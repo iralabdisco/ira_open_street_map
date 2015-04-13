@@ -1,0 +1,7 @@
+#request fields
+float64 x 
+float64 y
+---
+#response fields
+float64 latitude
+float64 longitude

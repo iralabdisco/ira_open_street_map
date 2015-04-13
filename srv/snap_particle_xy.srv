@@ -1,0 +1,16 @@
+#request fields (float64 = C++ double)
+float64 x 
+float64 y
+float64 max_distance_radius
+---
+#response fields (bool = C++ uint8_t(2) std::vector<bool>)
+float64 snapped_x
+float64 snapped_y
+float64 way_dir_quat_w
+float64 way_dir_quat_x
+float64 way_dir_quat_y
+float64 way_dir_quat_z
+float64 way_dir_degrees
+float64 way_dir_rad
+float64 way_dir_opposite_particles
+float64 distance_from_way

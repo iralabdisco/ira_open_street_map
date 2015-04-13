@@ -1,0 +1,8 @@
+#request fields (float64 = C++ double)
+float64 x1
+float64 y1
+float64 x2
+float64 y2
+---
+#response fields (float64 = C++ double)
+float64 distance

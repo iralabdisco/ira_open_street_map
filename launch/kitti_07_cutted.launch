@@ -1,0 +1,33 @@
+<launch>
+  <param name="/use_sim_time" value="true"/>	
+
+  <arg name="map" default="$(find ira_open_street_map)/maps/kitti_07.osm" />
+  <arg name="rviz" default="$(find road_layout_estimation)/rviz/visual_odometry_kitti_viso.rviz" />
+ 
+  	<!-- Local map transform-->
+	<node pkg="tf" type="static_transform_publisher" name="local_map_tf" 
+			args="455648.2 5426000.8 0 1 0 0 map local_map 200" /> 
+			
+	<!-- KITTI_07 PARAMETERS 
+	<arg name="lat" default="48.985319" />
+	<arg name="lon" default="8.393801" />            -->
+
+	<!-- start osm query node -->
+	<node 
+		pkg="ira_open_street_map" 
+		type="osm_query_node" 
+		name="osm_query_node" 
+		output="screen" 
+		args="$(arg map)" 
+	/> 
+	
+	<!-- Launch RViz-->
+	<node pkg="rviz" type="rviz" name="rviz" respawn="true"
+		args="-d $(arg rviz)"
+		output="screen"
+	/>
+	
+	<!-- Launch RQT reconfigure 
+	<node pkg="rqt_reconfigure" type="rqt_reconfigure" name="rqt_reconfigure" respawn="true"/>-->
+
+</launch>

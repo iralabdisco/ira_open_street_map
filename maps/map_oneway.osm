@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="Overpass API">
+<note>The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.</note>
+<meta osm_base="2014-11-25T15:31:02Z"/>
+
+<!--  UTM ZONE: 32-->
+  <node id="21458312" lat="45.5209287" lon="9.2163431"/>
+  <node id="21458322" lat="45.5232719" lon="9.2148104"/>
+  <node id="21458325" lat="45.5236522" lon="9.2133170"/> 
+  
+  
+  <node id="250051798" lat="45.5225598" lon="9.2173855"/>
+  <node id="1890361868" lat="45.5230323" lon="9.2156655"/>
+  <node id="250051827" lat="45.5230822" lon="9.2154853"/>
+  <node id="250051802" lat="45.5231121" lon="9.2153705"/>  
+  <node id="1890358961" lat="45.5232451" lon="9.2149226"/>
+  
+  <way id="8316624">
+    <nd ref="21458312" />
+    <nd ref="21458322" />
+    <nd ref="21458325" />
+    <tag k="highway" v="unclassified"/>
+    <tag k="loc_ref" v="1427_42899"/>
+    <tag k="name" v="Via Giovanni Ansaldo"/>
+    <tag k="oneway" v="-1"/>
+  </way> 
+      
+  <way id="182236660">
+    <nd ref="250051798"/>
+    <nd ref="1890361868"/>
+    <nd ref="250051827"/>
+    <nd ref="250051802"/>
+    <nd ref="1890358961"/>
+    <tag k="highway" v="unclassified"/>
+    <tag k="loc_ref" v="-9999_42901"/>
+    <tag k="name" v="Via Giovanni Ansaldo"/>
+    <tag k="oneway" v="yes"/>
+<!--    <tag k="lanes" v="2"/> -->
+  </way>
+</osm>

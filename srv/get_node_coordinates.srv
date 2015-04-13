@@ -1,0 +1,8 @@
+#request fields
+float64 node_id
+---
+#response fields
+float64 latitude
+float64 longitude
+float64 x
+float64 y

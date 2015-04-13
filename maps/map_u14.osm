@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="Overpass API">
+<note>The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.</note>
+<meta osm_base="2014-11-25T15:31:02Z"/>
+  
+  
+  <node id="250051814" lat="45.5230199" lon="9.2216079"/>
+  <node id="283232710" lat="45.5234488" lon="9.2204956"/>
+  <node id="1890358970" lat="45.5238011" lon="9.2187116"/>  
+  <node id="1890358973" lat="45.5240718" lon="9.2188683"/>
+  <node id="2690054783" lat="45.5231934" lon="9.2202935"/>        
+        
+  <way id="263391411">
+    <nd ref="250051814"/>
+    <nd ref="283232710"/>
+    <tag k="highway" v="service"/>
+    <tag k="loc_ref" v="1667_42951"/>
+    <tag k="name" v="Via Emilio Bignami"/>
+  </way>    
+  
+  <way id="263391415">
+    <nd ref="283232710"/>
+    <nd ref="1890358973"/>
+    <tag k="highway" v="residential"/>
+    <tag k="loc_ref" v="1667_42952"/>
+    <tag k="name" v="Via Emilio Bignami"/>
+  </way>
+  
+  <way id="263391420">
+    <nd ref="283232710"/>
+    <nd ref="2690054783"/>
+    <nd ref="1890358970"/>
+    <tag k="highway" v="service"/>
+    <tag k="loc_ref" v="1667_42954"/>
+    <tag k="name" v="Via Emilio Bignami"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="surface" v="asphalt"/>
+  </way> 
+  
+</osm>

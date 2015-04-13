@@ -1,0 +1,7 @@
+#request fields (float64 = C++ double)
+float64 x
+float64 y
+float64 max_distance_radius
+---
+#response fields (float64 = C++ double)
+float64 distance

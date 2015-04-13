@@ -1,0 +1,11 @@
+#request fields
+float64 way_id
+---
+#response fields
+float64 quat_w
+float64 quat_x
+float64 quat_y
+float64 quat_z
+float64 yaw_deg
+float64 yaw_rad
+bool opposite_direction

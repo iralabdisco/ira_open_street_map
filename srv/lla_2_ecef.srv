@@ -1,0 +1,9 @@
+#request fields (float64 = C++ double)
+float64 latitude 
+float64 longitude
+float64 altitude
+---
+#response fields (bool = C++ uint8_t(2) std::vector<bool>)
+float64 x 
+float64 y
+float64 z
