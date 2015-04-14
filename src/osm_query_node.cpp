@@ -515,10 +515,10 @@ Way_dir_struct way_direction_helper(const boost::shared_ptr<Osmium::OSM::Way con
     // Set opposite_direction flag
     response.opposite_direction = opposite_particles;
 
-    ROS_INFO_STREAM("   Direction calculated, Way ID: " << boost::lexical_cast<std::string>(way->id()));
-    ROS_INFO_STREAM("   Theta: " << theta);
-    ROS_INFO_STREAM("   Degrees: " << response.yaw_deg);
-    ROS_INFO_STREAM("   Quaternion: " << q.getX() << " " << q.getY() << " " << q.getZ()<< " " << q.getW() << "\n");
+    ROS_DEBUG_STREAM("   Direction calculated, Way ID: " << boost::lexical_cast<std::string>(way->id()));
+    ROS_DEBUG_STREAM("   Theta: " << theta);
+    ROS_DEBUG_STREAM("   Degrees: " << response.yaw_deg);
+    ROS_DEBUG_STREAM("   Quaternion: " << q.getX() << " " << q.getY() << " " << q.getZ()<< " " << q.getW() << "\n");
 
     return response;
 }
