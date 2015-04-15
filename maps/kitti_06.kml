@@ -1,0 +1,5088 @@
+<kml>
+  <Document>
+    <Schema id="points.schema">
+      <SimpleField name="osm_id" type="string"/>
+      <SimpleField name="barrier" type="string"/>
+      <SimpleField name="highway" type="string"/>
+      <SimpleField name="ref" type="string"/>
+      <SimpleField name="address" type="string"/>
+      <SimpleField name="is_in" type="string"/>
+      <SimpleField name="place" type="string"/>
+      <SimpleField name="man_made" type="string"/>
+      <SimpleField name="other_tags" type="string"/>
+    </Schema>
+    <Schema id="lines.schema">
+      <SimpleField name="osm_id" type="string"/>
+      <SimpleField name="highway" type="string"/>
+      <SimpleField name="waterway" type="string"/>
+      <SimpleField name="aerialway" type="string"/>
+      <SimpleField name="barrier" type="string"/>
+      <SimpleField name="man_made" type="string"/>
+      <SimpleField name="other_tags" type="string"/>
+    </Schema>
+    <Schema id="multilinestrings.schema">
+      <SimpleField name="osm_id" type="string"/>
+      <SimpleField name="type" type="string"/>
+      <SimpleField name="other_tags" type="string"/>
+    </Schema>
+    <Schema id="multipolygons.schema">
+      <SimpleField name="osm_id" type="string"/>
+      <SimpleField name="osm_way_id" type="string"/>
+      <SimpleField name="type" type="string"/>
+      <SimpleField name="aeroway" type="string"/>
+      <SimpleField name="amenity" type="string"/>
+      <SimpleField name="admin_level" type="string"/>
+      <SimpleField name="barrier" type="string"/>
+      <SimpleField name="boundary" type="string"/>
+      <SimpleField name="building" type="string"/>
+      <SimpleField name="craft" type="string"/>
+      <SimpleField name="geological" type="string"/>
+      <SimpleField name="historic" type="string"/>
+      <SimpleField name="land_area" type="string"/>
+      <SimpleField name="landuse" type="string"/>
+      <SimpleField name="leisure" type="string"/>
+      <SimpleField name="man_made" type="string"/>
+      <SimpleField name="military" type="string"/>
+      <SimpleField name="natural" type="string"/>
+      <SimpleField name="office" type="string"/>
+      <SimpleField name="place" type="string"/>
+      <SimpleField name="shop" type="string"/>
+      <SimpleField name="sport" type="string"/>
+      <SimpleField name="tourism" type="string"/>
+      <SimpleField name="other_tags" type="string"/>
+    </Schema>
+    <Schema id="other_relations.schema">
+      <SimpleField name="osm_id" type="string"/>
+      <SimpleField name="type" type="string"/>
+      <SimpleField name="other_tags" type="string"/>
+    </Schema>
+    <Document>
+      <name>points</name>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#points.schema">
+            <SimpleData name="osm_id">
+25344993            </SimpleData>
+            <SimpleData name="highway">
+turning_circle            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            8.3952396,49.0484216,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#points.schema">
+            <SimpleData name="osm_id">
+25344998            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["noexit"=>"yes"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            8.3954838,49.047732,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#points.schema">
+            <SimpleData name="osm_id">
+25345129            </SimpleData>
+            <SimpleData name="highway">
+turning_circle            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            8.3918764,49.0480256,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#points.schema">
+            <SimpleData name="osm_id">
+25345145            </SimpleData>
+            <SimpleData name="barrier">
+bollard            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            8.3917266,49.047904,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#points.schema">
+            <SimpleData name="osm_id">
+25346143            </SimpleData>
+            <SimpleData name="barrier">
+bollard            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            8.3905196,49.0484876,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#points.schema">
+            <SimpleData name="osm_id">
+25346145            </SimpleData>
+            <SimpleData name="barrier">
+bollard            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            8.390614,49.0487525,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Moldaustraße</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#points.schema">
+            <SimpleData name="osm_id">
+25346151            </SimpleData>
+            <SimpleData name="highway">
+bus_stop            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["public_transport"=>"platform"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            8.3964045,49.0473651,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Moldaustraße</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#points.schema">
+            <SimpleData name="osm_id">
+25346152            </SimpleData>
+            <SimpleData name="highway">
+bus_stop            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["public_transport"=>"platform","shelter"=>"yes"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            8.3962048,49.0473449,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Forlenweg</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#points.schema">
+            <SimpleData name="osm_id">
+25346169            </SimpleData>
+            <SimpleData name="highway">
+bus_stop            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["public_transport"=>"platform"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            8.3956061,49.052782,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Forlenweg</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#points.schema">
+            <SimpleData name="osm_id">
+25346170            </SimpleData>
+            <SimpleData name="highway">
+bus_stop            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["public_transport"=>"platform"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            8.3957336,49.052782,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#points.schema">
+            <SimpleData name="osm_id">
+25346172            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["amenity"=>"parking"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            8.39671,49.0471132,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#points.schema">
+            <SimpleData name="osm_id">
+25346174            </SimpleData>
+            <SimpleData name="barrier">
+bollard            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            8.3989522,49.0497049,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Donauschwabenstraße</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#points.schema">
+            <SimpleData name="osm_id">
+25346175            </SimpleData>
+            <SimpleData name="highway">
+bus_stop            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["public_transport"=>"platform"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            8.3960173,49.0514163,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Donauschwabenstraße</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#points.schema">
+            <SimpleData name="osm_id">
+25346176            </SimpleData>
+            <SimpleData name="highway">
+bus_stop            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["bench"=>"yes","public_transport"=>"platform","shelter"=>"yes"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            8.3959368,49.0512093,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#points.schema">
+            <SimpleData name="osm_id">
+25346186            </SimpleData>
+            <SimpleData name="barrier">
+bollard            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            8.3931357,49.0470274,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Neureut, Stadt Karlsruhe</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#points.schema">
+            <SimpleData name="osm_id">
+25945318            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["traffic_sign"=>"city_limit"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            8.3914192,49.0541471,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#points.schema">
+            <SimpleData name="osm_id">
+243708686            </SimpleData>
+            <SimpleData name="highway">
+give_way            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["traffic_sign"=>"DE:205"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            8.3899278,49.0450579,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#points.schema">
+            <SimpleData name="osm_id">
+373444436            </SimpleData>
+            <SimpleData name="highway">
+give_way            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["crossing"=>"uncontrolled","traffic_sign"=>"DE:205"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            8.3916747,49.053146,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#points.schema">
+            <SimpleData name="osm_id">
+374491110            </SimpleData>
+            <SimpleData name="highway">
+crossing            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["crossing"=>"traffic_signals"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            8.3914203,49.0528419,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#points.schema">
+            <SimpleData name="osm_id">
+374491129            </SimpleData>
+            <SimpleData name="highway">
+give_way            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["crossing"=>"uncontrolled","traffic_sign"=>"DE:205"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            8.3917356,49.0528432,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#points.schema">
+            <SimpleData name="osm_id">
+427548121            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["bus"=>"yes","public_transport"=>"stop_position"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            8.4002009,49.0566204,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#points.schema">
+            <SimpleData name="osm_id">
+427548198            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["bus"=>"yes","public_transport"=>"stop_position"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            8.39566,49.052782,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#points.schema">
+            <SimpleData name="osm_id">
+427548199            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["bus"=>"yes","public_transport"=>"stop_position"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            8.3960276,49.0513317,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#points.schema">
+            <SimpleData name="osm_id">
+427548200            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["bus"=>"yes","public_transport"=>"stop_position"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            8.3963471,49.0473744,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#points.schema">
+            <SimpleData name="osm_id">
+427548201            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["bus"=>"yes","public_transport"=>"stop_position"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            8.3942822,49.0459546,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Blankenlocher Weg</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#points.schema">
+            <SimpleData name="osm_id">
+428141638            </SimpleData>
+            <SimpleData name="highway">
+bus_stop            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["public_transport"=>"platform"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            8.3997684,49.0534153,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Blankenlocher Weg</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#points.schema">
+            <SimpleData name="osm_id">
+428141641            </SimpleData>
+            <SimpleData name="highway">
+bus_stop            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["public_transport"=>"platform"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            8.3991132,49.0536692,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#points.schema">
+            <SimpleData name="osm_id">
+428852458            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["bus"=>"yes","public_transport"=>"stop_position"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            8.3997661,49.0534971,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#points.schema">
+            <SimpleData name="osm_id">
+428852459            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["bus"=>"yes","public_transport"=>"stop_position"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            8.3991145,49.0536135,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#points.schema">
+            <SimpleData name="osm_id">
+1012884266            </SimpleData>
+            <SimpleData name="highway">
+crossing            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["crossing"=>"traffic_signals"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            8.3928279,49.0457485,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#points.schema">
+            <SimpleData name="osm_id">
+1012884267            </SimpleData>
+            <SimpleData name="highway">
+crossing            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["crossing"=>"traffic_signals"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            8.3915943,49.052853,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#points.schema">
+            <SimpleData name="osm_id">
+1136569583            </SimpleData>
+            <SimpleData name="highway">
+crossing            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["crossing"=>"traffic_signals"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            8.3912662,49.0529343,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#points.schema">
+            <SimpleData name="osm_id">
+1136569659            </SimpleData>
+            <SimpleData name="highway">
+give_way            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["crossing"=>"uncontrolled","traffic_sign"=>"DE:205"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            8.3911822,49.0531233,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#points.schema">
+            <SimpleData name="osm_id">
+1136569714            </SimpleData>
+            <SimpleData name="highway">
+crossing            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["crossing"=>"uncontrolled"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            8.3912376,49.0528348,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#points.schema">
+            <SimpleData name="osm_id">
+1136569808            </SimpleData>
+            <SimpleData name="highway">
+traffic_signals            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            8.3916477,49.0530385,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#points.schema">
+            <SimpleData name="osm_id">
+1136569813            </SimpleData>
+            <SimpleData name="highway">
+crossing            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["crossing"=>"traffic_signals"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            8.3912585,49.0530293,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#points.schema">
+            <SimpleData name="osm_id">
+1282748273            </SimpleData>
+            <SimpleData name="barrier">
+gate            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            8.3905726,49.0470288,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#points.schema">
+            <SimpleData name="osm_id">
+1470663810            </SimpleData>
+            <SimpleData name="highway">
+traffic_signals            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            8.3915949,49.0528201,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#points.schema">
+            <SimpleData name="osm_id">
+1470663811            </SimpleData>
+            <SimpleData name="highway">
+traffic_signals            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            8.3912073,49.052931,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#points.schema">
+            <SimpleData name="osm_id">
+1470663812            </SimpleData>
+            <SimpleData name="highway">
+traffic_signals            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            8.3913708,49.0531484,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#points.schema">
+            <SimpleData name="osm_id">
+1630227654            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["traffic_sign"=>"DE:331.2"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            8.3912787,49.0547914,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#points.schema">
+            <SimpleData name="osm_id">
+1708378647            </SimpleData>
+            <SimpleData name="barrier">
+gate            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            8.4015829,49.0444869,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#points.schema">
+            <SimpleData name="osm_id">
+1708615402            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["railway"=>"crossing"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            8.3908185,49.0545138,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#points.schema">
+            <SimpleData name="osm_id">
+1708764962            </SimpleData>
+            <SimpleData name="highway">
+crossing            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["crossing"=>"traffic_signals"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            8.3913786,49.0531163,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#points.schema">
+            <SimpleData name="osm_id">
+1708764968            </SimpleData>
+            <SimpleData name="highway">
+crossing            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["crossing"=>"traffic_signals"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            8.3915396,49.0531253,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#points.schema">
+            <SimpleData name="osm_id">
+1708765097            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["railway"=>"crossing"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            8.3916117,49.0550044,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#points.schema">
+            <SimpleData name="osm_id">
+1943362656            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["railway"=>"crossing"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            8.3908614,49.0544795,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#points.schema">
+            <SimpleData name="osm_id">
+1943362693            </SimpleData>
+            <SimpleData name="barrier">
+cycle_barrier            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            8.3909009,49.0544479,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#points.schema">
+            <SimpleData name="osm_id">
+1943362697            </SimpleData>
+            <SimpleData name="barrier">
+cycle_barrier            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            8.3907855,49.0545385,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#points.schema">
+            <SimpleData name="osm_id">
+1943362700            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["railway"=>"crossing"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            8.3910161,49.0543496,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#points.schema">
+            <SimpleData name="osm_id">
+1943362744            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["crossing:barrier"=>"half","crossing:light"=>"yes","railway"=>"level_crossing"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            8.3912657,49.0545987,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#points.schema">
+            <SimpleData name="osm_id">
+1943362760            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["crossing:barrier"=>"half","crossing:light"=>"yes","railway"=>"level_crossing"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            8.3914468,49.0547995,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#points.schema">
+            <SimpleData name="osm_id">
+2670267173            </SimpleData>
+            <SimpleData name="highway">
+traffic_signals            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            8.3917131,49.052814,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#points.schema">
+            <SimpleData name="osm_id">
+2670267174            </SimpleData>
+            <SimpleData name="highway">
+traffic_signals            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            8.3911977,49.0528536,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#points.schema">
+            <SimpleData name="osm_id">
+2670267196            </SimpleData>
+            <SimpleData name="highway">
+traffic_signals            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            8.3917327,49.0531205,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#points.schema">
+            <SimpleData name="osm_id">
+2670267197            </SimpleData>
+            <SimpleData name="highway">
+traffic_signals            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            8.3912131,49.0531453,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Document>
+    <Document>
+      <name>lines</name>
+      <Placemark>
+        <name>Blankenlocher Weg</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+4242874            </SimpleData>
+            <SimpleData name="highway">
+tertiary            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["lanes"=>"1","maxspeed"=>"30","oneway"=>"yes","postal_code"=>"76149","sidewalk"=>"right"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3924573,49.0530297,0
+            8.392631,49.0530418,0
+            8.3931401,49.0530774,0
+            8.3955776,49.0532375,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Blankenlocher Weg</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+4242875            </SimpleData>
+            <SimpleData name="highway">
+tertiary            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["maxspeed"=>"30","oneway"=>"yes","postal_code"=>"76149"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.4005369,49.0536853,0
+            8.4004675,49.0536542,0
+            8.4003501,49.0536284,0
+            8.4002345,49.0536162,0
+            8.4001222,49.0536257,0
+            8.4000193,49.0536435,0
+            8.3999222,49.0536536,0
+            8.3998123,49.0536543,0
+            8.3994984,49.0536313,0
+            8.3991145,49.0536135,0
+            8.398716,49.0535898,0
+            8.3979731,49.0535402,0
+            8.3972353,49.0534955,0
+            8.3964851,49.053448,0
+            8.3955513,49.0533983,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Hermann-Höpker-Aschoff-Straße</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+4242877            </SimpleData>
+            <SimpleData name="highway">
+residential            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["maxspeed"=>"30","postal_code"=>"76149"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3931401,49.0530774,0
+            8.3931162,49.0532423,0
+            8.3930868,49.0534591,0
+            8.3930494,49.0537263,0
+            8.3930284,49.0538762,0
+            8.3929665,49.0542395,0
+            8.3929392,49.0544966,0
+            8.3928607,49.0544919,0
+            8.3927168,49.0544801,0
+            8.3927256,49.0543414,0
+            8.3929665,49.0542395,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Eduard-von-Simson-Straße</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+4242879            </SimpleData>
+            <SimpleData name="highway">
+residential            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["postal_code"=>"76149","source:addr"=>"Maps4BW, LGL, www.lgl-bw.de"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.398716,49.0535898,0
+            8.3986374,49.0542207,0
+            8.3986138,49.0544142,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Hans-von-Dohnanyi-Straße</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+4242880            </SimpleData>
+            <SimpleData name="highway">
+residential            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["postal_code"=>"76149"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3994984,49.0536313,0
+            8.3994281,49.0541121,0
+            8.3994052,49.0542683,0
+            8.3993975,49.0543209,0
+            8.3993712,49.0545009,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+4242881            </SimpleData>
+            <SimpleData name="highway">
+residential            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3986374,49.0542207,0
+            8.3994052,49.0542683,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Blankenlocher Weg</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+4242882            </SimpleData>
+            <SimpleData name="highway">
+tertiary            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3995243,49.0534788,0
+            8.3995106,49.0535593,0
+            8.3994984,49.0536313,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Fichtenweg</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+4242885            </SimpleData>
+            <SimpleData name="highway">
+residential            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3924419,49.053167,0
+            8.3924573,49.0530297,0
+            8.3925068,49.0527548,0
+            8.3925476,49.0525284,0
+            8.3926358,49.052039,0
+            8.3927611,49.051343,0
+            8.3928863,49.0506481,0
+            8.3930185,49.0499142,0
+            8.3931197,49.0493522,0
+            8.393142,49.049283,0
+            8.3931927,49.0492169,0
+            8.3932683,49.0491536,0
+            8.3940273,49.0486939,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Eibenweg</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+4242886            </SimpleData>
+            <SimpleData name="highway">
+residential            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3925476,49.0525284,0
+            8.3956766,49.0526849,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Forlenweg</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+4242887            </SimpleData>
+            <SimpleData name="highway">
+residential            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3926358,49.052039,0
+            8.3951712,49.0521678,0
+            8.3957716,49.0521903,0
+            8.396807,49.0522463,0
+            8.3972424,49.0522681,0
+            8.3977708,49.0522967,0
+            8.3980091,49.0523074,0
+            8.3984859,49.0523318,0
+            8.3990722,49.0517649,0
+            8.3992139,49.0516653,0
+            8.4000144,49.0512049,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Zedernweg</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+4242888            </SimpleData>
+            <SimpleData name="highway">
+residential            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3927611,49.051343,0
+            8.393235,49.0513741,0
+            8.3940138,49.0514595,0
+            8.3948402,49.0515501,0
+            8.3952676,49.0515766,0
+            8.3959484,49.0515973,0
+            8.3968046,49.051673,0
+            8.3977825,49.0517396,0
+            8.3990722,49.0517649,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Föhrenweg</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+4242889            </SimpleData>
+            <SimpleData name="highway">
+residential            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3928863,49.0506481,0
+            8.3931864,49.0506688,0
+            8.3936046,49.0507397,0
+            8.3947366,49.0509181,0
+            8.3950438,49.0509601,0
+            8.3953987,49.0509924,0
+            8.3961167,49.0510533,0
+            8.3969193,49.051114,0
+            8.3982468,49.0511808,0
+            8.3991257,49.0512054,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Lärchenweg</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+4242890            </SimpleData>
+            <SimpleData name="highway">
+residential            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3930185,49.0499142,0
+            8.3932938,49.0499381,0
+            8.3934381,49.0499714,0
+            8.394014,49.0501289,0
+            8.3945561,49.0502677,0
+            8.3949835,49.0503574,0
+            8.3955317,49.0504429,0
+            8.3958684,49.050479,0
+            8.3962785,49.0505146,0
+            8.397128,49.0505838,0
+            8.3979617,49.0506097,0
+            8.3990178,49.0505852,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Tannenweg</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+4242893            </SimpleData>
+            <SimpleData name="highway">
+residential            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3952396,49.0484216,0
+            8.3953493,49.0485086,0
+            8.3954348,49.0485632,0
+            8.3955939,49.0486364,0
+            8.3957346,49.0486953,0
+            8.395985,49.0487907,0
+            8.396237,49.0488687,0
+            8.3964494,49.0489229,0
+            8.3967514,49.0489867,0
+            8.3970607,49.0490295,0
+            8.3972828,49.0490441,0
+            8.3976878,49.0490615,0
+            8.3983771,49.0490697,0
+            8.3987395,49.0490718,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>An der Waldschule</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+4242896            </SimpleData>
+            <SimpleData name="highway">
+residential            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["maxspeed"=>"30","oneway"=>"no"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.395915,49.0443656,0
+            8.3967459,49.04485,0
+            8.3976919,49.0454871,0
+            8.3977182,49.0455051,0
+            8.3983345,49.0459532,0
+            8.3990337,49.0464307,0
+            8.399125,49.0464982,0
+            8.3993087,49.0475137,0
+            8.3993457,49.0477663,0
+            8.3995105,49.0485821,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Zehntwaldstraße</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+4242897            </SimpleData>
+            <SimpleData name="highway">
+residential            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["maxspeed"=>"30","oneway"=>"no"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3952711,49.0448446,0
+            8.3969245,49.045974,0
+            8.3975549,49.0464143,0
+            8.3975669,49.0464215,0
+            8.398196,49.0468548,0
+            8.3982681,49.0469146,0
+            8.3983239,49.0469755,0
+            8.398353,49.0470305,0
+            8.3983909,49.0471295,0
+            8.3984298,49.0472911,0
+            8.3985014,49.0477686,0
+            8.3986236,49.0484173,0
+            8.3987395,49.0490718,0
+            8.3988541,49.0497012,0
+            8.3988563,49.0497135,0
+            8.3990178,49.0505852,0
+            8.3991257,49.0512054,0
+            8.3992139,49.0516653,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Wacholderweg</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+4242898            </SimpleData>
+            <SimpleData name="highway">
+residential            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3971121,49.0533273,0
+            8.3971718,49.0528422,0
+            8.3972347,49.0523306,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Donauschwabenstraße</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+4242912            </SimpleData>
+            <SimpleData name="highway">
+service            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3958706,49.0494973,0
+            8.3955317,49.0504429,0
+            8.3953987,49.0509924,0
+            8.3952676,49.0515766,0
+            8.3951712,49.0521678,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Kiefernweg</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+4242913            </SimpleData>
+            <SimpleData name="highway">
+service            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3933436,49.0482307,0
+            8.3927174,49.0478663,0
+            8.3927139,49.0478428,0
+            8.3926464,49.0478012,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Thujaweg</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+4242915            </SimpleData>
+            <SimpleData name="highway">
+cycleway            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3926464,49.0478012,0
+            8.392668,49.0477522,0
+            8.3926757,49.0477426,0
+            8.3926866,49.047733,0
+            8.393029,49.0475164,0
+            8.3930433,49.0475044,0
+            8.3930516,49.0474901,0
+            8.3931357,49.0470274,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Thujaweg</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+4242916            </SimpleData>
+            <SimpleData name="highway">
+residential            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3939023,49.0457031,0
+            8.3938033,49.0457981,0
+            8.3933521,49.0462037,0
+            8.3933276,49.0462366,0
+            8.3933176,49.0462709,0
+            8.3932742,49.0465253,0
+            8.3932415,49.0466975,0
+            8.3932195,49.0468566,0
+            8.3932031,49.0469425,0
+            8.3931508,49.0469386,0
+            8.3931357,49.0470274,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+4242922            </SimpleData>
+            <SimpleData name="highway">
+service            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3932415,49.0466975,0
+            8.3934148,49.0468203,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+4242931            </SimpleData>
+            <SimpleData name="highway">
+cycleway            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3895445,49.0528549,0
+            8.3896065,49.0528749,0
+            8.3897697,49.0530763,0
+            8.3898704,49.0532149,0
+            8.3900011,49.0533022,0
+            8.3900859,49.0533382,0
+            8.3901927,49.0533455,0
+            8.3903326,49.0533473,0
+            8.390503,49.0533255,0
+            8.3907006,49.0533155,0
+            8.3908333,49.0533292,0
+            8.3909188,49.0533516,0
+            8.3910587,49.0534277,0
+            8.391135,49.0534951,0
+            8.3911747,49.0535411,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+4242934            </SimpleData>
+            <SimpleData name="highway">
+cycleway            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3898944,49.0526141,0
+            8.3899896,49.05267,0
+            8.3900422,49.0527067,0
+            8.3901153,49.0528142,0
+            8.3902106,49.0528999,0
+            8.3903114,49.0529503,0
+            8.3904248,49.0529881,0
+            8.3909024,49.0531005,0
+            8.3910957,49.0531598,0
+            8.3911837,49.0532243,0
+            8.3912072,49.0533157,0
+            8.3911747,49.0535411,0
+            8.3911233,49.0539113,0
+            8.3911,49.0542311,0
+            8.3910926,49.054266,0
+            8.3910772,49.0542893,0
+            8.391059,49.0543123,0
+            8.3910161,49.0543496,0
+            8.3909829,49.0543824,0
+            8.3909009,49.0544479,0
+            8.3908614,49.0544795,0
+            8.3908185,49.0545138,0
+            8.3907855,49.0545385,0
+            8.3906946,49.0546064,0
+            8.390689,49.0546267,0
+            8.3906953,49.0546487,0
+            8.3908143,49.0548932,0
+            8.3908255,49.0549207,0
+            8.3908302,49.0549336,0
+            8.3908483,49.0549822,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+4242938            </SimpleData>
+            <SimpleData name="highway">
+footway            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3893237,49.0526365,0
+            8.3895878,49.0526247,0
+            8.3898944,49.0526141,0
+            8.3900997,49.0526119,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+4242939            </SimpleData>
+            <SimpleData name="highway">
+footway            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3896065,49.0528749,0
+            8.3899896,49.05267,0
+            8.3900997,49.0526119,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+4242941            </SimpleData>
+            <SimpleData name="highway">
+cycleway            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3883844,49.0502142,0
+            8.3883698,49.050154,0
+            8.3886617,49.0499725,0
+            8.3888772,49.0497947,0
+            8.3892841,49.0494583,0
+            8.3896855,49.0491291,0
+            8.3900869,49.0487999,0
+            8.3903433,49.0486148,0
+            8.3905196,49.0484876,0
+            8.3906319,49.0484066,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+4242943            </SimpleData>
+            <SimpleData name="highway">
+cycleway            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3900869,49.0487999,0
+            8.390614,49.0487525,0
+            8.3907008,49.0487447,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Leopoldshafener Straße</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+4242944            </SimpleData>
+            <SimpleData name="highway">
+residential            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3910295,49.0526732,0
+            8.3910929,49.0523377,0
+            8.3912252,49.0516153,0
+            8.3913661,49.0509422,0
+            8.3914938,49.0502622,0
+            8.3915926,49.0497652,0
+            8.3916871,49.0492789,0
+            8.3916929,49.0492466,0
+            8.3917098,49.0491528,0
+            8.3917403,49.0489716,0
+            8.3917827,49.048757,0
+            8.3918032,49.0486453,0
+            8.3918783,49.0482494,0
+            8.3918764,49.0480256,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+4242945            </SimpleData>
+            <SimpleData name="highway">
+service            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["noexit"=>"yes"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3917403,49.0489716,0
+            8.3914131,49.0489987,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+4242946            </SimpleData>
+            <SimpleData name="highway">
+service            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["noexit"=>"yes"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3917827,49.048757,0
+            8.391363,49.0487931,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Hochstettener Ring</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+4242947            </SimpleData>
+            <SimpleData name="highway">
+residential            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3912252,49.0516153,0
+            8.3905902,49.0516701,0
+            8.3902171,49.0517063,0
+            8.3901835,49.0517133,0
+            8.3901606,49.0517251,0
+            8.3901399,49.051747,0
+            8.3901318,49.0517661,0
+            8.3901321,49.0517941,0
+            8.3902617,49.0524344,0
+            8.3902992,49.0525709,0
+            8.3903618,49.0526543,0
+            8.390513,49.052711,0
+            8.3910295,49.0526732,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Rußheimer Straße</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+4242948            </SimpleData>
+            <SimpleData name="highway">
+residential            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3894668,49.0511149,0
+            8.3913661,49.0509422,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Liedolsheimer Ring</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+4242949            </SimpleData>
+            <SimpleData name="highway">
+residential            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3916871,49.0492789,0
+            8.391411,49.049308,0
+            8.3910972,49.0493345,0
+            8.3908273,49.0493561,0
+            8.3906565,49.0493703,0
+            8.3905612,49.0493783,0
+            8.3902993,49.0494028,0
+            8.3902583,49.0494157,0
+            8.3902226,49.0494383,0
+            8.3898199,49.0497683,0
+            8.3896023,49.0499467,0
+            8.3895037,49.0500275,0
+            8.3894723,49.0500636,0
+            8.3894567,49.0500952,0
+            8.3894542,49.0501317,0
+            8.3895114,49.0503677,0
+            8.3895191,49.0503887,0
+            8.3895394,49.0504054,0
+            8.3895673,49.0504182,0
+            8.3895935,49.0504228,0
+            8.3896176,49.0504242,0
+            8.3896493,49.0504241,0
+            8.3897468,49.0504155,0
+            8.3901972,49.050376,0
+            8.3906422,49.0503369,0
+            8.3910901,49.0502977,0
+            8.3914938,49.0502622,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+4242950            </SimpleData>
+            <SimpleData name="highway">
+cycleway            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3918764,49.0480256,0
+            8.3917266,49.047904,0
+            8.3913019,49.0478708,0
+            8.3912498,49.0478675,0
+            8.3906271,49.0478154,0
+            8.3905111,49.0478146,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Kirchfeldbrücke</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+4242951            </SimpleData>
+            <SimpleData name="highway">
+cycleway            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["bridge"=>"yes","layer"=>"1"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.392969,49.0480744,0
+            8.3926502,49.0478941,0
+            8.3925879,49.0478602,0
+            8.3925384,49.0478374,0
+            8.392492,49.0478198,0
+            8.3924465,49.0478063,0
+            8.3924008,49.0477944,0
+            8.3923425,49.0477831,0
+            8.3922914,49.0477766,0
+            8.3922325,49.047773,0
+            8.3921724,49.0477725,0
+            8.3921234,49.0477748,0
+            8.3916128,49.0478349,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+4242952            </SimpleData>
+            <SimpleData name="highway">
+cycleway            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3916128,49.0478349,0
+            8.3913019,49.0478708,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Zypressenweg</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+4242953            </SimpleData>
+            <SimpleData name="highway">
+living_street            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3954838,49.047732,0
+            8.3957246,49.0478944,0
+            8.3959644,49.0480453,0
+            8.3961161,49.0481235,0
+            8.3962568,49.048185,0
+            8.3964454,49.0482541,0
+            8.3966639,49.048315,0
+            8.3969412,49.048375,0
+            8.3972631,49.0484108,0
+            8.3975667,49.0484249,0
+            8.3986236,49.0484173,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Untere Hardtstraße</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+4243066            </SimpleData>
+            <SimpleData name="highway">
+tertiary            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["lanes"=>"2"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3883844,49.0502142,0
+            8.3884317,49.05018,0
+            8.3884681,49.0501605,0
+            8.3885141,49.0501401,0
+            8.3885636,49.0501292,0
+            8.3886082,49.0501259,0
+            8.3886637,49.0501265,0
+            8.3887184,49.0501362,0
+            8.3887635,49.0501539,0
+            8.3888103,49.0501808,0
+            8.3888562,49.050216,0
+            8.3890192,49.0503983,0
+            8.3891629,49.0505818,0
+            8.3893035,49.0507896,0
+            8.3893971,49.0509617,0
+            8.3894485,49.0510745,0
+            8.3894668,49.0511149,0
+            8.3901652,49.0525999,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Spöcker Straße</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+4243067            </SimpleData>
+            <SimpleData name="highway">
+residential            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["maxspeed"=>"30"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3908273,49.0493561,0
+            8.3908193,49.049318,0
+            8.3907603,49.0490361,0
+            8.3907008,49.0487447,0
+            8.390643,49.0484623,0
+            8.3906319,49.0484066,0
+            8.3905846,49.0481749,0
+            8.3905111,49.0478146,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Spöcker Straße</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+4243068            </SimpleData>
+            <SimpleData name="highway">
+unclassified            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3905111,49.0478146,0
+            8.390353,49.0470487,0
+            8.3899278,49.0450579,0
+            8.3899354,49.0449814,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Moldaustraße</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+4243070            </SimpleData>
+            <SimpleData name="highway">
+residential            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.397099,49.0477427,0
+            8.3973775,49.0477672,0
+            8.3974906,49.0477747,0
+            8.3976006,49.0477762,0
+            8.3985014,49.0477686,0
+            8.3993457,49.0477663,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Kiefernweg</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+4243072            </SimpleData>
+            <SimpleData name="highway">
+residential            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3933436,49.0482307,0
+            8.3933486,49.0482432,0
+            8.3933654,49.0482572,0
+            8.3940101,49.0486826,0
+            8.3940273,49.0486939,0
+            8.394129,49.0487674,0
+            8.3943691,49.0489289,0
+            8.394617,49.0490512,0
+            8.3947747,49.0491294,0
+            8.394813,49.0491449,0
+            8.395046,49.0492421,0
+            8.3952807,49.0493236,0
+            8.3955524,49.049411,0
+            8.3958706,49.0494973,0
+            8.3961157,49.0495473,0
+            8.3963611,49.0495863,0
+            8.3965582,49.0496145,0
+            8.396944,49.0496661,0
+            8.3971361,49.0496842,0
+            8.3972874,49.0496964,0
+            8.3975321,49.0497093,0
+            8.3978288,49.0497129,0
+            8.3981937,49.0497127,0
+            8.398731,49.0497065,0
+            8.3988541,49.0497012,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+4243075            </SimpleData>
+            <SimpleData name="highway">
+service            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3963137,49.047353,0
+            8.39671,49.0471132,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Kiefernweg</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+4243077            </SimpleData>
+            <SimpleData name="highway">
+cycleway            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3988563,49.0497135,0
+            8.3989522,49.0497049,0
+            8.3996874,49.0496535,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+4243081            </SimpleData>
+            <SimpleData name="highway">
+service            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3979329,49.0461922,0
+            8.3975549,49.0464143,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+4243082            </SimpleData>
+            <SimpleData name="highway">
+footway            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3975669,49.0464215,0
+            8.3962003,49.0472788,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Gildestraße</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+4243212            </SimpleData>
+            <SimpleData name="highway">
+residential            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3976919,49.0454871,0
+            8.3969245,49.045974,0
+            8.3955343,49.0468202,0
+            8.3933683,49.0481735,0
+            8.3933516,49.0481906,0
+            8.393344,49.0482082,0
+            8.3933436,49.0482307,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+4243213            </SimpleData>
+            <SimpleData name="highway">
+service            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3933436,49.0482307,0
+            8.3932885,49.0482641,0
+            8.3924443,49.0487757,0
+            8.3925114,49.0488307,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+4325093            </SimpleData>
+            <SimpleData name="highway">
+track            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["tracktype"=>"grade2"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.4000144,49.0512049,0
+            8.4000749,49.0511418,0
+            8.4020529,49.0498522,0
+            8.4036177,49.0495375,0
+            8.4051706,49.0492259,0
+            8.4070771,49.0488315,0
+            8.4078605,49.0486739,0
+            8.4080303,49.0486466,0
+            8.4110215,49.0482301,0
+            8.4123363,49.0480556,0
+            8.4138023,49.0478499,0
+            8.4144693,49.0477395,0
+            8.4150937,49.0475188,0
+            8.4163695,49.0473731,0
+            8.4180712,49.0471373,0
+            8.4181407,49.0471281,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Blankenlocher Weg</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+4329839            </SimpleData>
+            <SimpleData name="highway">
+tertiary            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["maxspeed"=>"30","oneway"=>"yes","postal_code"=>"76149"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3955776,49.0532375,0
+            8.3960793,49.0532671,0
+            8.39666,49.0533014,0
+            8.3971121,49.0533273,0
+            8.397643,49.0533569,0
+            8.3995243,49.0534788,0
+            8.3997661,49.0534971,0
+            8.4001217,49.0535167,0
+            8.40022,49.0535269,0
+            8.400315,49.0535455,0
+            8.4003912,49.0535735,0
+            8.4004593,49.0536166,0
+            8.4005369,49.0536853,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+4329845            </SimpleData>
+            <SimpleData name="highway">
+service            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.4004104,49.0534843,0
+            8.4003912,49.0535735,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+4329846            </SimpleData>
+            <SimpleData name="highway">
+footway            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3995105,49.0485821,0
+            8.3995939,49.0491554,0
+            8.3996874,49.0496535,0
+            8.4000144,49.0512049,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Wolfgang-Zeidler-Straße</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+4329848            </SimpleData>
+            <SimpleData name="highway">
+residential            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["postal_code"=>"76149"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3972353,49.0534955,0
+            8.3971484,49.0541282,0
+            8.3971181,49.054333,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Gerhard-Leibholz-Straße</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+4329849            </SimpleData>
+            <SimpleData name="highway">
+residential            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["postal_code"=>"76149","source:addr"=>"Maps4BW, LGL, www.lgl-bw.de"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3979731,49.0535402,0
+            8.3978752,49.0541734,0
+            8.3978448,49.0543725,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+4329850            </SimpleData>
+            <SimpleData name="highway">
+service            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3971484,49.0541282,0
+            8.3978752,49.0541734,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+4330823            </SimpleData>
+            <SimpleData name="highway">
+footway            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3953493,49.0485086,0
+            8.3959644,49.0480453,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+4330825            </SimpleData>
+            <SimpleData name="highway">
+footway            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3907008,49.0487447,0
+            8.3912888,49.0486918,0
+            8.3914175,49.0486802,0
+            8.3918032,49.0486453,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+4330826            </SimpleData>
+            <SimpleData name="highway">
+footway            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3912498,49.0478675,0
+            8.3912975,49.048105,0
+            8.3913604,49.0483962,0
+            8.3914175,49.0486802,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+4330827            </SimpleData>
+            <SimpleData name="highway">
+footway            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.390643,49.0484623,0
+            8.3913604,49.0483962,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+4330828            </SimpleData>
+            <SimpleData name="highway">
+footway            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3905846,49.0481749,0
+            8.3912975,49.048105,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+4330829            </SimpleData>
+            <SimpleData name="highway">
+service            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["noexit"=>"yes"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3917098,49.0491528,0
+            8.3914356,49.0491738,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+4330830            </SimpleData>
+            <SimpleData name="highway">
+footway            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3912888,49.0486918,0
+            8.3913469,49.0489827,0
+            8.3914093,49.049274,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+4330832            </SimpleData>
+            <SimpleData name="highway">
+footway            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3907603,49.0490361,0
+            8.3913469,49.0489827,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+4330833            </SimpleData>
+            <SimpleData name="highway">
+service            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["service"=>"parking_aisle"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3902344,49.049122,0
+            8.3902917,49.0493701,0
+            8.3902993,49.0494028,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+4330834            </SimpleData>
+            <SimpleData name="highway">
+service            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["service"=>"parking_aisle"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3905043,49.0490904,0
+            8.3905545,49.0493447,0
+            8.3905612,49.0493783,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+7650558            </SimpleData>
+            <SimpleData name="highway">
+service            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["surface"=>"asphalt"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.4015829,49.0444869,0
+            8.4015859,49.0445715,0
+            8.4015748,49.04463,0
+            8.4015316,49.0446971,0
+            8.4015058,49.044721,0
+            8.4013856,49.044841,0
+            8.4010817,49.0450464,0
+            8.3990337,49.0464307,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+7736155            </SimpleData>
+            <SimpleData name="highway">
+track            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["tracktype"=>"grade4"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.399125,49.0464982,0
+            8.3992049,49.0465654,0
+            8.4001485,49.0469578,0
+            8.4004089,49.0469831,0
+            8.400871,49.0470296,0
+            8.4016165,49.0470864,0
+            8.4022372,49.0471386,0
+            8.4025851,49.0471473,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+8024900            </SimpleData>
+            <SimpleData name="highway">
+track            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["tracktype"=>"grade5"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.4000918,49.0518847,0
+            8.4038324,49.0521811,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+8042810            </SimpleData>
+            <SimpleData name="highway">
+cycleway            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["foot"=>"yes"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3910295,49.0526732,0
+            8.3911293,49.0526732,0
+            8.3911575,49.0526997,0
+            8.3911682,49.0527166,0
+            8.3911886,49.0527492,0
+            8.3912138,49.0528006,0
+            8.3912376,49.0528348,0
+            8.3912656,49.0528814,0
+            8.3912662,49.0529343,0
+            8.3912623,49.0529895,0
+            8.3912585,49.0530293,0
+            8.3912169,49.0530953,0
+            8.3911822,49.0531233,0
+            8.3910957,49.0531598,0
+            8.3909653,49.0531968,0
+            8.390785,49.0532578,0
+            8.3907006,49.0533155,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Erna-Scheffler-Straße</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+8042813            </SimpleData>
+            <SimpleData name="highway">
+residential            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["postal_code"=>"76149"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3957721,49.0540524,0
+            8.3957221,49.054393,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Erna-Scheffler-Straße</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+8042814            </SimpleData>
+            <SimpleData name="highway">
+residential            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["postal_code"=>"76149"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3950375,49.0540024,0
+            8.394968,49.0544631,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Erna-Scheffler-Straße</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+8042815            </SimpleData>
+            <SimpleData name="highway">
+residential            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["postal_code"=>"76149"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3943448,49.0539577,0
+            8.3942786,49.0544297,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Erna-Scheffler-Straße</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+8042816            </SimpleData>
+            <SimpleData name="highway">
+residential            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["postal_code"=>"76149"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3936583,49.0539175,0
+            8.393594,49.0544139,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+8058239            </SimpleData>
+            <SimpleData name="highway">
+track            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["surface"=>"grass"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3861875,49.0461564,0
+            8.3865242,49.046306,0
+            8.3867441,49.0464109,0
+            8.3869663,49.0465592,0
+            8.3871751,49.0467071,0
+            8.3901272,49.0485,0
+            8.3903433,49.0486148,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+8115028            </SimpleData>
+            <SimpleData name="highway">
+cycleway            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["foot"=>"yes"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3917266,49.047904,0
+            8.3919425,49.0479173,0
+            8.392184,49.0477914,0
+            8.3922794,49.0472381,0
+            8.3923469,49.0469197,0
+            8.3925077,49.0459033,0
+            8.3925039,49.0458554,0
+            8.3924694,49.0458034,0
+            8.392432,49.045766,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+10694586            </SimpleData>
+            <SimpleData name="highway">
+path            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["bicycle"=>"yes","foot"=>"yes"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3900636,49.0450454,0
+            8.3901423,49.0454735,0
+            8.3903318,49.0463495,0
+            8.3904778,49.0470365,0
+            8.3906271,49.0478154,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+22926876            </SimpleData>
+            <SimpleData name="highway">
+service            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["service"=>"parking_aisle"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3930868,49.0534591,0
+            8.3928788,49.0534423,0
+            8.3926193,49.053426,0
+            8.3923636,49.0534101,0
+            8.3920538,49.0533909,0
+            8.3920779,49.0536618,0
+            8.3923247,49.0536772,0
+            8.3925804,49.0536932,0
+            8.3928399,49.0537094,0
+            8.3930494,49.0537263,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Abraham-Lincoln-Allee</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+28369397            </SimpleData>
+            <SimpleData name="highway">
+residential            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["postal_code"=>"76149"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.4005369,49.0536853,0
+            8.4005899,49.0537789,0
+            8.4006049,49.0539023,0
+            8.400599,49.0539592,0
+            8.4005484,49.0543124,0
+            8.4005025,49.0546333,0
+            8.4004982,49.0546627,0
+            8.4003834,49.0554645,0
+            8.4003294,49.0558415,0
+            8.4002754,49.0562184,0
+            8.4002009,49.0566204,0
+            8.4001601,49.0569095,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Lothar-Kreyssig-Straße</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+28446970            </SimpleData>
+            <SimpleData name="highway">
+living_street            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["postal_code"=>"76149"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.4005484,49.0543124,0
+            8.4014068,49.0543631,0
+            8.4018861,49.0543954,0
+            8.4019385,49.0543439,0
+            8.4026947,49.0543769,0
+            8.4029693,49.0544276,0
+            8.4033128,49.0544528,0
+            8.4035772,49.0544699,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Lothar-Kreyssig-Straße</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+28446971            </SimpleData>
+            <SimpleData name="highway">
+living_street            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["postal_code"=>"76149"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.4007626,49.0540237,0
+            8.4014527,49.0540727,0
+            8.4014336,49.0542056,0
+            8.4019493,49.0542386,0
+            8.4019731,49.0540659,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Lothar-Kreyssig-Straße</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+28446972            </SimpleData>
+            <SimpleData name="highway">
+living_street            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["postal_code"=>"76149"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.4019493,49.0542386,0
+            8.4019385,49.0543439,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Lothar-Kreyssig-Straße</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+28446973            </SimpleData>
+            <SimpleData name="highway">
+living_street            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["postal_code"=>"76149"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.4014336,49.0542056,0
+            8.4014068,49.0543631,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+30216127            </SimpleData>
+            <SimpleData name="highway">
+cycleway            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["foot"=>"yes"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.392954,49.0457664,0
+            8.3929159,49.0457824,0
+            8.3928934,49.0458175,0
+            8.3928204,49.0463709,0
+            8.392711,49.0470336,0
+            8.3925706,49.0476585,0
+            8.3925723,49.0476704,0
+            8.3925792,49.0476766,0
+            8.3926051,49.0476922,0
+            8.3926139,49.0477004,0
+            8.3926158,49.0477082,0
+            8.3926064,49.0477652,0
+            8.3926091,49.0477754,0
+            8.3926169,49.0477838,0
+            8.3926464,49.0478012,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Donauschwabenstraße</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+30474897            </SimpleData>
+            <SimpleData name="highway">
+tertiary            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["maxspeed"=>"30"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3955776,49.0532375,0
+            8.39566,49.052782,0
+            8.3956766,49.0526849,0
+            8.3957716,49.0521903,0
+            8.3957879,49.0521379,0
+            8.3959484,49.0515973,0
+            8.3960276,49.0513317,0
+            8.3961167,49.0510533,0
+            8.3962785,49.0505146,0
+            8.3965582,49.0496145,0
+            8.3967514,49.0489867,0
+            8.3969412,49.048375,0
+            8.3971196,49.0478199,0
+            8.3971214,49.0477988,0
+            8.3971203,49.0477778,0
+            8.397115,49.047763,0
+            8.397099,49.0477427,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Blankenlocher Weg</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+30474898            </SimpleData>
+            <SimpleData name="highway">
+tertiary            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["lanes"=>"1","maxspeed"=>"30","oneway"=>"yes","postal_code"=>"76149","sidewalk"=>"right"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3955513,49.0533983,0
+            8.3931162,49.0532423,0
+            8.3928011,49.0532248,0
+            8.3926268,49.053209,0
+            8.3926019,49.0532045,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Linkenheimer Landstraße</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+30474900            </SimpleData>
+            <SimpleData name="highway">
+primary            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["lanes"=>"3","maxspeed"=>"70","oneway"=>"yes","placement"=>"right_of:2","sidewalk"=>"no","turn:lanes"=>"left|through|through"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3913929,49.0530285,0
+            8.3914027,49.0529337,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+32907899            </SimpleData>
+            <SimpleData name="highway">
+footway            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["surface"=>"cobblestone"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3902617,49.0524344,0
+            8.3902964,49.0524087,0
+            8.390499,49.052383,0
+            8.3907285,49.0523689,0
+            8.3910506,49.0523407,0
+            8.3910929,49.0523377,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+32907927            </SimpleData>
+            <SimpleData name="highway">
+footway            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["surface"=>"cobblestone"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3900997,49.0526119,0
+            8.3901652,49.0525999,0
+            8.3902992,49.0525709,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Forlenweg</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+32941810            </SimpleData>
+            <SimpleData name="highway">
+residential            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3984859,49.0523318,0
+            8.3993401,49.0523756,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Zehntwaldstraße</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+32941813            </SimpleData>
+            <SimpleData name="highway">
+residential            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3995243,49.0534788,0
+            8.3994302,49.0529233,0
+            8.3993401,49.0523756,0
+            8.3992139,49.0516653,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Gebhard-Müller-Straße</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+32941849            </SimpleData>
+            <SimpleData name="highway">
+residential            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["postal_code"=>"76149"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3964851,49.053448,0
+            8.3963952,49.0540905,0
+            8.3963572,49.0543619,0
+            8.3963414,49.0544751,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+33146850            </SimpleData>
+            <SimpleData name="highway">
+footway            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["surface"=>"cobblestone"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3905902,49.0516701,0
+            8.3907285,49.0523689,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+33146851            </SimpleData>
+            <SimpleData name="highway">
+footway            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["surface"=>"cobblestone"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3912656,49.0528814,0
+            8.3914203,49.0528419,0
+            8.3915943,49.052853,0
+            8.3916774,49.0528507,0
+            8.3917356,49.0528432,0
+            8.3917916,49.0528225,0
+            8.3919798,49.05276,0
+            8.392032,49.0527488,0
+            8.3920862,49.0527394,0
+            8.3921576,49.0527368,0
+            8.3925068,49.0527548,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+35449714            </SimpleData>
+            <SimpleData name="highway">
+footway            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3966454,49.0528251,0
+            8.3964328,49.0528145,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+35449715            </SimpleData>
+            <SimpleData name="highway">
+service            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3932742,49.0465253,0
+            8.3938969,49.046986,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+35790740            </SimpleData>
+            <SimpleData name="highway">
+footway            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.397643,49.0533569,0
+            8.3977071,49.0528254,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Lothar-Kreyssig-Straße</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+35935376            </SimpleData>
+            <SimpleData name="highway">
+living_street            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["postal_code"=>"76149"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.4019731,49.0540659,0
+            8.4026054,49.0540963,0
+            8.4028276,49.0541394,0
+            8.4033599,49.0541734,0
+            8.4034705,49.0541686,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+47298208            </SimpleData>
+            <SimpleData name="highway">
+footway            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["foot"=>"permissive"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.4007626,49.0540237,0
+            8.4007017,49.054,0
+            8.400599,49.0539592,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+97061002            </SimpleData>
+            <SimpleData name="highway">
+service            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["service"=>"parking_aisle"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3923247,49.0536772,0
+            8.3923636,49.0534101,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+97061005            </SimpleData>
+            <SimpleData name="highway">
+service            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["service"=>"parking_aisle"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3928399,49.0537094,0
+            8.3928788,49.0534423,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+97061010            </SimpleData>
+            <SimpleData name="highway">
+service            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["service"=>"parking_aisle"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3925804,49.0536932,0
+            8.3926193,49.053426,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+98244206            </SimpleData>
+            <SimpleData name="highway">
+tertiary_link            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["lanes"=>"1","oneway"=>"yes","sidewalk"=>"no","turn:lanes"=>"right"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3916344,49.0526116,0
+            8.3916746,49.0527035,0
+            8.3916907,49.052745,0
+            8.3917131,49.052814,0
+            8.3917356,49.0528432,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+98244210            </SimpleData>
+            <SimpleData name="highway">
+tertiary_link            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["lanes"=>"1","oneway"=>"yes","sidewalk"=>"no","turn:lanes"=>"right"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3921574,49.0530895,0
+            8.3920337,49.0530883,0
+            8.3919026,49.0530965,0
+            8.3917979,49.0531053,0
+            8.3917327,49.0531205,0
+            8.3917003,49.0531326,0
+            8.3916747,49.053146,0
+            8.3915101,49.0533159,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+98244213            </SimpleData>
+            <SimpleData name="highway">
+tertiary_link            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["lanes"=>"1","oneway"=>"yes","sidewalk"=>"no","turn:lanes"=>"right"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3913247,49.0533915,0
+            8.3912964,49.0533039,0
+            8.3912749,49.0532336,0
+            8.391232,49.0531633,0
+            8.3912131,49.0531453,0
+            8.3911822,49.0531233,0
+            8.3911301,49.0530842,0
+            8.3910416,49.0530473,0
+            8.3909261,49.0529974,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+98244215            </SimpleData>
+            <SimpleData name="highway">
+tertiary_link            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["lanes"=>"1","oneway"=>"yes","sidewalk"=>"right","turn:lanes"=>"right"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3908726,49.0529207,0
+            8.3910117,49.0529018,0
+            8.3911211,49.0528805,0
+            8.3911977,49.0528536,0
+            8.3912376,49.0528348,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Moldaustraße</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+98244216            </SimpleData>
+            <SimpleData name="highway">
+tertiary            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3939023,49.0457031,0
+            8.394169,49.0458749,0
+            8.3942822,49.0459546,0
+            8.3955343,49.0468202,0
+            8.3962003,49.0472788,0
+            8.3963137,49.047353,0
+            8.3963471,49.0473744,0
+            8.3964987,49.0474631,0
+            8.3966366,49.0475342,0
+            8.3967581,49.0475937,0
+            8.3969126,49.0476624,0
+            8.3970255,49.0477061,0
+            8.3970804,49.0477319,0
+            8.397099,49.0477427,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Untere Hardtstraße</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+98244217            </SimpleData>
+            <SimpleData name="highway">
+tertiary            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["lanes"=>"2","oneway"=>"yes","sidewalk"=>"right","turn:lanes"=>"left|through;right"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3904884,49.0528901,0
+            8.3906861,49.0529107,0
+            8.3908726,49.0529207,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Untere Hardtstraße</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+98244218            </SimpleData>
+            <SimpleData name="highway">
+tertiary            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["lanes"=>"1","oneway"=>"yes","postal_code"=>"76149","sidewalk"=>"no"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3913929,49.0530285,0
+            8.3912585,49.0530293,0
+            8.3910362,49.0530139,0
+            8.3909261,49.0529974,0
+            8.3907304,49.0529682,0
+            8.3906018,49.0529313,0
+            8.3904884,49.0528901,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Blankenlocher Weg</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+98244219            </SimpleData>
+            <SimpleData name="highway">
+tertiary            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["lanes"=>"2","oneway"=>"yes","sidewalk"=>"no","turn:lanes"=>"left|through"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3914027,49.0529337,0
+            8.391572,49.0529371,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+112976832            </SimpleData>
+            <SimpleData name="highway">
+service            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["access"=>"private","service"=>"parking_aisle"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3909843,49.0460483,0
+            8.3910522,49.0463899,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+112976851            </SimpleData>
+            <SimpleData name="highway">
+service            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["access"=>"private","service"=>"parking_aisle"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3915305,49.0457181,0
+            8.391314,49.0460157,0
+            8.3913691,49.0462996,0
+            8.3913637,49.046333,0
+            8.3913432,49.0463527,0
+            8.3913069,49.0463639,0
+            8.3910522,49.0463899,0
+            8.3907993,49.0464147,0
+            8.3905609,49.0464368,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+112976852            </SimpleData>
+            <SimpleData name="highway">
+service            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["service"=>"driveway"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.390353,49.0470487,0
+            8.3904778,49.0470365,0
+            8.3905726,49.0470288,0
+            8.3906693,49.047021,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+112976853            </SimpleData>
+            <SimpleData name="highway">
+service            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["access"=>"private","service"=>"parking_aisle"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.390623,49.0473544,0
+            8.3920563,49.0474567,0
+            8.3920966,49.047204,0
+            8.3922991,49.046035,0
+            8.392295,49.045982,0
+            8.3922629,49.0459479,0
+            8.3921976,49.0459188,0
+            8.3915305,49.0457181,0
+            8.3912902,49.0456459,0
+            8.3909843,49.0460483,0
+            8.3907229,49.0460722,0
+            8.3904932,49.0460941,0
+            8.3905609,49.0464368,0
+            8.3906693,49.047021,0
+            8.3906721,49.0470946,0
+            8.390623,49.0473544,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+112976867            </SimpleData>
+            <SimpleData name="highway">
+service            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["access"=>"private","service"=>"parking_aisle"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3906721,49.0470946,0
+            8.3920966,49.047204,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+112976869            </SimpleData>
+            <SimpleData name="highway">
+service            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["access"=>"private","service"=>"parking_aisle"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3907229,49.0460722,0
+            8.3907993,49.0464147,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+122927811            </SimpleData>
+            <SimpleData name="highway">
+path            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["surface"=>"ground"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3927168,49.0544801,0
+            8.391554,49.054415,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+132153776            </SimpleData>
+            <SimpleData name="highway">
+footway            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3892841,49.0494583,0
+            8.3902128,49.0493843,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+132153777            </SimpleData>
+            <SimpleData name="highway">
+footway            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3907529,49.0498418,0
+            8.3906565,49.0493703,0
+            8.3906493,49.0493351,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+132153778            </SimpleData>
+            <SimpleData name="highway">
+footway            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3905404,49.0498611,0
+            8.3906422,49.0503369,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+132153779            </SimpleData>
+            <SimpleData name="highway">
+footway            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3897468,49.0504155,0
+            8.3896488,49.0499424,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+132153780            </SimpleData>
+            <SimpleData name="highway">
+footway            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3903146,49.0498817,0
+            8.3902226,49.0494383,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+132153781            </SimpleData>
+            <SimpleData name="highway">
+cycleway            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3932885,49.0482641,0
+            8.392969,49.0480744,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+132153782            </SimpleData>
+            <SimpleData name="highway">
+footway            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3901972,49.050376,0
+            8.3900958,49.0499017,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+132153783            </SimpleData>
+            <SimpleData name="highway">
+footway            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3911985,49.0498011,0
+            8.3910972,49.0493345,0
+            8.391088,49.0492975,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+132153784            </SimpleData>
+            <SimpleData name="highway">
+footway            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3910901,49.0502977,0
+            8.3909887,49.0498202,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+132153786            </SimpleData>
+            <SimpleData name="highway">
+footway            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3888772,49.0497947,0
+            8.389724,49.0497156,0
+            8.3898199,49.0497683,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+132153791            </SimpleData>
+            <SimpleData name="highway">
+service            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3896023,49.0499467,0
+            8.3896488,49.0499424,0
+            8.3900958,49.0499017,0
+            8.3903146,49.0498817,0
+            8.3905404,49.0498611,0
+            8.3907529,49.0498418,0
+            8.3909887,49.0498202,0
+            8.3911985,49.0498011,0
+            8.3915926,49.0497652,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Blankenlocher Weg</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+133610413            </SimpleData>
+            <SimpleData name="highway">
+tertiary            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["lanes"=>"2","oneway"=>"yes","postal_code"=>"76149","sidewalk"=>"no","turn:lanes"=>"left|through"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3921574,49.0530895,0
+            8.3919508,49.0530614,0
+            8.3916477,49.0530385,0
+            8.3915509,49.0530356,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Linkenheimer Landstraße</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+133610430            </SimpleData>
+            <SimpleData name="highway">
+primary            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["lanes"=>"4","maxspeed"=>"70","oneway"=>"yes","sidewalk"=>"no","turn:lanes"=>"left|through|through|right"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3917779,49.0518007,0
+            8.3916344,49.0526116,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Linkenheimer Landstraße</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+133610432            </SimpleData>
+            <SimpleData name="highway">
+primary            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["lanes"=>"4","maxspeed"=>"70","oneway"=>"yes","turn:lanes"=>"left|through|through|right"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3925446,49.0464417,0
+            8.392576,49.0462592,0
+            8.3926244,49.0459808,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Linkenheimer Landstraße</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+133610433            </SimpleData>
+            <SimpleData name="highway">
+primary            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["bicycle"=>"no","lanes"=>"3","maxspeed"=>"70","motorroad"=>"no","oneway"=>"yes","placement"=>"right_of:2","sidewalk"=>"no","turn:lanes"=>"left|through|through"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3913247,49.0533915,0
+            8.3913708,49.0531484,0
+            8.3913786,49.0531163,0
+            8.3913929,49.0530285,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Linkenheimer Landstraße</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+133610434            </SimpleData>
+            <SimpleData name="highway">
+primary            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["lanes"=>"2","maxspeed"=>"70","oneway"=>"yes","sidewalk"=>"no"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3914027,49.0529337,0
+            8.3914203,49.0528419,0
+            8.3914521,49.0526592,0
+            8.392328,49.0476251,0
+            8.3924445,49.0470242,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Linkenheimer Landstraße</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+133610438            </SimpleData>
+            <SimpleData name="highway">
+primary            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["lanes"=>"2","maxspeed"=>"70","oneway"=>"yes"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3928356,49.0456925,0
+            8.3928279,49.0457485,0
+            8.3926453,49.0468415,0
+            8.3924565,49.0479665,0
+            8.3918182,49.0515728,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Linkenheimer Landstraße</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+133610440            </SimpleData>
+            <SimpleData name="highway">
+primary            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["lanes"=>"3","maxspeed"=>"70","oneway"=>"yes","placement"=>"right_of:2","sidewalk"=>"no","turn:lanes"=>"left|through|through"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3916344,49.0526116,0
+            8.3915949,49.0528201,0
+            8.3915943,49.052853,0
+            8.391572,49.0529371,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Linkenheimer Landstraße</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+133610441            </SimpleData>
+            <SimpleData name="highway">
+primary            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["bicycle"=>"no","lanes"=>"2","maxspeed"=>"70","motorroad"=>"no","oneway"=>"yes","turn:lanes"=>"left;through|through;right"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3912393,49.0542285,0
+            8.3912424,49.0541487,0
+            8.3912415,49.0540811,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Erna-Scheffler-Straße</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+150089858            </SimpleData>
+            <SimpleData name="highway">
+residential            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["maxspeed"=>"30","postal_code"=>"76149"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3963952,49.0540905,0
+            8.3957721,49.0540524,0
+            8.3950375,49.0540024,0
+            8.3943448,49.0539577,0
+            8.3936583,49.0539175,0
+            8.3930284,49.0538762,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Linkenheimer Landstraße</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+150101090            </SimpleData>
+            <SimpleData name="highway">
+primary            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["bicycle"=>"no","lanes"=>"2","maxspeed"=>"70","oneway"=>"yes","sidewalk"=>"no"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3915509,49.0530356,0
+            8.3915396,49.0531253,0
+            8.3915101,49.0533159,0
+            8.3914682,49.0535766,0
+            8.3914405,49.0538045,0
+            8.3914274,49.0539549,0
+            8.3914192,49.0541471,0
+            8.3914265,49.05459,0
+            8.3914468,49.0547995,0
+            8.3914587,49.0549128,0
+            8.3915457,49.0553913,0
+            8.3918348,49.056582,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+158007580            </SimpleData>
+            <SimpleData name="highway">
+footway            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3902128,49.0493843,0
+            8.3902917,49.0493701,0
+            8.3903294,49.0493633,0
+            8.3905545,49.0493447,0
+            8.3906493,49.0493351,0
+            8.3908193,49.049318,0
+            8.391088,49.0492975,0
+            8.3914093,49.049274,0
+            8.3916929,49.0492466,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+158681234            </SimpleData>
+            <SimpleData name="highway">
+path            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["smoothness"=>"bad","surface"=>"ground","tracktype"=>"grade5"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3993087,49.0475137,0
+            8.4001485,49.0469578,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+158681237            </SimpleData>
+            <SimpleData name="highway">
+path            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["smoothness"=>"bad","surface"=>"ground","tracktype"=>"grade5"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.4028663,49.0477107,0
+            8.4020943,49.0476727,0
+            8.4007583,49.0488633,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+158681240            </SimpleData>
+            <SimpleData name="highway">
+path            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["smoothness"=>"bad","surface"=>"ground","tracktype"=>"grade4"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.4032856,49.0489485,0
+            8.4007583,49.0488633,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+158681243            </SimpleData>
+            <SimpleData name="highway">
+path            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["smoothness"=>"bad","surface"=>"ground","tracktype"=>"grade5"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.4004089,49.0469831,0
+            8.4003416,49.047388,0
+            8.4003614,49.0475724,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+158681247            </SimpleData>
+            <SimpleData name="highway">
+track            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["smoothness"=>"bad","surface"=>"ground","tracktype"=>"grade4"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.402619,49.0471481,0
+            8.4037651,49.0471906,0
+            8.4063888,49.0472641,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+158681248            </SimpleData>
+            <SimpleData name="highway">
+bridleway            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["smoothness"=>"bad","surface"=>"ground","tracktype"=>"grade5"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.4021738,49.046219,0
+            8.4060574,49.046554,0
+            8.4076397,49.0466934,0
+            8.4078436,49.0467042,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+158681249            </SimpleData>
+            <SimpleData name="highway">
+track            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["smoothness"=>"bad","surface"=>"compacted","tracktype"=>"grade4"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.402619,49.0471481,0
+            8.4021738,49.046219,0
+            8.4018677,49.0454893,0
+            8.4016893,49.0449856,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+158681253            </SimpleData>
+            <SimpleData name="highway">
+track            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["smoothness"=>"intermediate","surface"=>"compacted","tracktype"=>"grade2"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.402619,49.0471481,0
+            8.4025851,49.0471473,0
+            8.4026977,49.047265,0
+            8.4028663,49.0477107,0
+            8.4032856,49.0489485,0
+            8.4036177,49.0495375,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Forlenweg</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+158689330            </SimpleData>
+            <SimpleData name="highway">
+residential            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3977708,49.0522967,0
+            8.3977629,49.0523624,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+158697999            </SimpleData>
+            <SimpleData name="highway">
+path            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["smoothness"=>"bad","surface"=>"ground","tracktype"=>"grade5"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.4039409,49.0529674,0
+            8.4002434,49.0526533,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+158698001            </SimpleData>
+            <SimpleData name="highway">
+track            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["smoothness"=>"good","surface"=>"asphalt","tracktype"=>"grade1"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.4007254,49.0538226,0
+            8.4007017,49.054,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+158698003            </SimpleData>
+            <SimpleData name="highway">
+track            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["smoothness"=>"good","surface"=>"asphalt","tracktype"=>"grade1"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.4004104,49.0534843,0
+            8.4007743,49.0535105,0
+            8.4013872,49.0535466,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+158698007            </SimpleData>
+            <SimpleData name="highway">
+track            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["smoothness"=>"intermediate","surface"=>"compacted","tracktype"=>"grade2"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.4013872,49.0535466,0
+            8.4037314,49.0537528,0
+            8.4038871,49.0537562,0
+            8.404178,49.0538121,0
+            8.4056946,49.054276,0
+            8.4072079,49.0548372,0
+            8.4077927,49.0549968,0
+            8.4084374,49.0551743,0
+            8.408767,49.0553003,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+158698008            </SimpleData>
+            <SimpleData name="highway">
+track            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["smoothness"=>"good","surface"=>"asphalt","tracktype"=>"grade1"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.4007743,49.0535105,0
+            8.4007555,49.0536312,0
+            8.4007254,49.0538226,0
+            8.4007047,49.0537515,0
+            8.4006448,49.0536626,0
+            8.4005741,49.053599,0
+            8.4004418,49.0535243,0
+            8.4004104,49.0534843,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+158710571            </SimpleData>
+            <SimpleData name="highway">
+footway            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["smoothness"=>"bad","surface"=>"compacted"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3929392,49.0544966,0
+            8.3929998,49.054549,0
+            8.3931297,49.0545606,0
+            8.3937083,49.0545935,0
+            8.3941127,49.0544968,0
+            8.3947799,49.0545354,0
+            8.3953079,49.0545825,0
+            8.3955024,49.0545998,0
+            8.3957504,49.0545536,0
+            8.3959417,49.0544718,0
+            8.3961118,49.0544641,0
+            8.3963414,49.0544751,0
+            8.3970982,49.0545126,0
+            8.3974282,49.054463,0
+            8.4003774,49.0546097,0
+            8.4005025,49.0546333,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+158710573            </SimpleData>
+            <SimpleData name="highway">
+track            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["smoothness"=>"bad","surface"=>"grass","tracktype"=>"grade4"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3928174,49.0551536,0
+            8.3928607,49.0544919,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+158710575            </SimpleData>
+            <SimpleData name="highway">
+path            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["smoothness"=>"very_bad","surface"=>"grass"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3957221,49.054393,0
+            8.3957504,49.0545536,0
+            8.3960781,49.0548282,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+158710577            </SimpleData>
+            <SimpleData name="highway">
+path            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["smoothness"=>"very_bad","surface"=>"grass"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3953616,49.054249,0
+            8.3953079,49.0545825,0
+            8.3951521,49.0555019,0
+            8.3959579,49.0555692,0
+            8.3966612,49.0556279,0
+            8.3967516,49.0556197,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+158719721            </SimpleData>
+            <SimpleData name="highway">
+track            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["surface"=>"asphalt","tracktype"=>"grade1"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3916665,49.0552339,0
+            8.3916463,49.0551817,0
+            8.3916324,49.0551196,0
+            8.3916147,49.0550251,0
+            8.3916117,49.0550044,0
+            8.3915869,49.0548262,0
+            8.3915603,49.0545775,0
+            8.391554,49.054415,0
+            8.3915502,49.0542683,0
+            8.3915793,49.0538332,0
+            8.391621,49.0535381,0
+            8.3916476,49.0534237,0
+            8.391688,49.0532986,0
+            8.3917209,49.0532356,0
+            8.3917348,49.0532024,0
+            8.3917209,49.0531734,0
+            8.3916747,49.053146,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+158719729            </SimpleData>
+            <SimpleData name="highway">
+cycleway            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["foot"=>"yes","smoothness"=>"good","surface"=>"asphalt","tracktype"=>"grade1"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3916747,49.053146,0
+            8.3916273,49.0531308,0
+            8.3915396,49.0531253,0
+            8.3913786,49.0531163,0
+            8.391339,49.0531146,0
+            8.3912169,49.0530953,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+158921694            </SimpleData>
+            <SimpleData name="highway">
+footway            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.394813,49.0491449,0
+            8.3953545,49.04862,0
+            8.3954348,49.0485632,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+158921695            </SimpleData>
+            <SimpleData name="highway">
+footway            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3948565,49.0487072,0
+            8.3952931,49.048603,0
+            8.3954348,49.0485632,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+158921697            </SimpleData>
+            <SimpleData name="highway">
+footway            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.394129,49.0487674,0
+            8.3941982,49.048744,0
+            8.3945851,49.0487438,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+158921699            </SimpleData>
+            <SimpleData name="highway">
+footway            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3947462,49.0487782,0
+            8.3947344,49.0487751,0
+            8.3947178,49.0487739,0
+            8.3947025,49.0487755,0
+            8.3946919,49.0487786,0
+            8.394683,49.0487809,0
+            8.3946659,49.0487848,0
+            8.39465,49.0487867,0
+            8.3946347,49.0487855,0
+            8.3946205,49.0487824,0
+            8.3946081,49.0487778,0
+            8.3945951,49.0487674,0
+            8.3945875,49.0487558,0
+            8.3945851,49.0487438,0
+            8.3945869,49.0487341,0
+            8.3945987,49.0487221,0
+            8.3946093,49.0487152,0
+            8.3946252,49.0487078,0
+            8.3946482,49.0487028,0
+            8.3946736,49.0487039,0
+            8.3946942,49.0487097,0
+            8.3947096,49.0487163,0
+            8.3947161,49.0487182,0
+            8.3947273,49.0487182,0
+            8.3947456,49.0487124,0
+            8.3947627,49.0487047,0
+            8.3947904,49.0486974,0
+            8.3948152,49.0486954,0
+            8.3948329,49.0486974,0
+            8.3948459,49.0487005,0
+            8.3948565,49.0487072,0
+            8.3948642,49.0487213,0
+            8.3948677,49.0487364,0
+            8.3948671,49.0487496,0
+            8.3948612,49.0487724,0
+            8.3948506,49.0487836,0
+            8.3948252,49.0487898,0
+            8.394801,49.0487917,0
+            8.3947804,49.0487882,0
+            8.3947462,49.0487782,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+158921701            </SimpleData>
+            <SimpleData name="highway">
+footway            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["surface"=>"gravel"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3940101,49.0486826,0
+            8.3943343,49.0484861,0
+            8.3943663,49.0484769,0
+            8.3943969,49.0484744,0
+            8.3944354,49.0484785,0
+            8.3944794,49.0484913,0
+            8.3945199,49.0485169,0
+            8.394711,49.0486883,0
+            8.3947213,49.0487039,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+158924216            </SimpleData>
+            <SimpleData name="highway">
+path            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["smoothness"=>"bad","surface"=>"ground","tracktype"=>"grade4"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.4020529,49.0498522,0
+            8.3996874,49.0496535,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+158924222            </SimpleData>
+            <SimpleData name="highway">
+track            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["smoothness"=>"intermediate","surface"=>"compacted","tracktype"=>"grade2"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.4000144,49.0512049,0
+            8.4000409,49.0516287,0
+            8.4000918,49.0518847,0
+            8.4002434,49.0526533,0
+            8.4003494,49.0532498,0
+            8.4004104,49.0534843,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Donauschwabenstraße</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+172208684            </SimpleData>
+            <SimpleData name="highway">
+tertiary            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["maxspeed"=>"30"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3955513,49.0533983,0
+            8.3955776,49.0532375,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+183914061            </SimpleData>
+            <SimpleData name="highway">
+footway            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.39666,49.0533014,0
+            8.3966916,49.0530298,0
+            8.3966219,49.0530263,0
+            8.3966454,49.0528251,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+183914149            </SimpleData>
+            <SimpleData name="highway">
+service            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3932031,49.0469425,0
+            8.3934939,49.0471446,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Forlenweg</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+190299835            </SimpleData>
+            <SimpleData name="highway">
+residential            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3972347,49.0523306,0
+            8.3972424,49.0522681,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Forlenweg</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+190299836            </SimpleData>
+            <SimpleData name="highway">
+residential            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3980091,49.0523074,0
+            8.3977629,49.0523624,0
+            8.3972347,49.0523306,0
+            8.3969157,49.0523122,0
+            8.396807,49.0522463,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Zirbenweg</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+190299853            </SimpleData>
+            <SimpleData name="highway">
+residential            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3977629,49.0523624,0
+            8.3977071,49.0528254,0
+            8.3994302,49.0529233,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+231808397            </SimpleData>
+            <SimpleData name="highway">
+path            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["access"=>"private","foot"=>"yes","surface"=>"paving_stones"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3994281,49.0541121,0
+            8.4002214,49.0541646,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+239644630            </SimpleData>
+            <SimpleData name="highway">
+service            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["service"=>"parking_aisle"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3960793,49.0532671,0
+            8.3961345,49.0529113,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+239724874            </SimpleData>
+            <SimpleData name="highway">
+path            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["access"=>"private","foot"=>"yes","surface"=>"paving_stones"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3993975,49.0543209,0
+            8.4001911,49.0543734,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Blankenlocher Weg</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+261411988            </SimpleData>
+            <SimpleData name="highway">
+tertiary            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["lanes"=>"2","oneway"=>"yes","postal_code"=>"76149","sidewalk"=>"no","turn:lanes"=>"left|through"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3915509,49.0530356,0
+            8.3913929,49.0530285,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Blankenlocher Weg</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+261411989            </SimpleData>
+            <SimpleData name="highway">
+tertiary            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["lanes"=>"1","oneway"=>"yes","sidewalk"=>"no"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.391572,49.0529371,0
+            8.3917664,49.0529467,0
+            8.3920137,49.0529753,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Blankenlocher Weg</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+261411990            </SimpleData>
+            <SimpleData name="highway">
+tertiary            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["lanes"=>"1","oneway"=>"yes","sidewalk"=>"right"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3920137,49.0529753,0
+            8.3921466,49.0529963,0
+            8.3924573,49.0530297,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Blankenlocher Weg</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+261411991            </SimpleData>
+            <SimpleData name="highway">
+tertiary            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["lanes"=>"1","maxspeed"=>"30","oneway"=>"yes","postal_code"=>"76149","sidewalk"=>"no"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3926019,49.0532045,0
+            8.3925114,49.0531879,0
+            8.3924419,49.053167,0
+            8.3924122,49.053158,0
+            8.3922995,49.0531246,0
+            8.3921574,49.0530895,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Linkenheimer Landstraße</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+261411994            </SimpleData>
+            <SimpleData name="highway">
+primary            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["lanes"=>"2","maxspeed"=>"70","oneway"=>"yes","sidewalk"=>"no","turn:lanes"=>"left;through|through;right"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3924445,49.0470242,0
+            8.3925446,49.0464417,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Linkenheimer Landstraße</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+261411995            </SimpleData>
+            <SimpleData name="highway">
+primary            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["lanes"=>"2","maxspeed"=>"70","oneway"=>"yes","turn:lanes"=>"left;through|through;right"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3918182,49.0515728,0
+            8.3917779,49.0518007,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Linkenheimer Landstraße</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+261411998            </SimpleData>
+            <SimpleData name="highway">
+primary            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["lanes"=>"3","maxspeed"=>"70","oneway"=>"yes","placement"=>"right_of:2","sidewalk"=>"no","turn:lanes"=>"left|through|through"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.391572,49.0529371,0
+            8.3915509,49.0530356,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Linkenheimer Landstraße</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+261412002            </SimpleData>
+            <SimpleData name="highway">
+primary            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["bicycle"=>"no","lanes"=>"4","maxspeed"=>"70","motorroad"=>"no","oneway"=>"yes","sidewalk"=>"no","turn:lanes"=>"left|through|through|right"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3912415,49.0540811,0
+            8.3912486,49.0539852,0
+            8.3912695,49.0537661,0
+            8.3913247,49.0533915,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Untere Hardtstraße</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+261412003            </SimpleData>
+            <SimpleData name="highway">
+tertiary            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["change:lanes:backward"=>"no","change:lanes:forward"=>"not_left|not_right","lanes"=>"3","lanes:backward"=>"1","placement:forward"=>"left_of:1","sidewalk"=>"right","turn:lanes:forward"=>"left|through;right"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3903227,49.0528206,0
+            8.3903944,49.052859,0
+            8.3904884,49.0528901,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Untere Hardtstraße</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+261412004            </SimpleData>
+            <SimpleData name="highway">
+tertiary            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["change:lanes"=>"no|no","lanes"=>"2","sidewalk"=>"right"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3901652,49.0525999,0
+            8.3902449,49.0527397,0
+            8.3902906,49.0527892,0
+            8.3903227,49.0528206,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Untere Hardtstraße</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+261412005            </SimpleData>
+            <SimpleData name="highway">
+tertiary            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["lanes"=>"2","oneway"=>"yes","sidewalk"=>"no","turn:lanes"=>"left|through"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3908726,49.0529207,0
+            8.3911086,49.0529278,0
+            8.3912073,49.052931,0
+            8.3912662,49.0529343,0
+            8.3914027,49.0529337,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+261412018            </SimpleData>
+            <SimpleData name="highway">
+tertiary_link            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["lanes"=>"1","oneway"=>"yes","sidewalk"=>"no","turn:lanes"=>"right"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3912376,49.0528348,0
+            8.3912856,49.0528082,0
+            8.3913715,49.0527502,0
+            8.3914521,49.0526592,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+261412019            </SimpleData>
+            <SimpleData name="highway">
+footway            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3917348,49.0532024,0
+            8.3925978,49.0532447,0
+            8.3926019,49.0532045,0
+            8.392631,49.0530418,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+261412020            </SimpleData>
+            <SimpleData name="highway">
+tertiary_link            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["lanes"=>"1","oneway"=>"yes","sidewalk"=>"right","turn:lanes"=>"right"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3917356,49.0528432,0
+            8.3917631,49.0528662,0
+            8.3918435,49.0529155,0
+            8.3919104,49.052948,0
+            8.3920137,49.0529753,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+273012096            </SimpleData>
+            <SimpleData name="highway">
+footway            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3954838,49.047732,0
+            8.3962003,49.0472788,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+273012097            </SimpleData>
+            <SimpleData name="highway">
+footway            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3949996,49.0484512,0
+            8.3952931,49.048603,0
+            8.3953545,49.04862,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+273012098            </SimpleData>
+            <SimpleData name="highway">
+footway            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3947213,49.0487039,0
+            8.3947161,49.0487182,0
+            8.3947025,49.0487755,0
+            8.394617,49.0490512,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Linkenheimer Landstraße</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#lines.schema">
+            <SimpleData name="osm_id">
+296496259            </SimpleData>
+            <SimpleData name="highway">
+primary            </SimpleData>
+            <SimpleData name="other_tags">
+<![CDATA["bicycle"=>"no","lanes"=>"2","maxspeed"=>"70","motorroad"=>"no","oneway"=>"yes"]]>            </SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <LineString>
+          <coordinates>
+            8.3912787,49.0547914,0
+            8.3912777,49.0547673,0
+            8.3912657,49.0545987,0
+            8.3912393,49.0542285,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+    </Document>
+    <Document>
+      <name>multilinestrings</name>
+    </Document>
+    <Document>
+      <name>multipolygons</name>
+    </Document>
+    <Document>
+      <name>other_relations</name>
+    </Document>
+  </Document>
+</kml>
