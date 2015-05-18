@@ -108,10 +108,10 @@ int main(int argc, char **argv)
     }
     else
     {
-        ROS_INFO_STREAM("Running node with no args, downloading default map");
-        ROS_INFO_STREAM("CUSTOM ARGS USAGE:");
-        ROS_INFO_STREAM("   Node args: <latitude> <longitude> <map_offset_meters>");
-        ROS_INFO_STREAM("   Node args: <box_left_longitude> <box_bottom_latitude> <box_right_longitude> <tbox_top_latitude>");
+        ROS_WARN_STREAM("Running node with no args, downloading default map");
+        ROS_WARN_STREAM("CUSTOM ARGS USAGE:");
+        ROS_WARN_STREAM("   Node args: <latitude> <longitude> <map_offset_meters>");
+        ROS_WARN_STREAM("   Node args: <box_left_longitude> <box_bottom_latitude> <box_right_longitude> <tbox_top_latitude>");
     }
     // Earth’s radius (m)
     double R = 6378137;
