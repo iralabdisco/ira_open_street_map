@@ -96,12 +96,14 @@ int main(int argc, char **argv)
         }
         // Download a map with the given bounding box coordinates
         else if(argc == 5){
-
+            // TODO fix this useless if ... Task #396
         }
         else{
-            ROS_INFO_STREAM("CUSTOM ARGS USAGE:");
-            ROS_INFO_STREAM("   Node args: <latitude> <longitude> <map_offset_meters>");
-            ROS_INFO_STREAM("   Node args: <box_left_longitude> <box_bottom_latitude> <box_right_longitude> <tbox_top_latitude>");
+            ROS_WARN_STREAM("  **** WARNING ****");
+            ROS_WARN_STREAM("Running node with no args, downloading default map");
+            ROS_WARN_STREAM("CUSTOM ARGS USAGE:");
+            ROS_WARN_STREAM("   Node args: <latitude> <longitude> <map_offset_meters>");
+            ROS_WARN_STREAM("   Node args: <box_left_longitude> <box_bottom_latitude> <box_right_longitude> <tbox_top_latitude>");
         }
     }
     else
