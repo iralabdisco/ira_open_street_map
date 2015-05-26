@@ -19,6 +19,7 @@
 #include <sstream>
 #include <iostream>
 #include <stdlib.h>
+#include <sys/stat.h>
 
 using namespace std;
 
@@ -34,6 +35,8 @@ void get_page(const char* url, const char* file_path)
 
     if(easyhandle)
     {
+        struct stat st;
+
         // Set URL
         curl_easy_setopt( easyhandle, CURLOPT_URL, url ) ;
 
@@ -46,6 +49,9 @@ void get_page(const char* url, const char* file_path)
 
         // Close file
         fclose(file);
+
+        stat(file_path, &st);
+        ROS_INFO_STREAM("Downloaded " << st.st_size/1024 << " Kb");
     }
 
     // Close cURL
@@ -189,6 +195,6 @@ int main(int argc, char **argv)
     ROS_INFO_STREAM("Left: " << left_deg << " Bottom: " << bottom_deg << " Right: " << right_deg << " Top: " << top_deg);
     ROS_INFO_STREAM("Downloading...");
     get_page( osm_api_url.str().c_str(), map_path.str().c_str() );
-    ROS_INFO_STREAM("Download completed." << "File saved in: " << map_path.str().c_str());
+    ROS_INFO_STREAM("File saved in: " << map_path.str().c_str());
     return 0;
 }
