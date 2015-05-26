@@ -177,11 +177,10 @@ int main(int argc, char **argv)
     //  bottom  => is the latitude of the bottom (southernmost) side of the bounding box.
     //  right   => is the longitude of the right (easternmost) side of the bounding box.
     //  top     => is the latitude of the top (northernmost) side of the bounding box.
-    stringstream osm_api_url;
-//    osm_api_url << "https://www.openstreetmap.org/api/0.6/map?bbox=" << left_deg << "," << bottom_deg << "," << right_deg << "," << top_deg;
-    osm_api_url << "http://www.overpass-api.de/api/xapi?*[highway=*][bbox=" << left_deg << "," << bottom_deg << "," << right_deg << "," << top_deg <<"]";
+    stringstream osm_api_url;    
+    osm_api_url << "http://www.overpass-api.de/api/xapi?*[highway=*][bbox=" << left_deg << "," << bottom_deg << "," << right_deg << "," << top_deg <<"]"<<"[@meta]";
 
-//    cout << osm_api_url.str().c_str() << endl;
+    ROS_INFO_STREAM("Overpass URL: " << osm_api_url.str().c_str() );
 
     // Save map inside "package:/ira_open_street_map/maps/" directory with "map.osm" filename
     stringstream map_path;
