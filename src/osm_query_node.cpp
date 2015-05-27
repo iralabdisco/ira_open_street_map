@@ -679,6 +679,11 @@ bool snap_particle_xy(ira_open_street_map::snap_particle_xy::Request& req, ira_o
     vector<shared_ptr<Osmium::OSM::Way const> > way_vector; /// keep OSM way stored
     for(std::set<shared_ptr<Osmium::OSM::Way const> >::iterator way_itr = oh.m_ways.begin(); way_itr != oh.m_ways.end(); way_itr++)
     {
+        // Use only ways with Key:Highway
+        const char* highway = (*way_itr)->tags().get_value_by_key("highway");
+        if (!highway)
+            continue;
+
         // Get way-node list
         Osmium::OSM::WayNodeList waylist = (*way_itr)->nodes();
         for(Osmium::OSM::WayNodeList::iterator node_list_itr = waylist.begin(); node_list_itr != waylist.end(); node_list_itr++ )
@@ -722,7 +727,14 @@ bool snap_particle_xy(ira_open_street_map::snap_particle_xy::Request& req, ira_o
     Xy min_dist_node2;
 
     //        start cycle
-    for(vector<shared_ptr<Osmium::OSM::Way const> >::iterator way_itr = way_vector.begin(); way_itr != way_vector.end(); way_itr++){
+    for(vector<shared_ptr<Osmium::OSM::Way const> >::iterator way_itr = way_vector.begin(); way_itr != way_vector.end(); way_itr++)
+    {
+        // Use only ways with Key:Highway
+        // WARNING: this should be useless since we added only ways with Key:highway in the phase
+        const char* highway = (*way_itr)->tags().get_value_by_key("highway");
+        if (!highway)
+            continue;
+
         Osmium::OSM::WayNodeList way_n_list = (*way_itr)->nodes();
         for(Osmium::OSM::WayNodeList::iterator node_list_itr = way_n_list.begin(); node_list_itr != --way_n_list.end(); node_list_itr++ )
         {
@@ -842,6 +854,11 @@ bool get_closest_way_distance_utm(ira_open_street_map::get_closest_way_distance_
     vector<shared_ptr<Osmium::OSM::Way const> > way_vector; /// keep OSM way stored
     for(std::set<shared_ptr<Osmium::OSM::Way const> >::iterator way_itr = oh.m_ways.begin(); way_itr != oh.m_ways.end(); way_itr++)
     {
+        // Use only ways with Key:Highway
+        const char* highway = (*way_itr)->tags().get_value_by_key("highway");
+        if (!highway)
+            continue;
+
         // Get way-node list
         Osmium::OSM::WayNodeList waylist = (*way_itr)->nodes();
         for(Osmium::OSM::WayNodeList::iterator node_list_itr = waylist.begin(); node_list_itr != waylist.end(); node_list_itr++ )
@@ -879,7 +896,14 @@ bool get_closest_way_distance_utm(ira_open_street_map::get_closest_way_distance_
     Xy min_dist_node2;
 
     //        start cycle
-    for(vector<shared_ptr<Osmium::OSM::Way const> >::iterator way_itr = way_vector.begin(); way_itr != way_vector.end(); way_itr++){
+    for(vector<shared_ptr<Osmium::OSM::Way const> >::iterator way_itr = way_vector.begin(); way_itr != way_vector.end(); way_itr++)
+    {
+        // Use only ways with Key:Highway
+        // WARNING: this should be useless since we added only ways with Key:highway in the phase
+        const char* highway = (*way_itr)->tags().get_value_by_key("highway");
+        if (!highway)
+            continue;
+
         Osmium::OSM::WayNodeList way_n_list = (*way_itr)->nodes();
         for(Osmium::OSM::WayNodeList::iterator node_list_itr = way_n_list.begin(); node_list_itr != --way_n_list.end(); node_list_itr++ )
         {
@@ -1147,6 +1171,11 @@ void load_waylist(ros::Publisher &markerArrayPublisher_ways)
     {
         // Get way-node list
         Osmium::OSM::WayNodeList waylist = (*way_itr)->nodes();
+
+        // Use only ways with Key:Highway
+        const char* highway = (*way_itr)->tags().get_value_by_key("highway");
+        if (!highway)
+            continue;
 
         const char* one_way = (*way_itr)->tags().get_value_by_key("oneway");
         // ONEWAY TAG FOUND:
