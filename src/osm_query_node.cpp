@@ -165,7 +165,7 @@ struct Way_dir_struct{
     float yaw_rad;
 
     // Create two particles with opposite direction
-    float opposite_direction;
+    bool opposite_direction;
 
     // Error flags
     bool way_not_found;
@@ -1090,7 +1090,7 @@ visualization_msgs::MarkerArray directionArray;
  * @param resp
  * @return
  */
-void load_waylist(ros::Publisher &markerArrayPublisher_ways)
+void load_waylist()
 {
     visualization_msgs::Marker way_single_part;
     way_single_part.header.frame_id = "map";
@@ -1106,9 +1106,9 @@ void load_waylist(ros::Publisher &markerArrayPublisher_ways)
     way_single_part.pose.orientation.y = 0.0;
     way_single_part.pose.orientation.z = 0.0;
     way_single_part.pose.orientation.w = 1.0;
-    way_single_part.scale.x = 1;
-    way_single_part.scale.y = 0.1;
-    way_single_part.scale.z = 0.4;
+    way_single_part.scale.x = 1;    //WAY Key:highway 1m fixed width
+    way_single_part.scale.y = 0;    //don't used
+    way_single_part.scale.z = 0;    //don't used
     way_single_part.color.a = 1.0; // Don't forget to set the alpha!
     way_single_part.color.r = 1.0;
     way_single_part.color.g = 1.0;
@@ -1421,7 +1421,6 @@ int main(int argc, char* argv[]) {
     //    test_req.max_distance_radius = 100;
     //    is_valid_location_xy(test_req, test_resp);
 
-
     // test lat/lon conversion
     //    Xy coords = latlon_converter(45.5238,9.21954);
     //    Coordinates coords = xy2latlon_helper(511791.4,4999624.7,32,false);
@@ -1431,16 +1430,15 @@ int main(int argc, char* argv[]) {
     //    Xy C = {517152.9, 5041172.2};
     //    Xy D = snapxy2way_outbounds_helper(A, B, C);
 
-    // listen&run callbacks
-    //    ros::spin();
+    load_waylist();
 
-    load_waylist(markerArrayPublisher_ways);
-//    publish_buildinglist(markerArrayPublisher_buildings);
     markerArrayPublisher_ways.publish(waylistArray);
     markerArrayPublisher_ways.publish(waylistArray_oneway);
     markerArrayPublisher_ways.publish(nodelistArray);
     markerArrayPublisher_ways.publish(directionArray);
+//    publish_buildinglist(markerArrayPublisher_buildings);
 
+    // Multithread Spinner
     spinner.start();
 
     ros::Duration sleepTime(1);
