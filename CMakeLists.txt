@@ -71,6 +71,7 @@ add_service_files(
   get_node_coordinates.srv
   snap_particle_xy.srv
   get_closest_way_distance_utm.srv
+  getHighwayInfo.srv
 )
 
 # Generate service messages

@@ -14,3 +14,4 @@ float64 way_dir_degrees
 float64 way_dir_rad
 float64 way_dir_opposite_particles
 float64 distance_from_way
+int64   way_id

@@ -36,6 +36,7 @@
 #include <ira_open_street_map/snap_particle_xy.h>
 #include <ira_open_street_map/lla_2_ecef.h>
 #include <ira_open_street_map/ecef_2_lla.h>
+#include <ira_open_street_map/getHighwayInfo.h>
 #include <osmium/storage/byid/sparse_table.hpp>
 #include <osmium/storage/byid/mmap_file.hpp>
 #include <osmium/handler/coordinates_for_ways.hpp>
@@ -48,7 +49,8 @@ typedef Osmium::Storage::ById::SparseTable<Osmium::OSM::Position> storage_sparse
 typedef Osmium::Storage::ById::MmapFile<Osmium::OSM::Position> storage_mmap_t;
 typedef Osmium::Handler::CoordinatesForWays<storage_sparsetable_t, storage_mmap_t> cfw_handler_t;
 
-class ObjectHandler : public Osmium::Handler::Base {
+class ObjectHandler : public Osmium::Handler::Base
+{
 
 public:
 
@@ -449,7 +451,11 @@ Xy snap_particle_helper(Xy& A, Xy& B, Xy& C){
 }
 
 
-Way_dir_struct way_direction_helper(const boost::shared_ptr<Osmium::OSM::Way const>& way, Xy& A, Xy& B){
+Way_dir_struct way_direction_helper(const boost::shared_ptr<Osmium::OSM::Way const>& way, Xy& A, Xy& B)
+{
+    /*
+     *  Given a way (and two XY points) return, as a service response, the WAY DIRECTION
+     */
 
     // Init response
     Way_dir_struct response;
@@ -523,7 +529,12 @@ Way_dir_struct way_direction_helper(const boost::shared_ptr<Osmium::OSM::Way con
     return response;
 }
 
-Way_dir_struct way_direction_helper(double way_id){
+Way_dir_struct way_direction_helper(double way_id)
+{
+    /*
+     *  Given a way id, find that way and create a RESPONSE with it,
+     *  calculating the orientation using the FIRST two nodes.
+     */
 
     // Init response
     Way_dir_struct response;
@@ -550,7 +561,9 @@ Way_dir_struct way_direction_helper(double way_id){
 
             // way id found, check if it's a street
             const char* highway = (*way_itr)->tags().get_value_by_key("highway");
-            if(highway){
+
+            if(highway)
+            {
                 // Get way node list
                 Osmium::OSM::WayNodeList waylist = (*way_itr)->nodes();
 
@@ -721,10 +734,11 @@ bool snap_particle_xy(ira_open_street_map::snap_particle_xy::Request& req, ira_o
     //        init values
     double min_distance = 999999999;
     shared_ptr<Osmium::OSM::Way const> min_distance_way;
-    Xy min_distance_xy;
+    Xy snapped_xy;
     Xy particle = {req.x, req.y};
     Xy min_dist_node1;
     Xy min_dist_node2;
+    int64 way_id = 0;
 
     //        start cycle
     for(vector<shared_ptr<Osmium::OSM::Way const> >::iterator way_itr = way_vector.begin(); way_itr != way_vector.end(); way_itr++)
@@ -750,19 +764,20 @@ bool snap_particle_xy(ira_open_street_map::snap_particle_xy::Request& req, ira_o
             double lon2 = it2->position().lon();
             Xy node_2 = latlon2xy_helper(lat2, lon2);
 
-            // snap particle
+            // snap particle (on the way=highway segment defined by node_1 and node_2)
             Xy snap = snap_particle_helper(node_1, node_2, particle);
 
-            // calculate distance from particle to way segment
+            // calculate distance from particle to snapped way segment
             double dist = get_distance_helper(snap.x, snap.y, particle.x, particle.y);
 
             if(dist < min_distance){
                 // update min distance
                 min_distance = dist;
                 min_distance_way = *way_itr;
-                min_distance_xy = snap;
+                snapped_xy = snap;
                 min_dist_node1 = node_1;
                 min_dist_node2 = node_2;
+                way_id = (*way_itr)->id();
             }
 
             // break if it's last way segment
@@ -772,12 +787,12 @@ bool snap_particle_xy(ira_open_street_map::snap_particle_xy::Request& req, ira_o
         }
     }
 
-    // Get snapped particle direction
+    // Get snapped particle direction using the min_distance segment of the nearest way=highway element
     Way_dir_struct dir = way_direction_helper(min_distance_way, min_dist_node1, min_dist_node2);
 
     // Set response values
-    resp.snapped_x = min_distance_xy.x;
-    resp.snapped_y = min_distance_xy.y;
+    resp.snapped_x = snapped_xy.x;
+    resp.snapped_y = snapped_xy.y;
     resp.way_dir_rad = dir.yaw_rad;
     resp.way_dir_degrees = dir.yaw_deg;
     resp.way_dir_quat_w = dir.q_w;
@@ -786,6 +801,7 @@ bool snap_particle_xy(ira_open_street_map::snap_particle_xy::Request& req, ira_o
     resp.way_dir_quat_z = dir.q_z;
     resp.way_dir_opposite_particles = dir.opposite_direction;
     resp.distance_from_way = min_distance;
+    resp.way_id=0;
 
     return true;
 }
@@ -1012,6 +1028,64 @@ bool get_distance_from_xy(ira_open_street_map::get_distance_from_xy::Request& re
  * @param resp
  * @return
  */
+
+bool getHighwayInfo(ira_open_street_map::getHighwayInfo::Request& req, ira_open_street_map::getHighwayInfo::Response& resp)
+{
+    /*
+     *  REQ:    way_id
+     *  REPS:   n. of lanes
+     *          road width
+     *          oneway tag
+     */
+
+    const char* search_tag;
+    ROS_INFO_STREAM("Searching way_id " << req.way_id);
+    for(std::set<shared_ptr<Osmium::OSM::Way const> >::iterator way_itr = oh.m_ways.begin(); way_itr != oh.m_ways.end(); way_itr++)
+    {
+        ROS_INFO_STREAM((*way_itr)->id());
+        // Get way-node list
+        if ((*way_itr)->id() == req.way_id)
+        {
+            search_tag = (*way_itr)->tags().get_value_by_key("highway");
+            if (!search_tag)
+                continue;
+
+            search_tag = (*way_itr)->tags().get_value_by_key("lanes");
+            if (!search_tag)
+                resp.number_of_lanes=0;
+            else
+                resp.number_of_lanes=atoi(search_tag);
+
+            search_tag = (*way_itr)->tags().get_value_by_key("width");
+            if (!search_tag)
+                resp.width=0;
+            else
+                resp.width=boost::lexical_cast<double>(search_tag);
+
+            search_tag = (*way_itr)->tags().get_value_by_key("oneway");
+            if (!search_tag)
+                resp.oneway=0;
+            else
+            {
+                if(strcmp(search_tag,"yes") == 0 || strcmp(search_tag,"true") == 0 || strcmp(search_tag,"1") == 0){
+                    resp.oneway=1;
+                }
+                else if(strcmp(search_tag,"no")== 0 || strcmp(search_tag,"false")== 0 || strcmp(search_tag,"0")== 0){
+                    resp.oneway=0;
+                }
+                else if(strcmp(search_tag,"-1")== 0 || strcmp(search_tag,"reverse")== 0){
+                    resp.oneway=-1;
+                }
+            }
+
+
+            return true;
+        }
+    }
+    return false;
+}
+
+
 bool get_node_coordinates(ira_open_street_map::get_node_coordinates::Request& req, ira_open_street_map::get_node_coordinates::Response& resp){
 
     ROS_DEBUG_STREAM("SERVICE get_node_coordinates:");
@@ -1404,6 +1478,8 @@ int main(int argc, char* argv[]) {
     ros::ServiceServer server_waydirection = nh.advertiseService("/ira_open_street_map/way_direction", &way_direction);
     ros::ServiceServer server_nodecoords = nh.advertiseService("/ira_open_street_map/get_node_coordinates", &get_node_coordinates);
     ros::ServiceServer server_get_distance_from_way = nh.advertiseService("/ira_open_street_map/get_closest_way_distance_utm", &get_closest_way_distance_utm);
+
+    ros::ServiceServer server_getHighwayInfo = nh.advertiseService("/ira_open_street_map/getHighwayInfo", &getHighwayInfo);
 
     // test service call
     //    ira_open_street_map:markerArrayPublisher_ways:is_valid_location::Request test_req;
