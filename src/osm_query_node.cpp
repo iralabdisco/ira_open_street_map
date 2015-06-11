@@ -804,7 +804,7 @@ bool snap_particle_xy(ira_open_street_map::snap_particle_xy::Request& req, ira_o
     resp.way_dir_quat_z = dir.q_z;
     resp.way_dir_opposite_particles = dir.opposite_direction;
     resp.distance_from_way = min_distance;
-    resp.way_id=0;
+    resp.way_id=way_id;
 
     return true;
 }
@@ -1042,10 +1042,10 @@ bool getHighwayInfo(ira_open_street_map::getHighwayInfo::Request& req, ira_open_
      */
 
     const char* search_tag;
-    ROS_INFO_STREAM("Searching way_id " << req.way_id);
+    ROS_DEBUG_STREAM("Searching way_id " << req.way_id);
     for(std::set<shared_ptr<Osmium::OSM::Way const> >::iterator way_itr = oh.m_ways.begin(); way_itr != oh.m_ways.end(); way_itr++)
     {
-        ROS_INFO_STREAM((*way_itr)->id());
+        ROS_DEBUG_STREAM((*way_itr)->id());
         // Get way-node list
         if ((*way_itr)->id() == req.way_id)
         {
@@ -1081,10 +1081,11 @@ bool getHighwayInfo(ira_open_street_map::getHighwayInfo::Request& req, ira_open_
                 }
             }
 
-
+            ROS_DEBUG_STREAM("getHighwayInfo ACK");
             return true;
         }
     }
+    ROS_WARN_STREAM("Way-id: " << req.way_id <<  " not found in the current map");
     return false;
 }
 
