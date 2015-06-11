@@ -17,16 +17,24 @@
 #include <ros/publisher.h>
 #include <visualization_msgs/MarkerArray.h>
 #include <ros/package.h>
+#include <geometry_msgs/Point.h>
+#include <tf/tf.h>
+
 #include <osmium.hpp>
 #include <osmium/input/xml.hpp>
 #include <osmium/handler/coordinates_for_ways.hpp>
 #include <osmium/storage/objectstore.hpp>
-#include <geometry_msgs/Point.h>
+#include <osmium/storage/byid/sparse_table.hpp>
+#include <osmium/storage/byid/mmap_file.hpp>
+#include <osmium/handler/coordinates_for_ways.hpp>
+#include <osmium/multipolygon/assembler.hpp>
+#include <osmium/geometry/multipolygon.hpp>
+
 #include <iostream>
 #include <math.h>
 #include <stdlib.h>
-#include <tf/tf.h>
 #include <std_srvs/Empty.h>
+
 #include <ira_open_street_map/get_distance_from_xy.h>
 #include <ira_open_street_map/get_node_coordinates.h>
 #include <ira_open_street_map/get_closest_way_distance_utm.h>
@@ -37,11 +45,6 @@
 #include <ira_open_street_map/lla_2_ecef.h>
 #include <ira_open_street_map/ecef_2_lla.h>
 #include <ira_open_street_map/getHighwayInfo.h>
-#include <osmium/storage/byid/sparse_table.hpp>
-#include <osmium/storage/byid/mmap_file.hpp>
-#include <osmium/handler/coordinates_for_ways.hpp>
-#include <osmium/multipolygon/assembler.hpp>
-#include <osmium/geometry/multipolygon.hpp>
 
 using namespace std;
 
