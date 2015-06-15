@@ -3,5 +3,5 @@ int64 way_id
 ---
 #response fields (bool = C++ uint8_t(2) std::vector<bool>)
 float64 width
-uint8   number_of_lanes
-int8 	oneway
+int32     number_of_lanes
+int32     oneway
