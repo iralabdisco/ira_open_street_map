@@ -36,15 +36,17 @@
 #include <std_srvs/Empty.h>
 
 #include <ira_open_street_map/get_distance_from_xy.h>
-#include <ira_open_street_map/get_node_coordinates.h>
-#include <ira_open_street_map/get_closest_way_distance_utm.h>
-#include <ira_open_street_map/way_direction.h>
-#include <ira_open_street_map/latlon_2_xy.h>
-#include <ira_open_street_map/xy_2_latlon.h>
-#include <ira_open_street_map/snap_particle_xy.h>
-#include <ira_open_street_map/lla_2_ecef.h>
 #include <ira_open_street_map/ecef_2_lla.h>
+#include <ira_open_street_map/get_closest_way_distance_utm.h>
+#include <ira_open_street_map/get_node_coordinates.h>
+#include <ira_open_street_map/getDistanceFromLaneCenter.h>
 #include <ira_open_street_map/getHighwayInfo.h>
+#include <ira_open_street_map/latlon_2_xy.h>
+#include <ira_open_street_map/lla_2_ecef.h>
+#include <ira_open_street_map/snap_particle_xy.h>
+#include <ira_open_street_map/way_direction.h>
+#include <ira_open_street_map/xy_2_latlon.h>
+
 
 using namespace std;
 
@@ -392,7 +394,7 @@ Coordinates ecef2lla_helper(float x, float y, float z)
  * @param y2
  * @return
  */
-double get_distance_helper(double x1, double y1, double x2, double y2){
+double inline get_distance_helper(double x1, double y1, double x2, double y2){
     double dx = x2-x1;
     double dy = y2-y1;
     return sqrt(fabs(dx*dx+dy*dy));
@@ -1025,6 +1027,159 @@ bool get_distance_from_xy(ira_open_street_map::get_distance_from_xy::Request& re
     return true;
 }
 
+///
+/// \brief getLaneCenter
+/// \param req
+/// \param resp
+/// \return the position of the center of the requested lane, in XY coordinate frame
+///
+bool getDistanceFromLaneCenter(ira_open_street_map::getDistanceFromLaneCenter::Request& req, ira_open_street_map::getDistanceFromLaneCenter::Response& resp)
+{
+    const char* search_tag;
+    int number_of_lanes=0;
+    double width=0.0f;
+    int oneway=0;
+
+    ROS_DEBUG_STREAM("getLaneCenter for way_id: " << req.way_id);
+
+    for(std::set<shared_ptr<Osmium::OSM::Way const> >::iterator way_itr = oh.m_ways.begin(); way_itr != oh.m_ways.end(); way_itr++)
+    {
+        ROS_DEBUG_STREAM((*way_itr)->id());
+
+        // Get way-node list
+        if ((*way_itr)->id() == req.way_id)
+        {
+            search_tag = (*way_itr)->tags().get_value_by_key("highway");
+            if (!search_tag)
+                continue;
+
+            search_tag = (*way_itr)->tags().get_value_by_key("lanes");
+            if (!search_tag)
+                number_of_lanes=1;
+            else
+                number_of_lanes=atoi(search_tag);
+
+            search_tag = (*way_itr)->tags().get_value_by_key("width");
+            if (!search_tag)
+                width=0;
+            else
+                width=boost::lexical_cast<double>(search_tag);
+
+            search_tag = (*way_itr)->tags().get_value_by_key("oneway");
+            if (!search_tag)
+                oneway=0;
+            else
+            {
+                if(strcmp(search_tag,"yes") == 0 || strcmp(search_tag,"true") == 0 || strcmp(search_tag,"1") == 0){
+                    oneway=1;
+                }
+                else if(strcmp(search_tag,"no")== 0 || strcmp(search_tag,"false")== 0 || strcmp(search_tag,"0")== 0){
+                    oneway=0;
+                }
+                else if(strcmp(search_tag,"-1")== 0 || strcmp(search_tag,"reverse")== 0){
+                    oneway=-1;
+                }
+            }
+
+            //calculate shortest distance between particle and every way's segments (a way segment is defined by 2 nodes)
+            Xy node_1, node_2, snap,snapped_xy, min_dist_node1, min_dist_node2;
+            Osmium::OSM::WayNodeList::iterator it2;
+            shared_ptr<Osmium::OSM::Way const> min_distance_way;
+            double lat,lat2,lon,lon2,dist=0.0f;
+            double snapped_min_distance = 999999999;
+            int64 way_id = 0;
+            Xy particle = {req.x, req.y};
+
+            Osmium::OSM::WayNodeList way_n_list = (*way_itr)->nodes();
+            for(Osmium::OSM::WayNodeList::iterator node_list_itr = way_n_list.begin(); node_list_itr != --way_n_list.end(); node_list_itr++ )
+            {
+                // extract 1st node coordinates
+                lat = node_list_itr->position().lat();
+                lon = node_list_itr->position().lon();
+                node_1 = latlon2xy_helper(lat, lon);
+
+                // extract 2nd node coordinates
+                it2 = node_list_itr;
+                it2++;
+                lat2 = it2->position().lat();
+                lon2 = it2->position().lon();
+                node_2 = latlon2xy_helper(lat2, lon2);
+
+                // snap particle (on the way=highway segment defined by node_1 and node_2)
+                snap = snap_particle_helper(node_1, node_2, particle);
+
+                // calculate distance from particle to snapped way segment
+                dist = get_distance_helper(snap.x, snap.y, particle.x, particle.y);
+
+                if(dist < snapped_min_distance)
+                {
+                    // update min distance
+                    snapped_min_distance = dist;
+                    min_distance_way = *way_itr;
+                    snapped_xy = snap;
+                    min_dist_node1 = node_1;
+                    min_dist_node2 = node_2;
+                    way_id = (*way_itr)->id();
+                }
+
+                // break if it's last way segment
+                if ( it2 == way_n_list.end() ) {
+                    break;
+                }
+            }
+
+            Way_dir_struct dir = way_direction_helper(min_distance_way, min_dist_node1, min_dist_node2);
+
+            // Set response values
+            resp.snapped_x = snapped_xy.x;
+            resp.snapped_y = snapped_xy.y;
+            resp.way_dir_rad = dir.yaw_rad;
+            resp.way_dir_degrees = dir.yaw_deg;
+            resp.way_dir_quat_w = dir.q_w;
+            resp.way_dir_quat_x = dir.q_x;
+            resp.way_dir_quat_y = dir.q_y;
+            resp.way_dir_quat_z = dir.q_z;
+
+            resp.distance_from_way_center = snapped_min_distance;
+            resp.way_id=way_id;
+
+
+            // Distance from the lane center, lanes are equivalently distributed, i.e. max_width/n_lanes
+            resp.distance_from_lane_center =  abs( ((width / 2.0f) - snapped_min_distance) - (width / (2.0f * number_of_lanes)) );
+
+
+            ROS_DEBUG_STREAM("getLaneCenter ACK");
+            return true;
+        }
+    }
+
+    ROS_WARN_STREAM("Way-id: " << req.way_id <<  " not found in the current map");
+    return false;
+
+
+//    // Get snapped particle direction using the min_distance segment of the nearest way=highway element
+//    Way_dir_struct dir = way_direction_helper(min_distance_way, min_dist_node1, min_dist_node2);
+
+//    // Set response values
+//    resp.snapped_x = snapped_xy.x;
+//    resp.snapped_y = snapped_xy.y;
+//    resp.way_dir_rad = dir.yaw_rad;
+//    resp.way_dir_degrees = dir.yaw_deg;
+//    resp.way_dir_quat_w = dir.q_w;
+//    resp.way_dir_quat_x = dir.q_x;
+//    resp.way_dir_quat_y = dir.q_y;
+//    resp.way_dir_quat_z = dir.q_z;
+//    resp.way_dir_opposite_particles = dir.opposite_direction;
+//    resp.distance_from_way = min_distance;
+//    resp.way_id=way_id;
+
+//    return true;
+
+}
+
+
+
+
 /**
  * @brief get_node_coordinates
  * @param req
@@ -1484,6 +1639,7 @@ int main(int argc, char* argv[]) {
     ros::ServiceServer server_get_distance_from_way = nh.advertiseService("/ira_open_street_map/get_closest_way_distance_utm", &get_closest_way_distance_utm);
 
     ros::ServiceServer server_getHighwayInfo = nh.advertiseService("/ira_open_street_map/getHighwayInfo", &getHighwayInfo);
+    ros::ServiceServer server_getDistanceFromLaneCenter = nh.advertiseService("/ira_open_street_map/getDistanceFromLaneCenter", &getDistanceFromLaneCenter);
 
     // test service call
     //    ira_open_street_map:markerArrayPublisher_ways:is_valid_location::Request test_req;

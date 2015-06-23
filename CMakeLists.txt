@@ -68,10 +68,11 @@ add_service_files(
   latlon_2_xy.srv
   xy_2_latlon.srv
   way_direction.srv
-  get_node_coordinates.srv
   snap_particle_xy.srv
   get_closest_way_distance_utm.srv
+  get_node_coordinates.srv
   getHighwayInfo.srv
+  getDistanceFromLaneCenter.srv
 )
 
 # Generate service messages
