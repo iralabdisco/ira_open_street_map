@@ -685,7 +685,7 @@ double lla_distance(Coordinates& c1, Coordinates& c2)
 
 
 /**
- * @brief snap_particle_xy
+ * @brief snap_particle_xy          XY in global map frame!
  * @param req
  * @param resp
  * @return
@@ -1036,9 +1036,9 @@ bool get_distance_from_xy(ira_open_street_map::get_distance_from_xy::Request& re
 bool getDistanceFromLaneCenter(ira_open_street_map::getDistanceFromLaneCenter::Request& req, ira_open_street_map::getDistanceFromLaneCenter::Response& resp)
 {
     const char* search_tag;
-    int number_of_lanes=0;
-    double width=0.0f;
-    int oneway=0;
+    int         number_of_lanes=0;
+    double      width=0.0f;
+    int         oneway=0;
 
     ROS_DEBUG_STREAM("getLaneCenter for way_id: " << req.way_id);
 
@@ -1605,7 +1605,7 @@ int main(int argc, char* argv[]) {
     ros::Publisher markerArrayPublisher_ways = nh.advertise<visualization_msgs::MarkerArray>("/ways", 5);
     ros::Publisher markerArrayPublisher_buildings = nh.advertise<visualization_msgs::MarkerArray>("/buildings", 1);
 
-    ROS_INFO_STREAM("   OSM QUERY NODE STARTED:");
+    ROS_INFO_STREAM("OSM QUERY NODE STARTED:");
 
     // check filepath from arguments
     stringstream map_path;
@@ -1617,7 +1617,9 @@ int main(int argc, char* argv[]) {
         map_path << argv[1];
     }
 
+
     // init OSM file
+    ROS_INFO_STREAM("Trying to open" << map_path.str().c_str());
     Osmium::OSMFile infile(map_path.str().c_str());
 
     // Read OSM with ObjestHandler which is a combination of ObjectStore and CoordinateForWays handlers
@@ -1628,17 +1630,17 @@ int main(int argc, char* argv[]) {
     ROS_INFO_STREAM("   Nodes: " << oh.m_nodes.size() << "  Ways: " << oh.m_ways.size() << "  Relations: " << oh.m_relations.size());
 
     // init services
-    ros::ServiceServer server_lla2ecef = nh.advertiseService("/ira_open_street_map/lla_2_ecef", &lla_2_ecef);
-    ros::ServiceServer server_ecef2lla = nh.advertiseService("/ira_open_street_map/ecef_2_lla", &ecef_2_lla);
-    ros::ServiceServer server_distance_xy = nh.advertiseService("/ira_open_street_map/get_distance_from_xy", &get_distance_from_xy);
-    ros::ServiceServer server_latlon2xy = nh.advertiseService("/ira_open_street_map/latlon_2_xy", &latlon_2_xy);
-    ros::ServiceServer server_xy2latlon = nh.advertiseService("/ira_open_street_map/xy_2_latlon", &xy_2_latlon);
-    ros::ServiceServer server_snapparticle = nh.advertiseService("/ira_open_street_map/snap_particle_xy", &snap_particle_xy);
-    ros::ServiceServer server_waydirection = nh.advertiseService("/ira_open_street_map/way_direction", &way_direction);
-    ros::ServiceServer server_nodecoords = nh.advertiseService("/ira_open_street_map/get_node_coordinates", &get_node_coordinates);
-    ros::ServiceServer server_get_distance_from_way = nh.advertiseService("/ira_open_street_map/get_closest_way_distance_utm", &get_closest_way_distance_utm);
+    ros::ServiceServer server_lla2ecef                  = nh.advertiseService("/ira_open_street_map/lla_2_ecef", &lla_2_ecef);
+    ros::ServiceServer server_ecef2lla                  = nh.advertiseService("/ira_open_street_map/ecef_2_lla", &ecef_2_lla);
+    ros::ServiceServer server_distance_xy               = nh.advertiseService("/ira_open_street_map/get_distance_from_xy", &get_distance_from_xy);
+    ros::ServiceServer server_latlon2xy                 = nh.advertiseService("/ira_open_street_map/latlon_2_xy", &latlon_2_xy);
+    ros::ServiceServer server_xy2latlon                 = nh.advertiseService("/ira_open_street_map/xy_2_latlon", &xy_2_latlon);
+    ros::ServiceServer server_snapparticle              = nh.advertiseService("/ira_open_street_map/snap_particle_xy", &snap_particle_xy);
+    ros::ServiceServer server_waydirection              = nh.advertiseService("/ira_open_street_map/way_direction", &way_direction);
+    ros::ServiceServer server_nodecoords                = nh.advertiseService("/ira_open_street_map/get_node_coordinates", &get_node_coordinates);
+    ros::ServiceServer server_get_distance_from_way     = nh.advertiseService("/ira_open_street_map/get_closest_way_distance_utm", &get_closest_way_distance_utm);
 
-    ros::ServiceServer server_getHighwayInfo = nh.advertiseService("/ira_open_street_map/getHighwayInfo", &getHighwayInfo);
+    ros::ServiceServer server_getHighwayInfo            = nh.advertiseService("/ira_open_street_map/getHighwayInfo", &getHighwayInfo);
     ros::ServiceServer server_getDistanceFromLaneCenter = nh.advertiseService("/ira_open_street_map/getDistanceFromLaneCenter", &getDistanceFromLaneCenter);
 
     // test service call
