@@ -1,0 +1,20 @@
+#     float64 = C++ double
+#       int32 = int32_t
+#       int64 = int64_t long
+float64 x 
+float64 y
+int32   current_lane
+int64   way_id
+---
+#response fields (bool = C++ uint8_t(2) std::vector<bool>)
+float64 snapped_x
+float64 snapped_y
+float64 way_dir_quat_w
+float64 way_dir_quat_x
+float64 way_dir_quat_y
+float64 way_dir_quat_z
+float64 way_dir_degrees
+float64 way_dir_rad
+float64 distance_from_way_center
+float64 distance_from_lane_center
+int64   way_id
