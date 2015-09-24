@@ -127,6 +127,8 @@ add_executable(osm_map_test_node
 ## as an example, message headers may need to be generated before nodes
 # add_dependencies(ira_open_street_map_node ira_open_street_map_generate_messages_cpp)
 
+add_dependencies(osm_query_node ira_open_street_map_generate_messages_cpp)
+
 ## Specify libraries to link a library or executable target against
 target_link_libraries(osm_downloader_node
   ${catkin_LIBRARIES} curl
