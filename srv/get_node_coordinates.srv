@@ -1,5 +1,5 @@
 #request fields
-float64 node_id
+int64 node_id
 ---
 #response fields
 float64 latitude

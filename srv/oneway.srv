@@ -1,0 +1,5 @@
+#request fields
+int64 way_id
+---
+#response fields
+int32   oneway

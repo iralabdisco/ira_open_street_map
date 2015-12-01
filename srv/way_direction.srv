@@ -1,5 +1,5 @@
 #request fields
-float64 way_id
+int64 way_id
 ---
 #response fields
 float64 quat_w
