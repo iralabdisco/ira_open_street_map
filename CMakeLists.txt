@@ -68,6 +68,7 @@ add_service_files(
   latlon_2_xy.srv
   xy_2_latlon.srv
   way_direction.srv
+  oneway.srv
   snap_particle_xy.srv
   get_closest_way_distance_utm.srv
   get_node_coordinates.srv
@@ -80,6 +81,24 @@ generate_messages(
   DEPENDENCIES
   std_msgs
 )
+
+#Add all files in subdirectories of the project in
+# a dummy_target so qtcreator have access to all files
+#file(STRINGS ${CMAKE_SOURCE_DIR}/.gitignore gitignore)
+#foreach(line IN LISTS gitignore)
+#  message("line = ${line}")
+#endforeach()
+FILE(GLOB children ${CMAKE_SOURCE_DIR}/*)
+FOREACH(child ${children})
+  IF(NOT ${child} MATCHES "dataset")
+      IF(IS_DIRECTORY ${child})
+      file(GLOB_RECURSE dir_files "${child}/*")
+      LIST(APPEND extra_files ${dir_files})
+    ENDIF()
+  ENDIF()
+ENDFOREACH()
+add_custom_target(dummy_${PROJECT_NAME} SOURCES ${extra_files})
+
 
 ###################################
 ## catkin specific configuration ##

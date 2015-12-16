@@ -3,7 +3,7 @@
 #       int64 = int64_t long
 float64 x 
 float64 y
-int32   current_lane
+#int32   current_lane ##deleting with #527
 int64   way_id
 ---
 #response fields (bool = C++ uint8_t(2) std::vector<bool>)
@@ -18,3 +18,4 @@ float64 way_dir_rad
 float64 distance_from_way_center
 float64 distance_from_lane_center
 int64   way_id
+int32   current_lane ##adding with #527

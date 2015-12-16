@@ -46,7 +46,7 @@
 #include <ira_open_street_map/snap_particle_xy.h>
 #include <ira_open_street_map/way_direction.h>
 #include <ira_open_street_map/xy_2_latlon.h>
-
+#include <ira_open_street_map/oneway.h>
 
 using namespace std;
 
@@ -74,30 +74,35 @@ public:
 
 
 
-    ObjectHandler() : m_nodes(), m_ways(), m_relations() {
+    ObjectHandler() : m_nodes(), m_ways(), m_relations()
+    {
         handler_cfw = new cfw_handler_t(store_pos, store_neg);
     }
 
-    void init(Osmium::OSM::Meta& meta) {
+    void init(Osmium::OSM::Meta& meta)
+    {
         handler_cfw->init(meta);
     }
 
     /**
      * Insert shared_ptr of Node into object store.
      */
-    void node(const shared_ptr<Osmium::OSM::Node const>& node) {
+    void node(const shared_ptr<Osmium::OSM::Node const>& node)
+    {
         handler_cfw->node(node);
         m_nodes.insert(node);
     }
 
-    void after_nodes() {
+    void after_nodes()
+    {
         handler_cfw->after_nodes();
     }
 
     /**
      * Insert shared_ptr of Way into object store.
      */
-    void way(const shared_ptr<Osmium::OSM::Way>& way) {
+    void way(const shared_ptr<Osmium::OSM::Way>& way)
+    {
         handler_cfw->way(way);
         m_ways.insert(way);
     }
@@ -105,35 +110,40 @@ public:
     /**
      * Insert shared_ptr of Relation into object store.
      */
-    void relation(const shared_ptr<Osmium::OSM::Relation const>& relation) {
+    void relation(const shared_ptr<Osmium::OSM::Relation const>& relation)
+    {
         m_relations.insert(relation);
     }
 
     /**
      * Remove all nodes from object store.
      */
-    void clear_nodes() {
+    void clear_nodes()
+    {
         m_nodes.clear();
     }
 
     /**
      * Remove all ways from object store.
      */
-    void clear_ways() {
+    void clear_ways()
+    {
         m_ways.clear();
     }
 
     /**
      * Remove all relations from object store.
      */
-    void clear_relations() {
+    void clear_relations()
+    {
         m_relations.clear();
     }
 
     /**
      * Remove all objects from object store.
      */
-    void clear() {
+    void clear()
+    {
         clear_nodes();
         clear_ways();
         clear_relations();
@@ -160,7 +170,8 @@ struct Xy
 };
 
 // Response struct for Way direction calculator
-struct Way_dir_struct{
+struct Way_dir_struct
+{
     // Direction quaternion
     float q_w;
     float q_x;
@@ -181,11 +192,14 @@ struct Way_dir_struct{
 
 /** Functions ---------------------------------------------------------------------------*/
 
+bool isLeft(Xy osmA, Xy osmB, Xy queryPoint);
+
 // How to get UTM from Longitude:
 // UTM = 1.0 + floor((lngd + 180.0) / 6.0);
 //
 // (italy -> UTM = 32, southern = false)
-Coordinates xy2latlon_helper(double x, double y, double utmz, bool southern){
+Coordinates xy2latlon_helper(double x, double y, double utmz, bool southern)
+{
 
     // WGS 84 datum
     double eqRad = 6378137.0;
@@ -195,15 +209,15 @@ Coordinates xy2latlon_helper(double x, double y, double utmz, bool southern){
     double a = eqRad;           // equatorial radius in meters
     double f = 1.0 / flat;        // polar flattening
     double b = a * (1.0 - f);     // polar radius
-    double e = sqrt(1.0 - (pow(b,2) / pow(a,2)));  // eccentricity
+    double e = sqrt(1.0 - (pow(b, 2) / pow(a, 2))); // eccentricity
     double k0 = 0.9996;
     double k = 1;
     double drad = M_PI / 180.0;
 
     double esq = (1.0 - (b / a) * (b / a));
-    double e0sq = e * e / (1.0 - e*e);
+    double e0sq = e * e / (1.0 - e * e);
     double zcm = 3.0 + 6.0 * (utmz - 1.0) - 180.0;                         // Central meridian of zone
-    double e1 = (1 - sqrt(1 - e*e) ) / (1.0 + sqrt(1 - e*e));
+    double e1 = (1 - sqrt(1 - e * e) ) / (1.0 + sqrt(1 - e * e));
     double M0 = 0.0;
     double M = 0.0;
 
@@ -217,7 +231,7 @@ Coordinates xy2latlon_helper(double x, double y, double utmz, bool southern){
     phi1 = phi1 + e1 * e1 * e1 * (sin(6.0 * mu) * 151.0 / 96.0 + e1 * sin(8.0 * mu) * 1097.0 / 512.0);
 
     double C1 = e0sq * cos(phi1) * cos(phi1);
-    double T1 = tan(phi1)*tan(phi1);
+    double T1 = tan(phi1) * tan(phi1);
     double N1 = a / sqrt(1.0f - pow(e * sin(phi1), 2.0f));
     double R1 = N1 * (1.0f - pow(e, 2.0f)) / (1.0f - pow(e * sin(phi1), 2.0f));
     double D = (x - 500000.0) / (N1 * k0);
@@ -236,7 +250,8 @@ Coordinates xy2latlon_helper(double x, double y, double utmz, bool southern){
 // Conversion between geographic and UTM coordinates
 // Adapted from:
 // http://www.uwgb.edu/dutchs/UsefulData/ConvertUTMNoOZ.HTM
-Xy latlon2xy_helper(double lat, double lngd){
+Xy latlon2xy_helper(double lat, double lngd)
+{
 
     // WGS 84 datum
     double eqRad = 6378137.0;
@@ -246,7 +261,7 @@ Xy latlon2xy_helper(double lat, double lngd){
     double a = eqRad;           // equatorial radius in meters
     double f = 1.0 / flat;        // polar flattening
     double b = a * (1.0 - f);     // polar radius
-    double e = sqrt(1.0 - (pow(b,2) / pow(a,2)));  // eccentricity
+    double e = sqrt(1.0 - (pow(b, 2) / pow(a, 2))); // eccentricity
     double k0 = 0.9996;
     double drad = M_PI / 180.0;
 
@@ -276,17 +291,28 @@ Xy latlon2xy_helper(double lat, double lngd){
 
     // now the northing (from the equator)
     double y = k0 * (M - M0 + N * tan(phi) * (A * A * (1.0 / 2.0 + A * A * ((5.0 - T + 9.0 * C + 4.0 * C * C) / 24.0 + A * A * (61.0 - 58.0 * T + T * T + 600.0 * C - 330.0 * e0sq) / 720.0))));
-    if (y < 0){
+    if (y < 0)
+    {
         y = 10000000.0 + y; // add in false northing if south of the equator
     }
-    double easting = round(10.0*x) / 10.0;
-    double northing = round(10.0*y) / 10.0;
+    double easting = round(10.0 * x) / 10.0;
+    double northing = round(10.0 * y) / 10.0;
 
     Xy coords;
     coords.x = easting;
     coords.y = northing;
 
     return coords;
+
+    // the following lines were added to debug the rviz_satellite with Bing Maps. You can delete when needed.
+    //double sinLatitude = sin(latitude * M_PI/180);
+    //coords.x = ((longitude + 180.0f) / 360.0f) * 256.0f * pow(2,zoom);
+    //coords.y = (0.5f-log((1.0f+sinLatitude) / (1.0f-sinLatitude)) / (4.0f*M_PI)) * 256.0f * pow(2,zoom);
+
+    //double sinLatitude = sin(lat * M_PI/180);
+    //ROS_ERROR_STREAM ("DIFFERENCE\t"<<coords.x << " " <<((lngd + 180.0f) / 360.0f) * 256.0f * pow(2,19));
+    //ROS_ERROR_STREAM ("DIFFERENCE\t"<<coords.y << " " <<(0.5f-log((1.0f+sinLatitude) / (1.0f-sinLatitude)) / (4.0f*M_PI)) * 256.0f * pow(2,19));
+
 }
 
 /**
@@ -325,12 +351,12 @@ geometry_msgs::Point lla2ecef_helper(double lat, double lon, double alt)
 
     // intermediate calculation
     // (prime vertical radius of curvature)
-    double N = a / sqrt(1 - (e*e) * (sin(lat)*sin(lat)));
+    double N = a / sqrt(1 - (e * e) * (sin(lat) * sin(lat)));
 
     // results:
     point.x = (N + alt) * cos(lat) * cos(lon);
     point.y = (N + alt) * cos(lat) * sin(lon);
-    point.z = ((1-(e*e)) * N + alt) * sin(lat);
+    point.z = ((1 - (e * e)) * N + alt) * sin(lat);
 
     return point;
 }
@@ -367,17 +393,17 @@ Coordinates ecef2lla_helper(float x, float y, float z)
     float e = 0.081819190842622;  // eccentricity
 
     // calculations:
-    float b   = sqrt( (a*a) * (1 - e*e ));
-    float ep  = sqrt( (a*a - b*b ) / (b*b));
-    float p   = sqrt( x*x + y*y );
-    float th  = atan2(a*z,b*p);
-    float lon = atan2(y,x);
-    float lat = atan2( (z + ep*ep * b * sin(th)*sin(th)*sin(th)), (p - e*e *a * cos(th)*cos(th)*cos(th)) );
-    float N   = a / sqrt( 1 - e*e * sin(lat) * sin(lat));
+    float b   = sqrt( (a * a) * (1 - e * e ));
+    float ep  = sqrt( (a * a - b * b ) / (b * b));
+    float p   = sqrt( x * x + y * y );
+    float th  = atan2(a * z, b * p);
+    float lon = atan2(y, x);
+    float lat = atan2( (z + ep * ep * b * sin(th) * sin(th) * sin(th)), (p - e * e * a * cos(th) * cos(th) * cos(th)) );
+    float N   = a / sqrt( 1 - e * e * sin(lat) * sin(lat));
     float alt = p / cos(lat) - N;
 
     // return lon in range [0,2*pi)
-    lon = lon - (M_PI*2) * floor( lon / (M_PI*2) );
+    lon = lon - (M_PI * 2) * floor( lon / (M_PI * 2) );
 
     coords.latitude = lat;
     coords.longitude = lon;
@@ -388,26 +414,31 @@ Coordinates ecef2lla_helper(float x, float y, float z)
 
 /**
  * @brief get_distance_helper
- * @param x1
- * @param y1
- * @param x2
- * @param y2
- * @return
+ * @param x1 1st point, x coordinate
+ * @param y1 1st point, y coordinate
+ * @param x2 2nd point, x coordinate
+ * @param y2 2nd point, y coordinate
+ * @return value of the distance between the two points
  */
-double inline get_distance_helper(double x1, double y1, double x2, double y2){
-    double dx = x2-x1;
-    double dy = y2-y1;
-    return sqrt(fabs(dx*dx+dy*dy));
+double inline get_distance_helper(double x1, double y1, double x2, double y2)
+{
+    double dx = x2 - x1;
+    double dy = y2 - y1;
+    return sqrt(fabs(dx * dx + dy * dy));
 }
 
 /**
  * @brief snapxy2way_outbounds_helper
- * @param A
- * @param B
- * @param C
- * @return
+ * @param A 1st node of the way
+ * @param B 2nd node of the way
+ * @param C hypothesis position
+ * @return the position of the orthogonal projection of C in the segment defined by A and B
+ *
+ * Snaps the particle position to the way segment defined by A and B using
+ * the orthogonal projection
  */
-Xy snap_particle_helper(Xy& A, Xy& B, Xy& C){
+Xy snap_particle_helper(Xy& A, Xy& B, Xy& C)
+{
 
     // Snapped point to segment A,B
     Xy D;
@@ -418,12 +449,14 @@ Xy snap_particle_helper(Xy& A, Xy& B, Xy& C){
     // squared distance from A to B
     double AB_squared = AB.x * AB.x + AB.y * AB.y;
 
-    if(AB_squared == 0){
+    if (AB_squared == 0)
+    {
         // A and B are the same point
         D.x = A.x;
         D.y = A.y;
     }
-    else{
+    else
+    {
         // vector from A to p
         Xy Ap = {C.x - A.x, C.y - A.y};
 
@@ -432,36 +465,45 @@ Xy snap_particle_helper(Xy& A, Xy& B, Xy& C){
         // It falls where t = [(p-A) . (B-A)] / |B-A|^2
         double t = (Ap.x * AB.x + Ap.y * AB.y) / AB_squared;
 
-        if (t < 0.0){
+        if (t < 0.0)
+        {
             // "Before" A on the line, just return A
             // q = A;
             D.x = A.x;
             D.y = A.y;
         }
-        else if (t > 1.0){
+        else if (t > 1.0)
+        {
             // "After" B on the line, just return B
             // q = B;
             D.x = B.x;
             D.y = B.y;
         }
-        else{
+        else
+        {
             // projection lines "inbetween" A and B on the line
             D.x = t * AB.x + A.x;
             D.y = t * AB.y + A.y;
         }
     }
 
-
     return D;
 }
 
-
+/**
+ * @brief way_direction_helper
+ * @param way this is closest way to the current hypothesis
+ * @param A min_dist_node1, following the order of the elements in the way, this is the 1st element
+ * @param B min_dist_node2, following the order of the elements in the way, this is the 2nd element
+ * @return
+ *
+ * Given a way (and two XY points) return, as a service response, the direction of the hypotheses,
+ * based on the two points that creates the segment (A and B points). It also
+ * considers if the way is oneway or not.
+ *
+ */
 Way_dir_struct way_direction_helper(const boost::shared_ptr<Osmium::OSM::Way const>& way, Xy& A, Xy& B)
 {
-    /*
-     *  Given a way (and two XY points) return, as a service response, the WAY DIRECTION
-     */
-
     // Init response
     Way_dir_struct response;
     response.not_a_way = false;
@@ -472,6 +514,7 @@ Way_dir_struct way_direction_helper(const boost::shared_ptr<Osmium::OSM::Way con
     response.q_z = 0;
     response.yaw_deg = 0;
     response.yaw_rad = 0;
+    response.opposite_direction = 0;
 
     double theta = 0;                // Angle between A an B;
     bool opposite_particles = false; // This tells if we should create 2 particles with opposite directions
@@ -481,26 +524,31 @@ Way_dir_struct way_direction_helper(const boost::shared_ptr<Osmium::OSM::Way con
     const char* one_way = way->tags().get_value_by_key("oneway");
 
     // Get angle between A and B (radians)
-    theta = atan2(B.y-A.y, B.x-A.x);
+    theta = atan2(B.y - A.y, B.x - A.x);
 
     // ONEWAY TAG FOUND:
-    if( one_way ){
+    if ( one_way )
+    {
 
-        if(strcmp(one_way,"yes") == 0|| strcmp(one_way,"true") == 0|| strcmp(one_way,"1")== 0){
+        if (strcmp(one_way, "yes") == 0 || strcmp(one_way, "true") == 0 || strcmp(one_way, "1") == 0)
+        {
             opposite_particles = false;
         }
-        else if(strcmp(one_way,"no") == 0|| strcmp(one_way,"false") == 0|| strcmp(one_way,"0")== 0){
+        else if (strcmp(one_way, "no") == 0 || strcmp(one_way, "false") == 0 || strcmp(one_way, "0") == 0)
+        {
             // If street has multiple lanes, then we should create 2 particles with opposite direction
             opposite_particles = true;
         }
-        else if(strcmp(one_way,"-1") == 0|| strcmp(one_way,"reverse")== 0){
+        else if (strcmp(one_way, "-1") == 0 || strcmp(one_way, "reverse") == 0)
+        {
             // Get angle between B and A (radians)
-            theta = atan2(A.y-B.y, A.x-B.x);
+            theta = atan2(A.y - B.y, A.x - B.x);
             opposite_particles = false;
         }
     }
     // NO TAGS FOUND!
-    else{
+    else
+    {
         // Create 2 particles, since we don't know anything about this way
         opposite_particles = true;
     }
@@ -508,8 +556,9 @@ Way_dir_struct way_direction_helper(const boost::shared_ptr<Osmium::OSM::Way con
 
     // Create quaternion from angle and put it inside response
     //        Normalize angle if it is negative:
-    if(theta < 0){
-        theta += 2*M_PI;
+    if (theta < 0)
+    {
+        theta += 2 * M_PI;
     }
     tf::Quaternion q = tf::createQuaternionFromYaw(theta);
 
@@ -529,18 +578,21 @@ Way_dir_struct way_direction_helper(const boost::shared_ptr<Osmium::OSM::Way con
     ROS_DEBUG_STREAM("   Direction calculated, Way ID: " << boost::lexical_cast<std::string>(way->id()));
     ROS_DEBUG_STREAM("   Theta: " << theta);
     ROS_DEBUG_STREAM("   Degrees: " << response.yaw_deg);
-    ROS_DEBUG_STREAM("   Quaternion: " << q.getX() << " " << q.getY() << " " << q.getZ()<< " " << q.getW() << "\n");
+    ROS_DEBUG_STREAM("   Quaternion: " << q.getX() << " " << q.getY() << " " << q.getZ() << " " << q.getW() << "\n");
 
     return response;
 }
 
+/**
+ * @brief way_direction_helper
+ * @param way_id
+ * @return
+ *
+ * Given a way id, find that way and create a RESPONSE with it,
+ * calculating the orientation using the FIRST two nodes.
+ */
 Way_dir_struct way_direction_helper(double way_id)
 {
-    /*
-     *  Given a way id, find that way and create a RESPONSE with it,
-     *  calculating the orientation using the FIRST two nodes.
-     */
-
     // Init response
     Way_dir_struct response;
     response.not_a_way = false;
@@ -558,16 +610,16 @@ Way_dir_struct way_direction_helper(double way_id)
 
 
     // Cycle through every stored way
-    for(std::set<shared_ptr<Osmium::OSM::Way const> >::iterator way_itr = oh.m_ways.begin(); way_itr != oh.m_ways.end(); way_itr++)
+    for (std::set<shared_ptr<Osmium::OSM::Way const> >::iterator way_itr = oh.m_ways.begin(); way_itr != oh.m_ways.end(); way_itr++)
     {
-        if( (*way_itr)->id() == way_id  )
+        if ( (*way_itr)->id() == way_id  )
         {
             ROS_DEBUG_STREAM("SERVICE way_direction:");
 
             // way id found, check if it's a street
             const char* highway = (*way_itr)->tags().get_value_by_key("highway");
 
-            if(highway)
+            if (highway)
             {
                 // Get way node list
                 Osmium::OSM::WayNodeList waylist = (*way_itr)->nodes();
@@ -578,27 +630,30 @@ Way_dir_struct way_direction_helper(double way_id)
                 // Get first and second node UTM coords
                 Xy A = latlon2xy_helper(waylist.begin()->position().lat(), waylist.begin()->position().lon());
                 Xy B = latlon2xy_helper((++waylist.begin())->position().lat(), (++waylist.begin())->position().lon());
-                theta = atan2(B.y-A.y, B.x-A.x);
+                theta = atan2(B.y - A.y, B.x - A.x);
 
                 // ONEWAY TAG FOUND:
-                if( one_way ){
-
-
-                    if(strcmp(one_way,"yes") == 0 || strcmp(one_way,"true") == 0 || strcmp(one_way,"1") == 0){
+                if ( one_way )
+                {
+                    if (strcmp(one_way, "yes") == 0 || strcmp(one_way, "true") == 0 || strcmp(one_way, "1") == 0)
+                    {
                         opposite_particles = false;
                     }
-                    else if(strcmp(one_way,"no")== 0 || strcmp(one_way,"false")== 0 || strcmp(one_way,"0")== 0){
+                    else if (strcmp(one_way, "no") == 0 || strcmp(one_way, "false") == 0 || strcmp(one_way, "0") == 0)
+                    {
                         // If street has multiple lanes, then we should create 2 particles with opposite direction
                         opposite_particles = true;
                     }
-                    else if(strcmp(one_way,"-1")== 0 || strcmp(one_way,"reverse")== 0){
+                    else if (strcmp(one_way, "-1") == 0 || strcmp(one_way, "reverse") == 0)
+                    {
                         // Get angle between B and A (radians)
-                        theta = atan2(A.y-B.y, A.x-B.x);
+                        theta = atan2(A.y - B.y, A.x - B.x);
                         opposite_particles = false;
                     }
                 }
                 // NO TAGS FOUND!
-                else{
+                else
+                {
                     // Create 2 particles, since we don't know anything about this way
                     opposite_particles = true;
                 }
@@ -616,11 +671,13 @@ Way_dir_struct way_direction_helper(double way_id)
         }
     }
 
-    if(found){
+    if (found)
+    {
         // Create quaternion from angle and put it inside response
         //        Normalize angle if it is negative:
-        if(theta < 0){
-            theta += 2*M_PI;
+        if (theta < 0)
+        {
+            theta += 2 * M_PI;
         }
         tf::Quaternion q = tf::createQuaternionFromYaw(theta);
 
@@ -645,7 +702,8 @@ Way_dir_struct way_direction_helper(double way_id)
 
         return response;
     }
-    else{
+    else
+    {
         // Given ID was not found inside our Map
         ROS_DEBUG_STREAM("   Given ID was not found inside our Map");
         response.way_not_found = true;
@@ -653,7 +711,71 @@ Way_dir_struct way_direction_helper(double way_id)
     }
 }
 
-double xyz_distance(geometry_msgs::Point& p1, geometry_msgs::Point& p2){
+/**
+ * @brief oneWay returns true if the way_id has the tag OneWay, false otherwise
+ * @param way_id, inside the request(req.way_id)
+ * @return boolean: true if oneway tag found, false otherwise
+ *
+ * Returns true if oneway tag found. If returns true, check the response;
+ *
+ */
+bool getOneWayInfo(ira_open_street_map::oneway::Request& req, ira_open_street_map::oneway::Response& resp)
+{
+    resp.oneway = false; //initialize response to false, default value if wayid is not found
+
+    // Cycle through every stored way
+    for (std::set<shared_ptr<Osmium::OSM::Way const> >::iterator way_itr = oh.m_ways.begin(); way_itr != oh.m_ways.end(); way_itr++)
+    {
+        if ( (*way_itr)->id() == req.way_id  )
+        {
+            ROS_DEBUG_STREAM("SERVICE oneWay");
+
+            // way id found, check if it's a street
+            const char* highway = (*way_itr)->tags().get_value_by_key("highway");
+
+            if (highway)
+            {
+                const char* one_way = (*way_itr)->tags().get_value_by_key("oneway");
+
+                // ONEWAY TAG FOUND:
+                if ( one_way )
+                {
+                    if (strcmp(one_way, "yes") == 0 || strcmp(one_way, "true") == 0 || strcmp(one_way, "1") == 0)
+                    {
+                        resp.oneway = true;
+                    }
+                    else if (strcmp(one_way, "no") == 0 || strcmp(one_way, "false") == 0 || strcmp(one_way, "0") == 0)
+                    {
+                        resp.oneway = false;
+                    }
+                    else if (strcmp(one_way, "-1") == 0 || strcmp(one_way, "reverse") == 0)
+                    {
+                        resp.oneway = true;
+                    }
+                    return true;
+                }
+                // NO ONEWAY TAG FOUND!
+                else
+                {
+                    // in this case, the oneway tag is not present. return false
+                    resp.oneway = false;
+                    return false;
+                }
+            }
+            else
+            {
+                ROS_DEBUG_STREAM("Given ID is not a Way!");
+                resp.oneway = false;
+                return false;
+            }
+        }
+    }
+
+    return false;
+}
+
+double xyz_distance(geometry_msgs::Point& p1, geometry_msgs::Point& p2)
+{
     // calculate difference between points
     double dx = p2.x - p1.x;
     double dy = p2.y - p1.y;
@@ -661,7 +783,7 @@ double xyz_distance(geometry_msgs::Point& p1, geometry_msgs::Point& p2){
 
     // If the points are so close that the curvature of the Earth doesn't
     // matter, then we can simply calculate the stright-line distance:
-    return sqrt(dx*dx + dy*dy + dz*dz);
+    return sqrt(dx * dx + dy * dy + dz * dz);
 }
 
 double lla_distance(Coordinates& c1, Coordinates& c2)
@@ -677,7 +799,7 @@ double lla_distance(Coordinates& c1, Coordinates& c2)
 
     // If the points are so close that the curvature of the Earth doesn't
     // matter, then we can simply calculate the stright-line distance:
-    return sqrt(dx*dx + dy*dy + dz*dz);
+    return sqrt(dx * dx + dy * dy + dz * dz);
 }
 
 
@@ -695,7 +817,7 @@ bool snap_particle_xy(ira_open_street_map::snap_particle_xy::Request& req, ira_o
 
     // (1) Calculate distance between particle and every map Way (keep only ways that are below 'max_distance_radius')
     vector<shared_ptr<Osmium::OSM::Way const> > way_vector; /// keep OSM way stored
-    for(std::set<shared_ptr<Osmium::OSM::Way const> >::iterator way_itr = oh.m_ways.begin(); way_itr != oh.m_ways.end(); way_itr++)
+    for (std::set<shared_ptr<Osmium::OSM::Way const> >::iterator way_itr = oh.m_ways.begin(); way_itr != oh.m_ways.end(); way_itr++)
     {
         // Use only ways with Key:Highway
         const char* highway = (*way_itr)->tags().get_value_by_key("highway");
@@ -704,7 +826,7 @@ bool snap_particle_xy(ira_open_street_map::snap_particle_xy::Request& req, ira_o
 
         // Get way-node list
         Osmium::OSM::WayNodeList waylist = (*way_itr)->nodes();
-        for(Osmium::OSM::WayNodeList::iterator node_list_itr = waylist.begin(); node_list_itr != waylist.end(); node_list_itr++ )
+        for (Osmium::OSM::WayNodeList::iterator node_list_itr = waylist.begin(); node_list_itr != waylist.end(); node_list_itr++ )
         {
             // Get way-node coordinates
             double lat = node_list_itr->position().lat();
@@ -715,7 +837,7 @@ bool snap_particle_xy(ira_open_street_map::snap_particle_xy::Request& req, ira_o
             double distance = get_distance_helper(req.x, req.y, way_node_xy.x, way_node_xy.y);
 
             // Check if it's below max_distance_radius
-            if(distance <= req.max_distance_radius)
+            if (distance <= req.max_distance_radius)
             {
                 // Store way ID+
                 way_vector.push_back(*way_itr);
@@ -724,7 +846,8 @@ bool snap_particle_xy(ira_open_street_map::snap_particle_xy::Request& req, ira_o
         }
     }
 
-    if(way_vector.size() == 0){
+    if (way_vector.size() == 0)
+    {
         ROS_ERROR_STREAM("     No map nodes found next to particle. Distance radius: " << req.max_distance_radius << " m");
         return false;
     }
@@ -746,7 +869,7 @@ bool snap_particle_xy(ira_open_street_map::snap_particle_xy::Request& req, ira_o
     int64 way_id = 0;
 
     //        start cycle
-    for(vector<shared_ptr<Osmium::OSM::Way const> >::iterator way_itr = way_vector.begin(); way_itr != way_vector.end(); way_itr++)
+    for (vector<shared_ptr<Osmium::OSM::Way const> >::iterator way_itr = way_vector.begin(); way_itr != way_vector.end(); way_itr++)
     {
         // Use only ways with Key:Highway
         // WARNING: this should be useless since we added only ways with Key:highway in the phase
@@ -755,7 +878,7 @@ bool snap_particle_xy(ira_open_street_map::snap_particle_xy::Request& req, ira_o
             continue;
 
         Osmium::OSM::WayNodeList way_n_list = (*way_itr)->nodes();
-        for(Osmium::OSM::WayNodeList::iterator node_list_itr = way_n_list.begin(); node_list_itr != --way_n_list.end(); node_list_itr++ )
+        for (Osmium::OSM::WayNodeList::iterator node_list_itr = way_n_list.begin(); node_list_itr != --way_n_list.end(); node_list_itr++ )
         {
             // extract 1st node coordinates
             double lat = node_list_itr->position().lat();
@@ -775,7 +898,8 @@ bool snap_particle_xy(ira_open_street_map::snap_particle_xy::Request& req, ira_o
             // calculate distance from particle to snapped way segment
             double dist = get_distance_helper(snap.x, snap.y, particle.x, particle.y);
 
-            if(dist < min_distance){
+            if (dist < min_distance)
+            {
                 // update min distance
                 min_distance = dist;
                 min_distance_way = *way_itr;
@@ -786,7 +910,8 @@ bool snap_particle_xy(ira_open_street_map::snap_particle_xy::Request& req, ira_o
             }
 
             // break if it's last way segment
-            if ( it2 == way_n_list.end() ) {
+            if ( it2 == way_n_list.end() )
+            {
                 break;
             }
         }
@@ -806,9 +931,16 @@ bool snap_particle_xy(ira_open_street_map::snap_particle_xy::Request& req, ira_o
     resp.way_dir_quat_z = dir.q_z;
     resp.way_dir_opposite_particles = dir.opposite_direction;
     resp.distance_from_way = min_distance;
-    resp.way_id=way_id;
+    resp.way_id = way_id;
+    resp.isLeft = isLeft(min_dist_node1, min_dist_node2, particle); // #538 checks if we're on the left of right w.r.t the WAY
+
+    // #538 std::cout<< "LEFT/RIGHT: " << isLeft(min_dist_node1, min_dist_node2, particle) << std::endl;
 
     return true;
+}
+
+inline bool isLeft(Xy osmA, Xy osmB, Xy queryPoint){
+     return ((osmB.x - osmA.x)*(queryPoint.y - osmA.y) - (osmB.y - osmA.y)*(queryPoint.x - osmA.x)) > 0;
 }
 
 
@@ -817,8 +949,8 @@ bool snap_particle_xy(ira_open_street_map::snap_particle_xy::Request& req, ira_o
  * 1. Is there Oneway tag?
  *   YES:
  *      oneway = yes : calculate way direction with atan2 using Way node list sorting
- *      oneway = no : calculate way direction with atan2 using Way node list sorting and place 2 particles with opposite directions
- *      oneway = -1 : calculate way direction with atan2 using Way node list sorting and reverse the direction
+ *      oneway = no :  calculate way direction with atan2 using Way node list sorting and place 2 particles with opposite directions
+ *      oneway = -1 :  calculate way direction with atan2 using Way node list sorting and reverse the direction
  *   NO: Go to (2)
  *
  * 2. Is there Lanes tag?
@@ -840,10 +972,12 @@ bool way_direction(ira_open_street_map::way_direction::Request& req, ira_open_st
     Way_dir_struct response = way_direction_helper(req.way_id);
 
     // check errors
-    if(response.way_not_found || response.not_a_way){
+    if (response.way_not_found || response.not_a_way)
+    {
         return false;
     }
-    else{
+    else
+    {
         // Set quaternion
         resp.quat_w = response.q_w;
         resp.quat_x = response.q_x;
@@ -873,7 +1007,7 @@ bool get_closest_way_distance_utm(ira_open_street_map::get_closest_way_distance_
 
     // (1) Calculate distance between particle and every map Way (keep only ways that are below 'max_distance_radius')
     vector<shared_ptr<Osmium::OSM::Way const> > way_vector; /// keep OSM way stored
-    for(std::set<shared_ptr<Osmium::OSM::Way const> >::iterator way_itr = oh.m_ways.begin(); way_itr != oh.m_ways.end(); way_itr++)
+    for (std::set<shared_ptr<Osmium::OSM::Way const> >::iterator way_itr = oh.m_ways.begin(); way_itr != oh.m_ways.end(); way_itr++)
     {
         // Use only ways with Key:Highway
         const char* highway = (*way_itr)->tags().get_value_by_key("highway");
@@ -882,7 +1016,7 @@ bool get_closest_way_distance_utm(ira_open_street_map::get_closest_way_distance_
 
         // Get way-node list
         Osmium::OSM::WayNodeList waylist = (*way_itr)->nodes();
-        for(Osmium::OSM::WayNodeList::iterator node_list_itr = waylist.begin(); node_list_itr != waylist.end(); node_list_itr++ )
+        for (Osmium::OSM::WayNodeList::iterator node_list_itr = waylist.begin(); node_list_itr != waylist.end(); node_list_itr++ )
         {
             // Get way-node coordinates
             double lat = node_list_itr->position().lat();
@@ -893,7 +1027,7 @@ bool get_closest_way_distance_utm(ira_open_street_map::get_closest_way_distance_
             double distance = get_distance_helper(req.x, req.y, way_node_xy.x, way_node_xy.y);
 
             // Check if it's below max_distance_radius
-            if(distance <= req.max_distance_radius)
+            if (distance <= req.max_distance_radius)
             {
                 // Store way ID+
                 way_vector.push_back(*way_itr);
@@ -902,7 +1036,8 @@ bool get_closest_way_distance_utm(ira_open_street_map::get_closest_way_distance_
         }
     }
 
-    if(way_vector.size() == 0){
+    if (way_vector.size() == 0)
+    {
         ROS_ERROR_STREAM("     No map nodes found next to particle. Distance radius: " << req.max_distance_radius << " m");
         return false;
     }
@@ -917,7 +1052,7 @@ bool get_closest_way_distance_utm(ira_open_street_map::get_closest_way_distance_
     Xy min_dist_node2;
 
     //        start cycle
-    for(vector<shared_ptr<Osmium::OSM::Way const> >::iterator way_itr = way_vector.begin(); way_itr != way_vector.end(); way_itr++)
+    for (vector<shared_ptr<Osmium::OSM::Way const> >::iterator way_itr = way_vector.begin(); way_itr != way_vector.end(); way_itr++)
     {
         // Use only ways with Key:Highway
         // WARNING: this should be useless since we added only ways with Key:highway in the phase
@@ -926,7 +1061,7 @@ bool get_closest_way_distance_utm(ira_open_street_map::get_closest_way_distance_
             continue;
 
         Osmium::OSM::WayNodeList way_n_list = (*way_itr)->nodes();
-        for(Osmium::OSM::WayNodeList::iterator node_list_itr = way_n_list.begin(); node_list_itr != --way_n_list.end(); node_list_itr++ )
+        for (Osmium::OSM::WayNodeList::iterator node_list_itr = way_n_list.begin(); node_list_itr != --way_n_list.end(); node_list_itr++ )
         {
             // extract 1st node coordinates
             double lat = node_list_itr->position().lat();
@@ -946,7 +1081,8 @@ bool get_closest_way_distance_utm(ira_open_street_map::get_closest_way_distance_
             // calculate distance from particle to way segment
             double dist = get_distance_helper(snap.x, snap.y, particle.x, particle.y);
 
-            if(dist < min_distance){
+            if (dist < min_distance)
+            {
                 // update min distance
                 min_distance = dist;
                 min_distance_way = *way_itr;
@@ -956,7 +1092,8 @@ bool get_closest_way_distance_utm(ira_open_street_map::get_closest_way_distance_
             }
 
             // break if it's last way segment
-            if ( it2 == way_n_list.end() ) {
+            if ( it2 == way_n_list.end() )
+            {
                 break;
             }
         }
@@ -969,14 +1106,17 @@ bool get_closest_way_distance_utm(ira_open_street_map::get_closest_way_distance_
 }
 
 
-bool latlon_2_xy(ira_open_street_map::latlon_2_xy::Request& req, ira_open_street_map::latlon_2_xy::Response& resp){
+bool latlon_2_xy(ira_open_street_map::latlon_2_xy::Request& req, ira_open_street_map::latlon_2_xy::Response& resp)
+{
 
-    if ((req.latitude > 90) || (req.latitude < -90)){
+    if ((req.latitude > 90) || (req.latitude < -90))
+    {
         ROS_DEBUG_STREAM("   LATLON_2_XY: Latitude must be between -90 and 90");
         return false;
     }
 
-    if ((req.longitude > 180) || (req.longitude < -180)){
+    if ((req.longitude > 180) || (req.longitude < -180))
+    {
         ROS_DEBUG_STREAM("   LATLON_2_XY: Longitude must be between -180 and 180");
         return false;
     }
@@ -988,7 +1128,8 @@ bool latlon_2_xy(ira_open_street_map::latlon_2_xy::Request& req, ira_open_street
 }
 
 
-bool xy_2_latlon(ira_open_street_map::xy_2_latlon::Request& req, ira_open_street_map::xy_2_latlon::Response& resp){
+bool xy_2_latlon(ira_open_street_map::xy_2_latlon::Request& req, ira_open_street_map::xy_2_latlon::Response& resp)
+{
     Coordinates coords = xy2latlon_helper(req.x, req.y, 32, false);
     resp.latitude = coords.latitude;
     resp.longitude = coords.longitude;
@@ -1006,7 +1147,7 @@ bool ecef_2_lla(ira_open_street_map::ecef_2_lla::Request& req, ira_open_street_m
 
 bool lla_2_ecef(ira_open_street_map::lla_2_ecef::Request& req, ira_open_street_map::lla_2_ecef::Response& resp)
 {
-    geometry_msgs::Point p = lla2ecef_helper(req.latitude,req.longitude,req.altitude);
+    geometry_msgs::Point p = lla2ecef_helper(req.latitude, req.longitude, req.altitude);
     resp.x = p.x;
     resp.y = p.y;
     resp.z = p.z;
@@ -1019,30 +1160,48 @@ bool lla_2_ecef(ira_open_street_map::lla_2_ecef::Request& req, ira_open_street_m
  * @param resp
  * @return
  */
-bool get_distance_from_xy(ira_open_street_map::get_distance_from_xy::Request& req, ira_open_street_map::get_distance_from_xy::Response& resp){
+bool get_distance_from_xy(ira_open_street_map::get_distance_from_xy::Request& req, ira_open_street_map::get_distance_from_xy::Response& resp)
+{
 
     // Calculate distance between request node and current way node (Sqrt((N1-N2)²+(E1-E2)²))
-    resp.distance = get_distance_helper(req.x1,req.y1, req.x2, req.y2); // (m)
+    resp.distance = get_distance_helper(req.x1, req.y1, req.x2, req.y2); // (m)
 
     return true;
 }
 
-///
-/// \brief getLaneCenter
-/// \param req
-/// \param resp
-/// \return the position of the center of the requested lane, in XY coordinate frame
-///
-bool getDistanceFromLaneCenter(ira_open_street_map::getDistanceFromLaneCenter::Request& req, ira_open_street_map::getDistanceFromLaneCenter::Response& resp)
+/**
+ * @brief getDistanceFromLaneCenter
+ * @param req
+ * @param resp
+ * @return the position of the center of the requested lane, in XY coordinate frame
+ *
+ *              |    .    |    .    |
+ *              |    .    |    .    |
+ *              |    .    |    .    |
+ *              |    .    |    .    |
+ *              |    .    |    .    |
+ *              |    .    |    .    |
+ *                *
+ *                <--> this is the distance this function is going to return
+ *
+ * refs #435, #527
+ *
+ * vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+ * The function is set to DEPRECATED as a warning, beacause it is not finished
+ * ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ *
+ */
+ROS_DEPRECATED bool getDistanceFromLaneCenter(ira_open_street_map::getDistanceFromLaneCenter::Request& req, ira_open_street_map::getDistanceFromLaneCenter::Response& resp)
 {
     const char* search_tag;
-    int         number_of_lanes=0;
-    double      width=0.0f;
-    int         oneway=0;
+    int         number_of_lanes = 0;
+    double      width = 0.0f;           ///< value from OSM
+    int         oneway = 0;             ///< boolean oneway, i need only to know if is oneway or not, reversed is still oneway, so 1 oneway, 0 bothway
+
 
     ROS_DEBUG_STREAM("getLaneCenter for way_id: " << req.way_id);
 
-    for(std::set<shared_ptr<Osmium::OSM::Way const> >::iterator way_itr = oh.m_ways.begin(); way_itr != oh.m_ways.end(); way_itr++)
+    for (std::set<shared_ptr<Osmium::OSM::Way const> >::iterator way_itr = oh.m_ways.begin(); way_itr != oh.m_ways.end(); way_itr++)
     {
         ROS_DEBUG_STREAM((*way_itr)->id());
 
@@ -1055,43 +1214,46 @@ bool getDistanceFromLaneCenter(ira_open_street_map::getDistanceFromLaneCenter::R
 
             search_tag = (*way_itr)->tags().get_value_by_key("lanes");
             if (!search_tag)
-                number_of_lanes=1;
+                number_of_lanes = 1;
             else
-                number_of_lanes=atoi(search_tag);
+                number_of_lanes = atoi(search_tag);
 
             search_tag = (*way_itr)->tags().get_value_by_key("width");
             if (!search_tag)
-                width=0;
+                width = 0;
             else
-                width=boost::lexical_cast<double>(search_tag);
+                width = boost::lexical_cast<double>(search_tag);
 
             search_tag = (*way_itr)->tags().get_value_by_key("oneway");
             if (!search_tag)
-                oneway=0;
+                oneway = 0;
             else
             {
-                if(strcmp(search_tag,"yes") == 0 || strcmp(search_tag,"true") == 0 || strcmp(search_tag,"1") == 0){
-                    oneway=1;
+                if (strcmp(search_tag, "yes") == 0 || strcmp(search_tag, "true") == 0 || strcmp(search_tag, "1") == 0)
+                {
+                    oneway = 1; // it is oneway
                 }
-                else if(strcmp(search_tag,"no")== 0 || strcmp(search_tag,"false")== 0 || strcmp(search_tag,"0")== 0){
-                    oneway=0;
+                else if (strcmp(search_tag, "no") == 0 || strcmp(search_tag, "false") == 0 || strcmp(search_tag, "0") == 0)
+                {
+                    oneway = 0; // it is no-oneway
                 }
-                else if(strcmp(search_tag,"-1")== 0 || strcmp(search_tag,"reverse")== 0){
-                    oneway=-1;
+                else if (strcmp(search_tag, "-1") == 0 || strcmp(search_tag, "reverse") == 0)
+                {
+                    oneway = 1; // it is oneway, but in reverse order
                 }
             }
 
             //calculate shortest distance between particle and every way's segments (a way segment is defined by 2 nodes)
-            Xy node_1, node_2, snap,snapped_xy, min_dist_node1, min_dist_node2;
+            Xy node_1, node_2, snap, snapped_xy, min_dist_node1, min_dist_node2;
             Osmium::OSM::WayNodeList::iterator it2;
             shared_ptr<Osmium::OSM::Way const> min_distance_way;
-            double lat,lat2,lon,lon2,dist=0.0f;
+            double lat, lat2, lon, lon2, dist = 0.0f;
             double snapped_min_distance = 999999999;
             int64 way_id = 0;
             Xy particle = {req.x, req.y};
 
             Osmium::OSM::WayNodeList way_n_list = (*way_itr)->nodes();
-            for(Osmium::OSM::WayNodeList::iterator node_list_itr = way_n_list.begin(); node_list_itr != --way_n_list.end(); node_list_itr++ )
+            for (Osmium::OSM::WayNodeList::iterator node_list_itr = way_n_list.begin(); node_list_itr != --way_n_list.end(); node_list_itr++ )
             {
                 // extract 1st node coordinates
                 lat = node_list_itr->position().lat();
@@ -1111,7 +1273,7 @@ bool getDistanceFromLaneCenter(ira_open_street_map::getDistanceFromLaneCenter::R
                 // calculate distance from particle to snapped way segment
                 dist = get_distance_helper(snap.x, snap.y, particle.x, particle.y);
 
-                if(dist < snapped_min_distance)
+                if (dist < snapped_min_distance)
                 {
                     // update min distance
                     snapped_min_distance = dist;
@@ -1123,25 +1285,28 @@ bool getDistanceFromLaneCenter(ira_open_street_map::getDistanceFromLaneCenter::R
                 }
 
                 // break if it's last way segment
-                if ( it2 == way_n_list.end() ) {
+                if ( it2 == way_n_list.end() )
+                {
                     break;
                 }
             }
 
-            Way_dir_struct dir = way_direction_helper(min_distance_way, min_dist_node1, min_dist_node2);
+            // calculates the direction of the hypotheses based on the two points. needs the way-ptr to check
+            // whether the way is oneway or not
+            Way_dir_struct direction = way_direction_helper(min_distance_way, min_dist_node1, min_dist_node2);
 
             // Set response values
-            resp.snapped_x = snapped_xy.x;
-            resp.snapped_y = snapped_xy.y;
-            resp.way_dir_rad = dir.yaw_rad;
-            resp.way_dir_degrees = dir.yaw_deg;
-            resp.way_dir_quat_w = dir.q_w;
-            resp.way_dir_quat_x = dir.q_x;
-            resp.way_dir_quat_y = dir.q_y;
-            resp.way_dir_quat_z = dir.q_z;
+            resp.snapped_x       = snapped_xy.x;
+            resp.snapped_y       = snapped_xy.y;
+            resp.way_dir_rad     = direction.yaw_rad;
+            resp.way_dir_degrees = direction.yaw_deg;
+            resp.way_dir_quat_w  = direction.q_w;
+            resp.way_dir_quat_x  = direction.q_x;
+            resp.way_dir_quat_y  = direction.q_y;
+            resp.way_dir_quat_z  = direction.q_z;
 
-            resp.distance_from_way_center = snapped_min_distance;
-            resp.way_id=way_id;
+            resp.distance_from_way_center = snapped_min_distance; // this is the distance from the Hightway/Way center
+            resp.way_id = way_id;
 
 
             // Distance from the lane center, lanes are equivalently distributed, i.e. max_width/n_lanes
@@ -1198,7 +1363,7 @@ bool getHighwayInfo(ira_open_street_map::getHighwayInfo::Request& req, ira_open_
 
     const char* search_tag;
     ROS_DEBUG_STREAM("Searching way_id " << req.way_id);
-    for(std::set<shared_ptr<Osmium::OSM::Way const> >::iterator way_itr = oh.m_ways.begin(); way_itr != oh.m_ways.end(); way_itr++)
+    for (std::set<shared_ptr<Osmium::OSM::Way const> >::iterator way_itr = oh.m_ways.begin(); way_itr != oh.m_ways.end(); way_itr++)
     {
         ROS_DEBUG_STREAM((*way_itr)->id());
         // Get way-node list
@@ -1210,29 +1375,32 @@ bool getHighwayInfo(ira_open_street_map::getHighwayInfo::Request& req, ira_open_
 
             search_tag = (*way_itr)->tags().get_value_by_key("lanes");
             if (!search_tag)
-                resp.number_of_lanes=0;
+                resp.number_of_lanes = 0;
             else
-                resp.number_of_lanes=atoi(search_tag);
+                resp.number_of_lanes = atoi(search_tag);
 
             search_tag = (*way_itr)->tags().get_value_by_key("width");
             if (!search_tag)
-                resp.width=0;
+                resp.width = 0;
             else
-                resp.width=boost::lexical_cast<double>(search_tag);
+                resp.width = boost::lexical_cast<double>(search_tag);
 
             search_tag = (*way_itr)->tags().get_value_by_key("oneway");
             if (!search_tag)
-                resp.oneway=0;
+                resp.oneway = 0;
             else
             {
-                if(strcmp(search_tag,"yes") == 0 || strcmp(search_tag,"true") == 0 || strcmp(search_tag,"1") == 0){
-                    resp.oneway=1;
+                if (strcmp(search_tag, "yes") == 0 || strcmp(search_tag, "true") == 0 || strcmp(search_tag, "1") == 0)
+                {
+                    resp.oneway = 1;
                 }
-                else if(strcmp(search_tag,"no")== 0 || strcmp(search_tag,"false")== 0 || strcmp(search_tag,"0")== 0){
-                    resp.oneway=0;
+                else if (strcmp(search_tag, "no") == 0 || strcmp(search_tag, "false") == 0 || strcmp(search_tag, "0") == 0)
+                {
+                    resp.oneway = 0;
                 }
-                else if(strcmp(search_tag,"-1")== 0 || strcmp(search_tag,"reverse")== 0){
-                    resp.oneway=-1;
+                else if (strcmp(search_tag, "-1") == 0 || strcmp(search_tag, "reverse") == 0)
+                {
+                    resp.oneway = -1;
                 }
             }
 
@@ -1245,14 +1413,15 @@ bool getHighwayInfo(ira_open_street_map::getHighwayInfo::Request& req, ira_open_
 }
 
 
-bool get_node_coordinates(ira_open_street_map::get_node_coordinates::Request& req, ira_open_street_map::get_node_coordinates::Response& resp){
+bool get_node_coordinates(ira_open_street_map::get_node_coordinates::Request& req, ira_open_street_map::get_node_coordinates::Response& resp)
+{
 
     ROS_DEBUG_STREAM("SERVICE get_node_coordinates:");
 
     // Cycle through every stored way
-    for(std::set<shared_ptr<Osmium::OSM::Node const> >::iterator node_itr = oh.m_nodes.begin(); node_itr != oh.m_nodes.end(); node_itr++)
+    for (std::set<shared_ptr<Osmium::OSM::Node const> >::iterator node_itr = oh.m_nodes.begin(); node_itr != oh.m_nodes.end(); node_itr++)
     {
-        if( (*node_itr)->id() == req.node_id  )
+        if ( (*node_itr)->id() == req.node_id  )
         {
             double lat = (*node_itr)->position().lat();
             double lon = (*node_itr)->position().lon();
@@ -1260,10 +1429,10 @@ bool get_node_coordinates(ira_open_street_map::get_node_coordinates::Request& re
 
 
             ROS_DEBUG_STREAM("   Latitude, Longitude (WGS84):");
-            ROS_DEBUG_STREAM("   "<< lat  << " " << lon );
+            ROS_DEBUG_STREAM("   " << lat  << " " << lon );
 
             ROS_DEBUG_STREAM("   X, Y (UTM):");
-            ROS_DEBUG_STREAM("   "<< coords.x << " " << coords.y);
+            ROS_DEBUG_STREAM("   " << coords.x << " " << coords.y);
 
             resp.x = coords.x;
             resp.y = coords.y;
@@ -1393,14 +1562,14 @@ void load_waylist()
 
 
     Xy coords;
-    unsigned int id=0,id2=0,id3=0;
+    unsigned int id = 0, id2 = 0, id3 = 0;
     geometry_msgs::Point point, prev_point;
-    bool got_only_one_point=true;
+    bool got_only_one_point = true;
 
     waylistArray.markers.clear();
     waylistArray_oneway.markers.clear();
 
-    for(std::set<shared_ptr<Osmium::OSM::Way const> >::iterator way_itr = oh.m_ways.begin(); way_itr != oh.m_ways.end(); way_itr++)
+    for (std::set<shared_ptr<Osmium::OSM::Way const> >::iterator way_itr = oh.m_ways.begin(); way_itr != oh.m_ways.end(); way_itr++)
     {
         // Get way-node list
         Osmium::OSM::WayNodeList waylist = (*way_itr)->nodes();
@@ -1412,169 +1581,175 @@ void load_waylist()
 
         const char* one_way = (*way_itr)->tags().get_value_by_key("oneway");
         // ONEWAY TAG FOUND:
-        if( one_way ){
-            if(strcmp(one_way,"yes") == 0 || strcmp(one_way,"true") == 0 || strcmp(one_way,"1") == 0){
+        if ( one_way )
+        {
+            if (strcmp(one_way, "yes") == 0 || strcmp(one_way, "true") == 0 || strcmp(one_way, "1") == 0)
+            {
                 way_single_part.color.r = 0.0;
                 way_single_part.color.g = 1.0;
                 way_single_part.color.b = 0.0;
             }
-            else if(strcmp(one_way,"no")== 0 || strcmp(one_way,"false")== 0 || strcmp(one_way,"0")== 0){
+            else if (strcmp(one_way, "no") == 0 || strcmp(one_way, "false") == 0 || strcmp(one_way, "0") == 0)
+            {
                 way_single_part.color.r = 1.0;
                 way_single_part.color.g = 0.0;
                 way_single_part.color.b = 0.0;
             }
-            else if(strcmp(one_way,"-1")== 0 || strcmp(one_way,"reverse")== 0){
+            else if (strcmp(one_way, "-1") == 0 || strcmp(one_way, "reverse") == 0)
+            {
                 way_single_part.color.r = 0.0;
                 way_single_part.color.g = 1.0;
                 way_single_part.color.b = 0.0;
             }
         }
         // NO TAGS FOUND!
-        else{
+        else
+        {
             way_single_part.color.r = 1.0;
             way_single_part.color.g = 0.0;
             way_single_part.color.b = 0.0;
         }
 
 
-        for(Osmium::OSM::WayNodeList::iterator node_list_itr = waylist.begin(); node_list_itr != waylist.end(); node_list_itr++ )
+        for (Osmium::OSM::WayNodeList::iterator node_list_itr = waylist.begin(); node_list_itr != waylist.end(); node_list_itr++ )
         {
             // Get way-node coordinates
-            coords = latlon2xy_helper(node_list_itr->position().lat(),node_list_itr->position().lon());
-            node.pose.position.x=point.x = coords.x;
-            node.pose.position.y=point.y = coords.y;
-            node.pose.position.z=point.z = 0;
+            coords = latlon2xy_helper(node_list_itr->position().lat(), node_list_itr->position().lon());
+            node.pose.position.x = point.x = coords.x;
+            node.pose.position.y = point.y = coords.y;
+            node.pose.position.z = point.z = 0;
 
-            node.id=id++;
-            node.header.seq=id;
+            node.id = id++;
+            node.header.seq = id;
             node.pose.position.z = 0.2;
             nodelistArray.markers.push_back(node);
 
             if (got_only_one_point)
             {
-                prev_point=point;
-                got_only_one_point=false;
+                prev_point = point;
+                got_only_one_point = false;
             }
             else
             {
                 double middle_x, middle_y, theta;
                 tf::Quaternion q;
 
-                if( one_way )
+                if ( one_way )
                 {
-                    if(strcmp(one_way,"yes") == 0 || strcmp(one_way,"true") == 0 || strcmp(one_way,"1") == 0)
+                    if (strcmp(one_way, "yes") == 0 || strcmp(one_way, "true") == 0 || strcmp(one_way, "1") == 0)
                     {
-                        middle_x=(prev_point.x+point.x)/2;
-                        middle_y=(prev_point.y+point.y)/2;
-                        theta = atan2(point.y-prev_point.y, point.x-prev_point.x);
+                        middle_x = (prev_point.x + point.x) / 2;
+                        middle_y = (prev_point.y + point.y) / 2;
+                        theta = atan2(point.y - prev_point.y, point.x - prev_point.x);
                         q = tf::createQuaternionFromYaw(theta);
-                        direction.pose.position.x=middle_x+2;
-                        direction.pose.position.y=middle_y+2;
-                        direction.pose.position.z=0;
-                        direction.pose.orientation.x=q.x();
-                        direction.pose.orientation.y=q.y();
-                        direction.pose.orientation.z=q.z();
-                        direction.pose.orientation.w=q.w();
-                        direction.id=id3++;
-                        direction.header.seq=id3;
+                        direction.pose.position.x = middle_x + 2;
+                        direction.pose.position.y = middle_y + 2;
+                        direction.pose.position.z = 0;
+                        direction.pose.orientation.x = q.x();
+                        direction.pose.orientation.y = q.y();
+                        direction.pose.orientation.z = q.z();
+                        direction.pose.orientation.w = q.w();
+                        direction.id = id3++;
+                        direction.header.seq = id3;
                         directionArray.markers.push_back(direction);
                     }
-                    else if(strcmp(one_way,"no")== 0 || strcmp(one_way,"false")== 0 || strcmp(one_way,"0")== 0)
+                    else if (strcmp(one_way, "no") == 0 || strcmp(one_way, "false") == 0 || strcmp(one_way, "0") == 0)
                     {
-                        middle_x=(prev_point.x+point.x)/2;
-                        middle_y=(prev_point.y+point.y)/2;
-                        theta = atan2(prev_point.y-point.y, prev_point.x-point.x);
+                        middle_x = (prev_point.x + point.x) / 2;
+                        middle_y = (prev_point.y + point.y) / 2;
+                        theta = atan2(prev_point.y - point.y, prev_point.x - point.x);
                         q = tf::createQuaternionFromYaw(theta);
-                        direction.pose.position.x=middle_x+2;
-                        direction.pose.position.y=middle_y+2;
-                        direction.pose.position.z=0;
-                        direction.pose.orientation.x=q.x();
-                        direction.pose.orientation.y=q.y();
-                        direction.pose.orientation.z=q.z();
-                        direction.pose.orientation.w=q.w();
-                        direction.id=id3++;
-                        direction.header.seq=id3;
+                        direction.pose.position.x = middle_x + 2;
+                        direction.pose.position.y = middle_y + 2;
+                        direction.pose.position.z = 0;
+                        direction.pose.orientation.x = q.x();
+                        direction.pose.orientation.y = q.y();
+                        direction.pose.orientation.z = q.z();
+                        direction.pose.orientation.w = q.w();
+                        direction.id = id3++;
+                        direction.header.seq = id3;
                         directionArray.markers.push_back(direction);
 
-                        middle_x=(prev_point.x+point.x)/2;
-                        middle_y=(prev_point.y+point.y)/2;
-                        theta = atan2(point.y-prev_point.y, point.x-prev_point.x);
+                        middle_x = (prev_point.x + point.x) / 2;
+                        middle_y = (prev_point.y + point.y) / 2;
+                        theta = atan2(point.y - prev_point.y, point.x - prev_point.x);
                         q = tf::createQuaternionFromYaw(theta);
-                        direction.pose.position.x=middle_x-2;
-                        direction.pose.position.y=middle_y-2;
-                        direction.pose.position.z=0;
-                        direction.pose.orientation.x=q.x();
-                        direction.pose.orientation.y=q.y();
-                        direction.pose.orientation.z=q.z();
-                        direction.pose.orientation.w=q.w();
-                        direction.id=id3++;
-                        direction.header.seq=id3;
+                        direction.pose.position.x = middle_x - 2;
+                        direction.pose.position.y = middle_y - 2;
+                        direction.pose.position.z = 0;
+                        direction.pose.orientation.x = q.x();
+                        direction.pose.orientation.y = q.y();
+                        direction.pose.orientation.z = q.z();
+                        direction.pose.orientation.w = q.w();
+                        direction.id = id3++;
+                        direction.header.seq = id3;
                         directionArray.markers.push_back(direction);
                     }
-                    else if(strcmp(one_way,"-1")== 0 || strcmp(one_way,"reverse")== 0)
+                    else if (strcmp(one_way, "-1") == 0 || strcmp(one_way, "reverse") == 0)
                     {
-                        middle_x=(prev_point.x+point.x)/2;
-                        middle_y=(prev_point.y+point.y)/2;
-                        theta = atan2(point.y-prev_point.y, point.x-prev_point.x);
+                        middle_x = (prev_point.x + point.x) / 2;
+                        middle_y = (prev_point.y + point.y) / 2;
+                        theta = atan2(point.y - prev_point.y, point.x - prev_point.x);
                         q = tf::createQuaternionFromYaw(theta);
-                        direction.pose.position.x=middle_x+2;
-                        direction.pose.position.y=middle_y+2;
-                        direction.pose.position.z=0;
-                        direction.pose.orientation.x=q.x();
-                        direction.pose.orientation.y=q.y();
-                        direction.pose.orientation.z=q.z();
-                        direction.pose.orientation.w=q.w();
-                        direction.id=id3++;
-                        direction.header.seq=id3;
+                        direction.pose.position.x = middle_x + 2;
+                        direction.pose.position.y = middle_y + 2;
+                        direction.pose.position.z = 0;
+                        direction.pose.orientation.x = q.x();
+                        direction.pose.orientation.y = q.y();
+                        direction.pose.orientation.z = q.z();
+                        direction.pose.orientation.w = q.w();
+                        direction.id = id3++;
+                        direction.header.seq = id3;
                         directionArray.markers.push_back(direction);
                     }
                 }
                 // NO TAGS FOUND!
                 else
                 {
-                    middle_x=(prev_point.x+point.x)/2;
-                    middle_y=(prev_point.y+point.y)/2;
-                    theta = atan2(prev_point.y-point.y, prev_point.x-point.x);
+                    middle_x = (prev_point.x + point.x) / 2;
+                    middle_y = (prev_point.y + point.y) / 2;
+                    theta = atan2(prev_point.y - point.y, prev_point.x - point.x);
                     q = tf::createQuaternionFromYaw(theta);
-                    direction.pose.position.x=middle_x+2;
-                    direction.pose.position.y=middle_y+2;
-                    direction.pose.position.z=0;
-                    direction.pose.orientation.x=q.x();
-                    direction.pose.orientation.y=q.y();
-                    direction.pose.orientation.z=q.z();
-                    direction.pose.orientation.w=q.w();
-                    direction.id=id3++;
-                    direction.header.seq=id3;
+                    direction.pose.position.x = middle_x + 2;
+                    direction.pose.position.y = middle_y + 2;
+                    direction.pose.position.z = 0;
+                    direction.pose.orientation.x = q.x();
+                    direction.pose.orientation.y = q.y();
+                    direction.pose.orientation.z = q.z();
+                    direction.pose.orientation.w = q.w();
+                    direction.id = id3++;
+                    direction.header.seq = id3;
                     directionArray.markers.push_back(direction);
 
-                    middle_x=(prev_point.x+point.x)/2;
-                    middle_y=(prev_point.y+point.y)/2;
-                    theta = atan2(point.y-prev_point.y, point.x-prev_point.x);
+                    middle_x = (prev_point.x + point.x) / 2;
+                    middle_y = (prev_point.y + point.y) / 2;
+                    theta = atan2(point.y - prev_point.y, point.x - prev_point.x);
                     q = tf::createQuaternionFromYaw(theta);
-                    direction.pose.position.x=middle_x-2;
-                    direction.pose.position.y=middle_y-2;
-                    direction.pose.position.z=0;
-                    direction.pose.orientation.x=q.x();
-                    direction.pose.orientation.y=q.y();
-                    direction.pose.orientation.z=q.z();
-                    direction.pose.orientation.w=q.w();
-                    direction.id=id3++;
-                    direction.header.seq=id3;
+                    direction.pose.position.x = middle_x - 2;
+                    direction.pose.position.y = middle_y - 2;
+                    direction.pose.position.z = 0;
+                    direction.pose.orientation.x = q.x();
+                    direction.pose.orientation.y = q.y();
+                    direction.pose.orientation.z = q.z();
+                    direction.pose.orientation.w = q.w();
+                    direction.id = id3++;
+                    direction.header.seq = id3;
                     directionArray.markers.push_back(direction);
                 }
 
 
                 way_single_part.points.push_back(prev_point);
                 way_single_part.points.push_back(point);
-                prev_point=point;
+                prev_point = point;
             }
         }
-        way_single_part.id=id2++;
-        way_single_part.header.seq=id2;
+        way_single_part.id = id2++;
+        way_single_part.header.seq = id2;
         got_only_one_point = true;
 
-        if( one_way ){
-            if(strcmp(one_way,"no")== 0 || strcmp(one_way,"false")== 0 || strcmp(one_way,"0")== 0)
+        if ( one_way )
+        {
+            if (strcmp(one_way, "no") == 0 || strcmp(one_way, "false") == 0 || strcmp(one_way, "0") == 0)
             {
                 waylistArray.markers.push_back(way_single_part);
             }
@@ -1596,7 +1771,8 @@ void load_waylist()
 
 /* ================================================== */
 
-int main(int argc, char* argv[]) {
+int main(int argc, char* argv[])
+{
 
     // init node
     ros::init(argc, argv, "osm_query_node");
@@ -1609,10 +1785,12 @@ int main(int argc, char* argv[]) {
 
     // check filepath from arguments
     stringstream map_path;
-    if (argc != 2) {
+    if (argc != 2)
+    {
         map_path << ros::package::getPath("ira_open_street_map") << "/maps/kitti_05_debug3.osm";
     }
-    else{
+    else
+    {
         // read .osm file
         map_path << argv[1];
     }
@@ -1624,24 +1802,25 @@ int main(int argc, char* argv[]) {
 
     // Read OSM with ObjestHandler which is a combination of ObjectStore and CoordinateForWays handlers
     time_t t0 = time(NULL);
-    ROS_INFO_STREAM("   Reading: '"<< infile.filename().c_str() << "'");
+    ROS_INFO_STREAM("   Reading: '" << infile.filename().c_str() << "'");
     Osmium::Input::read(infile, oh);
     ROS_INFO_STREAM("   Finished reading OSM map file (time spent: " << time(NULL) - t0 << "s)");
     ROS_INFO_STREAM("   Nodes: " << oh.m_nodes.size() << "  Ways: " << oh.m_ways.size() << "  Relations: " << oh.m_relations.size());
 
     // init services
-    ros::ServiceServer server_lla2ecef                  = nh.advertiseService("/ira_open_street_map/lla_2_ecef", &lla_2_ecef);
-    ros::ServiceServer server_ecef2lla                  = nh.advertiseService("/ira_open_street_map/ecef_2_lla", &ecef_2_lla);
-    ros::ServiceServer server_distance_xy               = nh.advertiseService("/ira_open_street_map/get_distance_from_xy", &get_distance_from_xy);
-    ros::ServiceServer server_latlon2xy                 = nh.advertiseService("/ira_open_street_map/latlon_2_xy", &latlon_2_xy);
-    ros::ServiceServer server_xy2latlon                 = nh.advertiseService("/ira_open_street_map/xy_2_latlon", &xy_2_latlon);
-    ros::ServiceServer server_snapparticle              = nh.advertiseService("/ira_open_street_map/snap_particle_xy", &snap_particle_xy);
-    ros::ServiceServer server_waydirection              = nh.advertiseService("/ira_open_street_map/way_direction", &way_direction);
-    ros::ServiceServer server_nodecoords                = nh.advertiseService("/ira_open_street_map/get_node_coordinates", &get_node_coordinates);
+    ros::ServiceServer server_lla2ecef                  = nh.advertiseService("/ira_open_street_map/lla_2_ecef"                  , &lla_2_ecef);
+    ros::ServiceServer server_ecef2lla                  = nh.advertiseService("/ira_open_street_map/ecef_2_lla"                  , &ecef_2_lla);
+    ros::ServiceServer server_latlon2xy                 = nh.advertiseService("/ira_open_street_map/latlon_2_xy"                 , &latlon_2_xy);
+    ros::ServiceServer server_xy2latlon                 = nh.advertiseService("/ira_open_street_map/xy_2_latlon"                 , &xy_2_latlon);
+    ros::ServiceServer server_snapparticle              = nh.advertiseService("/ira_open_street_map/snap_particle_xy"            , &snap_particle_xy);
+    ros::ServiceServer server_waydirection              = nh.advertiseService("/ira_open_street_map/way_direction"               , &way_direction);
+    ros::ServiceServer server_nodecoords                = nh.advertiseService("/ira_open_street_map/get_node_coordinates"        , &get_node_coordinates);
     ros::ServiceServer server_get_distance_from_way     = nh.advertiseService("/ira_open_street_map/get_closest_way_distance_utm", &get_closest_way_distance_utm);
+    ros::ServiceServer server_distance_xy               = nh.advertiseService("/ira_open_street_map/get_distance_from_xy"        , &get_distance_from_xy);
 
-    ros::ServiceServer server_getHighwayInfo            = nh.advertiseService("/ira_open_street_map/getHighwayInfo", &getHighwayInfo);
-    ros::ServiceServer server_getDistanceFromLaneCenter = nh.advertiseService("/ira_open_street_map/getDistanceFromLaneCenter", &getDistanceFromLaneCenter);
+    ros::ServiceServer server_getHighwayInfo            = nh.advertiseService("/ira_open_street_map/getHighwayInfo"              , &getHighwayInfo);
+    ros::ServiceServer server_getDistanceFromLaneCenter = nh.advertiseService("/ira_open_street_map/getDistanceFromLaneCenter"   , &getDistanceFromLaneCenter);
+    ros::ServiceServer server_oneway                    = nh.advertiseService("/ira_open_street_map/oneWay"                      , &getOneWayInfo);
 
     // test service call
     //    ira_open_street_map:markerArrayPublisher_ways:is_valid_location::Request test_req;
@@ -1680,7 +1859,7 @@ int main(int argc, char* argv[]) {
     spinner.start();
 
     ros::Duration sleepTime(1);
-    while(ros::ok())
+    while (ros::ok())
     {
         markerArrayPublisher_ways.publish(waylistArray);
         markerArrayPublisher_ways.publish(waylistArray_oneway);
