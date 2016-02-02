@@ -1,0 +1,710 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="Overpass API">
+<note>The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.</note>
+<meta osm_base="2016-02-02T13:22:03Z"/>
+
+  <node id="1049023157" lat="49.0112801" lon="8.4236650"/>
+  <node id="1049023164" lat="49.0113444" lon="8.4236658"/>
+  <node id="1049023178" lat="49.0115162" lon="8.4241123"/>
+  <node id="1049023199" lat="49.0114062" lon="8.4241700"/>
+  <node id="1049023215" lat="49.0112871" lon="8.4238211"/>
+  <node id="1049023220" lat="49.0109017" lon="8.4233661"/>
+  <node id="1049023243" lat="49.0112713" lon="8.4238191"/>
+  <node id="1049023252" lat="49.0114399" lon="8.4239141"/>
+  <node id="1049023255" lat="49.0113491" lon="8.4239994"/>
+  <node id="1049023258" lat="49.0109299" lon="8.4233614"/>
+  <node id="1049023264" lat="49.0109332" lon="8.4234068"/>
+  <node id="1049023298" lat="49.0109050" lon="8.4234115"/>
+  <node id="1049056531" lat="49.0105701" lon="8.4224422"/>
+  <node id="1049056536" lat="49.0106806" lon="8.4225471"/>
+  <node id="1049056562" lat="49.0104369" lon="8.4223870"/>
+  <node id="1049056570" lat="49.0105056" lon="8.4224911"/>
+  <node id="1049056601" lat="49.0104443" lon="8.4228548"/>
+  <node id="1049056633" lat="49.0106752" lon="8.4227212"/>
+  <node id="1049056654" lat="49.0106322" lon="8.4224222"/>
+  <node id="1049056694" lat="49.0106368" lon="8.4225878"/>
+  <node id="1049056707" lat="49.0105640" lon="8.4223617"/>
+  <node id="1049056738" lat="49.0106830" lon="8.4228027"/>
+  <node id="1049056759" lat="49.0105282" lon="8.4227491"/>
+  <node id="1186047141" lat="49.0109333" lon="8.4237603"/>
+  <node id="1186047154" lat="49.0111163" lon="8.4237121"/>
+  <node id="1186047157" lat="49.0110661" lon="8.4237188"/>
+  <node id="1186047159" lat="49.0111242" lon="8.4237738"/>
+  <node id="1186047164" lat="49.0111339" lon="8.4237979"/>
+  <node id="1186047167" lat="49.0110591" lon="8.4234439"/>
+  <node id="1186047169" lat="49.0109625" lon="8.4234683"/>
+  <node id="1186047172" lat="49.0110295" lon="8.4236802"/>
+  <node id="1186047193" lat="49.0111726" lon="8.4237926"/>
+  <node id="1186047194" lat="49.0111752" lon="8.4238006"/>
+  <node id="1186047196" lat="49.0112113" lon="8.4238006"/>
+  <node id="1186047197" lat="49.0109659" lon="8.4234948"/>
+  <node id="1186047199" lat="49.0109122" lon="8.4236746"/>
+  <node id="1186047200" lat="49.0110186" lon="8.4236826"/>
+  <node id="1186047201" lat="49.0110355" lon="8.4237367"/>
+  <node id="1186047202" lat="49.0109263" lon="8.4236893"/>
+  <node id="1186047218" lat="49.0111928" lon="8.4236129"/>
+  <node id="1186047233" lat="49.0112377" lon="8.4236370"/>
+  <node id="1186047235" lat="49.0111084" lon="8.4235284"/>
+  <node id="1186047237" lat="49.0111383" lon="8.4235673"/>
+  <node id="1186047245" lat="49.0110565" lon="8.4236062"/>
+  <node id="1186047249" lat="49.0110406" lon="8.4236088"/>
+  <node id="1244845525" lat="49.0107296" lon="8.4241291"/>
+  <node id="1244845532" lat="49.0105376" lon="8.4235913"/>
+  <node id="1244845576" lat="49.0102385" lon="8.4235582"/>
+  <node id="1244845655" lat="49.0104828" lon="8.4236833"/>
+  <node id="1244845726" lat="49.0106771" lon="8.4235653"/>
+  <node id="1244845751" lat="49.0108638" lon="8.4243575"/>
+  <node id="1244845794" lat="49.0108108" lon="8.4237183"/>
+  <node id="1244845835" lat="49.0107085" lon="8.4239018"/>
+  <node id="1244845841" lat="49.0105225" lon="8.4234283"/>
+  <node id="1244845846" lat="49.0104679" lon="8.4235121"/>
+  <node id="1244845855" lat="49.0108064" lon="8.4236804"/>
+  <node id="1244845893" lat="49.0107179" lon="8.4238977"/>
+  <node id="1244845930" lat="49.0108504" lon="8.4241180"/>
+  <node id="1244845970" lat="49.0102497" lon="8.4237283"/>
+  <node id="1244846029" lat="49.0108257" lon="8.4238737"/>
+  <node id="1244846078" lat="49.0106887" lon="8.4237099"/>
+  <node id="1244846115" lat="49.0107030" lon="8.4237423"/>
+  <node id="1244846160" lat="49.0107455" lon="8.4243633"/>
+  <node id="1244846182" lat="49.0107790" lon="8.4234073"/>
+  <node id="1244846257" lat="49.0107489" lon="8.4233767"/>
+  <node id="1252730964" lat="49.0104502" lon="8.4244065"/>
+  <node id="1252730967" lat="49.0105785" lon="8.4241293"/>
+  <node id="1252731016" lat="49.0105602" lon="8.4241303"/>
+  <node id="1252731024" lat="49.0107044" lon="8.4240356"/>
+  <node id="1252731046" lat="49.0105793" lon="8.4244038"/>
+  <node id="1252731048" lat="49.0105764" lon="8.4240442"/>
+  <node id="1252731053" lat="49.0104321" lon="8.4241367"/>
+  <node id="1252731056" lat="49.0107055" lon="8.4241229"/>
+  <node id="1255392432" lat="49.0103637" lon="8.4232648"/>
+  <node id="1255392441" lat="49.0108538" lon="8.4223863"/>
+  <node id="1255392443" lat="49.0108852" lon="8.4231516"/>
+  <node id="1255392448" lat="49.0105630" lon="8.4232208"/>
+  <node id="1255392451" lat="49.0109365" lon="8.4229366"/>
+  <node id="1255392454" lat="49.0107096" lon="8.4225202"/>
+  <node id="1255392458" lat="49.0107330" lon="8.4228742"/>
+  <node id="1255392459" lat="49.0103622" lon="8.4228152"/>
+  <node id="1255392476" lat="49.0110249" lon="8.4230663"/>
+  <node id="1255392478" lat="49.0102690" lon="8.4231159"/>
+  <node id="1255392480" lat="49.0105591" lon="8.4230653"/>
+  <node id="1255392488" lat="49.0105751" lon="8.4228979"/>
+  <node id="1255392489" lat="49.0109595" lon="8.4229830"/>
+  <node id="1255392493" lat="49.0103327" lon="8.4230044"/>
+  <node id="1255392497" lat="49.0108660" lon="8.4227921"/>
+  <node id="1255392503" lat="49.0101901" lon="8.4227418"/>
+  <node id="1255392504" lat="49.0106464" lon="8.4232029"/>
+  <node id="1255392506" lat="49.0107263" lon="8.4227675"/>
+  <node id="1255392518" lat="49.0103849" lon="8.4230630"/>
+  <node id="1255392522" lat="49.0102666" lon="8.4230894"/>
+  <node id="1255392524" lat="49.0108715" lon="8.4230033"/>
+  <node id="1255392526" lat="49.0103175" lon="8.4228245"/>
+  <node id="1255392527" lat="49.0105488" lon="8.4230675"/>
+  <node id="1255392528" lat="49.0106871" lon="8.4224636"/>
+  <node id="1255392531" lat="49.0107958" lon="8.4228786"/>
+  <node id="1255392534" lat="49.0108449" lon="8.4227358"/>
+  <node id="1255392536" lat="49.0103482" lon="8.4230969"/>
+  <node id="1255392542" lat="49.0102052" lon="8.4227387"/>
+  <node id="1255392544" lat="49.0106322" lon="8.4230496"/>
+  <node id="1255392548" lat="49.0110380" lon="8.4229981"/>
+  <node id="1255392552" lat="49.0109297" lon="8.4225839"/>
+  <node id="1255392558" lat="49.0109254" lon="8.4229069"/>
+  <node id="1255392563" lat="49.0103361" lon="8.4230311"/>
+  <node id="1255392564" lat="49.0107867" lon="8.4230032"/>
+  <node id="1255392570" lat="49.0107487" lon="8.4224064"/>
+  <node id="1255392574" lat="49.0108533" lon="8.4227285"/>
+  <node id="1255392580" lat="49.0104279" lon="8.4230537"/>
+  <node id="1255392583" lat="49.0109655" lon="8.4229777"/>
+  <node id="1255392585" lat="49.0103048" lon="8.4230812"/>
+  <node id="1255392589" lat="49.0103190" lon="8.4228707"/>
+  <node id="1255392591" lat="49.0109962" lon="8.4227607"/>
+  <node id="1255392594" lat="49.0103653" lon="8.4230245"/>
+  <node id="1255392597" lat="49.0104844" lon="8.4232377"/>
+  <node id="1255392600" lat="49.0103872" lon="8.4230885"/>
+  <node id="1255392603" lat="49.0104289" lon="8.4226926"/>
+  <node id="1255392608" lat="49.0107508" lon="8.4230110"/>
+  <node id="1255392611" lat="49.0102455" lon="8.4232901"/>
+  <node id="1255392616" lat="49.0109328" lon="8.4229901"/>
+  <node id="1255392619" lat="49.0102919" lon="8.4227208"/>
+  <node id="1255392621" lat="49.0109356" lon="8.4228980"/>
+  <node id="1255392625" lat="49.0105278" lon="8.4228338"/>
+  <node id="1255392628" lat="49.0102820" lon="8.4228796"/>
+  <node id="1255392629" lat="49.0107851" lon="8.4229851"/>
+  <node id="1255392633" lat="49.0108977" lon="8.4228467"/>
+  <node id="1255392640" lat="49.0104384" lon="8.4227995"/>
+  <node id="1255392641" lat="49.0108312" lon="8.4226700"/>
+  <node id="1255392645" lat="49.0110491" lon="8.4229668"/>
+  <node id="1255392652" lat="49.0108118" lon="8.4222813"/>
+  <node id="1255392656" lat="49.0107762" lon="8.4225491"/>
+  <node id="1255392660" lat="49.0109117" lon="8.4228345"/>
+  <node id="1255392666" lat="49.0106167" lon="8.4228977"/>
+  <node id="1255392668" lat="49.0103746" lon="8.4230155"/>
+  <node id="1255392669" lat="49.0108269" lon="8.4229761"/>
+  <node id="1255392672" lat="49.0104702" lon="8.4230844"/>
+  <node id="1255392683" lat="49.0104302" lon="8.4230786"/>
+  <node id="1255392684" lat="49.0101939" lon="8.4227848"/>
+  <node id="1255392686" lat="49.0103071" lon="8.4231057"/>
+  <node id="1255392690" lat="49.0109345" lon="8.4230085"/>
+  <node id="1255392697" lat="49.0109467" lon="8.4229276"/>
+  <node id="1255392702" lat="49.0105372" lon="8.4229085"/>
+  <node id="1255392705" lat="49.0102957" lon="8.4230133"/>
+  <node id="1255392707" lat="49.0107662" lon="8.4231772"/>
+  <node id="1255392709" lat="49.0108744" lon="8.4227848"/>
+  <node id="1255392716" lat="49.0102302" lon="8.4231243"/>
+  <node id="1255392720" lat="49.0110121" lon="8.4231202"/>
+  <node id="1255392725" lat="49.0107293" lon="8.4223578"/>
+  <node id="1255392726" lat="49.0110629" lon="8.4229380"/>
+  <node id="1255392733" lat="49.0106633" lon="8.4226540"/>
+  <node id="1255392735" lat="49.0109608" lon="8.4230093"/>
+  <node id="1255392745" lat="49.0101996" lon="8.4228488"/>
+  <node id="1255392746" lat="49.0108284" lon="8.4229914"/>
+  <node id="1255392750" lat="49.0107796" lon="8.4227137"/>
+  <node id="1277646921" lat="49.0106658" lon="8.4235671"/>
+  <node id="1277646924" lat="49.0110577" lon="8.4239609"/>
+  <node id="1277646946" lat="49.0106503" lon="8.4234007"/>
+  <node id="1277646975" lat="49.0109778" lon="8.4242086"/>
+  <node id="1277647001" lat="49.0110799" lon="8.4241851"/>
+  <node id="1277647030" lat="49.0109556" lon="8.4239845"/>
+  <node id="1329767644" lat="49.0105876" lon="8.4235805"/>
+  <node id="1329767653" lat="49.0105935" lon="8.4236440"/>
+  <node id="1329767656" lat="49.0106377" lon="8.4235732"/>
+  <node id="1329767665" lat="49.0106433" lon="8.4236332"/>
+  <node id="1597623691" lat="49.0114942" lon="8.4244116"/>
+  <node id="1597623692" lat="49.0115379" lon="8.4243706"/>
+  <node id="1597623693" lat="49.0115480" lon="8.4243956"/>
+  <node id="1597623694" lat="49.0116047" lon="8.4243423"/>
+  <node id="3080328236" lat="49.0102852" lon="8.4226453"/>
+  <node id="3080328241" lat="49.0103863" lon="8.4223699"/>
+  <node id="3080328242" lat="49.0104085" lon="8.4226199"/>
+  <node id="3080328243" lat="49.0104125" lon="8.4226655"/>
+  <node id="3080328244" lat="49.0104263" lon="8.4226627"/>
+  <node id="3080328246" lat="49.0104345" lon="8.4223599"/>
+  <node id="3080328247" lat="49.0104607" lon="8.4226555"/>
+  <node id="3080328248" lat="49.0104689" lon="8.4230703"/>
+  <node id="3080328250" lat="49.0105815" lon="8.4229692"/>
+  <node id="3080328251" lat="49.0106205" lon="8.4229641"/>
+  <node id="3080328252" lat="49.0106310" lon="8.4230367"/>
+  <node id="3080328254" lat="49.0107334" lon="8.4228879"/>
+  <node id="3080328255" lat="49.0108680" lon="8.4223731"/>
+  <node id="3080328256" lat="49.0108695" lon="8.4229826"/>
+  <node id="3080328257" lat="49.0108712" lon="8.4224374"/>
+  <node id="3080328258" lat="49.0108876" lon="8.4224222"/>
+  <node id="3559037173" lat="49.0112869" lon="8.4238455"/>
+  <node id="3559037174" lat="49.0113015" lon="8.4238816"/>
+  <node id="3559037175" lat="49.0113405" lon="8.4240074"/>
+  <node id="3559037176" lat="49.0113503" lon="8.4236813">
+    <tag k="entrance" v="yes"/>
+    <tag k="level" v="0"/>
+  </node>
+  <node id="3559037177" lat="49.0113940" lon="8.4237948"/>
+  <node id="3559037178" lat="49.0113993" lon="8.4241765"/>
+  <node id="3559037179" lat="49.0114524" lon="8.4241721"/>
+  <node id="3686190522" lat="49.0109868" lon="8.4230438"/>
+  <node id="3686190523" lat="49.0110232" lon="8.4230939"/>
+  <node id="3686190524" lat="49.0110299" lon="8.4230315"/>
+  <way id="90426027">
+    <nd ref="1049023258"/>
+    <nd ref="1049023264"/>
+    <nd ref="1049023298"/>
+    <nd ref="1049023220"/>
+    <nd ref="1049023258"/>
+    <tag k="building" v="yes"/>
+    <tag k="shop" v="kiosk"/>
+    <tag k="source:geometry" v="Maps4BW, LGL, www.lgl-bw.de"/>
+    <tag k="wheelchair" v="yes"/>
+  </way>
+  <way id="90426029">
+    <nd ref="1049023164"/>
+    <nd ref="3559037176"/>
+    <nd ref="3559037177"/>
+    <nd ref="1049023252"/>
+    <nd ref="1049023255"/>
+    <nd ref="3559037174"/>
+    <nd ref="3559037173"/>
+    <nd ref="1049023215"/>
+    <nd ref="1049023243"/>
+    <nd ref="1049023157"/>
+    <nd ref="1049023164"/>
+    <tag k="addr:city" v="Karlsruhe"/>
+    <tag k="addr:country" v="DE"/>
+    <tag k="addr:housenumber" v="2"/>
+    <tag k="addr:postcode" v="76131"/>
+    <tag k="addr:street" v="Haid-und-Neu-Straße"/>
+    <tag k="building" v="yes"/>
+    <tag k="source:geometry" v="Maps4BW, LGL, www.lgl-bw.de"/>
+  </way>
+  <way id="90426034">
+    <nd ref="3559037179"/>
+    <nd ref="1049023199"/>
+    <nd ref="3559037175"/>
+    <nd ref="1049023255"/>
+    <nd ref="1049023252"/>
+    <nd ref="1049023178"/>
+    <nd ref="3559037179"/>
+    <tag k="addr:city" v="Karlsruhe"/>
+    <tag k="addr:country" v="DE"/>
+    <tag k="addr:housenumber" v="4"/>
+    <tag k="addr:postcode" v="76131"/>
+    <tag k="addr:street" v="Haid-und-Neu-Straße"/>
+    <tag k="building" v="yes"/>
+    <tag k="source:geometry" v="Maps4BW, LGL, www.lgl-bw.de"/>
+  </way>
+  <way id="90431752">
+    <nd ref="1049056738"/>
+    <nd ref="1255392625"/>
+    <nd ref="1049056601"/>
+    <nd ref="1255392640"/>
+    <nd ref="1255392603"/>
+    <nd ref="3080328244"/>
+    <nd ref="3080328247"/>
+    <nd ref="1049056562"/>
+    <nd ref="1049056707"/>
+    <nd ref="1049056531"/>
+    <nd ref="1049056654"/>
+    <nd ref="1049056536"/>
+    <nd ref="1049056694"/>
+    <nd ref="1049056570"/>
+    <nd ref="1049056759"/>
+    <nd ref="1049056633"/>
+    <nd ref="1049056738"/>
+    <tag k="building" v="yes"/>
+    <tag k="name" v="Weinhaus Dörflinger"/>
+    <tag k="shop" v="beverages"/>
+  </way>
+  <way id="102693139">
+    <nd ref="1049023199"/>
+    <nd ref="3559037178"/>
+    <nd ref="1597623691"/>
+    <nd ref="1597623692"/>
+    <nd ref="1597623693"/>
+    <nd ref="1597623694"/>
+    <nd ref="1049023178"/>
+    <nd ref="3559037179"/>
+    <nd ref="1049023199"/>
+    <tag k="addr:city" v="Karlsruhe"/>
+    <tag k="addr:country" v="DE"/>
+    <tag k="addr:housenumber" v="6"/>
+    <tag k="addr:postcode" v="76131"/>
+    <tag k="addr:street" v="Haid-und-Neu-Straße"/>
+    <tag k="building" v="yes"/>
+    <tag k="source:geometry" v="Maps4BW, LGL, www.lgl-bw.de"/>
+  </way>
+  <way id="102693141">
+    <nd ref="1186047202"/>
+    <nd ref="1186047141"/>
+    <nd ref="1186047201"/>
+    <nd ref="1186047172"/>
+    <nd ref="1186047200"/>
+    <nd ref="1186047249"/>
+    <nd ref="1186047245"/>
+    <nd ref="1186047157"/>
+    <nd ref="1186047154"/>
+    <nd ref="1186047159"/>
+    <nd ref="1186047164"/>
+    <nd ref="1186047193"/>
+    <nd ref="1186047194"/>
+    <nd ref="1186047196"/>
+    <nd ref="1049023243"/>
+    <nd ref="1049023157"/>
+    <nd ref="1186047233"/>
+    <nd ref="1186047218"/>
+    <nd ref="1186047237"/>
+    <nd ref="1186047235"/>
+    <nd ref="1186047167"/>
+    <nd ref="1186047169"/>
+    <nd ref="1186047197"/>
+    <nd ref="1186047199"/>
+    <nd ref="1186047202"/>
+    <tag k="building" v="yes"/>
+  </way>
+  <way id="108518437">
+    <nd ref="1244846029"/>
+    <nd ref="1244845930"/>
+    <nd ref="1244845525"/>
+    <nd ref="1244845835"/>
+    <nd ref="1244845893"/>
+    <nd ref="1244846029"/>
+    <tag k="addr:city" v="Karlsruhe"/>
+    <tag k="addr:country" v="DE"/>
+    <tag k="addr:housenumber" v="6"/>
+    <tag k="addr:postcode" v="76131"/>
+    <tag k="addr:street" v="Rintheimer Straße"/>
+    <tag k="building" v="yes"/>
+  </way>
+  <way id="108518447">
+    <nd ref="1277646946"/>
+    <nd ref="1277646921"/>
+    <nd ref="1244845726"/>
+    <nd ref="1244846078"/>
+    <nd ref="1244845855"/>
+    <nd ref="1244846182"/>
+    <nd ref="1244846257"/>
+    <nd ref="1277646946"/>
+    <tag k="addr:city" v="Karlsruhe"/>
+    <tag k="addr:country" v="DE"/>
+    <tag k="addr:housenumber" v="2"/>
+    <tag k="addr:postcode" v="76131"/>
+    <tag k="addr:street" v="Rintheimer Straße"/>
+    <tag k="building" v="yes"/>
+  </way>
+  <way id="108518455">
+    <nd ref="1244846029"/>
+    <nd ref="1244845893"/>
+    <nd ref="1244846115"/>
+    <nd ref="1244845794"/>
+    <nd ref="1244846029"/>
+    <tag k="addr:city" v="Karlsruhe"/>
+    <tag k="addr:country" v="DE"/>
+    <tag k="addr:housenumber" v="2a"/>
+    <tag k="addr:postcode" v="76131"/>
+    <tag k="addr:street" v="Rintheimer Straße"/>
+    <tag k="building" v="yes"/>
+  </way>
+  <way id="108518460">
+    <nd ref="1244845846"/>
+    <nd ref="1244845655"/>
+    <nd ref="1244845970"/>
+    <nd ref="1244845576"/>
+    <nd ref="1244845846"/>
+    <tag k="addr:city" v="Karlsruhe"/>
+    <tag k="addr:country" v="DE"/>
+    <tag k="addr:housenumber" v="3"/>
+    <tag k="addr:postcode" v="76131"/>
+    <tag k="addr:street" v="Georg-Friedrich-Straße"/>
+    <tag k="building" v="yes"/>
+  </way>
+  <way id="108518470">
+    <nd ref="1244845930"/>
+    <nd ref="1244845751"/>
+    <nd ref="1244846160"/>
+    <nd ref="1244845525"/>
+    <nd ref="1244845930"/>
+    <tag k="addr:city" v="Karlsruhe"/>
+    <tag k="addr:country" v="DE"/>
+    <tag k="addr:housenumber" v="8"/>
+    <tag k="addr:postcode" v="76131"/>
+    <tag k="addr:street" v="Rintheimer Straße"/>
+    <tag k="building" v="yes"/>
+  </way>
+  <way id="109435143">
+    <nd ref="1252731016"/>
+    <nd ref="1252731053"/>
+    <nd ref="1252730964"/>
+    <nd ref="1252731046"/>
+    <nd ref="1252731016"/>
+    <tag k="addr:city" v="Karlsruhe"/>
+    <tag k="addr:country" v="DE"/>
+    <tag k="addr:housenumber" v="8a"/>
+    <tag k="addr:postcode" v="76131"/>
+    <tag k="addr:street" v="Rintheimer Straße"/>
+    <tag k="building" v="yes"/>
+  </way>
+  <way id="109435145">
+    <nd ref="1252731024"/>
+    <nd ref="1252731056"/>
+    <nd ref="1252730967"/>
+    <nd ref="1252731048"/>
+    <nd ref="1252731024"/>
+    <tag k="building" v="yes"/>
+  </way>
+  <way id="109733604">
+    <nd ref="1255392672"/>
+    <nd ref="3080328248"/>
+    <nd ref="1255392683"/>
+    <nd ref="1255392580"/>
+    <nd ref="1255392518"/>
+    <nd ref="1255392600"/>
+    <nd ref="1255392536"/>
+    <nd ref="1255392432"/>
+    <nd ref="1255392597"/>
+    <nd ref="1255392672"/>
+    <tag k="addr:city" v="Karlsruhe"/>
+    <tag k="addr:country" v="DE"/>
+    <tag k="addr:housenumber" v="12"/>
+    <tag k="addr:postcode" v="76131"/>
+    <tag k="addr:street" v="Georg-Friedrich-Straße"/>
+    <tag k="building" v="yes"/>
+  </way>
+  <way id="109733605">
+    <nd ref="1049056694"/>
+    <nd ref="1255392733"/>
+    <nd ref="1255392656"/>
+    <nd ref="1255392641"/>
+    <nd ref="1255392552"/>
+    <nd ref="3080328257"/>
+    <nd ref="3080328258"/>
+    <nd ref="3080328255"/>
+    <nd ref="1255392441"/>
+    <nd ref="1255392454"/>
+    <nd ref="1049056536"/>
+    <nd ref="1049056694"/>
+    <tag k="addr:city" v="Karlsruhe"/>
+    <tag k="addr:country" v="DE"/>
+    <tag k="addr:housenumber" v="26"/>
+    <tag k="addr:postcode" v="76131"/>
+    <tag k="addr:street" v="Karl-Wilhelm-Straße"/>
+    <tag k="building" v="yes"/>
+  </way>
+  <way id="109733606">
+    <nd ref="1255392506"/>
+    <nd ref="1255392750"/>
+    <nd ref="1255392531"/>
+    <nd ref="3080328254"/>
+    <nd ref="1255392458"/>
+    <nd ref="1255392666"/>
+    <nd ref="3080328251"/>
+    <nd ref="3080328250"/>
+    <nd ref="1255392488"/>
+    <nd ref="1255392702"/>
+    <nd ref="1255392625"/>
+    <nd ref="1049056738"/>
+    <nd ref="1255392506"/>
+    <tag k="building" v="yes"/>
+  </way>
+  <way id="109733608">
+    <nd ref="1255392603"/>
+    <nd ref="1255392619"/>
+    <nd ref="1255392542"/>
+    <nd ref="1255392503"/>
+    <nd ref="1255392684"/>
+    <nd ref="1255392745"/>
+    <nd ref="1255392526"/>
+    <nd ref="1255392459"/>
+    <nd ref="1255392640"/>
+    <nd ref="1255392603"/>
+    <tag k="building" v="yes"/>
+  </way>
+  <way id="109733618">
+    <nd ref="1255392527"/>
+    <nd ref="1255392672"/>
+    <nd ref="1255392597"/>
+    <nd ref="1255392448"/>
+    <nd ref="1255392527"/>
+    <tag k="addr:city" v="Karlsruhe"/>
+    <tag k="addr:country" v="DE"/>
+    <tag k="addr:housenumber" v="10"/>
+    <tag k="addr:postcode" v="76131"/>
+    <tag k="addr:street" v="Georg-Friedrich-Straße"/>
+    <tag k="building" v="yes"/>
+  </way>
+  <way id="109733619">
+    <nd ref="1255392725"/>
+    <nd ref="1255392570"/>
+    <nd ref="1255392528"/>
+    <nd ref="1255392454"/>
+    <nd ref="1255392441"/>
+    <nd ref="1255392652"/>
+    <nd ref="1255392725"/>
+    <tag k="addr:city" v="Karlsruhe"/>
+    <tag k="addr:country" v="DE"/>
+    <tag k="addr:housenumber" v="24"/>
+    <tag k="addr:postcode" v="76131"/>
+    <tag k="addr:street" v="Karl-Wilhelm-Straße"/>
+    <tag k="building" v="yes"/>
+  </way>
+  <way id="109733628">
+    <nd ref="1255392544"/>
+    <nd ref="1255392480"/>
+    <nd ref="1255392527"/>
+    <nd ref="1255392448"/>
+    <nd ref="1255392504"/>
+    <nd ref="1255392544"/>
+    <tag k="addr:city" v="Karlsruhe"/>
+    <tag k="addr:country" v="DE"/>
+    <tag k="addr:housenumber" v="8"/>
+    <tag k="addr:postcode" v="76131"/>
+    <tag k="addr:street" v="Georg-Friedrich-Straße"/>
+    <tag k="building" v="yes"/>
+  </way>
+  <way id="109733630">
+    <nd ref="1255392735"/>
+    <nd ref="1255392690"/>
+    <nd ref="1255392616"/>
+    <nd ref="1255392524"/>
+    <nd ref="1255392443"/>
+    <nd ref="1255392720"/>
+    <nd ref="3686190523"/>
+    <nd ref="1255392476"/>
+    <nd ref="3686190522"/>
+    <nd ref="1255392735"/>
+    <tag k="addr:city" v="Karlsruhe"/>
+    <tag k="addr:country" v="DE"/>
+    <tag k="addr:housenumber" v="2"/>
+    <tag k="addr:postcode" v="76131"/>
+    <tag k="addr:street" v="Georg-Friedrich-Straße"/>
+    <tag k="building" v="yes"/>
+    <tag k="source:geometry" v="Maps4BW, LGL, www.lgl-bw.de"/>
+  </way>
+  <way id="109733634">
+    <nd ref="1255392524"/>
+    <nd ref="3080328256"/>
+    <nd ref="1255392746"/>
+    <nd ref="1255392669"/>
+    <nd ref="1255392629"/>
+    <nd ref="1255392564"/>
+    <nd ref="1255392608"/>
+    <nd ref="1255392707"/>
+    <nd ref="1255392443"/>
+    <nd ref="1255392524"/>
+    <tag k="addr:city" v="Karlsruhe"/>
+    <tag k="addr:country" v="DE"/>
+    <tag k="addr:housenumber" v="4"/>
+    <tag k="addr:postcode" v="76131"/>
+    <tag k="addr:street" v="Georg-Friedrich-Straße"/>
+    <tag k="building" v="yes"/>
+  </way>
+  <way id="109733640">
+    <nd ref="1255392459"/>
+    <nd ref="1255392668"/>
+    <nd ref="1255392594"/>
+    <nd ref="1255392563"/>
+    <nd ref="1255392493"/>
+    <nd ref="1255392705"/>
+    <nd ref="1255392628"/>
+    <nd ref="1255392589"/>
+    <nd ref="1255392526"/>
+    <nd ref="1255392459"/>
+    <tag k="building" v="yes"/>
+  </way>
+  <way id="109733642">
+    <nd ref="1255392726"/>
+    <nd ref="1255392645"/>
+    <nd ref="1255392548"/>
+    <nd ref="3686190524"/>
+    <nd ref="1255392476"/>
+    <nd ref="3686190522"/>
+    <nd ref="1255392735"/>
+    <nd ref="1255392489"/>
+    <nd ref="1255392583"/>
+    <nd ref="1255392697"/>
+    <nd ref="1255392451"/>
+    <nd ref="1255392558"/>
+    <nd ref="1255392621"/>
+    <nd ref="1255392660"/>
+    <nd ref="1255392591"/>
+    <nd ref="1255392726"/>
+    <tag k="addr:city" v="Karlsruhe"/>
+    <tag k="addr:country" v="DE"/>
+    <tag k="addr:housenumber" v="30"/>
+    <tag k="addr:postcode" v="76131"/>
+    <tag k="addr:street" v="Karl-Wilhelm-Straße"/>
+    <tag k="building" v="yes"/>
+    <tag k="source:geometry" v="Maps4BW, LGL, www.lgl-bw.de"/>
+  </way>
+  <way id="109733644">
+    <nd ref="1255392608"/>
+    <nd ref="3080328252"/>
+    <nd ref="1255392544"/>
+    <nd ref="1255392504"/>
+    <nd ref="1255392707"/>
+    <nd ref="1255392608"/>
+    <tag k="addr:city" v="Karlsruhe"/>
+    <tag k="addr:country" v="DE"/>
+    <tag k="addr:housenumber" v="6"/>
+    <tag k="addr:postcode" v="76131"/>
+    <tag k="addr:street" v="Georg-Friedrich-Straße"/>
+    <tag k="building" v="yes"/>
+  </way>
+  <way id="109733645">
+    <nd ref="1255392641"/>
+    <nd ref="1255392574"/>
+    <nd ref="1255392534"/>
+    <nd ref="1255392497"/>
+    <nd ref="1255392709"/>
+    <nd ref="1255392633"/>
+    <nd ref="1255392660"/>
+    <nd ref="1255392591"/>
+    <nd ref="1255392552"/>
+    <nd ref="1255392641"/>
+    <tag k="addr:city" v="Karlsruhe"/>
+    <tag k="addr:country" v="DE"/>
+    <tag k="addr:housenumber" v="28"/>
+    <tag k="addr:postcode" v="76131"/>
+    <tag k="addr:street" v="Karl-Wilhelm-Straße"/>
+    <tag k="building" v="yes"/>
+    <tag k="source:geometry" v="Maps4BW, LGL, www.lgl-bw.de"/>
+  </way>
+  <way id="109733650">
+    <nd ref="1255392536"/>
+    <nd ref="1255392686"/>
+    <nd ref="1255392585"/>
+    <nd ref="1255392522"/>
+    <nd ref="1255392478"/>
+    <nd ref="1255392716"/>
+    <nd ref="1255392611"/>
+    <nd ref="1255392432"/>
+    <nd ref="1255392536"/>
+    <tag k="addr:city" v="Karlsruhe"/>
+    <tag k="addr:country" v="DE"/>
+    <tag k="addr:housenumber" v="14"/>
+    <tag k="addr:postcode" v="76131"/>
+    <tag k="addr:street" v="Georg-Friedrich-Straße"/>
+    <tag k="building" v="yes"/>
+  </way>
+  <way id="112402475">
+    <nd ref="1277646924"/>
+    <nd ref="1277647001"/>
+    <nd ref="1277646975"/>
+    <nd ref="1277647030"/>
+    <nd ref="1277646924"/>
+    <tag k="addr:city" v="Karlsruhe"/>
+    <tag k="addr:country" v="DE"/>
+    <tag k="addr:housenumber" v="5"/>
+    <tag k="addr:postcode" v="76131"/>
+    <tag k="addr:street" v="Rintheimer Straße"/>
+    <tag k="building" v="yes"/>
+  </way>
+  <way id="112402477">
+    <nd ref="1277646921"/>
+    <nd ref="1329767656"/>
+    <nd ref="1329767665"/>
+    <nd ref="1329767653"/>
+    <nd ref="1329767644"/>
+    <nd ref="1244845532"/>
+    <nd ref="1244845841"/>
+    <nd ref="1277646946"/>
+    <nd ref="1277646921"/>
+    <tag k="addr:city" v="Karlsruhe"/>
+    <tag k="addr:country" v="DE"/>
+    <tag k="addr:housenumber" v="1"/>
+    <tag k="addr:postcode" v="76131"/>
+    <tag k="addr:street" v="Georg-Friedrich-Straße"/>
+    <tag k="building" v="yes"/>
+  </way>
+  <way id="112402478">
+    <nd ref="1186047201"/>
+    <nd ref="1277646924"/>
+    <nd ref="1277647030"/>
+    <nd ref="1186047141"/>
+    <nd ref="1186047201"/>
+    <tag k="addr:city" v="Karlsruhe"/>
+    <tag k="addr:country" v="DE"/>
+    <tag k="addr:housenumber" v="3"/>
+    <tag k="addr:postcode" v="76131"/>
+    <tag k="addr:street" v="Rintheimer Straße"/>
+    <tag k="building" v="yes"/>
+  </way>
+  <way id="303632978">
+    <nd ref="1255392603"/>
+    <nd ref="3080328244"/>
+    <nd ref="3080328243"/>
+    <nd ref="3080328242"/>
+    <nd ref="3080328236"/>
+    <nd ref="1255392619"/>
+    <nd ref="1255392603"/>
+    <tag k="building" v="yes"/>
+    <tag k="source" v="Maps4BW"/>
+  </way>
+  <way id="303632979">
+    <nd ref="3080328244"/>
+    <nd ref="3080328243"/>
+    <nd ref="3080328242"/>
+    <nd ref="3080328241"/>
+    <nd ref="3080328246"/>
+    <nd ref="1049056562"/>
+    <nd ref="3080328247"/>
+    <nd ref="3080328244"/>
+    <tag k="building" v="yes"/>
+    <tag k="source" v="Maps4BW"/>
+  </way>
+
+</osm>
