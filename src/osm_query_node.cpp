@@ -1511,6 +1511,47 @@ void publish_buildinglist(ros::Publisher &markerArrayPublisher_buildings)
     building.color.g = 0.0;
     building.color.b = 0.0;
 
+    for(std::set<shared_ptr<Osmium::OSM::Way const> >::iterator way_itr = oh.m_ways.begin(); way_itr != oh.m_ways.end(); way_itr++)
+    {
+        // Get way-node list
+        Osmium::OSM::WayNodeList waylist = (*way_itr)->nodes();
+
+        // Use only ways with Key:building
+        const char* building_tag = (*way_itr)->tags().get_value_by_key("building");
+
+        if(!building_tag)
+            continue;
+
+        for(Osmium::OSM::WayNodeList::iterator node_list_itr = waylist.begin(); node_list_itr != waylist.end() - 1; node_list_itr++ )
+        {
+            // Get way-node coordinates
+            coords_A = latlon2xy_helper(node_list_itr->position().lat(),node_list_itr->position().lon());
+            coords_B = latlon2xy_helper((node_list_itr + 1)->position().lat(),(node_list_itr + 1)->position().lon());
+
+            A.x = coords_A.x;
+            A.y = coords_A.y;
+            A.z = 0.0;
+
+            h_A.x = A.x;
+            h_A.y = A.y;
+            h_A.z = A.z + height;
+
+            B.x = coords_B.x;
+            B.y = coords_B.y;
+            B.z = 0.0;
+
+            h_B.x = B.x;
+            h_B.y = B.y;
+            h_B.z = B.z + height;
+
+            buildings.points.push_back(A);
+            buildings.points.push_back(h_A);
+            buildings.points.push_back(B);
+            buildings.points.push_back(B);
+            buildings.points.push_back(h_A);
+            buildings.points.push_back(h_B);
+        }
+    }
 }
 
 
@@ -1880,6 +1921,7 @@ int main(int argc, char* argv[])
     //    Xy D = snapxy2way_outbounds_helper(A, B, C);
 
     load_waylist();
+    load_buildinglist();
 
     markerArrayPublisher_ways.publish(waylistArray);
     markerArrayPublisher_ways.publish(waylistArray_oneway);
@@ -1897,6 +1939,7 @@ int main(int argc, char* argv[])
         markerArrayPublisher_ways.publish(waylistArray_oneway);
         markerArrayPublisher_ways.publish(nodelistArray);
         markerArrayPublisher_ways.publish(directionArray);
+        markerPublisher_buildings.publish(buildings);
         sleepTime.sleep();
     }
 

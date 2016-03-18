@@ -1,0 +1,7 @@
+<launch>
+   
+  	<!-- Local map transform-->
+	<node pkg="tf" type="static_transform_publisher" name="local_map_tf" 
+			args="458635.6 5429277.8 0 1 0 0 map local_map 200" />
+
+</launch>
