@@ -1,0 +1,2457 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="Overpass API">
+<note>The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.</note>
+<meta osm_base="2016-03-15T17:53:02Z"/>
+
+  <node id="14890770" lat="49.0115623" lon="8.4231704" version="7" timestamp="2012-07-19T10:22:56Z" changeset="12318312" uid="165061" user="mapper999"/>
+  <node id="14912566" lat="49.0102825" lon="8.4205200" version="4" timestamp="2012-07-17T13:35:19Z" changeset="12266659" uid="722137" user="OSMF Redaction Account"/>
+  <node id="14912567" lat="49.0103596" lon="8.4207196" version="3" timestamp="2011-01-04T10:57:01Z" changeset="6859226" uid="29717" user="eumiro"/>
+  <node id="14912568" lat="49.0113457" lon="8.4206445" version="5" timestamp="2012-07-17T13:35:28Z" changeset="12266659" uid="722137" user="OSMF Redaction Account"/>
+  <node id="14912569" lat="49.0113444" lon="8.4204152" version="5" timestamp="2012-07-17T13:35:28Z" changeset="12266659" uid="722137" user="OSMF Redaction Account"/>
+  <node id="14912570" lat="49.0113510" lon="8.4201122" version="4" timestamp="2011-03-04T17:05:51Z" changeset="7454993" uid="165061" user="mapper999"/>
+  <node id="14912571" lat="49.0113479" lon="8.4210090" version="2" timestamp="2009-06-19T13:59:47Z" changeset="1564619" uid="85761" user="klausis"/>
+  <node id="21498477" lat="49.0112414" lon="8.4294322" version="4" timestamp="2014-09-16T13:56:09Z" changeset="25479978" uid="35468" user="Blunauer"/>
+  <node id="21498478" lat="49.0098669" lon="8.4297362" version="8" timestamp="2015-07-18T14:05:31Z" changeset="32717894" uid="165061" user="mapper999"/>
+  <node id="21498489" lat="49.0098571" lon="8.4299085" version="9" timestamp="2015-07-18T14:05:32Z" changeset="32717894" uid="165061" user="mapper999"/>
+  <node id="21498576" lat="49.0091722" lon="8.4256659" version="5" timestamp="2012-07-17T13:35:07Z" changeset="12266648" uid="722137" user="OSMF Redaction Account"/>
+  <node id="21498577" lat="49.0092820" lon="8.4257417" version="2" timestamp="2009-06-19T13:55:13Z" changeset="1564619" uid="85761" user="klausis"/>
+  <node id="21498580" lat="49.0096457" lon="8.4258657" version="5" timestamp="2012-07-19T18:09:42Z" changeset="12341342" uid="42208" user="JanTH"/>
+  <node id="21498581" lat="49.0090621" lon="8.4262669" version="7" timestamp="2012-07-19T18:09:42Z" changeset="12341342" uid="42208" user="JanTH"/>
+  <node id="21498797" lat="49.0108087" lon="8.4218874" version="5" timestamp="2012-07-19T10:22:56Z" changeset="12318312" uid="165061" user="mapper999"/>
+  <node id="21498798" lat="49.0094870" lon="8.4222099" version="7" timestamp="2014-09-16T13:56:09Z" changeset="25479978" uid="35468" user="Blunauer"/>
+  <node id="21498799" lat="49.0093459" lon="8.4207643" version="8" timestamp="2015-09-03T17:37:00Z" changeset="33778563" uid="2600695" user="jlcod"/>
+  <node id="21498801" lat="49.0081643" lon="8.4220432" version="6" timestamp="2013-12-03T14:12:18Z" changeset="19252233" uid="165061" user="mapper999"/>
+  <node id="21498802" lat="49.0093482" lon="8.4202195" version="6" timestamp="2015-09-03T17:37:00Z" changeset="33778563" uid="2600695" user="jlcod"/>
+  <node id="21498803" lat="49.0100056" lon="8.4198115" version="5" timestamp="2012-07-19T10:22:56Z" changeset="12318312" uid="165061" user="mapper999"/>
+  <node id="21498804" lat="49.0096799" lon="8.4200997" version="6" timestamp="2015-08-07T21:28:55Z" changeset="33191050" uid="165061" user="mapper999"/>
+  <node id="21618142" lat="49.0084983" lon="8.4237920" version="8" timestamp="2015-05-30T16:29:14Z" changeset="31587838" uid="165061" user="mapper999"/>
+  <node id="21657019" lat="49.0125414" lon="8.4245808" version="9" timestamp="2015-04-10T11:48:19Z" changeset="30115933" uid="29717" user="eumiro"/>
+  <node id="21657023" lat="49.0126165" lon="8.4245518" version="10" timestamp="2015-04-10T11:48:19Z" changeset="30115933" uid="29717" user="eumiro"/>
+  <node id="25420935" lat="49.0114805" lon="8.4234597" version="10" timestamp="2012-07-19T10:22:56Z" changeset="12318312" uid="165061" user="mapper999"/>
+  <node id="25420940" lat="49.0113275" lon="8.4228154" version="7" timestamp="2012-07-19T10:22:57Z" changeset="12318312" uid="165061" user="mapper999">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="28144545" lat="49.0134041" lon="8.4245038" version="10" timestamp="2015-05-30T16:29:16Z" changeset="31587838" uid="165061" user="mapper999"/>
+  <node id="29009876" lat="49.0169757" lon="8.4382338" version="8" timestamp="2015-05-30T20:05:10Z" changeset="31590637" uid="165061" user="mapper999">
+    <tag k="traffic_sign:forward" v="DE:241-30"/>
+  </node>
+  <node id="31261889" lat="49.0118738" lon="8.4218440" version="6" timestamp="2015-06-11T20:44:40Z" changeset="31907021" uid="165061" user="mapper999"/>
+  <node id="31261890" lat="49.0122928" lon="8.4217994" version="5" timestamp="2012-07-17T13:35:36Z" changeset="12266659" uid="722137" user="OSMF Redaction Account"/>
+  <node id="31261891" lat="49.0123017" lon="8.4219686" version="6" timestamp="2012-07-17T13:35:36Z" changeset="12266659" uid="722137" user="OSMF Redaction Account"/>
+  <node id="31261892" lat="49.0118776" lon="8.4210376" version="4" timestamp="2012-07-17T13:35:33Z" changeset="12266659" uid="722137" user="OSMF Redaction Account"/>
+  <node id="276678907" lat="49.0092476" lon="8.4256968" version="4" timestamp="2011-05-11T15:20:19Z" changeset="8113290" uid="331334" user="Fry3k-KA"/>
+  <node id="281223243" lat="49.0111475" lon="8.4270457" version="5" timestamp="2014-09-16T13:56:09Z" changeset="25479978" uid="35468" user="Blunauer"/>
+  <node id="288005327" lat="49.0116615" lon="8.4226234" version="2" timestamp="2011-01-04T10:56:59Z" changeset="6859226" uid="29717" user="eumiro"/>
+  <node id="288005328" lat="49.0117286" lon="8.4219513" version="6" timestamp="2012-07-17T13:35:31Z" changeset="12266659" uid="722137" user="OSMF Redaction Account"/>
+  <node id="288005329" lat="49.0111517" lon="8.4212833" version="3" timestamp="2012-07-17T13:35:27Z" changeset="12266659" uid="722137" user="OSMF Redaction Account"/>
+  <node id="461678705" lat="49.0098543" lon="8.4190197" version="7" timestamp="2012-09-03T20:53:02Z" changeset="12973472" uid="165061" user="mapper999"/>
+  <node id="462271236" lat="49.0126285" lon="8.4243486" version="5" timestamp="2012-07-17T13:35:39Z" changeset="12266659" uid="722137" user="OSMF Redaction Account"/>
+  <node id="465206112" lat="49.0112816" lon="8.4228202" version="10" timestamp="2015-05-08T21:15:19Z" changeset="30920947" uid="165061" user="mapper999">
+    <tag k="bicycle" v="yes"/>
+    <tag k="button_operated" v="no"/>
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="highway" v="crossing"/>
+    <tag k="traffic_signals:arrow" v="yes"/>
+    <tag k="traffic_signals:sound" v="locate"/>
+    <tag k="traffic_signals:vibration" v="no"/>
+  </node>
+  <node id="480348632" lat="49.0120946" lon="8.4249651" version="10" timestamp="2015-05-30T16:29:18Z" changeset="31587838" uid="165061" user="mapper999"/>
+  <node id="521270113" lat="49.0123668" lon="8.4248531" version="7" timestamp="2012-06-20T22:16:51Z" changeset="11963770" uid="165061" user="mapper999">
+    <tag k="barrier" v="lift_gate"/>
+    <tag k="bicycle" v="yes"/>
+    <tag k="foot" v="yes"/>
+    <tag k="motorcar" v="yes"/>
+    <tag k="motorcycle" v="yes"/>
+  </node>
+  <node id="521270116" lat="49.0123027" lon="8.4247814" version="6" timestamp="2012-09-11T15:13:14Z" changeset="13070693" uid="165061" user="mapper999"/>
+  <node id="521270120" lat="49.0124338" lon="8.4248573" version="2" timestamp="2009-10-07T18:41:03Z" changeset="2774343" uid="29717" user="eumiro"/>
+  <node id="521270122" lat="49.0124370" lon="8.4250290" version="2" timestamp="2015-05-30T16:29:18Z" changeset="31587838" uid="165061" user="mapper999"/>
+  <node id="521270124" lat="49.0120418" lon="8.4250889" version="7" timestamp="2015-05-30T16:29:18Z" changeset="31587838" uid="165061" user="mapper999"/>
+  <node id="521270126" lat="49.0124650" lon="8.4251080" version="7" timestamp="2015-05-30T16:29:18Z" changeset="31587838" uid="165061" user="mapper999"/>
+  <node id="521270128" lat="49.0122253" lon="8.4251889" version="5" timestamp="2015-05-30T16:29:18Z" changeset="31587838" uid="165061" user="mapper999"/>
+  <node id="521270130" lat="49.0133093" lon="8.4247858" version="3" timestamp="2010-02-22T16:18:46Z" changeset="3944783" uid="7009" user="giggls"/>
+  <node id="521270138" lat="49.0133242" lon="8.4250344" version="5" timestamp="2015-12-19T12:49:27Z" changeset="36044466" uid="165061" user="mapper999"/>
+  <node id="521270142" lat="49.0127874" lon="8.4255588" version="8" timestamp="2012-07-17T13:35:41Z" changeset="12266659" uid="722137" user="OSMF Redaction Account"/>
+  <node id="521270146" lat="49.0133522" lon="8.4255002" version="7" timestamp="2015-12-19T12:49:28Z" changeset="36044466" uid="165061" user="mapper999"/>
+  <node id="521270148" lat="49.0133380" lon="8.4252632" version="5" timestamp="2015-12-19T12:49:28Z" changeset="36044466" uid="165061" user="mapper999"/>
+  <node id="521272740" lat="49.0129813" lon="8.4263900" version="4" timestamp="2010-02-22T16:18:48Z" changeset="3944783" uid="7009" user="giggls"/>
+  <node id="521272741" lat="49.0127741" lon="8.4266248" version="6" timestamp="2012-07-17T13:35:41Z" changeset="12266659" uid="722137" user="OSMF Redaction Account"/>
+  <node id="521272742" lat="49.0127412" lon="8.4266597" version="8" timestamp="2012-09-11T15:13:14Z" changeset="13070693" uid="165061" user="mapper999"/>
+  <node id="521428051" lat="49.0125651" lon="8.4248464" version="4" timestamp="2012-07-17T13:35:38Z" changeset="12266659" uid="722137" user="OSMF Redaction Account"/>
+  <node id="521428057" lat="49.0119725" lon="8.4254550" version="3" timestamp="2012-07-17T13:35:34Z" changeset="12266659" uid="722137" user="OSMF Redaction Account"/>
+  <node id="521431499" lat="49.0119679" lon="8.4251970" version="4" timestamp="2012-07-17T13:35:34Z" changeset="12266659" uid="722137" user="OSMF Redaction Account"/>
+  <node id="521431502" lat="49.0120577" lon="8.4254363" version="3" timestamp="2012-07-17T13:35:35Z" changeset="12266659" uid="722137" user="OSMF Redaction Account"/>
+  <node id="523630633" lat="49.0139375" lon="8.4300500" version="5" timestamp="2012-06-20T22:16:52Z" changeset="11963770" uid="165061" user="mapper999"/>
+  <node id="523630634" lat="49.0140465" lon="8.4304653" version="7" timestamp="2011-07-23T15:38:11Z" changeset="8807400" uid="212553" user="ARWIE"/>
+  <node id="523630638" lat="49.0142425" lon="8.4312195" version="6" timestamp="2012-08-03T14:20:29Z" changeset="12598813" uid="118352" user="kamarc"/>
+  <node id="523631335" lat="49.0099475" lon="8.4192892" version="8" timestamp="2015-11-27T17:25:24Z" changeset="35615352" uid="2600695" user="jlcod"/>
+  <node id="523631502" lat="49.0097994" lon="8.4186839" version="7" timestamp="2012-09-10T13:52:47Z" changeset="13057271" uid="165061" user="mapper999"/>
+  <node id="526930298" lat="49.0115090" lon="8.4234143" version="8" timestamp="2015-05-08T21:15:19Z" changeset="30920947" uid="165061" user="mapper999">
+    <tag k="bicycle" v="yes"/>
+    <tag k="button_operated" v="no"/>
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="highway" v="crossing"/>
+    <tag k="traffic_signals:arrow" v="no"/>
+    <tag k="traffic_signals:sound" v="no"/>
+  </node>
+  <node id="579630508" lat="49.0128577" lon="8.4259426" version="2" timestamp="2010-02-22T16:18:48Z" changeset="3944783" uid="7009" user="giggls"/>
+  <node id="650492476" lat="49.0129738" lon="8.4264545" version="1" timestamp="2010-02-22T16:18:43Z" changeset="3944783" uid="7009" user="giggls"/>
+  <node id="667388462" lat="49.0114765" lon="8.4210159" version="1" timestamp="2010-03-16T17:01:29Z" changeset="4144799" uid="7622" user="user_7622"/>
+  <node id="667388470" lat="49.0108061" lon="8.4210601" version="2" timestamp="2010-12-19T15:07:41Z" changeset="6705936" uid="29717" user="eumiro"/>
+  <node id="667388471" lat="49.0113056" lon="8.4223348" version="5" timestamp="2012-07-17T13:35:28Z" changeset="12266659" uid="722137" user="OSMF Redaction Account"/>
+  <node id="667388472" lat="49.0112369" lon="8.4221876" version="4" timestamp="2012-07-17T13:35:27Z" changeset="12266659" uid="722137" user="OSMF Redaction Account"/>
+  <node id="667388473" lat="49.0111420" lon="8.4219390" version="4" timestamp="2012-07-17T13:35:27Z" changeset="12266659" uid="722137" user="OSMF Redaction Account"/>
+  <node id="667388474" lat="49.0112733" lon="8.4214227" version="3" timestamp="2012-07-17T13:35:28Z" changeset="12266659" uid="722137" user="OSMF Redaction Account"/>
+  <node id="667388475" lat="49.0110579" lon="8.4217190" version="4" timestamp="2012-07-17T13:35:26Z" changeset="12266659" uid="722137" user="OSMF Redaction Account"/>
+  <node id="667388476" lat="49.0113707" lon="8.4224871" version="2" timestamp="2010-12-19T15:07:54Z" changeset="6705936" uid="29717" user="eumiro"/>
+  <node id="667388477" lat="49.0116545" lon="8.4218727" version="4" timestamp="2012-07-17T13:35:31Z" changeset="12266659" uid="722137" user="OSMF Redaction Account"/>
+  <node id="667388478" lat="49.0115713" lon="8.4217678" version="4" timestamp="2012-07-17T13:35:30Z" changeset="12266659" uid="722137" user="OSMF Redaction Account"/>
+  <node id="667388479" lat="49.0115179" lon="8.4217031" version="3" timestamp="2012-07-17T13:35:29Z" changeset="12266659" uid="722137" user="OSMF Redaction Account"/>
+  <node id="667388480" lat="49.0114120" lon="8.4215817" version="3" timestamp="2012-07-17T13:35:29Z" changeset="12266659" uid="722137" user="OSMF Redaction Account"/>
+  <node id="667388481" lat="49.0115335" lon="8.4225816" version="2" timestamp="2010-12-19T15:07:55Z" changeset="6705936" uid="29717" user="eumiro"/>
+  <node id="667388482" lat="49.0113904" lon="8.4225050" version="5" timestamp="2012-07-17T13:35:29Z" changeset="12266659" uid="722137" user="OSMF Redaction Account"/>
+  <node id="667389690" lat="49.0111684" lon="8.4213025" version="3" timestamp="2012-07-17T13:35:27Z" changeset="12266659" uid="722137" user="OSMF Redaction Account"/>
+  <node id="667389691" lat="49.0109691" lon="8.4214868" version="2" timestamp="2010-12-19T15:07:48Z" changeset="6705936" uid="29717" user="eumiro"/>
+  <node id="703726402" lat="49.0111887" lon="8.4229807" version="6" timestamp="2012-07-19T10:22:57Z" changeset="12318312" uid="165061" user="mapper999"/>
+  <node id="703726417" lat="49.0112510" lon="8.4229242" version="6" timestamp="2012-07-19T10:22:57Z" changeset="12318312" uid="165061" user="mapper999"/>
+  <node id="802168355" lat="49.0102325" lon="8.4205325" version="3" timestamp="2012-07-17T13:35:18Z" changeset="12266659" uid="722137" user="OSMF Redaction Account"/>
+  <node id="802168357" lat="49.0115090" lon="8.4235630" version="7" timestamp="2015-05-12T19:53:14Z" changeset="31064131" uid="165061" user="mapper999">
+    <tag k="button_operated" v="yes"/>
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="highway" v="crossing"/>
+    <tag k="traffic_signals:arrow" v="no"/>
+    <tag k="traffic_signals:sound" v="no"/>
+    <tag k="traffic_signals:vibration" v="no"/>
+  </node>
+  <node id="802168359" lat="49.0115782" lon="8.4230117" version="6" timestamp="2015-05-19T18:30:33Z" changeset="31292302" uid="165061" user="mapper999"/>
+  <node id="802168381" lat="49.0137467" lon="8.4303211" version="1" timestamp="2010-07-05T14:26:00Z" changeset="5142488" uid="246804" user="dacson"/>
+  <node id="802168416" lat="49.0115977" lon="8.4231119" version="5" timestamp="2015-05-19T18:30:33Z" changeset="31292302" uid="165061" user="mapper999"/>
+  <node id="802168449" lat="49.0113012" lon="8.4229767" version="1" timestamp="2010-07-05T14:26:06Z" changeset="5142488" uid="246804" user="dacson">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="802168468" lat="49.0156904" lon="8.4356484" version="7" timestamp="2014-08-26T10:42:12Z" changeset="25023645" uid="165061" user="mapper999"/>
+  <node id="802168481" lat="49.0107590" lon="8.4219000" version="4" timestamp="2012-07-19T10:22:57Z" changeset="12318312" uid="165061" user="mapper999"/>
+  <node id="802168485" lat="49.0113947" lon="8.4234528" version="7" timestamp="2015-08-07T21:29:00Z" changeset="33191050" uid="165061" user="mapper999">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:barrier" v="no"/>
+    <tag k="crossing:bell" v="no"/>
+    <tag k="crossing:light" v="yes"/>
+    <tag k="crossing:supervision" v="no"/>
+    <tag k="railway" v="crossing"/>
+  </node>
+  <node id="1081928856" lat="49.0117230" lon="8.4228077" version="5" timestamp="2014-11-12T22:29:56Z" changeset="26745841" uid="165061" user="mapper999">
+    <tag k="barrier" v="cycle_barrier"/>
+  </node>
+  <node id="1121417319" lat="49.0114914" lon="8.4254864" version="3" timestamp="2012-07-17T13:35:29Z" changeset="12266659" uid="722137" user="OSMF Redaction Account"/>
+  <node id="1121417331" lat="49.0114904" lon="8.4253737" version="3" timestamp="2012-07-17T13:35:28Z" changeset="12266659" uid="722137" user="OSMF Redaction Account"/>
+  <node id="1121417354" lat="49.0113484" lon="8.4253645" version="3" timestamp="2012-07-17T13:35:28Z" changeset="12266659" uid="722137" user="OSMF Redaction Account"/>
+  <node id="1121417377" lat="49.0115527" lon="8.4254851" version="3" timestamp="2012-07-17T13:35:29Z" changeset="12266659" uid="722137" user="OSMF Redaction Account"/>
+  <node id="1144841350" lat="49.0109828" lon="8.4224063" version="2" timestamp="2011-02-12T21:39:49Z" changeset="7269399" uid="165061" user="mapper999"/>
+  <node id="1144841386" lat="49.0107921" lon="8.4218917" version="2" timestamp="2012-04-11T12:16:39Z" changeset="11264249" uid="442210" user="dwausr">
+    <tag k="odbl" v="clean"/>
+  </node>
+  <node id="1144913926" lat="49.0120519" lon="8.4250800" version="4" timestamp="2015-05-30T16:29:08Z" changeset="31587838" uid="165061" user="mapper999"/>
+  <node id="1149741255" lat="49.0115241" lon="8.4236062" version="2" timestamp="2012-07-19T10:22:53Z" changeset="12318312" uid="165061" user="mapper999">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="1149741261" lat="49.0110948" lon="8.4227749" version="2" timestamp="2012-07-19T10:22:53Z" changeset="12318312" uid="165061" user="mapper999">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="1158181075" lat="49.0133497" lon="8.4287774" version="1" timestamp="2011-02-17T22:21:04Z" changeset="7317997" uid="165061" user="mapper999"/>
+  <node id="1185959199" lat="49.0112218" lon="8.4280401" version="3" timestamp="2014-09-16T13:56:07Z" changeset="25479978" uid="35468" user="Blunauer"/>
+  <node id="1185968987" lat="49.0111140" lon="8.4266128" version="4" timestamp="2014-09-16T13:56:07Z" changeset="25479978" uid="35468" user="Blunauer"/>
+  <node id="1185997654" lat="49.0126970" lon="8.4269960" version="2" timestamp="2011-03-28T20:17:37Z" changeset="7701118" uid="161619" user="FvGordon"/>
+  <node id="1186020420" lat="49.0120293" lon="8.4240501" version="1" timestamp="2011-03-04T16:48:27Z" changeset="7454993" uid="165061" user="mapper999"/>
+  <node id="1186020434" lat="49.0116100" lon="8.4238597" version="1" timestamp="2011-03-04T16:48:28Z" changeset="7454993" uid="165061" user="mapper999"/>
+  <node id="1186020437" lat="49.0115469" lon="8.4239171" version="1" timestamp="2011-03-04T16:48:28Z" changeset="7454993" uid="165061" user="mapper999"/>
+  <node id="1186020440" lat="49.0119247" lon="8.4237564" version="1" timestamp="2011-03-04T16:48:28Z" changeset="7454993" uid="165061" user="mapper999"/>
+  <node id="1186020443" lat="49.0117074" lon="8.4237725" version="1" timestamp="2011-03-04T16:48:28Z" changeset="7454993" uid="165061" user="mapper999"/>
+  <node id="1186031044" lat="49.0118437" lon="8.4220156" version="1" timestamp="2011-03-04T16:59:11Z" changeset="7454993" uid="165061" user="mapper999"/>
+  <node id="1186036465" lat="49.0114813" lon="8.4205230" version="1" timestamp="2011-03-04T17:05:48Z" changeset="7454993" uid="165061" user="mapper999"/>
+  <node id="1186036469" lat="49.0114655" lon="8.4204881" version="1" timestamp="2011-03-04T17:05:48Z" changeset="7454993" uid="165061" user="mapper999"/>
+  <node id="1186036480" lat="49.0114488" lon="8.4204653" version="1" timestamp="2011-03-04T17:05:48Z" changeset="7454993" uid="165061" user="mapper999"/>
+  <node id="1186036499" lat="49.0114866" lon="8.4205766" version="1" timestamp="2011-03-04T17:05:48Z" changeset="7454993" uid="165061" user="mapper999"/>
+  <node id="1186036501" lat="49.0114242" lon="8.4204613" version="1" timestamp="2011-03-04T17:05:49Z" changeset="7454993" uid="165061" user="mapper999"/>
+  <node id="1186036538" lat="49.0113446" lon="8.4204589" version="3" timestamp="2012-07-17T13:35:29Z" changeset="12266659" uid="722137" user="OSMF Redaction Account"/>
+  <node id="1186038876" lat="49.0114408" lon="8.4204640" version="1" timestamp="2011-03-04T17:07:24Z" changeset="7454993" uid="165061" user="mapper999"/>
+  <node id="1186038879" lat="49.0114480" lon="8.4204031" version="2" timestamp="2011-07-27T14:57:00Z" changeset="8845792" uid="493999" user="BastiaanH">
+    <tag k="barrier" v="gate"/>
+    <tag k="foot" v="yes"/>
+  </node>
+  <node id="1186038880" lat="49.0114576" lon="8.4203593" version="1" timestamp="2011-03-04T17:07:24Z" changeset="7454993" uid="165061" user="mapper999"/>
+  <node id="1186075960" lat="49.0109208" lon="8.4225387" version="2" timestamp="2011-04-22T13:30:31Z" changeset="7934373" uid="212553" user="ARWIE"/>
+  <node id="1186075966" lat="49.0109986" lon="8.4224667" version="2" timestamp="2011-04-22T13:30:30Z" changeset="7934373" uid="212553" user="ARWIE"/>
+  <node id="1186075976" lat="49.0105779" lon="8.4226580" version="1" timestamp="2011-03-04T17:36:22Z" changeset="7454993" uid="165061" user="mapper999"/>
+  <node id="1186075979" lat="49.0107134" lon="8.4226687" version="1" timestamp="2011-03-04T17:36:22Z" changeset="7454993" uid="165061" user="mapper999"/>
+  <node id="1186075982" lat="49.0109841" lon="8.4224802" version="2" timestamp="2011-04-22T13:30:31Z" changeset="7934373" uid="212553" user="ARWIE"/>
+  <node id="1186075983" lat="49.0108051" lon="8.4226456" version="2" timestamp="2011-04-22T13:30:32Z" changeset="7934373" uid="212553" user="ARWIE"/>
+  <node id="1186075987" lat="49.0110427" lon="8.4224260" version="1" timestamp="2011-03-04T17:36:23Z" changeset="7454993" uid="165061" user="mapper999"/>
+  <node id="1186075988" lat="49.0109611" lon="8.4225014" version="2" timestamp="2011-04-22T13:30:30Z" changeset="7934373" uid="212553" user="ARWIE"/>
+  <node id="1186201107" lat="49.0140092" lon="8.4303399" version="2" timestamp="2015-07-24T21:04:07Z" changeset="32860556" uid="165061" user="mapper999"/>
+  <node id="1231749934" lat="49.0096903" lon="8.4235306" version="7" timestamp="2015-12-21T22:16:00Z" changeset="36096014" uid="2600695" user="jlcod">
+    <tag k="crossing" v="uncontrolled"/>
+    <tag k="crossing_ref" v="zebra"/>
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="1255392467" lat="49.0094899" lon="8.4235618" version="2" timestamp="2015-12-21T22:16:00Z" changeset="36096014" uid="2600695" user="jlcod"/>
+  <node id="1255392537" lat="49.0096476" lon="8.4235445" version="2" timestamp="2015-12-21T22:16:00Z" changeset="36096014" uid="2600695" user="jlcod"/>
+  <node id="1255392691" lat="49.0095461" lon="8.4236746" version="2" timestamp="2015-12-21T22:16:00Z" changeset="36096014" uid="2600695" user="jlcod"/>
+  <node id="1255392704" lat="49.0095826" lon="8.4234437" version="2" timestamp="2015-12-21T22:16:00Z" changeset="36096014" uid="2600695" user="jlcod"/>
+  <node id="1277646910" lat="49.0105073" lon="8.4238189" version="1" timestamp="2011-05-08T21:31:16Z" changeset="8088004" uid="331334" user="Fry3k-KA"/>
+  <node id="1277646917" lat="49.0104694" lon="8.4233533" version="4" timestamp="2015-05-26T15:38:41Z" changeset="31476734" uid="165061" user="mapper999"/>
+  <node id="1277646937" lat="49.0105080" lon="8.4237483" version="1" timestamp="2011-05-08T21:31:17Z" changeset="8088004" uid="331334" user="Fry3k-KA"/>
+  <node id="1277646947" lat="49.0104979" lon="8.4238388" version="1" timestamp="2011-05-08T21:31:17Z" changeset="8088004" uid="331334" user="Fry3k-KA"/>
+  <node id="1277646986" lat="49.0105116" lon="8.4237858" version="1" timestamp="2011-05-08T21:31:18Z" changeset="8088004" uid="331334" user="Fry3k-KA"/>
+  <node id="1277646989" lat="49.0104819" lon="8.4238510" version="1" timestamp="2011-05-08T21:31:18Z" changeset="8088004" uid="331334" user="Fry3k-KA"/>
+  <node id="1277647004" lat="49.0103016" lon="8.4238918" version="1" timestamp="2011-05-08T21:31:18Z" changeset="8088004" uid="331334" user="Fry3k-KA"/>
+  <node id="1281824039" lat="49.0120078" lon="8.4246993" version="2" timestamp="2015-05-30T16:29:09Z" changeset="31587838" uid="165061" user="mapper999"/>
+  <node id="1281824047" lat="49.0123010" lon="8.4246782" version="2" timestamp="2015-05-30T16:29:09Z" changeset="31587838" uid="165061" user="mapper999"/>
+  <node id="1281824049" lat="49.0119962" lon="8.4247105" version="2" timestamp="2015-05-30T16:29:10Z" changeset="31587838" uid="165061" user="mapper999"/>
+  <node id="1305220326" lat="49.0112051" lon="8.4278245" version="3" timestamp="2014-09-16T13:56:08Z" changeset="25479978" uid="35468" user="Blunauer"/>
+  <node id="1305227385" lat="49.0101398" lon="8.4261571" version="3" timestamp="2015-07-18T14:05:26Z" changeset="32717894" uid="165061" user="mapper999"/>
+  <node id="1305227387" lat="49.0101095" lon="8.4265062" version="3" timestamp="2015-07-18T14:05:27Z" changeset="32717894" uid="165061" user="mapper999"/>
+  <node id="1364678762" lat="49.0098886" lon="8.4292994" version="3" timestamp="2015-07-18T14:05:27Z" changeset="32717894" uid="165061" user="mapper999"/>
+  <node id="1364678763" lat="49.0099352" lon="8.4287370" version="3" timestamp="2015-07-18T14:05:27Z" changeset="32717894" uid="165061" user="mapper999"/>
+  <node id="1381789459" lat="49.0132626" lon="8.4218415" version="2" timestamp="2014-11-25T18:44:47Z" changeset="27028367" uid="165061" user="mapper999"/>
+  <node id="1381789465" lat="49.0132512" lon="8.4210788" version="2" timestamp="2015-08-19T20:56:29Z" changeset="33450049" uid="165061" user="mapper999"/>
+  <node id="1395863903" lat="49.0117006" lon="8.4246201" version="2" timestamp="2012-09-11T15:13:13Z" changeset="13070693" uid="165061" user="mapper999"/>
+  <node id="1395863904" lat="49.0114927" lon="8.4251155" version="1" timestamp="2011-08-12T09:49:16Z" changeset="8993768" uid="165061" user="mapper999"/>
+  <node id="1395863905" lat="49.0116097" lon="8.4253636" version="1" timestamp="2011-08-12T09:49:16Z" changeset="8993768" uid="165061" user="mapper999"/>
+  <node id="1395863906" lat="49.0116167" lon="8.4255474" version="1" timestamp="2011-08-12T09:49:16Z" changeset="8993768" uid="165061" user="mapper999"/>
+  <node id="1395863907" lat="49.0115648" lon="8.4253730" version="1" timestamp="2011-08-12T09:49:16Z" changeset="8993768" uid="165061" user="mapper999"/>
+  <node id="1395863908" lat="49.0115472" lon="8.4251088" version="1" timestamp="2011-08-12T09:49:16Z" changeset="8993768" uid="165061" user="mapper999"/>
+  <node id="1395863911" lat="49.0114909" lon="8.4248433" version="1" timestamp="2011-08-12T09:49:17Z" changeset="8993768" uid="165061" user="mapper999"/>
+  <node id="1395863913" lat="49.0118050" lon="8.4244765" version="1" timestamp="2011-08-12T09:49:17Z" changeset="8993768" uid="165061" user="mapper999"/>
+  <node id="1395863915" lat="49.0115437" lon="8.4246649" version="1" timestamp="2011-08-12T09:49:17Z" changeset="8993768" uid="165061" user="mapper999"/>
+  <node id="1395863917" lat="49.0116844" lon="8.4246354" version="1" timestamp="2011-08-12T09:49:17Z" changeset="8993768" uid="165061" user="mapper999"/>
+  <node id="1395863918" lat="49.0114988" lon="8.4246636" version="1" timestamp="2011-08-12T09:49:17Z" changeset="8993768" uid="165061" user="mapper999"/>
+  <node id="1395863920" lat="49.0115537" lon="8.4255288" version="3" timestamp="2015-05-30T16:55:22Z" changeset="31588454" uid="165061" user="mapper999"/>
+  <node id="1480007944" lat="49.0110365" lon="8.4231822" version="1" timestamp="2011-10-25T08:40:39Z" changeset="9650178" uid="442210" user="dwausr"/>
+  <node id="1480007945" lat="49.0110367" lon="8.4232305" version="4" timestamp="2015-01-20T18:48:12Z" changeset="28290950" uid="165061" user="mapper999">
+    <tag k="highway" v="give_way"/>
+    <tag k="traffic_sign:backward" v="DE:205"/>
+  </node>
+  <node id="1480007946" lat="49.0110410" lon="8.4231280" version="1" timestamp="2011-10-25T08:40:39Z" changeset="9650178" uid="442210" user="dwausr"/>
+  <node id="1480007947" lat="49.0110430" lon="8.4232848" version="1" timestamp="2011-10-25T08:40:39Z" changeset="9650178" uid="442210" user="dwausr"/>
+  <node id="1480007948" lat="49.0110492" lon="8.4230717" version="1" timestamp="2011-10-25T08:40:40Z" changeset="9650178" uid="442210" user="dwausr"/>
+  <node id="1480007949" lat="49.0110527" lon="8.4233348" version="1" timestamp="2011-10-25T08:40:29Z" changeset="9650178" uid="442210" user="dwausr"/>
+  <node id="1480007951" lat="49.0110641" lon="8.4230085" version="1" timestamp="2011-10-25T08:40:30Z" changeset="9650178" uid="442210" user="dwausr"/>
+  <node id="1480007952" lat="49.0110665" lon="8.4233895" version="1" timestamp="2011-10-25T08:40:40Z" changeset="9650178" uid="442210" user="dwausr"/>
+  <node id="1480007953" lat="49.0110765" lon="8.4229607" version="1" timestamp="2011-10-25T08:40:30Z" changeset="9650178" uid="442210" user="dwausr"/>
+  <node id="1480007954" lat="49.0110809" lon="8.4232209" version="2" timestamp="2012-07-19T10:22:53Z" changeset="12318312" uid="165061" user="mapper999"/>
+  <node id="1480007956" lat="49.0110818" lon="8.4231335" version="2" timestamp="2012-07-19T10:22:53Z" changeset="12318312" uid="165061" user="mapper999"/>
+  <node id="1480007957" lat="49.0110848" lon="8.4234421" version="1" timestamp="2011-10-25T08:40:31Z" changeset="9650178" uid="442210" user="dwausr"/>
+  <node id="1480007958" lat="49.0110964" lon="8.4233180" version="2" timestamp="2012-07-19T10:22:53Z" changeset="12318312" uid="165061" user="mapper999">
+    <tag k="crossing" v="unmarked"/>
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="1480007959" lat="49.0110966" lon="8.4229058" version="1" timestamp="2011-10-25T08:40:31Z" changeset="9650178" uid="442210" user="dwausr"/>
+  <node id="1480007963" lat="49.0110973" lon="8.4230451" version="2" timestamp="2012-07-19T10:22:54Z" changeset="12318312" uid="165061" user="mapper999"/>
+  <node id="1480007967" lat="49.0111076" lon="8.4234900" version="1" timestamp="2011-10-25T08:40:42Z" changeset="9650178" uid="442210" user="dwausr"/>
+  <node id="1480007978" lat="49.0111170" lon="8.4233801" version="2" timestamp="2012-07-19T10:22:54Z" changeset="12318312" uid="165061" user="mapper999"/>
+  <node id="1480007980" lat="49.0111193" lon="8.4229812" version="2" timestamp="2012-07-19T10:22:54Z" changeset="12318312" uid="165061" user="mapper999">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="1480007981" lat="49.0111383" lon="8.4235295" version="1" timestamp="2011-10-25T08:40:43Z" changeset="9650178" uid="442210" user="dwausr"/>
+  <node id="1480007982" lat="49.0111471" lon="8.4230558" version="1" timestamp="2011-10-25T08:40:44Z" changeset="9650178" uid="442210" user="dwausr"/>
+  <node id="1480007983" lat="49.0111493" lon="8.4234420" version="2" timestamp="2012-07-19T10:22:54Z" changeset="12318312" uid="165061" user="mapper999"/>
+  <node id="1480007984" lat="49.0111742" lon="8.4235653" version="1" timestamp="2011-10-25T08:40:44Z" changeset="9650178" uid="442210" user="dwausr"/>
+  <node id="1480007985" lat="49.0111868" lon="8.4234893" version="2" timestamp="2012-07-19T10:22:54Z" changeset="12318312" uid="165061" user="mapper999"/>
+  <node id="1480007987" lat="49.0112139" lon="8.4235879" version="1" timestamp="2011-10-25T08:40:44Z" changeset="9650178" uid="442210" user="dwausr"/>
+  <node id="1480007988" lat="49.0112269" lon="8.4232708" version="1" timestamp="2011-10-25T08:40:45Z" changeset="9650178" uid="442210" user="dwausr"/>
+  <node id="1480007989" lat="49.0112282" lon="8.4235231" version="2" timestamp="2012-07-19T10:22:54Z" changeset="12318312" uid="165061" user="mapper999"/>
+  <node id="1480007990" lat="49.0112574" lon="8.4236021" version="1" timestamp="2011-10-25T08:40:45Z" changeset="9650178" uid="442210" user="dwausr"/>
+  <node id="1480007991" lat="49.0112892" lon="8.4235491" version="3" timestamp="2012-07-19T10:22:54Z" changeset="12318312" uid="165061" user="mapper999">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="1480007993" lat="49.0112974" lon="8.4235497" version="3" timestamp="2012-07-19T10:22:54Z" changeset="12318312" uid="165061" user="mapper999">
+    <tag k="highway" v="give_way"/>
+    <tag k="traffic_sign" v="DE:205"/>
+  </node>
+  <node id="1480007994" lat="49.0113046" lon="8.4236073" version="1" timestamp="2011-10-25T08:40:56Z" changeset="9650178" uid="442210" user="dwausr"/>
+  <node id="1480007995" lat="49.0113080" lon="8.4234793" version="1" timestamp="2011-10-25T08:40:56Z" changeset="9650178" uid="442210" user="dwausr"/>
+  <node id="1480007996" lat="49.0113348" lon="8.4234530" version="2" timestamp="2012-07-19T10:22:54Z" changeset="12318312" uid="165061" user="mapper999">
+    <tag k="highway" v="traffic_signals"/>
+  </node>
+  <node id="1480007997" lat="49.0113284" lon="8.4235513" version="2" timestamp="2012-07-19T10:22:54Z" changeset="12318312" uid="165061" user="mapper999">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="1480007998" lat="49.0113463" lon="8.4234771" version="1" timestamp="2011-10-25T08:40:46Z" changeset="9650178" uid="442210" user="dwausr">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="1480008000" lat="49.0113516" lon="8.4236100" version="1" timestamp="2011-10-25T08:40:58Z" changeset="9650178" uid="442210" user="dwausr"/>
+  <node id="1480008003" lat="49.0113775" lon="8.4235412" version="2" timestamp="2012-07-19T10:22:54Z" changeset="12318312" uid="165061" user="mapper999"/>
+  <node id="1480008004" lat="49.0113815" lon="8.4236623" version="1" timestamp="2011-10-25T08:40:58Z" changeset="9650178" uid="442210" user="dwausr"/>
+  <node id="1480008005" lat="49.0113998" lon="8.4236476" version="1" timestamp="2011-10-25T08:40:59Z" changeset="9650178" uid="442210" user="dwausr"/>
+  <node id="1480008006" lat="49.0114239" lon="8.4236307" version="2" timestamp="2015-05-12T19:53:13Z" changeset="31064131" uid="165061" user="mapper999">
+    <tag k="button_operated" v="yes"/>
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="highway" v="crossing"/>
+    <tag k="traffic_signals:arrow" v="no"/>
+    <tag k="traffic_signals:sound" v="no"/>
+    <tag k="traffic_signals:vibration" v="no"/>
+  </node>
+  <node id="1480008007" lat="49.0114540" lon="8.4236065" version="4" timestamp="2015-08-07T21:28:49Z" changeset="33191050" uid="165061" user="mapper999">
+    <tag k="button_operated" v="yes"/>
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:barrier" v="no"/>
+    <tag k="crossing:bell" v="no"/>
+    <tag k="crossing:light" v="yes"/>
+    <tag k="crossing:supervision" v="no"/>
+    <tag k="railway" v="crossing"/>
+    <tag k="traffic_signals:arrow" v="no"/>
+    <tag k="traffic_signals:sound" v="no"/>
+    <tag k="traffic_signals:vibration" v="no"/>
+  </node>
+  <node id="1480008008" lat="49.0114785" lon="8.4235876" version="4" timestamp="2015-08-07T21:28:49Z" changeset="33191050" uid="165061" user="mapper999">
+    <tag k="button_operated" v="yes"/>
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:barrier" v="no"/>
+    <tag k="crossing:bell" v="no"/>
+    <tag k="crossing:light" v="yes"/>
+    <tag k="crossing:supervision" v="no"/>
+    <tag k="railway" v="crossing"/>
+    <tag k="traffic_signals:arrow" v="no"/>
+    <tag k="traffic_signals:sound" v="no"/>
+    <tag k="traffic_signals:vibration" v="no"/>
+  </node>
+  <node id="1480008013" lat="49.0115380" lon="8.4239007" version="1" timestamp="2011-10-25T08:40:50Z" changeset="9650178" uid="442210" user="dwausr"/>
+  <node id="1480008015" lat="49.0115471" lon="8.4240302" version="1" timestamp="2011-10-25T08:41:00Z" changeset="9650178" uid="442210" user="dwausr"/>
+  <node id="1480008017" lat="49.0115576" lon="8.4257031" version="2" timestamp="2015-05-30T16:55:22Z" changeset="31588454" uid="165061" user="mapper999"/>
+  <node id="1480008020" lat="49.0115551" lon="8.4255929" version="2" timestamp="2015-05-30T16:55:22Z" changeset="31588454" uid="165061" user="mapper999"/>
+  <node id="1480008022" lat="49.0115563" lon="8.4256480" version="2" timestamp="2015-05-30T16:55:22Z" changeset="31588454" uid="165061" user="mapper999"/>
+  <node id="1480008024" lat="49.0115588" lon="8.4239409" version="2" timestamp="2014-02-10T13:59:15Z" changeset="20485710" uid="165061" user="mapper999"/>
+  <node id="1480008027" lat="49.0116063" lon="8.4238455" version="1" timestamp="2011-10-25T08:41:02Z" changeset="9650178" uid="442210" user="dwausr"/>
+  <node id="1480008029" lat="49.0116189" lon="8.4242127" version="1" timestamp="2011-10-25T08:41:03Z" changeset="9650178" uid="442210" user="dwausr"/>
+  <node id="1480008030" lat="49.0116268" lon="8.4239270" version="1" timestamp="2011-10-25T08:40:52Z" changeset="9650178" uid="442210" user="dwausr"/>
+  <node id="1480008031" lat="49.0116444" lon="8.4240832" version="1" timestamp="2011-10-25T08:40:53Z" changeset="9650178" uid="442210" user="dwausr"/>
+  <node id="1480008032" lat="49.0116563" lon="8.4240697" version="1" timestamp="2011-10-25T08:40:53Z" changeset="9650178" uid="442210" user="dwausr"/>
+  <node id="1480008037" lat="49.0116876" lon="8.4241717" version="1" timestamp="2011-10-25T08:40:53Z" changeset="9650178" uid="442210" user="dwausr"/>
+  <node id="1480008042" lat="49.0117222" lon="8.4245925" version="2" timestamp="2012-09-11T15:13:13Z" changeset="13070693" uid="165061" user="mapper999"/>
+  <node id="1480008043" lat="49.0117463" lon="8.4245525" version="2" timestamp="2012-09-11T15:13:13Z" changeset="13070693" uid="165061" user="mapper999"/>
+  <node id="1480008058" lat="49.0118625" lon="8.4246257" version="1" timestamp="2011-10-25T08:40:57Z" changeset="9650178" uid="442210" user="dwausr"/>
+  <node id="1480008063" lat="49.0119296" lon="8.4256085" version="1" timestamp="2011-10-25T08:40:59Z" changeset="9650178" uid="442210" user="dwausr"/>
+  <node id="1480008078" lat="49.0122358" lon="8.4255973" version="1" timestamp="2011-10-25T08:41:01Z" changeset="9650178" uid="442210" user="dwausr"/>
+  <node id="1480008081" lat="49.0122536" lon="8.4259947" version="1" timestamp="2011-10-25T08:41:02Z" changeset="9650178" uid="442210" user="dwausr"/>
+  <node id="1480008084" lat="49.0123551" lon="8.4259071" version="1" timestamp="2011-10-25T08:41:03Z" changeset="9650178" uid="442210" user="dwausr"/>
+  <node id="1480008085" lat="49.0123651" lon="8.4262739" version="1" timestamp="2011-10-25T08:41:03Z" changeset="9650178" uid="442210" user="dwausr"/>
+  <node id="1480008087" lat="49.0124298" lon="8.4263140" version="1" timestamp="2011-10-25T08:41:15Z" changeset="9650178" uid="442210" user="dwausr"/>
+  <node id="1480008098" lat="49.0126286" lon="8.4268154" version="1" timestamp="2011-10-25T08:41:16Z" changeset="9650178" uid="442210" user="dwausr"/>
+  <node id="1480008105" lat="49.0129184" lon="8.4275706" version="2" timestamp="2015-05-30T19:18:36Z" changeset="31590637" uid="165061" user="mapper999"/>
+  <node id="1480008114" lat="49.0132504" lon="8.4284452" version="1" timestamp="2011-10-25T08:41:09Z" changeset="9650178" uid="442210" user="dwausr"/>
+  <node id="1480008146" lat="49.0137427" lon="8.4302780" version="1" timestamp="2011-10-25T08:41:14Z" changeset="9650178" uid="442210" user="dwausr"/>
+  <node id="1480090550" lat="49.0133128" lon="8.4286499" version="3" timestamp="2015-03-05T13:26:13Z" changeset="29266514" uid="442210" user="dwausr">
+    <tag k="bus" v="yes"/>
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="Hauptfriedhof"/>
+    <tag k="public_transport" v="platform"/>
+    <tag k="ref:IFOPT" v="de:8212:402:2:5"/>
+  </node>
+  <node id="1480090819" lat="49.0112652" lon="8.4311278" version="2" timestamp="2012-07-09T04:01:22Z" changeset="12157557" uid="28237" user="lyx"/>
+  <node id="1480091086" lat="49.0133460" lon="8.4287592" version="1" timestamp="2011-10-25T11:40:55Z" changeset="9651465" uid="442210" user="dwausr"/>
+  <node id="1480091088" lat="49.0133789" lon="8.4289053" version="1" timestamp="2011-10-25T11:40:56Z" changeset="9651465" uid="442210" user="dwausr"/>
+  <node id="1480091218" lat="49.0144130" lon="8.4318338" version="1" timestamp="2011-10-25T11:41:18Z" changeset="9651465" uid="442210" user="dwausr"/>
+  <node id="1480091258" lat="49.0144636" lon="8.4320239" version="1" timestamp="2011-10-25T11:41:36Z" changeset="9651465" uid="442210" user="dwausr"/>
+  <node id="1480091279" lat="49.0144985" lon="8.4321734" version="1" timestamp="2011-10-25T11:41:37Z" changeset="9651465" uid="442210" user="dwausr"/>
+  <node id="1480091306" lat="49.0147805" lon="8.4332114" version="1" timestamp="2011-10-25T11:41:28Z" changeset="9651465" uid="442210" user="dwausr"/>
+  <node id="1480091311" lat="49.0148811" lon="8.4335189" version="1" timestamp="2011-10-25T11:41:29Z" changeset="9651465" uid="442210" user="dwausr"/>
+  <node id="1480091317" lat="49.0149738" lon="8.4338167" version="1" timestamp="2011-10-25T11:41:46Z" changeset="9651465" uid="442210" user="dwausr"/>
+  <node id="1480091323" lat="49.0150714" lon="8.4341312" version="1" timestamp="2011-10-25T11:41:47Z" changeset="9651465" uid="442210" user="dwausr"/>
+  <node id="1480091325" lat="49.0151092" lon="8.4342525" version="1" timestamp="2011-10-25T11:41:32Z" changeset="9651465" uid="442210" user="dwausr"/>
+  <node id="1480091329" lat="49.0151523" lon="8.4343668" version="1" timestamp="2011-10-25T11:41:48Z" changeset="9651465" uid="442210" user="dwausr"/>
+  <node id="1480091332" lat="49.0152676" lon="8.4346431" version="1" timestamp="2011-10-25T11:41:34Z" changeset="9651465" uid="442210" user="dwausr"/>
+  <node id="1480091336" lat="49.0153648" lon="8.4348727" version="1" timestamp="2011-10-25T11:41:35Z" changeset="9651465" uid="442210" user="dwausr"/>
+  <node id="1480091344" lat="49.0155245" lon="8.4352531" version="1" timestamp="2011-10-25T11:41:36Z" changeset="9651465" uid="442210" user="dwausr"/>
+  <node id="1480091349" lat="49.0156261" lon="8.4354972" version="1" timestamp="2011-10-25T11:41:38Z" changeset="9651465" uid="442210" user="dwausr"/>
+  <node id="1480091362" lat="49.0157838" lon="8.4358778" version="1" timestamp="2011-10-25T11:41:58Z" changeset="9651465" uid="442210" user="dwausr"/>
+  <node id="1480091368" lat="49.0159345" lon="8.4362307" version="1" timestamp="2011-10-25T11:41:59Z" changeset="9651465" uid="442210" user="dwausr"/>
+  <node id="1480091374" lat="49.0160573" lon="8.4365143" version="1" timestamp="2011-10-25T11:42:01Z" changeset="9651465" uid="442210" user="dwausr"/>
+  <node id="1480091379" lat="49.0162214" lon="8.4368891" version="1" timestamp="2011-10-25T11:41:48Z" changeset="9651465" uid="442210" user="dwausr"/>
+  <node id="1480091390" lat="49.0164652" lon="8.4374467" version="1" timestamp="2011-10-25T11:41:50Z" changeset="9651465" uid="442210" user="dwausr"/>
+  <node id="1480091396" lat="49.0166108" lon="8.4377332" version="1" timestamp="2011-10-25T11:41:51Z" changeset="9651465" uid="442210" user="dwausr"/>
+  <node id="1480091403" lat="49.0166942" lon="8.4378783" version="1" timestamp="2011-10-25T11:42:08Z" changeset="9651465" uid="442210" user="dwausr"/>
+  <node id="1480091406" lat="49.0167594" lon="8.4379707" version="1" timestamp="2011-10-25T11:41:54Z" changeset="9651465" uid="442210" user="dwausr"/>
+  <node id="1480091411" lat="49.0168656" lon="8.4381079" version="1" timestamp="2011-10-25T11:42:10Z" changeset="9651465" uid="442210" user="dwausr"/>
+  <node id="1480091421" lat="49.0169991" lon="8.4383173" version="2" timestamp="2014-10-20T12:40:25Z" changeset="26212003" uid="165061" user="mapper999">
+    <tag k="crossing" v="uncontrolled"/>
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="1480091423" lat="49.0170158" lon="8.4383922" version="1" timestamp="2011-10-25T11:42:13Z" changeset="9651465" uid="442210" user="dwausr"/>
+  <node id="1480091425" lat="49.0170369" lon="8.4384642" version="1" timestamp="2011-10-25T11:42:13Z" changeset="9651465" uid="442210" user="dwausr"/>
+  <node id="1480091428" lat="49.0170668" lon="8.4385225" version="1" timestamp="2011-10-25T11:42:14Z" changeset="9651465" uid="442210" user="dwausr"/>
+  <node id="1480091429" lat="49.0171048" lon="8.4385840" version="1" timestamp="2011-10-25T11:42:14Z" changeset="9651465" uid="442210" user="dwausr"/>
+  <node id="1480156717" lat="49.0109892" lon="8.4223356" version="1" timestamp="2011-10-25T13:38:39Z" changeset="9652394" uid="442210" user="dwausr"/>
+  <node id="1480156732" lat="49.0110172" lon="8.4225456" version="1" timestamp="2011-10-25T13:38:39Z" changeset="9652394" uid="442210" user="dwausr"/>
+  <node id="1480156799" lat="49.0110447" lon="8.4226340" version="1" timestamp="2011-10-25T13:38:22Z" changeset="9652394" uid="442210" user="dwausr"/>
+  <node id="1480156813" lat="49.0110812" lon="8.4228365" version="1" timestamp="2011-10-25T13:38:41Z" changeset="9652394" uid="442210" user="dwausr"/>
+  <node id="1480156820" lat="49.0110925" lon="8.4225105" version="1" timestamp="2011-10-25T13:38:24Z" changeset="9652394" uid="442210" user="dwausr"/>
+  <node id="1480156828" lat="49.0111085" lon="8.4228141" version="3" timestamp="2015-05-11T19:13:04Z" changeset="31015447" uid="165061" user="mapper999">
+    <tag k="button_operated" v="yes"/>
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="highway" v="crossing"/>
+    <tag k="traffic_signals:arrow" v="no"/>
+    <tag k="traffic_signals:sound" v="no"/>
+    <tag k="traffic_signals:vibration" v="no"/>
+  </node>
+  <node id="1480156840" lat="49.0111196" lon="8.4224383" version="1" timestamp="2011-10-25T13:38:25Z" changeset="9652394" uid="442210" user="dwausr"/>
+  <node id="1480156850" lat="49.0111379" lon="8.4227902" version="4" timestamp="2015-08-07T21:28:49Z" changeset="33191050" uid="165061" user="mapper999">
+    <tag k="button_operated" v="yes"/>
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:barrier" v="no"/>
+    <tag k="crossing:bell" v="no"/>
+    <tag k="crossing:light" v="yes"/>
+    <tag k="crossing:supervision" v="no"/>
+    <tag k="railway" v="crossing"/>
+    <tag k="traffic_signals:arrow" v="no"/>
+    <tag k="traffic_signals:sound" v="no"/>
+    <tag k="traffic_signals:vibration" v="no"/>
+  </node>
+  <node id="1480156855" lat="49.0111455" lon="8.4229306" version="2" timestamp="2012-07-19T10:22:54Z" changeset="12318312" uid="165061" user="mapper999"/>
+  <node id="1480156866" lat="49.0111493" lon="8.4226416" version="4" timestamp="2015-05-08T21:15:07Z" changeset="30920947" uid="165061" user="mapper999">
+    <tag k="bus" v="yes"/>
+    <tag k="name" v="Karl-Wilhelm-Platz"/>
+    <tag k="public_transport" v="stop_position"/>
+    <tag k="ref_name" v="Karlsruhe Karl-Wilhelm-Platz"/>
+    <tag k="tram" v="no"/>
+  </node>
+  <node id="1480156867" lat="49.0111623" lon="8.4227703" version="4" timestamp="2015-08-07T21:28:49Z" changeset="33191050" uid="165061" user="mapper999">
+    <tag k="button_operated" v="yes"/>
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:barrier" v="no"/>
+    <tag k="crossing:bell" v="no"/>
+    <tag k="crossing:light" v="yes"/>
+    <tag k="crossing:supervision" v="no"/>
+    <tag k="railway" v="crossing"/>
+    <tag k="traffic_signals:arrow" v="no"/>
+    <tag k="traffic_signals:sound" v="no"/>
+    <tag k="traffic_signals:vibration" v="no"/>
+  </node>
+  <node id="1480156876" lat="49.0111683" lon="8.4230101" version="4" timestamp="2015-05-26T15:38:42Z" changeset="31476734" uid="165061" user="mapper999">
+    <tag k="bicycle" v="no"/>
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="highway" v="crossing"/>
+    <tag k="traffic_signals:arrow" v="yes"/>
+    <tag k="traffic_signals:sound" v="locate"/>
+    <tag k="traffic_signals:vibration" v="yes"/>
+  </node>
+  <node id="1480156880" lat="49.0111766" lon="8.4228884" version="3" timestamp="2015-08-07T21:28:50Z" changeset="33191050" uid="165061" user="mapper999">
+    <tag k="crossing:barrier" v="no"/>
+    <tag k="crossing:bell" v="no"/>
+    <tag k="crossing:light" v="yes"/>
+    <tag k="crossing:supervision" v="no"/>
+    <tag k="railway" v="level_crossing"/>
+  </node>
+  <node id="1480156886" lat="49.0111906" lon="8.4227454" version="3" timestamp="2015-05-11T19:13:05Z" changeset="31015447" uid="165061" user="mapper999">
+    <tag k="button_operated" v="yes"/>
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="highway" v="crossing"/>
+    <tag k="traffic_signals:arrow" v="no"/>
+    <tag k="traffic_signals:sound" v="no"/>
+    <tag k="traffic_signals:vibration" v="no"/>
+  </node>
+  <node id="1480156893" lat="49.0111989" lon="8.4228658" version="4" timestamp="2015-08-07T21:28:50Z" changeset="33191050" uid="165061" user="mapper999">
+    <tag k="crossing:barrier" v="no"/>
+    <tag k="crossing:bell" v="no"/>
+    <tag k="crossing:light" v="yes"/>
+    <tag k="crossing:supervision" v="no"/>
+    <tag k="railway" v="level_crossing"/>
+  </node>
+  <node id="1480156898" lat="49.0112070" lon="8.4229651" version="5" timestamp="2015-08-07T21:28:50Z" changeset="33191050" uid="165061" user="mapper999">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:barrier" v="no"/>
+    <tag k="crossing:bell" v="no"/>
+    <tag k="crossing:light" v="yes"/>
+    <tag k="crossing:supervision" v="no"/>
+    <tag k="railway" v="crossing"/>
+    <tag k="traffic_signals:arrow" v="no"/>
+    <tag k="traffic_signals:sound" v="no"/>
+    <tag k="traffic_signals:vibration" v="no"/>
+  </node>
+  <node id="1480156902" lat="49.0112274" lon="8.4227179" version="1" timestamp="2011-10-25T13:38:27Z" changeset="9652394" uid="442210" user="dwausr"/>
+  <node id="1480156903" lat="49.0112299" lon="8.4229455" version="6" timestamp="2015-12-11T20:32:56Z" changeset="35892703" uid="165061" user="mapper999">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:barrier" v="no"/>
+    <tag k="crossing:bell" v="no"/>
+    <tag k="crossing:light" v="yes"/>
+    <tag k="crossing:supervision" v="no"/>
+    <tag k="railway" v="crossing"/>
+    <tag k="traffic_signals:arrow" v="no"/>
+    <tag k="traffic_signals:sound" v="no"/>
+    <tag k="traffic_signals:vibration" v="no"/>
+  </node>
+  <node id="1480156904" lat="49.0112380" lon="8.4228377" version="2" timestamp="2012-07-19T10:22:55Z" changeset="12318312" uid="165061" user="mapper999"/>
+  <node id="1480156907" lat="49.0112753" lon="8.4229062" version="5" timestamp="2015-05-08T21:15:14Z" changeset="30920947" uid="165061" user="mapper999">
+    <tag k="bicycle" v="no"/>
+    <tag k="button_operated" v="yes"/>
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="highway" v="crossing"/>
+    <tag k="traffic_signals:arrow" v="yes"/>
+    <tag k="traffic_signals:sound" v="locate"/>
+    <tag k="traffic_signals:vibration" v="yes"/>
+  </node>
+  <node id="1480156908" lat="49.0112979" lon="8.4227410" version="2" timestamp="2015-05-19T18:30:31Z" changeset="31292302" uid="165061" user="mapper999"/>
+  <node id="1480156909" lat="49.0113111" lon="8.4228975" version="1" timestamp="2011-10-25T13:38:50Z" changeset="9652394" uid="442210" user="dwausr"/>
+  <node id="1480156910" lat="49.0113482" lon="8.4227448" version="2" timestamp="2015-05-19T18:30:31Z" changeset="31292302" uid="165061" user="mapper999"/>
+  <node id="1480156911" lat="49.0113665" lon="8.4228219" version="3" timestamp="2012-07-19T10:22:55Z" changeset="12318312" uid="165061" user="mapper999">
+    <tag k="highway" v="give_way"/>
+    <tag k="traffic_sign" v="DE:205"/>
+  </node>
+  <node id="1480156912" lat="49.0113902" lon="8.4231093" version="1" timestamp="2011-10-25T13:38:34Z" changeset="9652394" uid="442210" user="dwausr"/>
+  <node id="1480156922" lat="49.0113973" lon="8.4227616" version="2" timestamp="2015-05-19T18:30:32Z" changeset="31292302" uid="165061" user="mapper999"/>
+  <node id="1480156934" lat="49.0114091" lon="8.4228406" version="2" timestamp="2012-07-19T10:22:55Z" changeset="12318312" uid="165061" user="mapper999"/>
+  <node id="1480156946" lat="49.0114189" lon="8.4235198" version="4" timestamp="2015-08-07T21:28:50Z" changeset="33191050" uid="165061" user="mapper999">
+    <tag k="crossing:barrier" v="no"/>
+    <tag k="crossing:bell" v="no"/>
+    <tag k="crossing:light" v="yes"/>
+    <tag k="crossing:supervision" v="no"/>
+    <tag k="railway" v="level_crossing"/>
+  </node>
+  <node id="1480156963" lat="49.0114428" lon="8.4228655" version="2" timestamp="2012-07-19T10:22:55Z" changeset="12318312" uid="165061" user="mapper999"/>
+  <node id="1480156978" lat="49.0114439" lon="8.4235002" version="4" timestamp="2015-08-07T21:28:50Z" changeset="33191050" uid="165061" user="mapper999">
+    <tag k="crossing:barrier" v="no"/>
+    <tag k="crossing:bell" v="no"/>
+    <tag k="crossing:light" v="yes"/>
+    <tag k="crossing:supervision" v="no"/>
+    <tag k="railway" v="level_crossing"/>
+  </node>
+  <node id="1480156983" lat="49.0114438" lon="8.4227910" version="2" timestamp="2015-05-19T18:30:32Z" changeset="31292302" uid="165061" user="mapper999"/>
+  <node id="1480156990" lat="49.0114591" lon="8.4233837" version="3" timestamp="2015-05-08T21:15:14Z" changeset="30920947" uid="165061" user="mapper999">
+    <tag k="bicycle" v="no"/>
+    <tag k="button_operated" v="yes"/>
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="highway" v="crossing"/>
+    <tag k="traffic_signals:arrow" v="yes"/>
+    <tag k="traffic_signals:sound" v="no"/>
+    <tag k="traffic_signals:vibration" v="yes"/>
+  </node>
+  <node id="1480156996" lat="49.0114768" lon="8.4233392" version="1" timestamp="2011-10-25T13:38:56Z" changeset="9652394" uid="442210" user="dwausr"/>
+  <node id="1480157005" lat="49.0114800" lon="8.4229063" version="2" timestamp="2012-07-19T10:22:55Z" changeset="12318312" uid="165061" user="mapper999"/>
+  <node id="1480157013" lat="49.0114863" lon="8.4228320" version="2" timestamp="2015-05-19T18:30:32Z" changeset="31292302" uid="165061" user="mapper999"/>
+  <node id="1480157021" lat="49.0115106" lon="8.4229555" version="2" timestamp="2012-07-19T10:22:55Z" changeset="12318312" uid="165061" user="mapper999"/>
+  <node id="1480157028" lat="49.0115236" lon="8.4228835" version="2" timestamp="2015-05-19T18:30:32Z" changeset="31292302" uid="165061" user="mapper999"/>
+  <node id="1480157063" lat="49.0115348" lon="8.4233545" version="2" timestamp="2012-07-19T10:22:55Z" changeset="12318312" uid="165061" user="mapper999"/>
+  <node id="1480157075" lat="49.0115405" lon="8.4230298" version="3" timestamp="2012-07-19T10:22:55Z" changeset="12318312" uid="165061" user="mapper999">
+    <tag k="crossing" v="unmarked"/>
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="1480157076" lat="49.0115414" lon="8.4235386" version="1" timestamp="2011-10-25T13:38:59Z" changeset="9652394" uid="442210" user="dwausr"/>
+  <node id="1480157077" lat="49.0115493" lon="8.4230634" version="2" timestamp="2012-07-19T10:22:55Z" changeset="12318312" uid="165061" user="mapper999"/>
+  <node id="1480157078" lat="49.0115550" lon="8.4232742" version="2" timestamp="2012-07-19T10:22:56Z" changeset="12318312" uid="165061" user="mapper999"/>
+  <node id="1480157079" lat="49.0115632" lon="8.4234098" version="2" timestamp="2015-05-19T18:30:32Z" changeset="31292302" uid="165061" user="mapper999"/>
+  <node id="1480157080" lat="49.0115588" lon="8.4231191" version="2" timestamp="2012-07-19T10:22:56Z" changeset="12318312" uid="165061" user="mapper999"/>
+  <node id="1480157081" lat="49.0115545" lon="8.4229440" version="2" timestamp="2015-05-19T18:30:32Z" changeset="31292302" uid="165061" user="mapper999"/>
+  <node id="1480157083" lat="49.0115863" lon="8.4233320" version="2" timestamp="2015-05-19T18:30:32Z" changeset="31292302" uid="165061" user="mapper999"/>
+  <node id="1480157084" lat="49.0115992" lon="8.4232491" version="2" timestamp="2015-05-19T18:30:32Z" changeset="31292302" uid="165061" user="mapper999"/>
+  <node id="1480157085" lat="49.0115899" lon="8.4230609" version="2" timestamp="2015-05-19T18:30:32Z" changeset="31292302" uid="165061" user="mapper999"/>
+  <node id="1480157089" lat="49.0116530" lon="8.4238213" version="1" timestamp="2011-10-25T13:39:03Z" changeset="9652394" uid="442210" user="dwausr"/>
+  <node id="1480157091" lat="49.0117655" lon="8.4241170" version="1" timestamp="2011-10-25T13:38:45Z" changeset="9652394" uid="442210" user="dwausr"/>
+  <node id="1480157093" lat="49.0118600" lon="8.4243655" version="1" timestamp="2011-10-25T13:39:03Z" changeset="9652394" uid="442210" user="dwausr"/>
+  <node id="1480157098" lat="49.0121167" lon="8.4250207" version="3" timestamp="2015-05-30T16:29:10Z" changeset="31587838" uid="165061" user="mapper999"/>
+  <node id="1480157099" lat="49.0121322" lon="8.4250077" version="1" timestamp="2011-10-25T13:39:05Z" changeset="9652394" uid="442210" user="dwausr"/>
+  <node id="1480157103" lat="49.0122949" lon="8.4248690" version="1" timestamp="2011-10-25T13:39:05Z" changeset="9652394" uid="442210" user="dwausr"/>
+  <node id="1480157111" lat="49.0125251" lon="8.4247393" version="1" timestamp="2011-10-25T13:38:49Z" changeset="9652394" uid="442210" user="dwausr">
+    <tag k="amenity" v="bicycle_parking"/>
+  </node>
+  <node id="1480157113" lat="49.0125369" lon="8.4245607" version="2" timestamp="2015-04-10T11:48:19Z" changeset="30115933" uid="29717" user="eumiro"/>
+  <node id="1480157114" lat="49.0125372" lon="8.4245395" version="2" timestamp="2015-04-10T11:48:19Z" changeset="30115933" uid="29717" user="eumiro"/>
+  <node id="1480157115" lat="49.0125423" lon="8.4245197" version="2" timestamp="2015-04-10T11:48:19Z" changeset="30115933" uid="29717" user="eumiro"/>
+  <node id="1480157116" lat="49.0125495" lon="8.4245965" version="2" timestamp="2015-04-10T11:48:19Z" changeset="30115933" uid="29717" user="eumiro"/>
+  <node id="1480157117" lat="49.0125515" lon="8.4245038" version="2" timestamp="2015-04-10T11:48:19Z" changeset="30115933" uid="29717" user="eumiro"/>
+  <node id="1480157118" lat="49.0125605" lon="8.4246074" version="2" timestamp="2015-04-10T11:48:19Z" changeset="30115933" uid="29717" user="eumiro"/>
+  <node id="1480157119" lat="49.0125637" lon="8.4244936" version="2" timestamp="2015-04-10T11:48:19Z" changeset="30115933" uid="29717" user="eumiro"/>
+  <node id="1480157120" lat="49.0125732" lon="8.4246123" version="2" timestamp="2015-04-10T11:48:19Z" changeset="30115933" uid="29717" user="eumiro"/>
+  <node id="1480157121" lat="49.0125775" lon="8.4244905" version="2" timestamp="2015-04-10T11:48:19Z" changeset="30115933" uid="29717" user="eumiro"/>
+  <node id="1480157122" lat="49.0125863" lon="8.4246106" version="2" timestamp="2015-04-10T11:48:19Z" changeset="30115933" uid="29717" user="eumiro"/>
+  <node id="1480157124" lat="49.0125911" lon="8.4244947" version="2" timestamp="2015-04-10T11:48:19Z" changeset="30115933" uid="29717" user="eumiro"/>
+  <node id="1480157125" lat="49.0125983" lon="8.4246026" version="2" timestamp="2015-04-10T11:48:19Z" changeset="30115933" uid="29717" user="eumiro"/>
+  <node id="1480157126" lat="49.0126045" lon="8.4245079" version="2" timestamp="2015-04-10T11:48:19Z" changeset="30115933" uid="29717" user="eumiro"/>
+  <node id="1480157127" lat="49.0126080" lon="8.4245891" version="2" timestamp="2015-04-10T11:48:19Z" changeset="30115933" uid="29717" user="eumiro"/>
+  <node id="1480157128" lat="49.0126134" lon="8.4245280" version="2" timestamp="2015-04-10T11:48:19Z" changeset="30115933" uid="29717" user="eumiro"/>
+  <node id="1480157129" lat="49.0126143" lon="8.4245715" version="2" timestamp="2015-04-10T11:48:19Z" changeset="30115933" uid="29717" user="eumiro"/>
+  <node id="1480157134" lat="49.0128266" lon="8.4268639" version="2" timestamp="2016-02-21T13:24:56Z" changeset="37346704" uid="165061" user="mapper999"/>
+  <node id="1480157143" lat="49.0132160" lon="8.4278791" version="1" timestamp="2011-10-25T13:39:03Z" changeset="9652394" uid="442210" user="dwausr"/>
+  <node id="1480157153" lat="49.0133784" lon="8.4282893" version="2" timestamp="2015-05-30T19:18:37Z" changeset="31590637" uid="165061" user="mapper999">
+    <tag k="traffic_sign:forward" v="DE:241-30"/>
+  </node>
+  <node id="1480157156" lat="49.0134290" lon="8.4283877" version="1" timestamp="2011-10-25T13:39:31Z" changeset="9652394" uid="442210" user="dwausr"/>
+  <node id="1480157157" lat="49.0134577" lon="8.4284374" version="1" timestamp="2011-10-25T13:39:14Z" changeset="9652394" uid="442210" user="dwausr"/>
+  <node id="1480157164" lat="49.0134942" lon="8.4285329" version="1" timestamp="2011-10-25T13:39:32Z" changeset="9652394" uid="442210" user="dwausr"/>
+  <node id="1480157166" lat="49.0135943" lon="8.4288350" version="1" timestamp="2011-10-25T13:39:32Z" changeset="9652394" uid="442210" user="dwausr"/>
+  <node id="1480157170" lat="49.0136762" lon="8.4290847" version="1" timestamp="2011-10-25T13:39:33Z" changeset="9652394" uid="442210" user="dwausr"/>
+  <node id="1480157195" lat="49.0137549" lon="8.4293511" version="1" timestamp="2011-10-25T13:39:37Z" changeset="9652394" uid="442210" user="dwausr"/>
+  <node id="1480157302" lat="49.0139284" lon="8.4299926" version="2" timestamp="2012-06-20T22:16:51Z" changeset="11963770" uid="165061" user="mapper999"/>
+  <node id="1480157306" lat="49.0139649" lon="8.4301826" version="1" timestamp="2011-10-25T13:39:25Z" changeset="9652394" uid="442210" user="dwausr"/>
+  <node id="1480157318" lat="49.0141546" lon="8.4308978" version="1" timestamp="2011-10-25T13:39:49Z" changeset="9652394" uid="442210" user="dwausr"/>
+  <node id="1480192124" lat="49.0093267" lon="8.4258365" version="1" timestamp="2011-10-25T14:35:41Z" changeset="9652781" uid="442210" user="dwausr"/>
+  <node id="1480192135" lat="49.0093661" lon="8.4258876" version="2" timestamp="2012-07-19T18:09:42Z" changeset="12341342" uid="42208" user="JanTH"/>
+  <node id="1480192269" lat="49.0094404" lon="8.4235721" version="2" timestamp="2015-05-15T20:35:50Z" changeset="31186552" uid="165061" user="mapper999">
+    <tag k="crossing" v="uncontrolled"/>
+    <tag k="crossing_ref" v="zebra"/>
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="1480192283" lat="49.0095357" lon="8.4237380" version="2" timestamp="2015-05-15T20:35:50Z" changeset="31186552" uid="165061" user="mapper999">
+    <tag k="crossing" v="uncontrolled"/>
+    <tag k="crossing_ref" v="zebra"/>
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="1480192330" lat="49.0095815" lon="8.4233886" version="3" timestamp="2015-05-15T20:35:50Z" changeset="31186552" uid="165061" user="mapper999">
+    <tag k="crossing" v="uncontrolled"/>
+    <tag k="crossing_ref" v="zebra"/>
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="1480192376" lat="49.0097505" lon="8.4312436" version="3" timestamp="2015-07-18T14:05:28Z" changeset="32717894" uid="165061" user="mapper999"/>
+  <node id="1480192390" lat="49.0097520" lon="8.4314498" version="3" timestamp="2015-07-18T14:05:28Z" changeset="32717894" uid="165061" user="mapper999">
+    <tag k="traffic_sign:forward" v="DE:274.1[30]"/>
+  </node>
+  <node id="1480192391" lat="49.0097562" lon="8.4310853" version="3" timestamp="2015-07-18T14:05:28Z" changeset="32717894" uid="165061" user="mapper999"/>
+  <node id="1481256098" lat="49.0098179" lon="8.4302510" version="3" timestamp="2015-07-18T14:05:29Z" changeset="32717894" uid="165061" user="mapper999"/>
+  <node id="1482297446" lat="49.0117924" lon="8.4219933" version="2" timestamp="2015-06-11T20:44:38Z" changeset="31907021" uid="165061" user="mapper999"/>
+  <node id="1534526044" lat="49.0111667" lon="8.4226208" version="5" timestamp="2015-05-08T21:15:08Z" changeset="30920947" uid="165061" user="mapper999">
+    <tag k="bus" v="yes"/>
+    <tag k="highway" v="bus_stop"/>
+    <tag k="name" v="Karl-Wilhelm-Platz"/>
+    <tag k="public_transport" v="platform"/>
+    <tag k="ref:IFOPT" v="de:8212:401:0:7"/>
+    <tag k="ref_name" v="Karlsruhe Karl-Wilhelm-Platz"/>
+    <tag k="tram" v="no"/>
+    <tag k="wheelchair" v="no"/>
+  </node>
+  <node id="1595245139" lat="49.0122990" lon="8.4261083" version="1" timestamp="2012-01-17T19:43:12Z" changeset="10421177" uid="165061" user="mapper999"/>
+  <node id="1616492737" lat="49.0104263" lon="8.4205081" version="1" timestamp="2012-02-03T08:59:39Z" changeset="10574278" uid="151736" user="Jennifer Neubauer">
+    <tag k="highway" v="give_way"/>
+    <tag k="traffic_sign" v="DE:205"/>
+  </node>
+  <node id="1641501694" lat="49.0097157" lon="8.4235254" version="4" timestamp="2015-12-21T22:16:00Z" changeset="36096014" uid="2600695" user="jlcod">
+    <tag k="highway" v="give_way"/>
+    <tag k="traffic_sign" v="DE:205"/>
+  </node>
+  <node id="1641501695" lat="49.0094141" lon="8.4235784" version="1" timestamp="2012-02-21T06:53:16Z" changeset="10747583" uid="151736" user="Jennifer Neubauer">
+    <tag k="highway" v="give_way"/>
+    <tag k="traffic_sign" v="DE:205"/>
+  </node>
+  <node id="1656033998" lat="49.0122941" lon="8.4242529" version="3" timestamp="2015-05-30T16:29:12Z" changeset="31587838" uid="165061" user="mapper999"/>
+  <node id="1656034000" lat="49.0123755" lon="8.4240342" version="1" timestamp="2012-03-02T15:00:41Z" changeset="10849191" uid="29717" user="eumiro"/>
+  <node id="1656034001" lat="49.0123852" lon="8.4240316" version="2" timestamp="2012-06-20T22:16:51Z" changeset="11963770" uid="165061" user="mapper999"/>
+  <node id="1656034003" lat="49.0124379" lon="8.4240177" version="2" timestamp="2015-05-30T16:29:12Z" changeset="31587838" uid="165061" user="mapper999"/>
+  <node id="1676974391" lat="49.0133161" lon="8.4210837" version="1" timestamp="2012-03-16T16:24:30Z" changeset="10999937" uid="35468" user="Blunauer"/>
+  <node id="1676974404" lat="49.0133268" lon="8.4218322" version="2" timestamp="2015-08-19T20:56:30Z" changeset="33450049" uid="165061" user="mapper999"/>
+  <node id="1676974411" lat="49.0133360" lon="8.4225913" version="2" timestamp="2015-08-19T20:56:30Z" changeset="33450049" uid="165061" user="mapper999"/>
+  <node id="1676974415" lat="49.0133259" lon="8.4227727" version="3" timestamp="2015-06-16T14:05:02Z" changeset="32007300" uid="165061" user="mapper999"/>
+  <node id="1677001494" lat="49.0112479" lon="8.4227504" version="2" timestamp="2015-05-19T18:30:32Z" changeset="31292302" uid="165061" user="mapper999"/>
+  <node id="1677001511" lat="49.0115310" lon="8.4234794" version="2" timestamp="2015-05-19T18:30:32Z" changeset="31292302" uid="165061" user="mapper999"/>
+  <node id="1677001513" lat="49.0116015" lon="8.4231639" version="2" timestamp="2015-05-19T18:30:32Z" changeset="31292302" uid="165061" user="mapper999"/>
+  <node id="1677001515" lat="49.0116891" lon="8.4231490" version="2" timestamp="2015-05-12T19:34:51Z" changeset="31064131" uid="165061" user="mapper999"/>
+  <node id="1677001518" lat="49.0117999" lon="8.4231257" version="2" timestamp="2015-05-12T19:34:51Z" changeset="31064131" uid="165061" user="mapper999"/>
+  <node id="1677001520" lat="49.0125006" lon="8.4229694" version="1" timestamp="2012-03-16T16:45:06Z" changeset="11000149" uid="35468" user="Blunauer"/>
+  <node id="1677001522" lat="49.0132342" lon="8.4227944" version="3" timestamp="2015-06-19T19:16:01Z" changeset="32082198" uid="165061" user="mapper999">
+    <tag k="traffic_sign:backward" v="DE:290.2"/>
+    <tag k="traffic_sign:forward" v="DE:290.1,DE:1020-32[A2]"/>
+  </node>
+  <node id="1677006096" lat="49.0117397" lon="8.4229681" version="1" timestamp="2012-03-16T16:47:11Z" changeset="11000167" uid="35468" user="Blunauer"/>
+  <node id="1677006099" lat="49.0132770" lon="8.4226064" version="2" timestamp="2014-11-25T18:44:47Z" changeset="27028367" uid="165061" user="mapper999"/>
+  <node id="1692818062" lat="49.0101654" lon="8.4205624" version="1" timestamp="2012-03-27T06:53:57Z" changeset="11113176" uid="151736" user="Jennifer Neubauer">
+    <tag k="highway" v="give_way"/>
+    <tag k="traffic_sign" v="DE:205"/>
+  </node>
+  <node id="1703288286" lat="49.0126781" lon="8.4243648" version="1" timestamp="2012-04-05T20:03:34Z" changeset="11193788" uid="35468" user="Blunauer"/>
+  <node id="1721880320" lat="49.0117098" lon="8.4219309" version="1" timestamp="2012-04-18T14:54:49Z" changeset="11344979" uid="35468" user="Blunauer">
+    <tag k="barrier" v="bollard"/>
+  </node>
+  <node id="1721884480" lat="49.0099987" lon="8.4194961" version="2" timestamp="2012-09-03T20:53:01Z" changeset="12973472" uid="165061" user="mapper999"/>
+  <node id="1796420797" lat="49.0139486" lon="8.4301176" version="1" timestamp="2012-06-20T22:16:18Z" changeset="11963770" uid="165061" user="mapper999"/>
+  <node id="1818468606" lat="49.0108181" lon="8.4232790" version="3" timestamp="2015-12-21T22:16:01Z" changeset="36096014" uid="2600695" user="jlcod"/>
+  <node id="1818468607" lat="49.0109752" lon="8.4248179" version="2" timestamp="2014-09-16T13:56:08Z" changeset="25479978" uid="35468" user="Blunauer"/>
+  <node id="1818468608" lat="49.0110158" lon="8.4253664" version="2" timestamp="2014-09-16T13:56:08Z" changeset="25479978" uid="35468" user="Blunauer"/>
+  <node id="1818468609" lat="49.0110216" lon="8.4254786" version="2" timestamp="2014-09-16T13:56:08Z" changeset="25479978" uid="35468" user="Blunauer"/>
+  <node id="1818468614" lat="49.0110710" lon="8.4260560" version="2" timestamp="2014-09-16T13:56:08Z" changeset="25479978" uid="35468" user="Blunauer"/>
+  <node id="1818468615" lat="49.0110930" lon="8.4263271" version="2" timestamp="2014-09-16T13:56:08Z" changeset="25479978" uid="35468" user="Blunauer"/>
+  <node id="1818468617" lat="49.0112241" lon="8.4285061" version="2" timestamp="2014-09-16T13:56:09Z" changeset="25479978" uid="35468" user="Blunauer"/>
+  <node id="1818468618" lat="49.0112240" lon="8.4286211" version="2" timestamp="2014-09-16T13:56:09Z" changeset="25479978" uid="35468" user="Blunauer"/>
+  <node id="1818468619" lat="49.0112636" lon="8.4307114" version="2" timestamp="2012-07-10T19:26:27Z" changeset="12178288" uid="28237" user="lyx"/>
+  <node id="1820693722" lat="49.0099921" lon="8.4279958" version="3" timestamp="2015-07-18T14:05:30Z" changeset="32717894" uid="165061" user="mapper999"/>
+  <node id="1820693724" lat="49.0099968" lon="8.4281129" version="3" timestamp="2015-07-18T14:05:30Z" changeset="32717894" uid="165061" user="mapper999"/>
+  <node id="1820693726" lat="49.0100295" lon="8.4234529" version="4" timestamp="2015-12-21T22:16:01Z" changeset="36096014" uid="2600695" user="jlcod"/>
+  <node id="1820693731" lat="49.0100733" lon="8.4269867" version="3" timestamp="2015-07-18T14:05:30Z" changeset="32717894" uid="165061" user="mapper999"/>
+  <node id="1820693733" lat="49.0101819" lon="8.4257191" version="3" timestamp="2015-07-18T14:05:30Z" changeset="32717894" uid="165061" user="mapper999"/>
+  <node id="1830646742" lat="49.0093985" lon="8.4207573" version="3" timestamp="2015-09-03T17:37:00Z" changeset="33778563" uid="2600695" user="jlcod"/>
+  <node id="1830646792" lat="49.0109631" lon="8.4222933" version="1" timestamp="2012-07-19T10:22:40Z" changeset="12318312" uid="165061" user="mapper999"/>
+  <node id="1830646794" lat="49.0109893" lon="8.4225675" version="1" timestamp="2012-07-19T10:22:40Z" changeset="12318312" uid="165061" user="mapper999"/>
+  <node id="1830646912" lat="49.0113702" lon="8.4234754" version="1" timestamp="2012-07-19T10:22:42Z" changeset="12318312" uid="165061" user="mapper999"/>
+  <node id="1830646925" lat="49.0114171" lon="8.4234308" version="3" timestamp="2015-08-07T21:28:53Z" changeset="33191050" uid="165061" user="mapper999">
+    <tag k="crossing" v="traffic_signals"/>
+    <tag k="crossing:barrier" v="no"/>
+    <tag k="crossing:bell" v="no"/>
+    <tag k="crossing:light" v="yes"/>
+    <tag k="crossing:supervision" v="no"/>
+    <tag k="railway" v="crossing"/>
+  </node>
+  <node id="1830646929" lat="49.0114269" lon="8.4234212" version="1" timestamp="2012-07-19T10:22:43Z" changeset="12318312" uid="165061" user="mapper999"/>
+  <node id="1830646936" lat="49.0114420" lon="8.4234063" version="1" timestamp="2012-07-19T10:22:44Z" changeset="12318312" uid="165061" user="mapper999"/>
+  <node id="1831247641" lat="49.0094012" lon="8.4259044" version="1" timestamp="2012-07-19T18:09:41Z" changeset="12341342" uid="42208" user="JanTH"/>
+  <node id="1839639948" lat="49.0113449" lon="8.4205142" version="1" timestamp="2012-07-27T09:54:46Z" changeset="12509017" uid="165061" user="mapper999"/>
+  <node id="1839639950" lat="49.0113473" lon="8.4209139" version="1" timestamp="2012-07-27T09:54:46Z" changeset="12509017" uid="165061" user="mapper999"/>
+  <node id="1839639952" lat="49.0113827" lon="8.4204570" version="1" timestamp="2012-07-27T09:54:46Z" changeset="12509017" uid="165061" user="mapper999"/>
+  <node id="1864266087" lat="49.0094427" lon="8.4258978" version="1" timestamp="2012-08-13T13:45:54Z" changeset="12714156" uid="42208" user="JanTH"/>
+  <node id="1897090272" lat="49.0098212" lon="8.4189226" version="1" timestamp="2012-09-03T20:52:45Z" changeset="12973472" uid="165061" user="mapper999"/>
+  <node id="1897090289" lat="49.0100303" lon="8.4196016" version="1" timestamp="2012-09-03T20:52:46Z" changeset="12973472" uid="165061" user="mapper999"/>
+  <node id="1897090290" lat="49.0100647" lon="8.4196990" version="1" timestamp="2012-09-03T20:52:46Z" changeset="12973472" uid="165061" user="mapper999"/>
+  <node id="1897090291" lat="49.0101371" lon="8.4198880" version="1" timestamp="2012-09-03T20:52:46Z" changeset="12973472" uid="165061" user="mapper999"/>
+  <node id="1897090293" lat="49.0103617" lon="8.4205120" version="1" timestamp="2012-09-03T20:52:46Z" changeset="12973472" uid="165061" user="mapper999"/>
+  <node id="1897090294" lat="49.0104391" lon="8.4207125" version="1" timestamp="2012-09-03T20:52:46Z" changeset="12973472" uid="165061" user="mapper999"/>
+  <node id="1908406217" lat="49.0097979" lon="8.4187689" version="1" timestamp="2012-09-10T13:52:26Z" changeset="13057271" uid="165061" user="mapper999"/>
+  <node id="1908406219" lat="49.0098046" lon="8.4188492" version="1" timestamp="2012-09-10T13:52:26Z" changeset="13057271" uid="165061" user="mapper999"/>
+  <node id="2296045320" lat="49.0123013" lon="8.4246958" version="1" timestamp="2013-05-08T15:41:40Z" changeset="16032140" uid="14299" user="Earthwings"/>
+  <node id="2296045321" lat="49.0122987" lon="8.4245434" version="2" timestamp="2015-04-10T11:48:20Z" changeset="30115933" uid="29717" user="eumiro"/>
+  <node id="2665202893" lat="49.0114338" lon="8.4236548" version="1" timestamp="2014-02-10T13:58:22Z" changeset="20485710" uid="165061" user="mapper999"/>
+  <node id="2665202894" lat="49.0114972" lon="8.4238007" version="1" timestamp="2014-02-10T13:58:22Z" changeset="20485710" uid="165061" user="mapper999"/>
+  <node id="3080224501" lat="49.0101267" lon="8.4248627" version="2" timestamp="2015-12-21T22:16:01Z" changeset="36096014" uid="2600695" user="jlcod"/>
+  <node id="3080224502" lat="49.0109300" lon="8.4243156" version="1" timestamp="2014-09-16T13:56:02Z" changeset="25479978" uid="35468" user="Blunauer"/>
+  <node id="3205046198" lat="49.0132162" lon="8.4218477" version="1" timestamp="2014-11-25T18:44:40Z" changeset="27028367" uid="165061" user="mapper999">
+    <tag k="traffic_sign:backward" v="DE:267"/>
+  </node>
+  <node id="3301100909" lat="49.0110056" lon="8.4232376" version="2" timestamp="2015-05-30T16:29:16Z" changeset="31587838" uid="165061" user="mapper999">
+    <tag k="traffic_sign:backward" v="DE:274.2[30]"/>
+    <tag k="traffic_sign:forward" v="DE:274.1[30]"/>
+  </node>
+  <node id="3384279693" lat="49.0113057" lon="8.4233756" version="1" timestamp="2015-03-05T13:26:02Z" changeset="29266514" uid="442210" user="dwausr">
+    <tag k="bus" v="yes"/>
+    <tag k="name" v="Karl-Wilhelm-Platz"/>
+    <tag k="network" v="Karlsruher Verkehrsverbund"/>
+    <tag k="note" v="SEV-Haltestelle"/>
+    <tag k="operator" v="Verkehrsbetriebe Karlsruhe GmbH"/>
+    <tag k="public_transport" v="stop_position"/>
+    <tag k="ref:IFOPT" v="de:8212:401:0:11"/>
+    <tag k="tram" v="no"/>
+    <tag k="uic_ref" v="721387"/>
+  </node>
+  <node id="3384279993" lat="49.0113563" lon="8.4231186" version="1" timestamp="2015-03-05T13:26:03Z" changeset="29266514" uid="442210" user="dwausr">
+    <tag k="bus" v="yes"/>
+    <tag k="name" v="Karl-Wilhelm-Platz"/>
+    <tag k="network" v="Karlsruher Verkehrsverbund"/>
+    <tag k="note" v="SEV-Haltestelle"/>
+    <tag k="operator" v="Verkehrsbetriebe Karlsruhe GmbH"/>
+    <tag k="public_transport" v="stop_position"/>
+    <tag k="ref:IFOPT" v="de:8212:401:0:12"/>
+    <tag k="tram" v="no"/>
+    <tag k="uic_ref" v="721387"/>
+  </node>
+  <node id="3448377377" lat="49.0125948" lon="8.4239416" version="1" timestamp="2015-04-10T11:48:18Z" changeset="30115933" uid="29717" user="eumiro"/>
+  <node id="3448377378" lat="49.0127731" lon="8.4239108" version="1" timestamp="2015-04-10T11:48:18Z" changeset="30115933" uid="29717" user="eumiro"/>
+  <node id="3448377379" lat="49.0128667" lon="8.4239233" version="1" timestamp="2015-04-10T11:48:18Z" changeset="30115933" uid="29717" user="eumiro">
+    <tag k="access" v="private"/>
+    <tag k="amenity" v="parking_entrance"/>
+    <tag k="parking" v="underground"/>
+  </node>
+  <node id="3513133332" lat="49.0117739" lon="8.4231311" version="1" timestamp="2015-05-12T19:34:32Z" changeset="31064131" uid="165061" user="mapper999"/>
+  <node id="3547526718" lat="49.0099547" lon="8.4234705" version="2" timestamp="2015-12-21T22:16:01Z" changeset="36096014" uid="2600695" user="jlcod"/>
+  <node id="3559037172" lat="49.0107693" lon="8.4232887" version="1" timestamp="2015-05-30T16:27:56Z" changeset="31587838" uid="165061" user="mapper999"/>
+  <node id="3559037185" lat="49.0119227" lon="8.4247815" version="1" timestamp="2015-05-30T16:27:56Z" changeset="31587838" uid="165061" user="mapper999"/>
+  <node id="3559037186" lat="49.0119331" lon="8.4247714" version="1" timestamp="2015-05-30T16:27:56Z" changeset="31587838" uid="165061" user="mapper999"/>
+  <node id="3559037239" lat="49.0126324" lon="8.4245508" version="1" timestamp="2015-05-30T16:27:57Z" changeset="31587838" uid="165061" user="mapper999"/>
+  <node id="3559289186" lat="49.0120677" lon="8.4249676" version="1" timestamp="2015-05-30T19:18:29Z" changeset="31590637" uid="165061" user="mapper999">
+    <tag k="highway" v="traffic_mirror"/>
+  </node>
+  <node id="3559289235" lat="49.0131088" lon="8.4280646" version="1" timestamp="2015-05-30T19:18:29Z" changeset="31590637" uid="165061" user="mapper999"/>
+  <node id="3575330119" lat="49.0102191" lon="8.4234077" version="1" timestamp="2015-06-05T19:46:51Z" changeset="31754318" uid="165061" user="mapper999"/>
+  <node id="3575330136" lat="49.0104213" lon="8.4233638" version="1" timestamp="2015-06-05T19:46:51Z" changeset="31754318" uid="165061" user="mapper999"/>
+  <node id="3588430208" lat="49.0118228" lon="8.4219049" version="1" timestamp="2015-06-11T20:44:15Z" changeset="31907021" uid="165061" user="mapper999"/>
+  <node id="3598614138" lat="49.0101395" lon="8.4201540" version="1" timestamp="2015-06-16T14:04:32Z" changeset="32007300" uid="165061" user="mapper999"/>
+  <node id="3598614139" lat="49.0102243" lon="8.4203711" version="1" timestamp="2015-06-16T14:04:32Z" changeset="32007300" uid="165061" user="mapper999"/>
+  <node id="3605775610" lat="49.0106961" lon="8.4219153" version="1" timestamp="2015-06-19T19:15:29Z" changeset="32082198" uid="165061" user="mapper999"/>
+  <node id="3605775611" lat="49.0116674" lon="8.4231527" version="1" timestamp="2015-06-19T19:15:29Z" changeset="32082198" uid="165061" user="mapper999">
+    <tag k="highway" v="give_way"/>
+    <tag k="traffic_sign:forward" v="DE:205;DE:209-20;DE:274.2[30];DE:290.2"/>
+  </node>
+  <node id="3620742860" lat="49.0134778" lon="8.4284899" version="1" timestamp="2015-06-26T20:48:22Z" changeset="32232627" uid="165061" user="mapper999"/>
+  <node id="3621426204" lat="49.0127674" lon="8.4243588" version="1" timestamp="2015-06-27T10:04:58Z" changeset="32240131" uid="165061" user="mapper999"/>
+  <node id="3656667399" lat="49.0097737" lon="8.4309013" version="1" timestamp="2015-07-18T14:03:45Z" changeset="32717894" uid="165061" user="mapper999"/>
+  <node id="3656667405" lat="49.0099686" lon="8.4284176" version="1" timestamp="2015-07-18T14:03:45Z" changeset="32717894" uid="165061" user="mapper999"/>
+  <node id="3686190481" lat="49.0095488" lon="8.4201641" version="1" timestamp="2015-08-07T21:26:52Z" changeset="33191050" uid="165061" user="mapper999"/>
+  <node id="3686190495" lat="49.0098149" lon="8.4199955" version="1" timestamp="2015-08-07T21:26:52Z" changeset="33191050" uid="165061" user="mapper999"/>
+  <node id="3698328911" lat="49.0105026" lon="8.4233461" version="1" timestamp="2015-08-15T09:54:01Z" changeset="33349425" uid="165061" user="mapper999"/>
+  <node id="3698328912" lat="49.0105439" lon="8.4237505" version="1" timestamp="2015-08-15T09:54:01Z" changeset="33349425" uid="165061" user="mapper999">
+    <tag k="entrance" v="yes"/>
+  </node>
+  <node id="3728096987" lat="49.0098970" lon="8.4199240" version="1" timestamp="2015-09-03T17:36:58Z" changeset="33778563" uid="2600695" user="jlcod"/>
+  <node id="3767766261" lat="49.0100733" lon="8.4241528" version="2" timestamp="2015-12-21T22:16:01Z" changeset="36096014" uid="2600695" user="jlcod"/>
+  <node id="3767766262" lat="49.0103521" lon="8.4241169" version="1" timestamp="2015-10-01T18:52:40Z" changeset="34375345" uid="2600695" user="jlcod"/>
+  <node id="3767766263" lat="49.0105120" lon="8.4234380" version="1" timestamp="2015-10-01T18:52:40Z" changeset="34375345" uid="2600695" user="jlcod">
+    <tag k="barrier" v="gate"/>
+  </node>
+  <node id="3767766264" lat="49.0105176" lon="8.4245477" version="1" timestamp="2015-10-01T18:52:40Z" changeset="34375345" uid="2600695" user="jlcod"/>
+  <node id="3767766265" lat="49.0105251" lon="8.4240052" version="1" timestamp="2015-10-01T18:52:40Z" changeset="34375345" uid="2600695" user="jlcod"/>
+  <node id="3767766266" lat="49.0106054" lon="8.4243787" version="1" timestamp="2015-10-01T18:52:40Z" changeset="34375345" uid="2600695" user="jlcod"/>
+  <node id="3767766267" lat="49.0106175" lon="8.4245328" version="1" timestamp="2015-10-01T18:52:40Z" changeset="34375345" uid="2600695" user="jlcod"/>
+  <node id="3767766268" lat="49.0106356" lon="8.4242466" version="1" timestamp="2015-10-01T18:52:40Z" changeset="34375345" uid="2600695" user="jlcod"/>
+  <node id="3767766269" lat="49.0106846" lon="8.4239942" version="1" timestamp="2015-10-01T18:52:40Z" changeset="34375345" uid="2600695" user="jlcod"/>
+  <node id="3767766270" lat="49.0106940" lon="8.4242437" version="1" timestamp="2015-10-01T18:52:40Z" changeset="34375345" uid="2600695" user="jlcod"/>
+  <node id="3767766271" lat="49.0106994" lon="8.4244342" version="1" timestamp="2015-10-01T18:52:40Z" changeset="34375345" uid="2600695" user="jlcod"/>
+  <node id="3767766272" lat="49.0107108" lon="8.4243804" version="1" timestamp="2015-10-01T18:52:40Z" changeset="34375345" uid="2600695" user="jlcod"/>
+  <node id="3767766273" lat="49.0107817" lon="8.4243828" version="1" timestamp="2015-10-01T18:52:40Z" changeset="34375345" uid="2600695" user="jlcod"/>
+  <node id="3767766274" lat="49.0109349" lon="8.4243701" version="1" timestamp="2015-10-01T18:52:40Z" changeset="34375345" uid="2600695" user="jlcod"/>
+  <node id="3767766275" lat="49.0109390" lon="8.4244158" version="1" timestamp="2015-10-01T18:52:40Z" changeset="34375345" uid="2600695" user="jlcod"/>
+  <node id="3804081616" lat="49.0110449" lon="8.4257510" version="1" timestamp="2015-10-26T20:14:38Z" changeset="34890347" uid="3054129" user="Darren Strash">
+    <tag k="crossing" v="uncontrolled"/>
+    <tag k="highway" v="crossing"/>
+  </node>
+  <node id="3888223299" lat="49.0122888" lon="8.4239176" version="1" timestamp="2015-12-11T20:32:09Z" changeset="35892703" uid="165061" user="mapper999"/>
+  <node id="3888223300" lat="49.0123333" lon="8.4248588" version="1" timestamp="2015-12-11T20:32:09Z" changeset="35892703" uid="165061" user="mapper999">
+    <tag k="traffic_sign:forward" v="DE:112,DE:274[10]"/>
+  </node>
+  <node id="3888223330" lat="49.0129304" lon="8.4243478" version="1" timestamp="2015-12-11T20:32:10Z" changeset="35892703" uid="165061" user="mapper999"/>
+  <node id="3888223333" lat="49.0129510" lon="8.4271880" version="1" timestamp="2015-12-11T20:32:10Z" changeset="35892703" uid="165061" user="mapper999"/>
+  <node id="3888223334" lat="49.0129537" lon="8.4243462" version="1" timestamp="2015-12-11T20:32:10Z" changeset="35892703" uid="165061" user="mapper999"/>
+  <node id="3888223349" lat="49.0130304" lon="8.4243411" version="1" timestamp="2015-12-11T20:32:10Z" changeset="35892703" uid="165061" user="mapper999"/>
+  <node id="3888223351" lat="49.0130441" lon="8.4274310" version="1" timestamp="2015-12-11T20:32:10Z" changeset="35892703" uid="165061" user="mapper999"/>
+  <node id="3888223581" lat="49.0131975" lon="8.4278310" version="1" timestamp="2015-12-11T20:32:11Z" changeset="35892703" uid="165061" user="mapper999"/>
+  <node id="3888223619" lat="49.0136649" lon="8.4290503" version="1" timestamp="2015-12-11T20:32:11Z" changeset="35892703" uid="165061" user="mapper999"/>
+  <node id="3903695906" lat="49.0095697" lon="8.4235601" version="1" timestamp="2015-12-21T22:15:55Z" changeset="36096014" uid="2600695" user="jlcod">
+    <tag k="highway" v="mini_roundabout"/>
+  </node>
+  <node id="3903695907" lat="49.0100712" lon="8.4239371" version="1" timestamp="2015-12-21T22:15:55Z" changeset="36096014" uid="2600695" user="jlcod"/>
+  <node id="3903695908" lat="49.0111826" lon="8.4229895" version="1" timestamp="2015-12-21T22:15:55Z" changeset="36096014" uid="2600695" user="jlcod"/>
+  <node id="3903695909" lat="49.0111999" lon="8.4229712" version="1" timestamp="2015-12-21T22:15:55Z" changeset="36096014" uid="2600695" user="jlcod"/>
+  <node id="3903695910" lat="49.0112407" lon="8.4229346" version="1" timestamp="2015-12-21T22:15:55Z" changeset="36096014" uid="2600695" user="jlcod"/>
+  <node id="3903695911" lat="49.0112585" lon="8.4229187" version="1" timestamp="2015-12-21T22:15:55Z" changeset="36096014" uid="2600695" user="jlcod"/>
+  <node id="3903695912" lat="49.0113842" lon="8.4234624" version="1" timestamp="2015-12-21T22:15:55Z" changeset="36096014" uid="2600695" user="jlcod"/>
+  <node id="3964871724" lat="49.0112242" lon="8.4230943" version="1" timestamp="2016-01-24T20:41:43Z" changeset="36784109" uid="165061" user="mapper999">
+    <tag k="highway" v="street_lamp"/>
+    <tag k="light:count" v="1"/>
+    <tag k="light:method" v="electric"/>
+    <tag k="light_source" v="lantern"/>
+    <tag k="operator" v="Verkehrsbetriebe Karlsruhe GmbH"/>
+    <tag k="support" v="pole"/>
+  </node>
+  <node id="3964871725" lat="49.0112960" lon="8.4230300" version="1" timestamp="2016-01-24T20:41:43Z" changeset="36784109" uid="165061" user="mapper999">
+    <tag k="highway" v="street_lamp"/>
+    <tag k="light:count" v="1"/>
+    <tag k="light:method" v="electric"/>
+    <tag k="light_source" v="lantern"/>
+    <tag k="operator" v="Verkehrsbetriebe Karlsruhe GmbH"/>
+    <tag k="support" v="pole"/>
+  </node>
+  <node id="3964871727" lat="49.0113318" lon="8.4233740" version="1" timestamp="2016-01-24T20:41:43Z" changeset="36784109" uid="165061" user="mapper999">
+    <tag k="highway" v="street_lamp"/>
+    <tag k="light:count" v="1"/>
+    <tag k="light:method" v="electric"/>
+    <tag k="light_source" v="lantern"/>
+    <tag k="operator" v="Verkehrsbetriebe Karlsruhe GmbH"/>
+    <tag k="support" v="pole"/>
+  </node>
+  <node id="3964871728" lat="49.0114037" lon="8.4233098" version="1" timestamp="2016-01-24T20:41:43Z" changeset="36784109" uid="165061" user="mapper999">
+    <tag k="highway" v="street_lamp"/>
+    <tag k="light:count" v="1"/>
+    <tag k="light:method" v="electric"/>
+    <tag k="light_source" v="lantern"/>
+    <tag k="operator" v="Verkehrsbetriebe Karlsruhe GmbH"/>
+    <tag k="support" v="pole"/>
+  </node>
+  <node id="4004617454" lat="49.0112930" lon="8.4227642" version="1" timestamp="2016-02-13T19:44:15Z" changeset="37193396" uid="165061" user="mapper999">
+    <tag k="highway" v="street_lamp"/>
+    <tag k="light_source" v="lantern"/>
+    <tag k="operator" v="Stadt Karlsruhe"/>
+    <tag k="operator:type" v="public"/>
+    <tag k="support" v="pole"/>
+  </node>
+  <node id="4004617455" lat="49.0113865" lon="8.4227784" version="1" timestamp="2016-02-13T19:44:15Z" changeset="37193396" uid="165061" user="mapper999">
+    <tag k="highway" v="street_lamp"/>
+    <tag k="light_source" v="lantern"/>
+    <tag k="operator" v="Stadt Karlsruhe"/>
+    <tag k="operator:type" v="public"/>
+    <tag k="support" v="pole"/>
+  </node>
+  <node id="4004617456" lat="49.0114720" lon="8.4228374" version="1" timestamp="2016-02-13T19:44:16Z" changeset="37193396" uid="165061" user="mapper999">
+    <tag k="highway" v="street_lamp"/>
+    <tag k="light_source" v="lantern"/>
+    <tag k="operator" v="Stadt Karlsruhe"/>
+    <tag k="operator:type" v="public"/>
+    <tag k="support" v="pole"/>
+  </node>
+  <node id="4004617457" lat="49.0115407" lon="8.4229352" version="1" timestamp="2016-02-13T19:44:16Z" changeset="37193396" uid="165061" user="mapper999">
+    <tag k="highway" v="street_lamp"/>
+    <tag k="light_source" v="lantern"/>
+    <tag k="operator" v="Stadt Karlsruhe"/>
+    <tag k="operator:type" v="public"/>
+    <tag k="support" v="pole"/>
+  </node>
+  <node id="4004617458" lat="49.0115457" lon="8.4234347" version="1" timestamp="2016-02-13T19:44:16Z" changeset="37193396" uid="165061" user="mapper999">
+    <tag k="highway" v="street_lamp"/>
+    <tag k="light_source" v="lantern"/>
+    <tag k="operator" v="Stadt Karlsruhe"/>
+    <tag k="operator:type" v="public"/>
+    <tag k="support" v="pole"/>
+  </node>
+  <node id="4004617459" lat="49.0115851" lon="8.4230613" version="1" timestamp="2016-02-13T19:44:16Z" changeset="37193396" uid="165061" user="mapper999">
+    <tag k="highway" v="street_lamp"/>
+    <tag k="light_source" v="lantern"/>
+    <tag k="operator" v="Stadt Karlsruhe"/>
+    <tag k="operator:type" v="public"/>
+    <tag k="support" v="pole"/>
+  </node>
+  <node id="4004617460" lat="49.0115909" lon="8.4232593" version="1" timestamp="2016-02-13T19:44:16Z" changeset="37193396" uid="165061" user="mapper999">
+    <tag k="highway" v="street_lamp"/>
+    <tag k="light_source" v="lantern"/>
+    <tag k="operator" v="Stadt Karlsruhe"/>
+    <tag k="operator:type" v="public"/>
+    <tag k="support" v="pole"/>
+  </node>
+  <way id="3425751" version="9" timestamp="2014-06-26T17:05:40Z" changeset="23193117" uid="6609" user="drhzbg">
+    <nd ref="14912569"/>
+    <nd ref="1616492737"/>
+    <nd ref="1897090293"/>
+    <nd ref="14912566"/>
+    <tag k="highway" v="residential"/>
+    <tag k="maxspeed" v="30"/>
+    <tag k="name" v="Hölderlinstraße"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <way id="3425752" version="8" timestamp="2014-02-10T13:58:47Z" changeset="20485710" uid="165061" user="mapper999">
+    <nd ref="14912571"/>
+    <nd ref="667388462"/>
+    <nd ref="31261892"/>
+    <nd ref="1381789465"/>
+    <nd ref="1676974391"/>
+    <tag k="highway" v="residential"/>
+    <tag k="maxspeed" v="30"/>
+    <tag k="name" v="Emil-Gött-Straße"/>
+    <tag k="parking:condition:both" v="residents"/>
+    <tag k="parking:condition:both:residents" v="A3"/>
+    <tag k="parking:lane:both" v="parallel"/>
+    <tag k="parking:lane:both:parallel" v="on_kerb"/>
+    <tag k="sidewalk" v="both"/>
+  </way>
+  <way id="4060217" version="10" timestamp="2015-09-03T17:37:00Z" changeset="33778563" uid="2600695" user="jlcod">
+    <nd ref="21498802"/>
+    <nd ref="3686190481"/>
+    <nd ref="21498804"/>
+    <nd ref="3686190495"/>
+    <nd ref="3728096987"/>
+    <tag k="highway" v="service"/>
+    <tag k="note" v="unechte Einbahnstraße, Feuerwehrzufahrt"/>
+  </way>
+  <way id="4211754" version="8" timestamp="2014-06-26T17:05:40Z" changeset="23193117" uid="6609" user="drhzbg">
+    <nd ref="14912567"/>
+    <nd ref="1897090294"/>
+    <nd ref="14912568"/>
+    <tag k="highway" v="residential"/>
+    <tag k="maxspeed" v="30"/>
+    <tag k="name" v="Hölderlinstraße"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <way id="4293408" version="7" timestamp="2012-12-07T20:30:46Z" changeset="14192616" uid="1118974" user="Philipp Kern-2">
+    <nd ref="1818468608"/>
+    <nd ref="1121417354"/>
+    <nd ref="1121417331"/>
+    <nd ref="1121417319"/>
+    <nd ref="1121417377"/>
+    <nd ref="1395863920"/>
+    <tag k="highway" v="footway"/>
+  </way>
+  <way id="4850193" version="8" timestamp="2014-11-25T18:44:46Z" changeset="27028367" uid="165061" user="mapper999">
+    <nd ref="31261892"/>
+    <nd ref="31261889"/>
+    <nd ref="31261890"/>
+    <nd ref="31261891"/>
+    <nd ref="3205046198"/>
+    <nd ref="1381789459"/>
+    <nd ref="1676974404"/>
+    <tag k="access" v="private"/>
+    <tag k="highway" v="service"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <way id="24882720" version="10" timestamp="2013-10-16T03:52:47Z" changeset="18379091" uid="236221" user="deocka">
+    <nd ref="21498799"/>
+    <nd ref="1830646742"/>
+    <nd ref="1692818062"/>
+    <nd ref="802168355"/>
+    <nd ref="14912566"/>
+    <tag k="cycleway" v="opposite"/>
+    <tag k="highway" v="residential"/>
+    <tag k="maxspeed" v="30"/>
+    <tag k="name" v="Bernhardstraße"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="oneway:bicycle" v="no"/>
+  </way>
+  <way id="26292384" version="7" timestamp="2014-11-12T22:29:54Z" changeset="26745841" uid="165061" user="mapper999">
+    <nd ref="1677006096"/>
+    <nd ref="1081928856"/>
+    <nd ref="288005327"/>
+    <nd ref="288005328"/>
+    <tag k="access" v="private"/>
+    <tag k="bicycle" v="no"/>
+    <tag k="foot" v="private"/>
+    <tag k="highway" v="footway"/>
+  </way>
+  <way id="26292385" version="3" timestamp="2015-06-11T20:44:33Z" changeset="31907021" uid="165061" user="mapper999">
+    <nd ref="288005328"/>
+    <nd ref="1482297446"/>
+    <nd ref="3588430208"/>
+    <nd ref="31261889"/>
+    <tag k="access" v="private"/>
+    <tag k="highway" v="service"/>
+  </way>
+  <way id="26292386" version="8" timestamp="2012-07-17T13:28:39Z" changeset="12266466" uid="722137" user="OSMF Redaction Account">
+    <nd ref="288005329"/>
+    <nd ref="667389690"/>
+    <nd ref="667388474"/>
+    <nd ref="667388480"/>
+    <nd ref="667388479"/>
+    <nd ref="667388478"/>
+    <nd ref="667388477"/>
+    <nd ref="1721880320"/>
+    <nd ref="288005328"/>
+    <tag k="access" v="private"/>
+    <tag k="highway" v="service"/>
+  </way>
+  <way id="42019992" version="7" timestamp="2015-12-11T20:32:50Z" changeset="35892703" uid="165061" user="mapper999">
+    <nd ref="521270113"/>
+    <nd ref="521270120"/>
+    <nd ref="521428051"/>
+    <tag k="access" v="permissive"/>
+    <tag k="highway" v="service"/>
+    <tag k="maxspeed" v="10"/>
+    <tag k="motorcar" v="private"/>
+    <tag k="service" v="parking_aisle"/>
+  </way>
+  <way id="42019998" version="5" timestamp="2015-12-11T20:32:49Z" changeset="35892703" uid="165061" user="mapper999">
+    <nd ref="521270138"/>
+    <nd ref="521270126"/>
+    <tag k="access" v="permissive"/>
+    <tag k="highway" v="service"/>
+    <tag k="maxspeed" v="10"/>
+    <tag k="motorcar" v="private"/>
+    <tag k="service" v="parking_aisle"/>
+  </way>
+  <way id="42024297" version="2" timestamp="2011-10-25T13:43:00Z" changeset="9652394" uid="442210" user="dwausr">
+    <nd ref="1480157111"/>
+    <nd ref="521428051"/>
+    <tag k="highway" v="cycleway"/>
+  </way>
+  <way id="42024300" version="2" timestamp="2015-12-11T20:32:50Z" changeset="35892703" uid="165061" user="mapper999">
+    <nd ref="521270126"/>
+    <nd ref="521270122"/>
+    <nd ref="521270120"/>
+    <tag k="access" v="permissive"/>
+    <tag k="highway" v="service"/>
+    <tag k="maxspeed" v="10"/>
+    <tag k="motorcar" v="private"/>
+    <tag k="service" v="parking_aisle"/>
+  </way>
+  <way id="42024301" version="2" timestamp="2015-12-11T20:32:49Z" changeset="35892703" uid="165061" user="mapper999">
+    <nd ref="521270128"/>
+    <nd ref="521270122"/>
+    <tag k="access" v="permissive"/>
+    <tag k="highway" v="service"/>
+    <tag k="maxspeed" v="10"/>
+    <tag k="motorcar" v="private"/>
+    <tag k="service" v="parking_aisle"/>
+  </way>
+  <way id="42024386" version="1" timestamp="2009-10-05T12:01:52Z" changeset="2748539" uid="29717" user="eumiro">
+    <nd ref="521428057"/>
+    <nd ref="521431502"/>
+    <tag k="highway" v="steps"/>
+  </way>
+  <way id="52514195" version="4" timestamp="2012-07-27T09:54:50Z" changeset="12509017" uid="165061" user="mapper999">
+    <nd ref="667388462"/>
+    <nd ref="1186036499"/>
+    <nd ref="1186036465"/>
+    <nd ref="1186036469"/>
+    <nd ref="1186036480"/>
+    <nd ref="1186038876"/>
+    <nd ref="1186036501"/>
+    <nd ref="1839639952"/>
+    <nd ref="1186036538"/>
+    <tag k="highway" v="footway"/>
+  </way>
+  <way id="52514197" version="1" timestamp="2010-03-16T17:01:29Z" changeset="4144799" uid="7622" user="user_7622">
+    <nd ref="667388478"/>
+    <nd ref="667388471"/>
+    <tag k="highway" v="footway"/>
+  </way>
+  <way id="52514198" version="1" timestamp="2010-03-16T17:01:30Z" changeset="4144799" uid="7622" user="user_7622">
+    <nd ref="667388480"/>
+    <nd ref="667388473"/>
+    <tag k="highway" v="footway"/>
+  </way>
+  <way id="52514199" version="2" timestamp="2010-03-16T17:04:17Z" changeset="4144825" uid="7622" user="user_7622">
+    <nd ref="667388481"/>
+    <nd ref="667388482"/>
+    <nd ref="667388476"/>
+    <nd ref="667388471"/>
+    <nd ref="667388472"/>
+    <nd ref="667388473"/>
+    <nd ref="667388475"/>
+    <nd ref="667389691"/>
+    <nd ref="667388470"/>
+    <tag k="highway" v="footway"/>
+  </way>
+  <way id="52514200" version="1" timestamp="2010-03-16T17:01:30Z" changeset="4144799" uid="7622" user="user_7622">
+    <nd ref="667388479"/>
+    <nd ref="667388472"/>
+    <tag k="highway" v="footway"/>
+  </way>
+  <way id="52514201" version="1" timestamp="2010-03-16T17:01:30Z" changeset="4144799" uid="7622" user="user_7622">
+    <nd ref="667388474"/>
+    <nd ref="667388475"/>
+    <tag k="highway" v="footway"/>
+  </way>
+  <way id="52514202" version="1" timestamp="2010-03-16T17:01:30Z" changeset="4144799" uid="7622" user="user_7622">
+    <nd ref="667388477"/>
+    <nd ref="667388482"/>
+    <tag k="highway" v="footway"/>
+  </way>
+  <way id="52514299" version="1" timestamp="2010-03-16T17:04:17Z" changeset="4144825" uid="7622" user="user_7622">
+    <nd ref="667389690"/>
+    <nd ref="667389691"/>
+    <tag k="highway" v="footway"/>
+  </way>
+  <way id="52514300" version="5" timestamp="2015-06-11T20:44:33Z" changeset="31907021" uid="165061" user="mapper999">
+    <nd ref="31261891"/>
+    <nd ref="1186031044"/>
+    <nd ref="1482297446"/>
+    <tag k="highway" v="footway"/>
+  </way>
+  <way id="56066342" version="8" timestamp="2015-03-05T13:26:09Z" changeset="29266514" uid="442210" user="dwausr">
+    <nd ref="25420935"/>
+    <nd ref="1480156990"/>
+    <nd ref="3384279993"/>
+    <nd ref="802168449"/>
+    <nd ref="1480156907"/>
+    <nd ref="1480156904"/>
+    <tag k="highway" v="secondary"/>
+    <tag k="lanes" v="1"/>
+    <tag k="lit" v="yes"/>
+    <tag k="maxspeed" v="50"/>
+    <tag k="name" v="Karl-Wilhelm-Platz"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="parking:lane:right" v="no_stopping"/>
+    <tag k="zone:traffic" v="DE:urban"/>
+  </way>
+  <way id="56066350" version="9" timestamp="2015-03-05T13:26:09Z" changeset="29266514" uid="442210" user="dwausr">
+    <nd ref="1480156855"/>
+    <nd ref="1480156876"/>
+    <nd ref="3384279693"/>
+    <nd ref="1480007996"/>
+    <nd ref="1480007998"/>
+    <nd ref="1480008003"/>
+    <tag k="highway" v="secondary"/>
+    <tag k="lanes" v="1"/>
+    <tag k="lit" v="yes"/>
+    <tag k="maxspeed" v="50"/>
+    <tag k="name" v="Karl-Wilhelm-Platz"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="parking:lane:right" v="no_stopping"/>
+    <tag k="zone:traffic" v="DE:urban"/>
+  </way>
+  <way id="66080235" version="3" timestamp="2012-03-16T16:47:11Z" changeset="11000167" uid="35468" user="Blunauer">
+    <nd ref="802168359"/>
+    <nd ref="1480157075"/>
+    <nd ref="1480156912"/>
+    <tag k="foot" v="designated"/>
+    <tag k="highway" v="path"/>
+    <tag k="lit" v="yes"/>
+  </way>
+  <way id="66080240" version="2" timestamp="2011-10-25T09:34:42Z" changeset="9650178" uid="442210" user="dwausr">
+    <nd ref="1480007949"/>
+    <nd ref="1480007958"/>
+    <nd ref="1480007988"/>
+    <tag k="highway" v="footway"/>
+    <tag k="lit" v="yes"/>
+  </way>
+  <way id="66080310" version="2" timestamp="2011-10-25T09:33:48Z" changeset="9650178" uid="442210" user="dwausr">
+    <nd ref="521431499"/>
+    <nd ref="521428057"/>
+    <nd ref="1480008063"/>
+    <nd ref="1480008022"/>
+    <nd ref="1480008017"/>
+    <tag k="bicycle" v="yes"/>
+    <tag k="highway" v="footway"/>
+    <tag k="name" v="Hoepfner-Passage"/>
+  </way>
+  <way id="102690844" version="3" timestamp="2011-10-25T13:43:26Z" changeset="9652394" uid="442210" user="dwausr">
+    <nd ref="1186020420"/>
+    <nd ref="1186020440"/>
+    <nd ref="1186020443"/>
+    <nd ref="1480157089"/>
+    <nd ref="1186020434"/>
+    <nd ref="1186020437"/>
+    <tag k="access" v="private"/>
+    <tag k="highway" v="service"/>
+    <tag k="service" v="driveway"/>
+  </way>
+  <way id="102692497" version="1" timestamp="2011-03-04T17:07:24Z" changeset="7454993" uid="165061" user="mapper999">
+    <nd ref="1186038880"/>
+    <nd ref="1186038879"/>
+    <nd ref="1186038876"/>
+    <tag k="highway" v="footway"/>
+  </way>
+  <way id="102693060" version="5" timestamp="2014-02-10T13:58:57Z" changeset="20485710" uid="165061" user="mapper999">
+    <nd ref="14912570"/>
+    <nd ref="14912569"/>
+    <nd ref="1186036538"/>
+    <tag k="highway" v="residential"/>
+    <tag k="maxspeed" v="30"/>
+    <tag k="name" v="Hölderlinstraße"/>
+    <tag k="parking:condition:both" v="residents"/>
+    <tag k="parking:condition:both:residents" v="A3"/>
+    <tag k="parking:lane:both" v="parallel"/>
+    <tag k="parking:lane:both:parallel" v="on_street"/>
+    <tag k="sidewalk" v="both"/>
+  </way>
+  <way id="102694858" version="1" timestamp="2011-03-04T17:36:23Z" changeset="7454993" uid="165061" user="mapper999">
+    <nd ref="1186075976"/>
+    <nd ref="1186075979"/>
+    <nd ref="1186075983"/>
+    <tag k="access" v="permissive"/>
+    <tag k="highway" v="service"/>
+  </way>
+  <way id="102694859" version="1" timestamp="2011-03-04T17:36:23Z" changeset="7454993" uid="165061" user="mapper999">
+    <nd ref="1186075983"/>
+    <nd ref="1186075960"/>
+    <tag k="access" v="permissive"/>
+    <tag k="highway" v="service"/>
+    <tag k="tunnel" v="yes"/>
+  </way>
+  <way id="102694860" version="1" timestamp="2011-03-04T17:36:23Z" changeset="7454993" uid="165061" user="mapper999">
+    <nd ref="1186075960"/>
+    <nd ref="1186075988"/>
+    <nd ref="1186075982"/>
+    <nd ref="1186075966"/>
+    <nd ref="1186075987"/>
+    <tag k="access" v="permissive"/>
+    <tag k="highway" v="service"/>
+  </way>
+  <way id="112402476" version="2" timestamp="2015-10-01T18:52:41Z" changeset="34375345" uid="2600695" user="jlcod">
+    <nd ref="1277647004"/>
+    <nd ref="1277646989"/>
+    <nd ref="1277646947"/>
+    <nd ref="1277646910"/>
+    <tag k="access" v="permissive"/>
+    <tag k="highway" v="service"/>
+    <tag k="service" v="parking_aisle"/>
+  </way>
+  <way id="112862458" version="2" timestamp="2015-05-30T16:28:56Z" changeset="31587838" uid="165061" user="mapper999">
+    <nd ref="1281824047"/>
+    <nd ref="1281824039"/>
+    <nd ref="1281824049"/>
+    <nd ref="3559037186"/>
+    <nd ref="3559037185"/>
+    <tag k="highway" v="service"/>
+  </way>
+  <way id="124068934" version="4" timestamp="2014-02-10T13:58:57Z" changeset="20485710" uid="165061" user="mapper999">
+    <nd ref="1186036538"/>
+    <nd ref="1839639948"/>
+    <nd ref="14912568"/>
+    <tag k="highway" v="residential"/>
+    <tag k="maxspeed" v="30"/>
+    <tag k="name" v="Hölderlinstraße"/>
+    <tag k="parking:condition:both" v="residents"/>
+    <tag k="parking:condition:both:residents" v="A3"/>
+    <tag k="parking:lane:both" v="parallel"/>
+    <tag k="parking:lane:both:parallel" v="on_street"/>
+    <tag k="sidewalk" v="right"/>
+  </way>
+  <way id="125739181" version="6" timestamp="2015-05-30T19:18:33Z" changeset="31590637" uid="165061" user="mapper999">
+    <nd ref="1480008042"/>
+    <nd ref="521431499"/>
+    <nd ref="521431502"/>
+    <nd ref="1480008081"/>
+    <nd ref="1595245139"/>
+    <nd ref="1480008085"/>
+    <nd ref="1480008087"/>
+    <nd ref="1480008098"/>
+    <nd ref="1185997654"/>
+    <nd ref="1480008105"/>
+    <nd ref="3559289235"/>
+    <nd ref="1480008114"/>
+    <nd ref="1480090550"/>
+    <nd ref="1480091086"/>
+    <nd ref="1158181075"/>
+    <nd ref="1480091088"/>
+    <nd ref="1480008146"/>
+    <nd ref="802168381"/>
+    <tag k="bicycle" v="no"/>
+    <tag k="foot" v="designated"/>
+    <tag k="highway" v="path"/>
+    <tag k="lit" v="yes"/>
+  </way>
+  <way id="125739187" version="2" timestamp="2011-10-25T09:34:20Z" changeset="9650178" uid="442210" user="dwausr">
+    <nd ref="1480008020"/>
+    <nd ref="1480008022"/>
+    <tag k="highway" v="footway"/>
+  </way>
+  <way id="125739190" version="2" timestamp="2011-10-25T09:34:14Z" changeset="9650178" uid="442210" user="dwausr">
+    <nd ref="1395863920"/>
+    <nd ref="1480008020"/>
+    <tag k="highway" v="steps"/>
+  </way>
+  <way id="125739193" version="3" timestamp="2012-09-11T15:13:08Z" changeset="13070693" uid="165061" user="mapper999">
+    <nd ref="1395863906"/>
+    <nd ref="1395863905"/>
+    <nd ref="1395863907"/>
+    <nd ref="1395863908"/>
+    <nd ref="1395863904"/>
+    <nd ref="1395863911"/>
+    <nd ref="1395863918"/>
+    <nd ref="1395863915"/>
+    <nd ref="1395863917"/>
+    <nd ref="1395863903"/>
+    <nd ref="1480008042"/>
+    <nd ref="1480008043"/>
+    <nd ref="1395863913"/>
+    <tag k="access" v="private"/>
+    <tag k="highway" v="service"/>
+    <tag k="service" v="parking_aisle"/>
+  </way>
+  <way id="134631678" version="12" timestamp="2016-02-13T19:46:42Z" changeset="37193396" uid="165061" user="mapper999">
+    <nd ref="1480007954"/>
+    <nd ref="1480007945"/>
+    <nd ref="3301100909"/>
+    <tag k="bicycle" v="yes"/>
+    <tag k="highway" v="tertiary"/>
+    <tag k="lcn" v="yes"/>
+    <tag k="lit" v="yes"/>
+    <tag k="maxspeed" v="50"/>
+    <tag k="name" v="Georg-Friedrich-Straße"/>
+    <tag k="note" v="im SHP des NVK: III"/>
+    <tag k="source:maxspeed" v="DE:urban"/>
+    <tag k="zone:traffic" v="DE:urban"/>
+  </way>
+  <way id="134631681" version="6" timestamp="2014-02-10T13:58:48Z" changeset="20485710" uid="165061" user="mapper999">
+    <nd ref="1480008037"/>
+    <nd ref="1395863913"/>
+    <tag k="highway" v="secondary"/>
+    <tag k="lanes" v="4"/>
+    <tag k="lit" v="yes"/>
+    <tag k="maxspeed" v="50"/>
+    <tag k="name" v="Haid-und-Neu-Straße"/>
+    <tag k="note" v="im SHP des NVK: II"/>
+    <tag k="note:lanes" v="äußere Spuren meistens zugeparkt -&gt; effektiv 2 Spuren"/>
+    <tag k="parking:condition:right" v="free"/>
+    <tag k="parking:lane:right" v="parallel"/>
+    <tag k="parking:lane:right:parallel" v="on_street"/>
+    <tag k="zone:traffic" v="DE:urban"/>
+  </way>
+  <way id="134631682" version="5" timestamp="2014-02-10T13:58:49Z" changeset="20485710" uid="165061" user="mapper999">
+    <nd ref="1480008003"/>
+    <nd ref="1480008006"/>
+    <nd ref="2665202893"/>
+    <tag k="access:lanes" v="yes|no"/>
+    <tag k="bicycle:lanes" v="yes|designated"/>
+    <tag k="cycleway" v="lane"/>
+    <tag k="highway" v="secondary"/>
+    <tag k="lanes" v="1"/>
+    <tag k="lit" v="yes"/>
+    <tag k="maxspeed" v="50"/>
+    <tag k="name" v="Haid-und-Neu-Straße"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="parking:lane:right" v="no_parking"/>
+    <tag k="placement" v="middle_of:1"/>
+    <tag k="width:lanes" v="3.2|1.5"/>
+    <tag k="zone:traffic" v="DE:urban"/>
+  </way>
+  <way id="134631683" version="4" timestamp="2014-01-15T09:39:12Z" changeset="20009926" uid="165061" user="mapper999">
+    <nd ref="1480008037"/>
+    <nd ref="1480008032"/>
+    <nd ref="1480008030"/>
+    <nd ref="1186020434"/>
+    <nd ref="1480008027"/>
+    <nd ref="1149741255"/>
+    <nd ref="802168357"/>
+    <nd ref="25420935"/>
+    <tag k="highway" v="secondary"/>
+    <tag k="lanes" v="1"/>
+    <tag k="lit" v="yes"/>
+    <tag k="maxspeed" v="50"/>
+    <tag k="name" v="Haid-und-Neu-Straße"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="zone:traffic" v="DE:urban"/>
+  </way>
+  <way id="134631685" version="10" timestamp="2016-02-13T19:46:46Z" changeset="37193396" uid="165061" user="mapper999">
+    <nd ref="25420935"/>
+    <nd ref="526930298"/>
+    <nd ref="1480157063"/>
+    <nd ref="1480157078"/>
+    <nd ref="14890770"/>
+    <tag k="highway" v="tertiary"/>
+    <tag k="lanes" v="1"/>
+    <tag k="lit" v="yes"/>
+    <tag k="maxspeed" v="50"/>
+    <tag k="name" v="Karl-Wilhelm-Platz"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="parking:lane:both" v="no_parking"/>
+    <tag k="zone:traffic" v="DE:urban"/>
+  </way>
+  <way id="134631686" version="9" timestamp="2016-02-19T12:39:17Z" changeset="37307711" uid="651621" user="bjoern262">
+    <nd ref="1480156904"/>
+    <nd ref="1480156886"/>
+    <nd ref="1480156866"/>
+    <tag k="highway" v="secondary"/>
+    <tag k="lanes" v="1"/>
+    <tag k="lit" v="yes"/>
+    <tag k="maxspeed" v="50"/>
+    <tag k="name" v="Karl-Wilhelm-Straße"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="parking:lane:right" v="no_parking"/>
+    <tag k="zone:traffic" v="DE:urban"/>
+  </way>
+  <way id="134631716" version="1" timestamp="2011-10-25T08:42:39Z" changeset="9650178" uid="442210" user="dwausr">
+    <nd ref="1480008000"/>
+    <nd ref="1480007994"/>
+    <nd ref="1480007990"/>
+    <nd ref="1480007987"/>
+    <nd ref="1480007984"/>
+    <nd ref="1480007981"/>
+    <nd ref="1480007967"/>
+    <nd ref="1480007957"/>
+    <nd ref="1480007952"/>
+    <nd ref="1480007949"/>
+    <nd ref="1480007947"/>
+    <nd ref="1480007945"/>
+    <nd ref="1480007944"/>
+    <nd ref="1480007946"/>
+    <nd ref="1480007948"/>
+    <nd ref="1480007951"/>
+    <nd ref="1480007953"/>
+    <nd ref="1480007959"/>
+    <tag k="highway" v="footway"/>
+    <tag k="lit" v="yes"/>
+  </way>
+  <way id="134631766" version="4" timestamp="2016-02-13T19:46:50Z" changeset="37193396" uid="165061" user="mapper999">
+    <nd ref="1480007995"/>
+    <nd ref="1480008003"/>
+    <tag k="foot" v="no"/>
+    <tag k="highway" v="cycleway"/>
+    <tag k="lit" v="yes"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <way id="134631767" version="4" timestamp="2012-07-19T10:22:50Z" changeset="12318312" uid="165061" user="mapper999">
+    <nd ref="1830646794"/>
+    <nd ref="1480156813"/>
+    <nd ref="1480007959"/>
+    <nd ref="1480007980"/>
+    <nd ref="1480007982"/>
+    <nd ref="1480007988"/>
+    <nd ref="1480007995"/>
+    <tag k="bicycle" v="designated"/>
+    <tag k="foot" v="designated"/>
+    <tag k="highway" v="path"/>
+    <tag k="lit" v="yes"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <way id="134631771" version="2" timestamp="2011-10-25T13:43:10Z" changeset="9652394" uid="442210" user="dwausr">
+    <nd ref="1480008004"/>
+    <nd ref="1480008005"/>
+    <nd ref="1480008006"/>
+    <nd ref="1480008007"/>
+    <nd ref="1480008008"/>
+    <nd ref="802168357"/>
+    <nd ref="1480157076"/>
+    <tag k="highway" v="footway"/>
+    <tag k="lit" v="yes"/>
+  </way>
+  <way id="134631773" version="4" timestamp="2015-12-21T22:16:00Z" changeset="36096014" uid="2600695" user="jlcod">
+    <nd ref="1480007982"/>
+    <nd ref="1480156876"/>
+    <nd ref="3903695908"/>
+    <nd ref="703726402"/>
+    <nd ref="3903695909"/>
+    <nd ref="1480156898"/>
+    <nd ref="1480156903"/>
+    <nd ref="3903695910"/>
+    <nd ref="703726417"/>
+    <nd ref="3903695911"/>
+    <nd ref="1480156907"/>
+    <nd ref="1480156909"/>
+    <tag k="bicycle" v="no"/>
+    <tag k="highway" v="footway"/>
+    <tag k="lit" v="yes"/>
+  </way>
+  <way id="134631775" version="2" timestamp="2012-07-17T13:28:32Z" changeset="12266466" uid="722137" user="OSMF Redaction Account">
+    <nd ref="1480007995"/>
+    <nd ref="1480007997"/>
+    <nd ref="1480008000"/>
+    <nd ref="1480008004"/>
+    <nd ref="1480008015"/>
+    <nd ref="1480008029"/>
+    <nd ref="1480008043"/>
+    <tag k="bicycle" v="no"/>
+    <tag k="foot" v="designated"/>
+    <tag k="highway" v="path"/>
+    <tag k="lit" v="yes"/>
+  </way>
+  <way id="134631776" version="6" timestamp="2015-12-21T22:16:00Z" changeset="36096014" uid="2600695" user="jlcod">
+    <nd ref="1480007995"/>
+    <nd ref="1480007998"/>
+    <nd ref="1830646912"/>
+    <nd ref="3903695912"/>
+    <nd ref="802168485"/>
+    <nd ref="1830646925"/>
+    <nd ref="1830646929"/>
+    <nd ref="1830646936"/>
+    <nd ref="1480156990"/>
+    <nd ref="1480156996"/>
+    <tag k="bicycle" v="no"/>
+    <tag k="highway" v="footway"/>
+    <tag k="lit" v="yes"/>
+  </way>
+  <way id="134641662" version="7" timestamp="2015-12-11T20:32:50Z" changeset="35892703" uid="165061" user="mapper999">
+    <nd ref="1480091429"/>
+    <nd ref="1480091428"/>
+    <nd ref="1480091425"/>
+    <nd ref="1480091423"/>
+    <nd ref="1480091421"/>
+    <nd ref="29009876"/>
+    <nd ref="1480091411"/>
+    <nd ref="1480091406"/>
+    <nd ref="1480091403"/>
+    <nd ref="1480091396"/>
+    <nd ref="1480091390"/>
+    <nd ref="1480091379"/>
+    <nd ref="1480091374"/>
+    <nd ref="1480091368"/>
+    <nd ref="1480091362"/>
+    <nd ref="802168468"/>
+    <nd ref="1480091349"/>
+    <nd ref="1480091344"/>
+    <nd ref="1480091336"/>
+    <nd ref="1480091332"/>
+    <nd ref="1480091329"/>
+    <nd ref="1480091325"/>
+    <nd ref="1480091323"/>
+    <nd ref="1480091317"/>
+    <nd ref="1480091311"/>
+    <nd ref="1480091306"/>
+    <nd ref="1480091279"/>
+    <nd ref="1480091258"/>
+    <nd ref="1480091218"/>
+    <nd ref="523630638"/>
+    <nd ref="1480157318"/>
+    <nd ref="523630634"/>
+    <nd ref="1186201107"/>
+    <nd ref="1480157306"/>
+    <nd ref="1796420797"/>
+    <nd ref="523630633"/>
+    <nd ref="1480157302"/>
+    <nd ref="1480157195"/>
+    <nd ref="1480157170"/>
+    <nd ref="3888223619"/>
+    <nd ref="1480157166"/>
+    <nd ref="1480157164"/>
+    <nd ref="3620742860"/>
+    <nd ref="1480157157"/>
+    <nd ref="1480157156"/>
+    <nd ref="1480157153"/>
+    <nd ref="1480157143"/>
+    <nd ref="3888223581"/>
+    <nd ref="3888223351"/>
+    <nd ref="3888223333"/>
+    <nd ref="1480157134"/>
+    <nd ref="521272742"/>
+    <nd ref="1480157098"/>
+    <tag k="bicycle" v="designated"/>
+    <tag k="foot" v="designated"/>
+    <tag k="highway" v="path"/>
+    <tag k="lit" v="yes"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="segregated" v="yes"/>
+  </way>
+  <way id="134650845" version="10" timestamp="2016-03-12T18:51:00Z" changeset="37788284" uid="165061" user="mapper999">
+    <nd ref="21498803"/>
+    <nd ref="3598614138"/>
+    <tag k="access:lanes:backward" v="no|yes"/>
+    <tag k="highway" v="secondary"/>
+    <tag k="lanes" v="4"/>
+    <tag k="lit" v="yes"/>
+    <tag k="maxspeed" v="50"/>
+    <tag k="name" v="Karl-Wilhelm-Straße"/>
+    <tag k="note" v="im SHP des NVK: II"/>
+    <tag k="note:lanes" v="äußere Spuren meistens zugeparkt -&gt; effektiv 2 Spuren"/>
+    <tag k="parking:condition:right" v="free"/>
+    <tag k="parking:lane:left" v="no_stopping"/>
+    <tag k="parking:lane:right" v="parallel"/>
+    <tag k="parking:lane:right:parallel" v="on_street"/>
+    <tag k="sidewalk" v="right"/>
+    <tag k="tram:lanes:backward" v="designated|no"/>
+    <tag k="zone:traffic" v="DE:urban"/>
+  </way>
+  <way id="134650846" version="8" timestamp="2015-06-19T19:15:49Z" changeset="32082198" uid="165061" user="mapper999">
+    <nd ref="1830646792"/>
+    <nd ref="1144841350"/>
+    <tag k="highway" v="secondary"/>
+    <tag k="lanes" v="1"/>
+    <tag k="lit" v="yes"/>
+    <tag k="maxspeed" v="50"/>
+    <tag k="name" v="Karl-Wilhelm-Straße"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="parking:condition:2" v="free"/>
+    <tag k="parking:condition:right" v="no_parking"/>
+    <tag k="parking:condition:right:2:time_interval" v="Mo-Su 18:00-08:00"/>
+    <tag k="parking:condition:right:except" v="loading"/>
+    <tag k="parking:condition:right:time_interval" v="Mo-Su 08:00-18:00"/>
+    <tag k="parking:lane:right" v="parallel"/>
+    <tag k="sidewalk" v="right"/>
+    <tag k="zone:traffic" v="DE:urban"/>
+  </way>
+  <way id="134650851" version="4" timestamp="2015-12-21T22:15:59Z" changeset="36096014" uid="2600695" user="jlcod">
+    <nd ref="21498799"/>
+    <nd ref="21498798"/>
+    <nd ref="1480192330"/>
+    <nd ref="1255392704"/>
+    <nd ref="3903695906"/>
+    <tag k="highway" v="residential"/>
+    <tag k="maxspeed" v="30"/>
+    <tag k="name" v="Ludwig-Wilhelm-Straße"/>
+  </way>
+  <way id="134650856" version="2" timestamp="2015-06-05T19:46:58Z" changeset="31754318" uid="165061" user="mapper999">
+    <nd ref="21498801"/>
+    <nd ref="21498798"/>
+    <tag k="highway" v="residential"/>
+    <tag k="maxspeed" v="30"/>
+    <tag k="name" v="Rudolfstraße"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="vehicle" v="destination"/>
+    <tag k="vehicle:note" v="Sperrung nur während der Baustelle am Durlacher Tor"/>
+  </way>
+  <way id="134650857" version="2" timestamp="2015-06-19T19:15:52Z" changeset="32082198" uid="165061" user="mapper999">
+    <nd ref="21498797"/>
+    <nd ref="1144841386"/>
+    <nd ref="802168481"/>
+    <nd ref="3605775610"/>
+    <nd ref="21498798"/>
+    <tag k="highway" v="residential"/>
+    <tag k="maxspeed" v="30"/>
+    <tag k="name" v="Rudolfstraße"/>
+    <tag k="parking:condition:left" v="residents"/>
+    <tag k="parking:condition:left:residents" v="A1"/>
+    <tag k="parking:lane:left" v="perpendicular"/>
+  </way>
+  <way id="134650858" version="7" timestamp="2015-06-22T19:43:24Z" changeset="32146805" uid="165061" user="mapper999">
+    <nd ref="1677001520"/>
+    <nd ref="3448377377"/>
+    <nd ref="462271236"/>
+    <tag k="highway" v="residential"/>
+    <tag k="maxspeed" v="30"/>
+    <tag k="name" v="Schönfeldstraße"/>
+    <tag k="operator" v="Stadt Karlsruhe"/>
+    <tag k="operator:type" v="public"/>
+    <tag k="parking:condition:left" v="residents"/>
+    <tag k="parking:condition:left:default" v="free"/>
+    <tag k="parking:condition:left:residents" v="A2"/>
+    <tag k="parking:condition:left:time_interval" v="18:00-06:00"/>
+    <tag k="parking:condition:right" v="free"/>
+    <tag k="parking:lane:left" v="perpendicular"/>
+    <tag k="parking:lane:right" v="parallel"/>
+    <tag k="parking:lane:right:parallel" v="on_street"/>
+    <tag k="source:maxspeed" v="DE:zone30"/>
+  </way>
+  <way id="134650863" version="2" timestamp="2012-03-16T16:45:10Z" changeset="11000149" uid="35468" user="Blunauer">
+    <nd ref="1677001494"/>
+    <nd ref="1480156908"/>
+    <nd ref="1480156910"/>
+    <nd ref="1480156922"/>
+    <nd ref="1480156983"/>
+    <nd ref="1480157013"/>
+    <nd ref="1480157028"/>
+    <nd ref="1480157081"/>
+    <nd ref="802168359"/>
+    <nd ref="1480157085"/>
+    <nd ref="802168416"/>
+    <nd ref="1677001513"/>
+    <nd ref="1480157084"/>
+    <nd ref="1480157083"/>
+    <nd ref="1480157079"/>
+    <nd ref="1677001511"/>
+    <tag k="highway" v="footway"/>
+    <tag k="lit" v="yes"/>
+  </way>
+  <way id="134650864" version="1" timestamp="2011-10-25T13:40:55Z" changeset="9652394" uid="442210" user="dwausr">
+    <nd ref="21657023"/>
+    <nd ref="1480157128"/>
+    <nd ref="1480157126"/>
+    <nd ref="1480157124"/>
+    <nd ref="1480157121"/>
+    <nd ref="1480157119"/>
+    <nd ref="1480157117"/>
+    <nd ref="1480157115"/>
+    <nd ref="1480157114"/>
+    <nd ref="1480157113"/>
+    <nd ref="21657019"/>
+    <nd ref="1480157116"/>
+    <nd ref="1480157118"/>
+    <nd ref="1480157120"/>
+    <nd ref="1480157122"/>
+    <nd ref="1480157125"/>
+    <nd ref="1480157127"/>
+    <nd ref="1480157129"/>
+    <nd ref="21657023"/>
+    <tag k="bicycle" v="designated"/>
+    <tag k="foot" v="designated"/>
+    <tag k="highway" v="path"/>
+  </way>
+  <way id="134650867" version="2" timestamp="2012-04-05T20:03:36Z" changeset="11193788" uid="35468" user="Blunauer">
+    <nd ref="462271236"/>
+    <nd ref="1480157124"/>
+    <tag k="bicycle" v="designated"/>
+    <tag k="foot" v="designated"/>
+    <tag k="highway" v="path"/>
+  </way>
+  <way id="134650868" version="1" timestamp="2011-10-25T13:40:56Z" changeset="9652394" uid="442210" user="dwausr">
+    <nd ref="1480157098"/>
+    <nd ref="480348632"/>
+    <tag k="bicycle" v="designated"/>
+    <tag k="foot" v="designated"/>
+    <tag k="highway" v="path"/>
+    <tag k="lit" v="yes"/>
+    <tag k="segregated" v="yes"/>
+  </way>
+  <way id="134650871" version="7" timestamp="2015-05-08T21:14:59Z" changeset="30920947" uid="165061" user="mapper999">
+    <nd ref="480348632"/>
+    <nd ref="1281824049"/>
+    <nd ref="1480157093"/>
+    <nd ref="1480157091"/>
+    <nd ref="1480157089"/>
+    <nd ref="1480157076"/>
+    <tag k="bicycle" v="designated"/>
+    <tag k="foot" v="designated"/>
+    <tag k="highway" v="path"/>
+    <tag k="lit" v="yes"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="segregated" v="yes"/>
+  </way>
+  <way id="134650873" version="4" timestamp="2015-08-07T21:28:30Z" changeset="33191050" uid="165061" user="mapper999">
+    <nd ref="1144841350"/>
+    <nd ref="1186075982"/>
+    <nd ref="1830646794"/>
+    <tag k="bicycle" v="designated"/>
+    <tag k="foot" v="designated"/>
+    <tag k="highway" v="path"/>
+    <tag k="lit" v="yes"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <way id="134650875" version="2" timestamp="2015-12-11T20:32:51Z" changeset="35892703" uid="165061" user="mapper999">
+    <nd ref="521270124"/>
+    <nd ref="1144913926"/>
+    <nd ref="1480157098"/>
+    <nd ref="1480157099"/>
+    <nd ref="1480157103"/>
+    <nd ref="3888223300"/>
+    <nd ref="521270113"/>
+    <tag k="highway" v="service"/>
+    <tag k="maxspeed" v="50"/>
+    <tag k="source:maxspeed" v="DE:urban"/>
+  </way>
+  <way id="134650876" version="1" timestamp="2011-10-25T13:40:46Z" changeset="9652394" uid="442210" user="dwausr">
+    <nd ref="1480156902"/>
+    <nd ref="1480156886"/>
+    <nd ref="1480156867"/>
+    <nd ref="1480156850"/>
+    <nd ref="1480156828"/>
+    <nd ref="1480156813"/>
+    <tag k="highway" v="footway"/>
+    <tag k="lit" v="yes"/>
+  </way>
+  <way id="134655454" version="3" timestamp="2015-12-21T22:15:58Z" changeset="36096014" uid="2600695" user="jlcod">
+    <nd ref="21498581"/>
+    <nd ref="21498576"/>
+    <nd ref="1480192283"/>
+    <nd ref="1255392691"/>
+    <nd ref="3903695906"/>
+    <tag k="highway" v="residential"/>
+    <tag k="maxspeed" v="30"/>
+    <tag k="name" v="Gerwigstraße"/>
+  </way>
+  <way id="134655463" version="7" timestamp="2014-06-26T17:05:41Z" changeset="23193117" uid="6609" user="drhzbg">
+    <nd ref="21498576"/>
+    <nd ref="276678907"/>
+    <nd ref="21498577"/>
+    <nd ref="1480192124"/>
+    <nd ref="1480192135"/>
+    <nd ref="1831247641"/>
+    <nd ref="1864266087"/>
+    <nd ref="21498580"/>
+    <nd ref="1820693733"/>
+    <nd ref="1818468609"/>
+    <tag k="highway" v="residential"/>
+    <tag k="maxspeed" v="30"/>
+    <tag k="name" v="Sternbergstraße"/>
+  </way>
+  <way id="137382171" version="7" timestamp="2015-12-21T22:15:57Z" changeset="36096014" uid="2600695" user="jlcod">
+    <nd ref="3903695906"/>
+    <nd ref="1255392467"/>
+    <nd ref="1480192269"/>
+    <nd ref="1641501695"/>
+    <nd ref="21618142"/>
+    <tag k="bicycle" v="yes"/>
+    <tag k="highway" v="tertiary"/>
+    <tag k="lanes" v="2"/>
+    <tag k="maxspeed" v="30"/>
+    <tag k="name" v="Georg-Friedrich-Straße"/>
+    <tag k="note" v="im SHP des NVK: III"/>
+    <tag k="source:maxspeed" v="DE:zone30"/>
+    <tag k="zone:traffic" v="DE:urban"/>
+  </way>
+  <way id="137382172" version="5" timestamp="2016-02-13T19:46:47Z" changeset="37193396" uid="165061" user="mapper999">
+    <nd ref="1480156855"/>
+    <nd ref="1480007980"/>
+    <nd ref="1480007963"/>
+    <nd ref="1480007956"/>
+    <nd ref="1480007954"/>
+    <nd ref="1480007958"/>
+    <nd ref="1480007978"/>
+    <tag k="highway" v="tertiary"/>
+    <tag k="lanes" v="1"/>
+    <tag k="lit" v="yes"/>
+    <tag k="maxspeed" v="50"/>
+    <tag k="name" v="Karl-Wilhelm-Platz"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="zone:traffic" v="DE:urban"/>
+  </way>
+  <way id="137953400" version="6" timestamp="2016-02-13T19:46:47Z" changeset="37193396" uid="165061" user="mapper999">
+    <nd ref="14890770"/>
+    <nd ref="1480157080"/>
+    <nd ref="1480157077"/>
+    <nd ref="1480157075"/>
+    <nd ref="1480157021"/>
+    <tag k="highway" v="tertiary"/>
+    <tag k="lanes" v="1"/>
+    <tag k="lit" v="yes"/>
+    <tag k="maxspeed" v="50"/>
+    <tag k="name" v="Karl-Wilhelm-Platz"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="parking:lane:both" v="no_parking"/>
+    <tag k="zone:traffic" v="DE:urban"/>
+  </way>
+  <way id="137953401" version="4" timestamp="2016-02-13T19:46:46Z" changeset="37193396" uid="165061" user="mapper999">
+    <nd ref="1480156904"/>
+    <nd ref="1480156893"/>
+    <nd ref="1480156880"/>
+    <nd ref="1480156855"/>
+    <tag k="highway" v="tertiary"/>
+    <tag k="lanes" v="1"/>
+    <tag k="lit" v="yes"/>
+    <tag k="maxspeed" v="50"/>
+    <tag k="name" v="Karl-Wilhelm-Platz"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="zone:traffic" v="DE:urban"/>
+  </way>
+  <way id="152826271" version="1" timestamp="2012-03-02T15:00:41Z" changeset="10849191" uid="29717" user="eumiro">
+    <nd ref="1656034001"/>
+    <nd ref="1656034000"/>
+    <tag k="highway" v="steps"/>
+  </way>
+  <way id="152826272" version="1" timestamp="2012-03-02T15:00:41Z" changeset="10849191" uid="29717" user="eumiro">
+    <nd ref="1656034003"/>
+    <nd ref="1656034001"/>
+    <tag k="highway" v="footway"/>
+  </way>
+  <way id="152826273" version="3" timestamp="2015-12-11T20:32:51Z" changeset="35892703" uid="165061" user="mapper999">
+    <nd ref="3888223299"/>
+    <nd ref="1656033998"/>
+    <nd ref="2296045321"/>
+    <nd ref="1281824047"/>
+    <nd ref="2296045320"/>
+    <nd ref="521270116"/>
+    <nd ref="1480157103"/>
+    <tag k="highway" v="service"/>
+  </way>
+  <way id="155299321" version="7" timestamp="2016-01-24T20:42:07Z" changeset="36784109" uid="165061" user="mapper999">
+    <nd ref="1676974415"/>
+    <nd ref="1677001522"/>
+    <nd ref="1677001520"/>
+    <nd ref="1677001518"/>
+    <nd ref="3513133332"/>
+    <nd ref="1677001515"/>
+    <nd ref="3605775611"/>
+    <nd ref="1677001513"/>
+    <nd ref="14890770"/>
+    <tag k="bicycle" v="yes"/>
+    <tag k="foot" v="yes"/>
+    <tag k="highway" v="tertiary"/>
+    <tag k="lit" v="yes"/>
+    <tag k="maxspeed" v="30"/>
+    <tag k="name" v="Parkstraße"/>
+    <tag k="note" v="im SHP des NVK: III"/>
+    <tag k="oneway" v="no"/>
+    <tag k="operator" v="Stadt Karlsruhe"/>
+    <tag k="operator:type" v="public"/>
+    <tag k="parking:condition:left" v="residents"/>
+    <tag k="parking:condition:left:residents" v="A2"/>
+    <tag k="parking:lane:left" v="parallel"/>
+    <tag k="source:maxspeed" v="DE:zone30"/>
+    <tag k="surface" v="asphalt"/>
+    <tag k="zone:traffic" v="DE:urban"/>
+  </way>
+  <way id="155299923" version="3" timestamp="2015-05-15T20:16:54Z" changeset="31186552" uid="165061" user="mapper999">
+    <nd ref="1676974411"/>
+    <nd ref="1677006099"/>
+    <nd ref="1677006096"/>
+    <nd ref="802168359"/>
+    <tag k="bicycle" v="no"/>
+    <tag k="foot" v="designated"/>
+    <tag k="highway" v="footway"/>
+    <tag k="surface" v="paving_stones"/>
+  </way>
+  <way id="158689402" version="3" timestamp="2015-12-11T20:32:48Z" changeset="35892703" uid="165061" user="mapper999">
+    <nd ref="521428051"/>
+    <nd ref="521270130"/>
+    <nd ref="521270138"/>
+    <nd ref="521270148"/>
+    <nd ref="521270146"/>
+    <nd ref="521270142"/>
+    <nd ref="579630508"/>
+    <nd ref="521272740"/>
+    <nd ref="650492476"/>
+    <nd ref="521272741"/>
+    <nd ref="521270128"/>
+    <tag k="access" v="permissive"/>
+    <tag k="highway" v="service"/>
+    <tag k="maxspeed" v="10"/>
+    <tag k="motorcar" v="private"/>
+    <tag k="service" v="parking_aisle"/>
+  </way>
+  <way id="158689407" version="2" timestamp="2012-07-17T13:28:28Z" changeset="12266466" uid="722137" user="OSMF Redaction Account">
+    <nd ref="21657019"/>
+    <nd ref="521270116"/>
+    <nd ref="480348632"/>
+    <tag k="bicycle" v="designated"/>
+    <tag k="foot" v="designated"/>
+    <tag k="highway" v="path"/>
+    <tag k="segregated" v="yes"/>
+  </way>
+  <way id="170689010" version="4" timestamp="2015-10-26T20:14:39Z" changeset="34890347" uid="3054129" user="Darren Strash">
+    <nd ref="1818468606"/>
+    <nd ref="3080224502"/>
+    <nd ref="3767766274"/>
+    <nd ref="3767766275"/>
+    <nd ref="1818468607"/>
+    <nd ref="1818468608"/>
+    <nd ref="1818468609"/>
+    <nd ref="3804081616"/>
+    <nd ref="1818468614"/>
+    <nd ref="1818468615"/>
+    <nd ref="1185968987"/>
+    <nd ref="281223243"/>
+    <nd ref="1305220326"/>
+    <nd ref="1185959199"/>
+    <nd ref="1818468617"/>
+    <nd ref="1818468618"/>
+    <nd ref="21498477"/>
+    <nd ref="1818468619"/>
+    <nd ref="1480090819"/>
+    <tag k="highway" v="residential"/>
+    <tag k="maxspeed" v="30"/>
+    <tag k="name" v="Rintheimer Straße"/>
+  </way>
+  <way id="173880294" version="2" timestamp="2015-05-30T16:28:55Z" changeset="31587838" uid="165061" user="mapper999">
+    <nd ref="28144545"/>
+    <nd ref="3559037239"/>
+    <nd ref="21657023"/>
+    <tag k="bicycle" v="yes"/>
+    <tag k="highway" v="footway"/>
+  </way>
+  <way id="260921700" version="1" timestamp="2014-02-10T13:58:26Z" changeset="20485710" uid="165061" user="mapper999">
+    <nd ref="2665202893"/>
+    <nd ref="2665202894"/>
+    <tag k="access:lanes" v="yes|no"/>
+    <tag k="bicycle:lanes" v="yes|designated"/>
+    <tag k="cycleway" v="lane"/>
+    <tag k="highway" v="secondary"/>
+    <tag k="lanes" v="1"/>
+    <tag k="lit" v="yes"/>
+    <tag k="maxspeed" v="50"/>
+    <tag k="name" v="Haid-und-Neu-Straße"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="parking:condition:right" v="no_parking"/>
+    <tag k="parking:condition:right:capacity" v="2"/>
+    <tag k="parking:condition:right:except" v="loading"/>
+    <tag k="parking:lane:right" v="parallel"/>
+    <tag k="parking:lane:right:parallel" v="on_kerb"/>
+    <tag k="placement" v="middle_of:1"/>
+    <tag k="width:lanes" v="3.2|1.5"/>
+    <tag k="zone:traffic" v="DE:urban"/>
+  </way>
+  <way id="260921702" version="1" timestamp="2014-02-10T13:58:26Z" changeset="20485710" uid="165061" user="mapper999">
+    <nd ref="1480008024"/>
+    <nd ref="1480008031"/>
+    <nd ref="1480008037"/>
+    <tag k="highway" v="secondary"/>
+    <tag k="lanes" v="1"/>
+    <tag k="lit" v="yes"/>
+    <tag k="maxspeed" v="50"/>
+    <tag k="name" v="Haid-und-Neu-Straße"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="parking:condition:right" v="free"/>
+    <tag k="parking:lane:right" v="parallel"/>
+    <tag k="parking:lane:right:parallel" v="on_street"/>
+    <tag k="zone:traffic" v="DE:urban"/>
+  </way>
+  <way id="260921707" version="1" timestamp="2014-02-10T13:58:26Z" changeset="20485710" uid="165061" user="mapper999">
+    <nd ref="2665202894"/>
+    <nd ref="1480008013"/>
+    <nd ref="1186020437"/>
+    <nd ref="1480008024"/>
+    <tag k="access:lanes" v="yes|no"/>
+    <tag k="bicycle:lanes" v="yes|designated"/>
+    <tag k="cycleway" v="lane"/>
+    <tag k="highway" v="secondary"/>
+    <tag k="lanes" v="1"/>
+    <tag k="lit" v="yes"/>
+    <tag k="maxspeed" v="50"/>
+    <tag k="name" v="Haid-und-Neu-Straße"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="parking:lane:right" v="no_parking"/>
+    <tag k="placement" v="middle_of:1"/>
+    <tag k="width:lanes" v="3.2|1.5"/>
+    <tag k="zone:traffic" v="DE:urban"/>
+  </way>
+  <way id="260921708" version="2" timestamp="2015-05-30T16:28:40Z" changeset="31587838" uid="165061" user="mapper999">
+    <nd ref="1395863913"/>
+    <nd ref="1480008058"/>
+    <nd ref="3559037185"/>
+    <nd ref="521270124"/>
+    <nd ref="1480008078"/>
+    <nd ref="1480008084"/>
+    <tag k="highway" v="secondary"/>
+    <tag k="lanes" v="4"/>
+    <tag k="lit" v="yes"/>
+    <tag k="maxspeed" v="50"/>
+    <tag k="name" v="Haid-und-Neu-Straße"/>
+    <tag k="note" v="im SHP des NVK: II"/>
+    <tag k="note:lanes" v="äußere Spuren meistens zugeparkt -&gt; effektiv 2 Spuren"/>
+    <tag k="parking:condition:right" v="ticket"/>
+    <tag k="parking:lane:right" v="diagonal"/>
+    <tag k="zone:traffic" v="DE:urban"/>
+  </way>
+  <way id="260921714" version="1" timestamp="2014-02-10T13:58:27Z" changeset="20485710" uid="165061" user="mapper999">
+    <nd ref="14912568"/>
+    <nd ref="1839639950"/>
+    <nd ref="14912571"/>
+    <tag k="highway" v="residential"/>
+    <tag k="maxspeed" v="30"/>
+    <tag k="name" v="Hölderlinstraße"/>
+    <tag k="parking:condition:both" v="residents"/>
+    <tag k="parking:condition:both:residents" v="A3"/>
+    <tag k="parking:lane:both" v="parallel"/>
+    <tag k="parking:lane:both:parallel" v="on_kerb"/>
+    <tag k="sidewalk" v="right"/>
+  </way>
+  <way id="260921716" version="2" timestamp="2015-06-19T19:15:50Z" changeset="32082198" uid="165061" user="mapper999">
+    <nd ref="21498797"/>
+    <nd ref="1830646792"/>
+    <tag k="highway" v="secondary"/>
+    <tag k="lanes" v="4"/>
+    <tag k="lit" v="yes"/>
+    <tag k="maxspeed" v="50"/>
+    <tag k="name" v="Karl-Wilhelm-Straße"/>
+    <tag k="note" v="im SHP des NVK: II"/>
+    <tag k="note:lanes" v="äußere Spuren meistens zugeparkt -&gt; effektiv 2 Spuren"/>
+    <tag k="parking:condition:2" v="free"/>
+    <tag k="parking:condition:left" v="free"/>
+    <tag k="parking:condition:right" v="no_parking"/>
+    <tag k="parking:condition:right:2:time_interval" v="Mo-Su 18:00-08:00"/>
+    <tag k="parking:condition:right:except" v="loading"/>
+    <tag k="parking:condition:right:time_interval" v="Mo-Su 08:00-18:00"/>
+    <tag k="parking:lane:left" v="parallel"/>
+    <tag k="parking:lane:left:parallel" v="on_street"/>
+    <tag k="parking:lane:right" v="parallel"/>
+    <tag k="sidewalk" v="right"/>
+    <tag k="zone:traffic" v="DE:urban"/>
+  </way>
+  <way id="260921717" version="2" timestamp="2015-06-19T19:15:48Z" changeset="32082198" uid="165061" user="mapper999">
+    <nd ref="14912567"/>
+    <nd ref="21498797"/>
+    <tag k="highway" v="secondary"/>
+    <tag k="lanes" v="4"/>
+    <tag k="lit" v="yes"/>
+    <tag k="maxspeed" v="50"/>
+    <tag k="name" v="Karl-Wilhelm-Straße"/>
+    <tag k="note" v="im SHP des NVK: II"/>
+    <tag k="note:lanes" v="äußere Spuren meistens zugeparkt -&gt; effektiv 2 Spuren"/>
+    <tag k="parking:condition:both" v="free"/>
+    <tag k="parking:lane:both" v="parallel"/>
+    <tag k="parking:lane:both:parallel" v="on_street"/>
+    <tag k="sidewalk" v="right"/>
+    <tag k="zone:traffic" v="DE:urban"/>
+  </way>
+  <way id="260921718" version="1" timestamp="2014-02-10T13:58:28Z" changeset="20485710" uid="165061" user="mapper999">
+    <nd ref="1186075987"/>
+    <nd ref="1480156717"/>
+    <nd ref="1830646792"/>
+    <tag k="highway" v="secondary"/>
+    <tag k="lanes" v="1"/>
+    <tag k="lit" v="yes"/>
+    <tag k="maxspeed" v="50"/>
+    <tag k="name" v="Karl-Wilhelm-Straße"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="parking:condition:right" v="free"/>
+    <tag k="parking:lane:right" v="parallel"/>
+    <tag k="parking:lane:right:parallel" v="on_street"/>
+    <tag k="zone:traffic" v="DE:urban"/>
+  </way>
+  <way id="323310143" version="3" timestamp="2015-05-30T16:28:37Z" changeset="31587838" uid="165061" user="mapper999">
+    <nd ref="3301100909"/>
+    <nd ref="1818468606"/>
+    <tag k="bicycle" v="yes"/>
+    <tag k="highway" v="tertiary"/>
+    <tag k="lcn" v="yes"/>
+    <tag k="maxspeed" v="30"/>
+    <tag k="name" v="Georg-Friedrich-Straße"/>
+    <tag k="note" v="im SHP des NVK: III"/>
+    <tag k="parking:condition:right" v="ticket"/>
+    <tag k="parking:condition:right:capacity" v="4"/>
+    <tag k="parking:condition:right:time_interval" v="Mo-Sa 08:00-20:00"/>
+    <tag k="parking:lane:right" v="parallel"/>
+    <tag k="parking:lane:right:parallel" v="on_kerb"/>
+    <tag k="source:maxspeed" v="DE:zone30"/>
+    <tag k="zone:traffic" v="DE:urban"/>
+  </way>
+  <way id="323310144" version="3" timestamp="2015-05-30T16:28:36Z" changeset="31587838" uid="165061" user="mapper999">
+    <nd ref="1818468606"/>
+    <nd ref="3559037172"/>
+    <tag k="bicycle" v="yes"/>
+    <tag k="highway" v="tertiary"/>
+    <tag k="maxspeed" v="30"/>
+    <tag k="name" v="Georg-Friedrich-Straße"/>
+    <tag k="note" v="im SHP des NVK: III"/>
+    <tag k="parking:condition:right" v="ticket"/>
+    <tag k="parking:condition:right:capacity" v="1"/>
+    <tag k="parking:condition:right:time_interval" v="Mo-Sa 08:00-20:00"/>
+    <tag k="parking:lane:right" v="parallel"/>
+    <tag k="parking:lane:right:parallel" v="on_kerb"/>
+    <tag k="source:maxspeed" v="DE:zone30"/>
+    <tag k="zone:traffic" v="DE:urban"/>
+  </way>
+  <way id="337782291" version="1" timestamp="2015-04-10T11:48:18Z" changeset="30115933" uid="29717" user="eumiro">
+    <nd ref="3448377377"/>
+    <nd ref="3448377378"/>
+    <nd ref="3448377379"/>
+    <tag k="highway" v="service"/>
+  </way>
+  <way id="343772635" version="1" timestamp="2015-05-08T21:14:34Z" changeset="30920947" uid="165061" user="mapper999">
+    <nd ref="1480156902"/>
+    <nd ref="1480156840"/>
+    <nd ref="1897090294"/>
+    <nd ref="1897090293"/>
+    <nd ref="1897090291"/>
+    <nd ref="1897090290"/>
+    <nd ref="1897090289"/>
+    <nd ref="1721884480"/>
+    <nd ref="523631335"/>
+    <nd ref="461678705"/>
+    <nd ref="1897090272"/>
+    <nd ref="1908406219"/>
+    <nd ref="1908406217"/>
+    <nd ref="523631502"/>
+    <tag k="bicycle" v="designated"/>
+    <tag k="foot" v="designated"/>
+    <tag k="highway" v="path"/>
+    <tag k="lit" v="yes"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="segregated" v="yes"/>
+  </way>
+  <way id="343772642" version="1" timestamp="2015-05-08T21:14:35Z" changeset="30920947" uid="165061" user="mapper999">
+    <nd ref="1480157076"/>
+    <nd ref="1677001511"/>
+    <nd ref="526930298"/>
+    <nd ref="1480156996"/>
+    <nd ref="1480156912"/>
+    <nd ref="1480156909"/>
+    <nd ref="465206112"/>
+    <nd ref="1677001494"/>
+    <nd ref="1480156902"/>
+    <tag k="bicycle" v="designated"/>
+    <tag k="foot" v="designated"/>
+    <tag k="highway" v="path"/>
+    <tag k="lit" v="yes"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="segregated" v="no"/>
+  </way>
+  <way id="348702616" version="2" timestamp="2015-05-30T16:28:36Z" changeset="31587838" uid="165061" user="mapper999">
+    <nd ref="3547526718"/>
+    <nd ref="1641501694"/>
+    <tag k="bicycle" v="yes"/>
+    <tag k="highway" v="tertiary"/>
+    <tag k="maxspeed" v="30"/>
+    <tag k="name" v="Georg-Friedrich-Straße"/>
+    <tag k="note" v="im SHP des NVK: III"/>
+    <tag k="parking:condition:left" v="ticket"/>
+    <tag k="parking:condition:left:capacity" v="4"/>
+    <tag k="parking:condition:left:time_interval" v="Mo-Sa 08:00-20:00"/>
+    <tag k="parking:condition:right" v="free"/>
+    <tag k="parking:lane:left" v="parallel"/>
+    <tag k="parking:lane:right" v="parallel"/>
+    <tag k="parking:lane:right:parallel" v="on_kerb"/>
+    <tag k="source:maxspeed" v="DE:zone30"/>
+    <tag k="zone:traffic" v="DE:urban"/>
+  </way>
+  <way id="348702618" version="3" timestamp="2015-12-21T22:15:57Z" changeset="36096014" uid="2600695" user="jlcod">
+    <nd ref="1641501694"/>
+    <nd ref="1231749934"/>
+    <nd ref="1255392537"/>
+    <nd ref="3903695906"/>
+    <tag k="bicycle" v="yes"/>
+    <tag k="highway" v="tertiary"/>
+    <tag k="maxspeed" v="30"/>
+    <tag k="name" v="Georg-Friedrich-Straße"/>
+    <tag k="note" v="im SHP des NVK: III"/>
+    <tag k="source:maxspeed" v="DE:zone30"/>
+    <tag k="zone:traffic" v="DE:urban"/>
+  </way>
+  <way id="350143672" version="3" timestamp="2015-08-15T09:54:57Z" changeset="33349425" uid="165061" user="mapper999">
+    <nd ref="3559037172"/>
+    <nd ref="3698328911"/>
+    <nd ref="1277646917"/>
+    <nd ref="3575330136"/>
+    <nd ref="3575330119"/>
+    <nd ref="1820693726"/>
+    <nd ref="3547526718"/>
+    <tag k="bicycle" v="yes"/>
+    <tag k="highway" v="tertiary"/>
+    <tag k="maxspeed" v="30"/>
+    <tag k="name" v="Georg-Friedrich-Straße"/>
+    <tag k="note" v="im SHP des NVK: III"/>
+    <tag k="parking:condition:both" v="free"/>
+    <tag k="parking:lane:right" v="parallel"/>
+    <tag k="parking:lane:right:parallel" v="on_kerb"/>
+    <tag k="source:maxspeed" v="DE:zone30"/>
+    <tag k="zone:traffic" v="DE:urban"/>
+  </way>
+  <way id="354085926" version="3" timestamp="2016-03-12T18:51:01Z" changeset="37788284" uid="165061" user="mapper999">
+    <nd ref="3598614138"/>
+    <nd ref="3598614139"/>
+    <tag k="access:lanes:backward" v="no|yes"/>
+    <tag k="highway" v="secondary"/>
+    <tag k="lanes" v="4"/>
+    <tag k="lit" v="yes"/>
+    <tag k="maxspeed" v="50"/>
+    <tag k="name" v="Karl-Wilhelm-Straße"/>
+    <tag k="note" v="im SHP des NVK: II"/>
+    <tag k="note:lanes" v="äußere Spuren meistens zugeparkt -&gt; effektiv 2 Spuren"/>
+    <tag k="parking:condition:left" v="free"/>
+    <tag k="parking:condition:left:capacity" v="2"/>
+    <tag k="parking:condition:right" v="free"/>
+    <tag k="parking:lane:left" v="parallel"/>
+    <tag k="parking:lane:left:parallel" v="on_kerb"/>
+    <tag k="parking:lane:right" v="parallel"/>
+    <tag k="parking:lane:right:parallel" v="on_street"/>
+    <tag k="sidewalk" v="right"/>
+    <tag k="tram:lanes:backward" v="designated|no"/>
+    <tag k="zone:traffic" v="DE:urban"/>
+  </way>
+  <way id="354085927" version="3" timestamp="2016-03-12T18:51:01Z" changeset="37788284" uid="165061" user="mapper999">
+    <nd ref="3598614139"/>
+    <nd ref="14912566"/>
+    <tag k="access:lanes:backward" v="no|yes"/>
+    <tag k="highway" v="secondary"/>
+    <tag k="lanes" v="4"/>
+    <tag k="lit" v="yes"/>
+    <tag k="maxspeed" v="50"/>
+    <tag k="name" v="Karl-Wilhelm-Straße"/>
+    <tag k="note" v="im SHP des NVK: II"/>
+    <tag k="note:lanes" v="äußere Spuren meistens zugeparkt -&gt; effektiv 2 Spuren"/>
+    <tag k="parking:condition:right" v="free"/>
+    <tag k="parking:lane:left" v="no_stopping"/>
+    <tag k="parking:lane:right" v="parallel"/>
+    <tag k="parking:lane:right:parallel" v="on_street"/>
+    <tag k="sidewalk" v="right"/>
+    <tag k="tram:lanes:backward" v="designated|no"/>
+    <tag k="zone:traffic" v="DE:urban"/>
+  </way>
+  <way id="354928804" version="1" timestamp="2015-06-19T19:15:33Z" changeset="32082198" uid="165061" user="mapper999">
+    <nd ref="1144841350"/>
+    <nd ref="1186075966"/>
+    <nd ref="1480156732"/>
+    <nd ref="1480156799"/>
+    <nd ref="1149741261"/>
+    <nd ref="1480156828"/>
+    <nd ref="1480156855"/>
+    <tag k="highway" v="secondary"/>
+    <tag k="lanes" v="1"/>
+    <tag k="lit" v="yes"/>
+    <tag k="maxspeed" v="50"/>
+    <tag k="name" v="Karl-Wilhelm-Straße"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="parking:condition:2" v="free"/>
+    <tag k="parking:condition:right" v="no_parking"/>
+    <tag k="parking:condition:right:2:time_interval" v="Mo-Su 18:00-08:00"/>
+    <tag k="parking:condition:right:except" v="loading"/>
+    <tag k="parking:condition:right:time_interval" v="Mo-Su 08:00-18:00"/>
+    <tag k="parking:lane:right" v="parallel"/>
+    <tag k="zone:traffic" v="DE:urban"/>
+  </way>
+  <way id="361151487" version="3" timestamp="2015-12-21T22:15:57Z" changeset="36096014" uid="2600695" user="jlcod">
+    <nd ref="1480192390"/>
+    <nd ref="1480192376"/>
+    <nd ref="1480192391"/>
+    <nd ref="3656667399"/>
+    <nd ref="1481256098"/>
+    <nd ref="21498489"/>
+    <nd ref="21498478"/>
+    <nd ref="1364678762"/>
+    <nd ref="1364678763"/>
+    <nd ref="3656667405"/>
+    <nd ref="1820693724"/>
+    <nd ref="1820693722"/>
+    <nd ref="1820693731"/>
+    <nd ref="1305227387"/>
+    <nd ref="1305227385"/>
+    <nd ref="1820693733"/>
+    <nd ref="3080224501"/>
+    <nd ref="3767766261"/>
+    <nd ref="3903695907"/>
+    <nd ref="1820693726"/>
+    <tag k="highway" v="residential"/>
+    <tag k="maxspeed" v="30"/>
+    <tag k="name" v="Essenweinstraße"/>
+    <tag k="parking:condition:right" v="ticket"/>
+    <tag k="parking:lane:right" v="parallel"/>
+    <tag k="source:maxspeed" v="DE:zone30"/>
+  </way>
+  <way id="365826336" version="2" timestamp="2015-10-01T18:52:41Z" changeset="34375345" uid="2600695" user="jlcod">
+    <nd ref="3698328912"/>
+    <nd ref="3767766263"/>
+    <tag k="access" v="private"/>
+    <tag k="description" v="Zugang Rintheimer Straße 4 und Georg-Friedrich-Straße 1"/>
+    <tag k="highway" v="footway"/>
+  </way>
+  <way id="373276903" version="1" timestamp="2015-10-01T18:52:40Z" changeset="34375345" uid="2600695" user="jlcod">
+    <nd ref="3767766261"/>
+    <nd ref="3767766262"/>
+    <tag k="highway" v="service"/>
+  </way>
+  <way id="373276905" version="1" timestamp="2015-10-01T18:52:40Z" changeset="34375345" uid="2600695" user="jlcod">
+    <nd ref="3767766263"/>
+    <nd ref="3698328911"/>
+    <tag k="description" v="Zugang Rintheimer Straße 4 und Georg-Friedrich-Straße 1"/>
+    <tag k="highway" v="footway"/>
+  </way>
+  <way id="373276906" version="1" timestamp="2015-10-01T18:52:40Z" changeset="34375345" uid="2600695" user="jlcod">
+    <nd ref="3767766268"/>
+    <nd ref="3767766270"/>
+    <nd ref="3767766272"/>
+    <tag k="highway" v="service"/>
+    <tag k="service" v="parking_aisle"/>
+  </way>
+  <way id="373276908" version="1" timestamp="2015-10-01T18:52:40Z" changeset="34375345" uid="2600695" user="jlcod">
+    <nd ref="3767766264"/>
+    <nd ref="3767766267"/>
+    <nd ref="3767766271"/>
+    <nd ref="3767766275"/>
+    <tag k="highway" v="service"/>
+  </way>
+  <way id="373276909" version="1" timestamp="2015-10-01T18:52:40Z" changeset="34375345" uid="2600695" user="jlcod">
+    <nd ref="3767766266"/>
+    <nd ref="3767766272"/>
+    <nd ref="3767766273"/>
+    <nd ref="3767766274"/>
+    <tag k="highway" v="service"/>
+  </way>
+  <way id="373276910" version="1" timestamp="2015-10-01T18:52:40Z" changeset="34375345" uid="2600695" user="jlcod">
+    <nd ref="1277646917"/>
+    <nd ref="1277646937"/>
+    <nd ref="1277646986"/>
+    <nd ref="1277646910"/>
+    <nd ref="3767766265"/>
+    <nd ref="3767766269"/>
+    <tag k="access" v="permissive"/>
+    <tag k="highway" v="service"/>
+    <tag k="service" v="parking_aisle"/>
+  </way>
+  <way id="385476746" version="1" timestamp="2015-12-11T20:32:18Z" changeset="35892703" uid="165061" user="mapper999">
+    <nd ref="3888223349"/>
+    <nd ref="3888223334"/>
+    <nd ref="3888223330"/>
+    <nd ref="3621426204"/>
+    <nd ref="1703288286"/>
+    <nd ref="462271236"/>
+    <tag k="highway" v="residential"/>
+    <tag k="maxspeed" v="30"/>
+    <tag k="name" v="Vincenz-Prießnitz-Straße"/>
+    <tag k="source:maxspeed" v="DE:zone30"/>
+  </way>
+  <way id="387026954" version="2" timestamp="2016-02-13T19:46:46Z" changeset="37193396" uid="165061" user="mapper999">
+    <nd ref="1480008003"/>
+    <nd ref="1480156946"/>
+    <nd ref="1480156978"/>
+    <nd ref="25420935"/>
+    <tag k="highway" v="tertiary"/>
+    <tag k="lanes" v="1"/>
+    <tag k="lit" v="yes"/>
+    <tag k="maxspeed" v="50"/>
+    <tag k="name" v="Karl-Wilhelm-Platz"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="zone:traffic" v="DE:urban"/>
+  </way>
+  <way id="387026955" version="2" timestamp="2016-02-13T19:46:47Z" changeset="37193396" uid="165061" user="mapper999">
+    <nd ref="1480157021"/>
+    <nd ref="1480157005"/>
+    <nd ref="1480156963"/>
+    <nd ref="1480156934"/>
+    <nd ref="1480156911"/>
+    <nd ref="25420940"/>
+    <nd ref="465206112"/>
+    <nd ref="1480156904"/>
+    <tag k="highway" v="tertiary"/>
+    <tag k="lanes" v="2"/>
+    <tag k="lit" v="yes"/>
+    <tag k="maxspeed" v="50"/>
+    <tag k="name" v="Karl-Wilhelm-Platz"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="parking:lane:both" v="no_parking"/>
+    <tag k="turn:lanes" v="through|right"/>
+    <tag k="zone:traffic" v="DE:urban"/>
+  </way>
+  <way id="387026956" version="2" timestamp="2016-02-13T19:46:47Z" changeset="37193396" uid="165061" user="mapper999">
+    <nd ref="1480007978"/>
+    <nd ref="1480007983"/>
+    <nd ref="1480007985"/>
+    <nd ref="1480007989"/>
+    <nd ref="1480007991"/>
+    <nd ref="1480007993"/>
+    <nd ref="1480007997"/>
+    <nd ref="1480008003"/>
+    <tag k="highway" v="tertiary"/>
+    <tag k="lanes" v="2"/>
+    <tag k="lit" v="yes"/>
+    <tag k="maxspeed" v="50"/>
+    <tag k="name" v="Karl-Wilhelm-Platz"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="turn:lanes" v="through|right"/>
+    <tag k="zone:traffic" v="DE:urban"/>
+  </way>
+  <way id="398702703" version="1" timestamp="2016-02-19T12:39:11Z" changeset="37307711" uid="651621" user="bjoern262">
+    <nd ref="1480156866"/>
+    <nd ref="1480156820"/>
+    <nd ref="1186075987"/>
+    <tag k="highway" v="secondary"/>
+    <tag k="lanes" v="1"/>
+    <tag k="lit" v="yes"/>
+    <tag k="maxspeed" v="50"/>
+    <tag k="name" v="Karl-Wilhelm-Straße"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="parking:lane:right" v="no_parking"/>
+    <tag k="zone:traffic" v="DE:urban"/>
+  </way>
+  <way id="403349965" version="1" timestamp="2016-03-12T18:50:22Z" changeset="37788284" uid="165061" user="mapper999">
+    <nd ref="14912566"/>
+    <nd ref="14912567"/>
+    <tag k="highway" v="secondary"/>
+    <tag k="lanes" v="4"/>
+    <tag k="lit" v="yes"/>
+    <tag k="maxspeed" v="50"/>
+    <tag k="name" v="Karl-Wilhelm-Straße"/>
+    <tag k="note" v="im SHP des NVK: II"/>
+    <tag k="note:lanes" v="äußere Spuren meistens zugeparkt -&gt; effektiv 2 Spuren"/>
+    <tag k="parking:condition:right" v="free"/>
+    <tag k="parking:lane:left" v="no_stopping"/>
+    <tag k="parking:lane:right" v="parallel"/>
+    <tag k="parking:lane:right:parallel" v="on_street"/>
+    <tag k="sidewalk" v="right"/>
+    <tag k="zone:traffic" v="DE:urban"/>
+  </way>
+
+</osm>
