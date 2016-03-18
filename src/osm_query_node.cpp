@@ -54,6 +54,10 @@ typedef Osmium::Storage::ById::SparseTable<Osmium::OSM::Position> storage_sparse
 typedef Osmium::Storage::ById::MmapFile<Osmium::OSM::Position> storage_mmap_t;
 typedef Osmium::Handler::CoordinatesForWays<storage_sparsetable_t, storage_mmap_t> cfw_handler_t;
 
+/**
+ * @brief The ObjectHandler class
+ * With this class we handle the Osmium Library
+ */
 class ObjectHandler : public Osmium::Handler::Base
 {
 
@@ -150,11 +154,11 @@ public:
     }
 };
 
-/** Structs ---------------------------------------------------------------------------*/
-// Combination of ObjectStore and CoordinateForWays handlers
+/* Structs ---------------------------------------------------------------------------*/
+/// Combination of ObjectStore and CoordinateForWays handlers
 ObjectHandler oh;
 
-// Coordinates struct
+/// Coordinates struct
 struct Coordinates
 {
     float latitude;
@@ -162,14 +166,14 @@ struct Coordinates
     float altitude;
 };
 
-// Cartesian coordinates struct
+/// Cartesian coordinates struct
 struct Xy
 {
     double x;
     double y;
 };
 
-// Response struct for Way direction calculator
+/// Response struct for Way direction calculator
 struct Way_dir_struct
 {
     // Direction quaternion
@@ -190,9 +194,34 @@ struct Way_dir_struct
     bool not_a_way;
 };
 
-/** Functions ---------------------------------------------------------------------------*/
+/* Functions ---------------------------------------------------------------------------*/
 
-bool isLeft(Xy osmA, Xy osmB, Xy queryPoint);
+bool                    isLeft                       (Xy osmA, Xy osmB, Xy queryPoint);
+bool                    ecef_2_lla                   (ira_open_street_map::ecef_2_lla::Request& req, ira_open_street_map::ecef_2_lla::Response& resp);
+Coordinates             ecef2lla_helper              (float x, float y, float z);
+bool                    get_closest_way_distance_utm (ira_open_street_map::get_closest_way_distance_utm::Request& req, ira_open_street_map::get_closest_way_distance_utm::Response& resp);
+bool                    get_distance_from_xy         (ira_open_street_map::get_distance_from_xy::Request& req, ira_open_street_map::get_distance_from_xy::Response& resp);
+double inline           get_distance_helper          (double x1, double y1, double x2, double y2);
+bool                    get_node_coordinates         (ira_open_street_map::get_node_coordinates::Request& req, ira_open_street_map::get_node_coordinates::Response& resp);
+ROS_DEPRECATED bool     getDistanceFromLaneCenter    (ira_open_street_map::getDistanceFromLaneCenter::Request& req, ira_open_street_map::getDistanceFromLaneCenter::Response& resp);
+bool                    getHighwayInfo               (ira_open_street_map::getHighwayInfo::Request& req, ira_open_street_map::getHighwayInfo::Response& resp);
+bool                    getOneWayInfo                (ira_open_street_map::oneway::Request& req, ira_open_street_map::oneway::Response& resp);
+bool                    latlon_2_xy                  (ira_open_street_map::latlon_2_xy::Request& req, ira_open_street_map::latlon_2_xy::Response& resp);
+Xy                      latlon2xy_helper             (double lat, double lngd);
+bool                    lla_2_ecef                   (ira_open_street_map::lla_2_ecef::Request& req, ira_open_street_map::lla_2_ecef::Response& resp);
+double                  lla_distance                 (Coordinates& c1, Coordinates& c2);
+geometry_msgs::Point    lla2ecef_helper              (double lat, double lon, double alt);
+void                    load_waylist                 ();
+void                    publish_buildinglist         (ros::Publisher &markerArrayPublisher_buildings);
+Xy                      snap_particle_helper         (Xy& A, Xy& B, Xy& C);
+bool                    snap_particle_xy             (ira_open_street_map::snap_particle_xy::Request& req, ira_open_street_map::snap_particle_xy::Response& resp);
+Way_dir_struct          way_direction_helper         (const boost::shared_ptr<Osmium::OSM::Way const>& way, Xy& A, Xy& B);
+Way_dir_struct          way_direction_helper         (double way_id);
+bool                    way_direction                (ira_open_street_map::way_direction::Request& req, ira_open_street_map::way_direction::Response& resp);
+bool                    xy_2_latlon                  (ira_open_street_map::xy_2_latlon::Request& req, ira_open_street_map::xy_2_latlon::Response& resp);
+Coordinates             xy2latlon_helper             (double x, double y, double utmz, bool southern);
+double                  xyz_distance                 (geometry_msgs::Point& p1, geometry_msgs::Point& p2);
+
 
 // How to get UTM from Longitude:
 // UTM = 1.0 + floor((lngd + 180.0) / 6.0);
@@ -295,23 +324,17 @@ Xy latlon2xy_helper(double lat, double lngd)
     {
         y = 10000000.0 + y; // add in false northing if south of the equator
     }
-    double easting = round(10.0 * x) / 10.0;
-    double northing = round(10.0 * y) / 10.0;
+    //double easting  = round(10.0 * x) / 10.0;
+    //double northing = round(10.0 * y) / 10.0;
+
+    double easting  = x;
+    double northing = y;
 
     Xy coords;
     coords.x = easting;
     coords.y = northing;
 
     return coords;
-
-    // the following lines were added to debug the rviz_satellite with Bing Maps. You can delete when needed.
-    //double sinLatitude = sin(latitude * M_PI/180);
-    //coords.x = ((longitude + 180.0f) / 360.0f) * 256.0f * pow(2,zoom);
-    //coords.y = (0.5f-log((1.0f+sinLatitude) / (1.0f-sinLatitude)) / (4.0f*M_PI)) * 256.0f * pow(2,zoom);
-
-    //double sinLatitude = sin(lat * M_PI/180);
-    //ROS_ERROR_STREAM ("DIFFERENCE\t"<<coords.x << " " <<((lngd + 180.0f) / 360.0f) * 256.0f * pow(2,19));
-    //ROS_ERROR_STREAM ("DIFFERENCE\t"<<coords.y << " " <<(0.5f-log((1.0f+sinLatitude) / (1.0f-sinLatitude)) / (4.0f*M_PI)) * 256.0f * pow(2,19));
 
 }
 
@@ -807,7 +830,7 @@ double lla_distance(Coordinates& c1, Coordinates& c2)
 
 
 /**
- * @brief snap_particle_xy          XY in global map frame!
+ * @brief snap_particle_xy  XY in global map frame! (Northing/Easting)
  * @param req
  * @param resp
  * @return
@@ -939,8 +962,18 @@ bool snap_particle_xy(ira_open_street_map::snap_particle_xy::Request& req, ira_o
     return true;
 }
 
-inline bool isLeft(Xy osmA, Xy osmB, Xy queryPoint){
-     return ((osmB.x - osmA.x)*(queryPoint.y - osmA.y) - (osmB.y - osmA.y)*(queryPoint.x - osmA.x)) > 0;
+
+/**
+ * @brief isLeft This routine checks on which side of a segment created by two points
+ * a queryPoint is. This is related to task #538
+ * @param osmA the first  point of the orientated segment, usually northing/easting
+ * @param osmB the second point of the orientated segment, usually northing/easting
+ * @param queryPoint the query point, position of the particle, usually northing/easting
+ * @return true if the queryPoint is on the LEFT, false if it is on the RIGHT.
+ */
+inline bool isLeft(Xy osmA, Xy osmB, Xy queryPoint)
+{
+    return ((osmB.x - osmA.x) * (queryPoint.y - osmA.y) - (osmB.y - osmA.y) * (queryPoint.x - osmA.x)) > 0;
 }
 
 
@@ -1351,7 +1384,6 @@ ROS_DEPRECATED bool getDistanceFromLaneCenter(ira_open_street_map::getDistanceFr
  * @param resp
  * @return
  */
-
 bool getHighwayInfo(ira_open_street_map::getHighwayInfo::Request& req, ira_open_street_map::getHighwayInfo::Response& resp)
 {
     /*
