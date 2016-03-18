@@ -1478,38 +1478,32 @@ bool get_node_coordinates(ira_open_street_map::get_node_coordinates::Request& re
     return true;
 }
 
-
+visualization_msgs::Marker buildings;
 /**
  * @brief publish_waylist
  * @param req
  * @param resp
  * @return
  */
-void publish_buildinglist(ros::Publisher &markerArrayPublisher_buildings)
+void load_buildinglist()
 {
-    visualization_msgs::MarkerArray buildingsArray;
+    buildings.header.frame_id = "map";
+    buildings.header.stamp = ros::Time();
+    buildings.ns = "buildings";
+    buildings.id = 0;
+    buildings.type = visualization_msgs::Marker::TRIANGLE_LIST;
+    buildings.action = visualization_msgs::Marker::ADD;
+    buildings.scale.x = 1.0;
+    buildings.scale.y = 1.0;
+    buildings.scale.z = 1.0;
+    buildings.color.r = 0.0f;
+    buildings.color.g = 0.9f;
+    buildings.color.b = 0.7f;
+    buildings.color.a = 0.75f;
 
-    visualization_msgs::Marker building;
-    building.header.frame_id = "map";
-    building.header.stamp = ros::Time();
-    building.ns = "way";
-    building.id = 0;
-    building.type = visualization_msgs::Marker::LINE_LIST;
-    building.action = visualization_msgs::Marker::ADD;
-    building.pose.position.x = 0;
-    building.pose.position.y = 0;
-    building.pose.position.z = 0;
-    building.pose.orientation.x = 0.0;
-    building.pose.orientation.y = 0.0;
-    building.pose.orientation.z = 0.0;
-    building.pose.orientation.w = 1.0;
-    building.scale.x = 1;
-    building.scale.y = 0.1;
-    building.scale.z = 0.1;
-    building.color.a = 0.8; // Don't forget to set the alpha!
-    building.color.r = 1.0;
-    building.color.g = 0.0;
-    building.color.b = 0.0;
+    Xy coords_A, coords_B;
+    float height = 3.0f;
+    geometry_msgs::Point A, h_A, B, h_B;
 
     for(std::set<shared_ptr<Osmium::OSM::Way const> >::iterator way_itr = oh.m_ways.begin(); way_itr != oh.m_ways.end(); way_itr++)
     {
@@ -1852,7 +1846,7 @@ int main(int argc, char* argv[])
     ros::NodeHandle nh;
     ros::AsyncSpinner spinner(8);
     ros::Publisher markerArrayPublisher_ways = nh.advertise<visualization_msgs::MarkerArray>("/ways", 5);
-    ros::Publisher markerArrayPublisher_buildings = nh.advertise<visualization_msgs::MarkerArray>("/buildings", 1);
+    ros::Publisher markerPublisher_buildings = nh.advertise<visualization_msgs::Marker>("/buildings", 1);
 
     ROS_INFO_STREAM("OSM QUERY NODE STARTED:");
 
@@ -1927,8 +1921,7 @@ int main(int argc, char* argv[])
     markerArrayPublisher_ways.publish(waylistArray_oneway);
     markerArrayPublisher_ways.publish(nodelistArray);
     markerArrayPublisher_ways.publish(directionArray);
-//    publish_buildinglist(markerArrayPublisher_buildings);
-
+    markerPublisher_buildings.publish(buildings);
     // Multithread Spinner
     spinner.start();
 

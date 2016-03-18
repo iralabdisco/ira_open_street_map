@@ -61,8 +61,8 @@ void get_page(const char* url, const char* file_path)
 int main(int argc, char **argv)
 {
     // init node
-    ros::init(argc, argv, "osm_downloader_node");
-    ros::NodeHandle nh;
+    //ros::init(argc, argv, "osm_downloader_node");
+    //ros::NodeHandle nh;
 
     // Map coordinates (default coordinates of U14 - Bicocca Computer Science department building)
     double lat = 45.523774;
