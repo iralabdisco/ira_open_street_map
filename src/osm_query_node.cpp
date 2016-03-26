@@ -1490,7 +1490,7 @@ void load_buildinglist()
     buildings.header.frame_id = "map";
     buildings.header.stamp = ros::Time();
     buildings.ns = "buildings";
-    buildings.id = 0;
+    buildings.id = 3;
     buildings.type = visualization_msgs::Marker::TRIANGLE_LIST;
     buildings.action = visualization_msgs::Marker::ADD;
     buildings.scale.x = 1.0;
@@ -1563,7 +1563,7 @@ void load_waylist()
 {
     visualization_msgs::Marker way_single_part;
     way_single_part.header.frame_id = "map";
-    way_single_part.header.stamp = ros::Time();
+    way_single_part.header.stamp = ros::Time::now();
     way_single_part.ns = "way";
     way_single_part.id = 0;
     way_single_part.type = visualization_msgs::Marker::LINE_LIST;
@@ -1585,9 +1585,9 @@ void load_waylist()
 
     visualization_msgs::Marker node;
     node.header.frame_id = "map";
-    node.header.stamp = ros::Time();
+    node.header.stamp = ros::Time::now();
     node.ns = "node";
-    node.id = 0;
+    node.id = 1;
     node.type = visualization_msgs::Marker::CYLINDER;
     node.action = visualization_msgs::Marker::ADD;
     node.pose.position.x = 0;
@@ -1607,9 +1607,9 @@ void load_waylist()
 
     visualization_msgs::Marker direction;
     direction.header.frame_id = "map";
-    direction.header.stamp = ros::Time();
+    direction.header.stamp = ros::Time::now();
     direction.ns = "direction";
-    direction.id = 0;
+    direction.id = 2;
     direction.type = visualization_msgs::Marker::ARROW;
     direction.action = visualization_msgs::Marker::ADD;
     direction.pose.position.x = 0;
