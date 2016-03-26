@@ -212,7 +212,7 @@ bool                    lla_2_ecef                   (ira_open_street_map::lla_2
 double                  lla_distance                 (Coordinates& c1, Coordinates& c2);
 geometry_msgs::Point    lla2ecef_helper              (double lat, double lon, double alt);
 void                    load_waylist                 ();
-void                    publish_buildinglist         (ros::Publisher &markerArrayPublisher_buildings);
+void                    load_buildinglist            ();
 Xy                      snap_particle_helper         (Xy& A, Xy& B, Xy& C);
 bool                    snap_particle_xy             (ira_open_street_map::snap_particle_xy::Request& req, ira_open_street_map::snap_particle_xy::Response& resp);
 Way_dir_struct          way_direction_helper         (const boost::shared_ptr<Osmium::OSM::Way const>& way, Xy& A, Xy& B);
