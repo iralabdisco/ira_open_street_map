@@ -4,9 +4,8 @@
  *      Universita' degli Studi Milano - Bicocca, DISCO                    *
  *      Building U14, viale Sarca 336, 20126, Milano, Italy                *
  *                                                                         *
- *   Author:    Dario Limongi                                              *
- *   Email:     dario.limongi@gmail.com                                    *
- *   Date:      12/08/2014                                                 *
+ *   Authors:    Dario Limongi, Augusto Ballardini, Sergio Cattaneo        *
+ *   Maintainer: augusto.ballardini@disco.unimib.it                        *
  *                                                                         *
  ***************************************************************************/
 
